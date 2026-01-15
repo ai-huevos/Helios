@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatAm Operator Archetypes - AI Huevos eBook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+        /* BRAND VARIABLES */
+        :root {
+            /* Primary Colors */
+            --brand-yellow: #FFE03D;
+            --brand-blue: #4D9FFF;
+            --brand-black: #000000;
+            --brand-white: #FFFFFF;
+
+            /* Secondary Colors */
+            --brand-purple: #B8A0FF;
+            --brand-orange: #FF5C3D;
+
+            /* Web Colors */
+            --brand-gray-light: #E5E5E5;
+            --brand-gray-dark: #9B9B9B;
+
+            /* Typography */
+            --font-primary: 'Scandia', 'Inter', sans-serif;
+            /* Fallback to Inter if Scandia not loaded */
+            --font-mono: 'Geist Mono', 'Roboto Mono', monospace;
+            /* Fallback to Roboto Mono */
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: linear-gradient(135deg, var(--brand-white) 0%, #f8f9fa 100%);
+            color: var(--brand-black);
+            line-height: 1.6;
+        }
+
+        /* Main Container */
+        .ebook-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+            box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            background: linear-gradient(180deg, var(--brand-black) 0%, #1a1a1a 100%);
+            color: var(--brand-white);
+            padding: 40px 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 3px solid var(--brand-yellow);
+        }
+
+        .sidebar-logo {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .egg-emoji {
+            font-size: 32px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-section-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--brand-yellow);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar-nav button {
+            background: none;
+            border: none;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+            text-align: left;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .sidebar-nav button:hover {
+            background: #FFE03D;
+            color: #000000;
+            transform: translateX(5px);
+        }
+
+        .sidebar-nav button.active {
+            background: #4D9FFF;
+            color: #ffffff;
+            border-left: 3px solid #FFE03D;
+        }
+
+        /* Main Content */
+        .content {
+            overflow-y: auto;
+            padding: 60px 80px;
+            background: #ffffff;
+        }
+
+        /* Sections */
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Cover Page */
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 90vh;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #FFE03D 100%);
+            color: #ffffff;
+            padding: 60px;
+            border-radius: 12px;
+        }
+
+        .cover-egg {
+            font-size: 120px;
+            margin-bottom: 40px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .cover-page h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .cover-page p {
+            font-size: 20px;
+            color: #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        .cover-meta {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+            font-size: 16px;
+            color: #f0f0f0;
+        }
+
+        /* Typography */
+        /* Typography */
+        h2 {
+            font-family: var(--font-primary);
+            font-size: 42px;
+            font-weight: 500;
+            /* Medium per brand guidelines */
+            margin-bottom: 30px;
+            color: var(--brand-black);
+            border-bottom: 4px solid var(--brand-yellow);
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            font-family: var(--font-primary);
+            font-size: 28px;
+            font-weight: 500;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .h3-emoji {
+            font-size: 32px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: #333333;
+        }
+
+        ul,
+        ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        thead {
+            background: linear-gradient(90deg, #000000 0%, #1a1a1a 100%);
+            color: #ffffff;
+        }
+
+        th {
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+        }
+
+        tbody tr:hover {
+            background: #eff5ff;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Cards */
+        .card {
+            background: #f8f9fa;
+            border-left: 4px solid var(--brand-blue);
+            padding: 24px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 20px rgba(77, 159, 255, 0.2);
+        }
+
+        .card.highlight {
+            border-left-color: var(--brand-yellow);
+            background: linear-gradient(90deg, rgba(255, 224, 61, 0.1) 0%, rgba(255, 224, 61, 0) 100%);
+        }
+
+        .card.purple {
+            border-left-color: var(--brand-purple);
+            background: linear-gradient(90deg, rgba(184, 160, 255, 0.1) 0%, rgba(184, 160, 255, 0) 100%);
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .card-content {
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.7;
+        }
+
+        /* Highlights */
+        .highlight-box {
+            background: linear-gradient(90deg, var(--brand-yellow) 0%, var(--brand-blue) 50%, var(--brand-purple) 100%);
+            color: var(--brand-white);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .quote {
+            border-left: 4px solid var(--brand-orange);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #1a1a1a;
+            font-style: italic;
+        }
+
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 24px;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            border-color: #FFE03D;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(255, 224, 61, 0.2);
+        }
+
+        .metric-value {
+            font-family: var(--font-mono);
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--brand-blue);
+            margin-bottom: 8px;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: #666666;
+            font-weight: 500;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            background: linear-gradient(90deg, var(--brand-yellow) 0%, var(--brand-orange) 100%);
+            color: var(--brand-black);
+            font-family: var(--font-mono);
+            border: none;
+            padding: 16px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            text-transform: lowercase;
+            /* Per brand guidelines for Geist Mono */
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 224, 61, 0.4);
+        }
+
+        /* Back Cover */
+        .back-cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 90vh;
+            background: linear-gradient(135deg, #FFE03D 0%, #4D9FFF 50%, #B8A0FF 100%);
+            color: #000000;
+            padding: 60px;
+            border-radius: 12px;
+        }
+
+        .back-cover h2 {
+            border: none;
+            margin-bottom: 20px;
+            font-size: 42px;
+        }
+
+        .back-cover-content {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin-top: 30px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .back-cover-content p {
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .contact-info strong {
+            display: block;
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: #4D9FFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: #000000;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-top: 3px solid #FFE03D;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #999999;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .ebook-container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                height: auto;
+                border-right: none;
+                border-bottom: 3px solid #FFE03D;
+                padding: 20px;
+            }
+
+            .content {
+                padding: 40px;
+            }
+
+            .cover-page h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ebook-container {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .cover-page {
+                padding: 30px;
+            }
+
+            .cover-page h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th,
+            td {
+                padding: 8px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .sidebar {
+                display: none;
+            }
+
+            .ebook-container {
+                grid-template-columns: 1fr;
+                box-shadow: none;
+            }
+
+            .content {
+                padding: 0;
+            }
+
+            .section {
+                page-break-after: always;
+            }
+
+            h2 {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ebook-container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <span class="egg-emoji">🥚</span>
+                <div>
+                    <div>AI Huevos</div>
+                    <div style="font-size: 10px; font-weight: 400; color: #FFE03D;">eBook 2026</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">Contenido</div>
+                <ul class="sidebar-nav">
+                    <li><button class="nav-btn active" data-section="cover">Portada</button></li>
+                    <li><button class="nav-btn" data-section="intro">Introducción</button></li>
+                    <li><button class="nav-btn" data-section="metro">Metro: Hotelería</button></li>
+                    <li><button class="nav-btn" data-section="kikes">Kikes: Avicultura</button></li>
+                    <li><button class="nav-btn" data-section="transformation">Transformaciones</button></li>
+                    <li><button class="nav-btn" data-section="ai-solutions">Soluciones con IA</button></li>
+                    <li><button class="nav-btn" data-section="back">Contraportada</button></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">Recursos</div>
+                <ul class="sidebar-nav">
+                    <li><button class="nav-btn" onclick="window.print()">📄 Descargar PDF</button></li>
+                    <li><button class="nav-btn" onclick="shareBook()">📤 Compartir</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+
+            <!-- COVER PAGE -->
+            <section id="cover" class="section active">
+                <div class="cover-page">
+                    <div class="cover-egg">🥚</div>
+                    <h1>LatAm Operator Archetypes</h1>
+                    <p>Estrategias de transformación digital para operadores inmobiliarios y agroindustriales</p>
+                    <div class="cover-meta">
+                        <p><strong>Powered by AI Huevos</strong></p>
+                        <p>Pa' emprender se necesitan huevos</p>
+                        <p style="font-size: 14px; color: #ccc; margin-top: 20px;">enero 2026</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INTRODUCTION -->
+            <section id="intro" class="section">
+                <h2>Introducción: El Reto de los Operadores en LatAm</h2>
+
+                <p>Los operadores de activos reales en América Latina—desde cadenas hoteleras hasta productores
+                    agroindustriales—enfrentan un desafío común: <strong>la brecha entre el volumen de datos disponibles
+                        y la capacidad de convertirlos en decisiones rápidas y rentables.</strong></p>
+
+                <div class="highlight-box">
+                    "Real-time visibility no es un lujo. Es la tabla de salvación para operadores enfrentando
+                    volatilidad, fragmentación de datos y presión regulatoria constante."
+                </div>
+
+                <h3><span class="h3-emoji">📊</span> El Problema Real</h3>
+                <ul>
+                    <li><strong>Data Latency:</strong> Reportes de junta llegan 15-20 días después del cierre.
+                        Oportunidades de corrección se pierden.</li>
+                    <li><strong>Silos Operacionales:</strong> Cada propiedad, cada granja, cada distribución corre en
+                        paralelo sin visibilidad cruzada.</li>
+                    <li><strong>Ceguera Táctica:</strong> Un General Manager no sabe si su ocupancia cayó 8% hasta el
+                        reporte del mes siguiente.</li>
+                    <li><strong>Automatización Manual:</strong> 15-20 horas/mes de consolidación de reportes. Propenso a
+                        errores. Sin visión predictiva.</li>
+                </ul>
+
+                <h3><span class="h3-emoji">🎯</span> Nuestra Respuesta</h3>
+                <p>Este eBook explora dos arquetipos operacionales reales en LatAm:</p>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div style="font-size: 40px; margin-bottom: 8px;">🏨</div>
+                        <div class="metric-label"><strong>Metro Hotels</strong> – Operador inmobiliario de lujo con 17
+                            propiedades en 3 países</div>
+                    </div>
+                    <div class="metric-card">
+                        <div style="font-size: 40px; margin-bottom: 8px;">🐔</div>
+                        <div class="metric-label"><strong>Huevos Kikes</strong> – Productor agroindustrial integrado, #1
+                            en Colombia</div>
+                    </div>
+                </div>
+
+                <p>Para cada uno, mostramos:</p>
+                <ol>
+                    <li><strong>¿Quiénes son?</strong> Modelos de negocio, activos, y presiones competitivas reales.
+                    </li>
+                    <li><strong>¿Cómo ganan dinero?</strong> Métricas no-negociables que gobiernan la rentabilidad.</li>
+                    <li><strong>¿Dónde están ciegos?</strong> Desafíos crónicos y oportunidades escondidas.</li>
+                    <li><strong>¿Cómo AI Huevos ayuda?</strong> Soluciones operacionales concretas con ROI
+                        cuantificable.</li>
+                </ol>
+
+                <div class="cta-section">
+                    <h4 style="color: #fff;">¿Listo para explorar tu transformación?</h4>
+                    <p style="color: #f0f0f0; margin-top: 10px;">Sigue adelante. Te esperan insights que cambiarán cómo
+                        ves tu operación.</p>
+                </div>
+            </section>
+
+            <!-- METRO SECTION -->
+            <section id="metro" class="section">
+                <h2>Metro: El Operador Inmobiliario Hotelero</h2>
+
+                <h3><span class="h3-emoji">🏨</span> Quiénes Son</h3>
+                <p><strong>Metro Operación Inmobiliaria</strong> fundada en 2010 por Felipe Galeano (ingeniero
+                    industrial con background en private equity) es el arquetipo del constructor disciplinado de activos
+                    reales en LatAm.</p>
+
+                <div class="card highlight">
+                    <div class="card-title">Portfolio de Metro</div>
+                    <div class="card-content">
+                        <strong>17 propiedades</strong> en Colombia, Chile, Perú | <strong>~1,500 habitaciones</strong>
+                        | Marcas: Hampton by Hilton, Holiday Inn, Courtyard by Marriott | Base de activos: >$200M USD |
+                        Ocupancia promedio: 55-65% | ADR: $90-$150
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">💰</span> Cómo Ganan Dinero</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flujo de Ingreso</th>
+                            <th>Mecánica</th>
+                            <th>Importancia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Room Revenue</strong></td>
+                            <td>Ocupancia × ADR × Inventario = RevPAR</td>
+                            <td>Base de flujo de caja</td>
+                        </tr>
+                        <tr>
+                            <td><strong>F&B & Ancillary</strong></td>
+                            <td>Desayuno, sala de reuniones, wellness, parking</td>
+                            <td>15-25% de ingresos; alto margen</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Apreciación de Activos</strong></td>
+                            <td>Propiedades bien localizadas + brand premium = valor creciente</td>
+                            <td>Retorno a largo plazo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GOP (Margen Operativo)</strong></td>
+                            <td>Ingresos - Costos directos = Beneficio antes de deuda</td>
+                            <td>25-35% target; medida de eficiencia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Refinanciación</strong></td>
+                            <td>Activos estables permiten deuda a tasas bajas; refinancia a tasas mejores</td>
+                            <td>Multiplicador de retorno en equity</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3><span class="h3-emoji">⚡</span> Transformaciones Críticas (Próximos 3-5 Años)</h3>
+
+                <div class="card">
+                    <div class="card-title">1. De Reportes Retroactivos → Inteligencia de Portfolio en Vivo</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> Reportes de junta llegan 15-20 días después de mes-cierre.<br>
+                        <strong>Problema:</strong> Oportunidades de corrección (ajuste de precios, staffing) se pierden
+                        por semanas.<br>
+                        <strong>Futuro:</strong> Dashboards diarios de ocupancia, ADR, caja por propiedad.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">2. De Decisiones Aisladas → Optimización de Portfolio</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> Cada GM maneja su propiedad con autonomía. Aprendizajes no
+                        transfieren.<br>
+                        <strong>Problema:</strong> Si un GM descubre que pricing dinámico sube RevPAR 8%, toma años
+                        implementarlo en otras propiedades.<br>
+                        <strong>Futuro:</strong> Benchmarking cross-propiedad y playbooks operacionales estandarizados.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">3. De Stack Fragmentado → Tech Integrado en Cloud</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> PMS, channel manager, RMS, HR, Finance en sistemas desconectados.<br>
+                        <strong>Problema:</strong> Imposible optimizar labor + pricing + revenue simultáneamente.<br>
+                        <strong>Futuro:</strong> Cloud unificado (OPERA Cloud, Preno, RMS integrado).
+                    </div>
+                </div>
+
+                <div class="card purple">
+                    <div class="card-title">4. De Intuición → Decisiones Aumentadas por IA</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> Revenue managers ajustan rates manualmente; staffing por intuición.<br>
+                        <strong>Problema:</strong> Competidores con pricing IA están ganando 2-3% RevPAR extra.<br>
+                        <strong>Futuro:</strong> AI-driven dynamic pricing, labor forecasting predictivo. Humans refine,
+                        no deciden.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">📈</span> Métricas No-Negociables</h3>
+                <p>Para gobernar un portfolio como Metro, estos 15-20 KPIs son el "cockpit":</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Métrica</th>
+                            <th>Target</th>
+                            <th>¿Por Qué Importa?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Portfolio Occupancy %</strong></td>
+                            <td>60-68%</td>
+                            <td>Base de ingresos; <60%=alerta roja</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Portfolio ADR</strong></td>
+                            <td>$110-$140</td>
+                            <td>Pricing power; trend es todo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Portfolio RevPAR</strong></td>
+                            <td>$65-$90 (creciendo)</td>
+                            <td>KPI oro: combina ocupancia + pricing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GOP %</strong></td>
+                            <td>25-35% margin</td>
+                            <td>Rentabilidad operativa real</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Debt-to-EBITDA</strong></td>
+                            <td>
+                                <3.0x (covenant)</td>
+                            <td>Flexibilidad financiera; refinancing risk</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Labor Cost % Revenue</strong></td>
+                            <td>20-23%</td>
+                            <td>Identifica propiedades ineficientes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time-to-Reporting</strong></td>
+                            <td>
+                                <15 días (aspirando <7)</td>
+                            <td>Velocidad de decisión</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- KIKES SECTION -->
+            <section id="kikes" class="section">
+                <h2>Kikes: El Productor Agroindustrial Integrado</h2>
+
+                <h3><span class="h3-emoji">🐔</span> Quiénes Son</h3>
+                <p><strong>Incubadora Santander S.A.</strong> (marca: Huevos Kikes) bajo liderazgo de Juan Felipe
+                    Montoya Muñoz es el arquetipo del operador agroindustrial integrado en LatAm con propósito nacional.
+                </p>
+
+                <div class="card highlight">
+                    <div class="card-title">Portfolio de Kikes</div>
+                    <div class="card-content">
+                        <strong>#1 productor de huevos en Colombia</strong> | >4 millones de huevos/día | 2,000+
+                        empleados | Capacidad integrada: hatcheries → granjas de ponedoras → procesamiento →
+                        distribución | Mercado: ~$3B (Colombia); cuota 25-30% | Crecimiento: +9% anual | Exportaciones:
+                        +800% YoY (2024 vs 2023)
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">💡</span> Complejidad End-to-End</h3>
+                <ul>
+                    <li><strong>Upstream:</strong> Hatcheries (incubación), stock genético, feed procurement (44-71% de
+                        costo).</li>
+                    <li><strong>Production:</strong> Granjas con miles de gallinas; monitoreo diario de tasa de postura,
+                        mortalidad, conversión alimentaria.</li>
+                    <li><strong>Processing:</strong> Recolección, clasificación, pasteurización. SANOVO facility (2017)
+                        = automatización moderna.</li>
+                    <li><strong>Logistics:</strong> Cadena de frío; 400+ vehículos; 16 centros de distribución;
+                        temperatura crítica.</li>
+                    <li><strong>Commercial:</strong> Retail, food service, exports, institucional; márgenes varían por
+                        canal.</li>
+                </ul>
+
+                <h3><span class="h3-emoji">💰</span> Cómo Ganan Dinero</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flujo de Ingreso</th>
+                            <th>Mecánica</th>
+                            <th>Reto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Huevos Commodity</strong></td>
+                            <td>Volumen × Precio promedio. Margen: 3-8% (commodity)</td>
+                            <td>Volatilidad de precios de insumos; competencia en precio</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Huevos Premium/Specialty</strong></td>
+                            <td>Cage-free, omega-3; margen 10-20% más alto</td>
+                            <td>Capex de conversión; cambio de consumidor lento</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Productos Procesados</strong></td>
+                            <td>Huevo pasteurizado, en polvo; venta a food service e industrial</td>
+                            <td>Requiere nueva línea; cliente base diferente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Byproducts</strong></td>
+                            <td>Cáscara → calcio; mortalidades → rendering; estiércol → composting</td>
+                            <td>Economía circular aún emergente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Exportaciones</strong></td>
+                            <td>Acceso U.S. (2024); Venezuela, Ecuador, Curaçao. Margen alto pero riesgos regulatorios
+                            </td>
+                            <td>Status sanitario (avian flu-free); certificaciones; compliance multipaís</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3><span class="h3-emoji">⚡</span> Transformaciones Críticas (Próximos 3-5 Años)</h3>
+
+                <div class="card">
+                    <div class="card-title">1. De Gestión Reactiva → Biosecurity Predictivo</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> Se detecta enfermedad cuando aves están visiblemente enfermas. Mortalidad
+                        ya escaló.<br>
+                        <strong>Riesgo:</strong> Avian flu puede costar $25K-$50K por granja; revoca status de
+                        exportación.<br>
+                        <strong>Futuro:</strong> IoT + sensores en granjas; detección patógena en aire; alertas 24-48h
+                        antes de síntomas clínicos.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">2. De Trazabilidad Parcial → Cadena Completa Auditable</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> Puedo rastrear hacia atrás (granja→procesamiento). Hacia adelante (venta)
+                        es incompleto.<br>
+                        <strong>Riesgo:</strong> Recall ineficiente; incumplimiento regulatorio; desconfianza de
+                        retail.<br>
+                        <strong>Futuro:</strong> Blockchain/distributed ledger; cada huevo etiquetado; farm-to-shelf
+                        100% trazable.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">3. De Datos Fragmentados → Data Warehouse Integrado</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> Farm systems, ERP, CRM, logistics = silos. No hay vista clara de margen
+                        por canal/granja.<br>
+                        <strong>Oportunidad:</strong> ¿Cuál canal es más rentable? ¿Cuál granja más eficiente? Invisible
+                        hoy.<br>
+                        <strong>Futuro:</strong> Dashboard unificado: margen por canal, granja, cliente. Decisiones
+                        rápidas.
+                    </div>
+                </div>
+
+                <div class="card purple">
+                    <div class="card-title">4. De Volatilidad de Márgenes → Optimización Predictiva</div>
+                    <div class="card-content">
+                        <strong>Hoy:</strong> Precio commodity + costo feed fluctúan. Margen se comprime sin aviso.<br>
+                        <strong>Oportunidad:</strong> Forecast feed costs; ajusta mix (commodity vs. premium). Hedging
+                        de insumos.<br>
+                        <strong>Futuro:</strong> AI predice commodity prices 30-90 días adelante. Guía decisiones de
+                        producción.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">📈</span> Métricas No-Negociables</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Métrica</th>
+                            <th>Target</th>
+                            <th>¿Por Qué Importa?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Lay Rate (Hen-Day)</strong></td>
+                            <td>90-94%</td>
+                            <td>Huevos por 100 aves/día; caída 2% = millones perdidos/año</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mortalidad %</strong></td>
+                            <td><4-5%< /td>
+                            <td>Aves perdidas = producción perdida + costo ineficiencia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Feed Conversion Ratio</strong></td>
+                            <td>1.8-2.0</td>
+                            <td>Feed = 44-71% costo; mejora 0.1 = millones en margen</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Yield (Huevos Vendibles)</strong></td>
+                            <td>96-98%</td>
+                            <td>% de huevos recolectados que son saleable (no roto)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost per Dozen</strong></td>
+                            <td>$2.20-$2.80</td>
+                            <td>Determina break-even pricing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Margen Bruto %</strong></td>
+                            <td>20-35% (commodity ~20-25%; premium ~35%)</td>
+                            <td>Rentabilidad operativa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salmonella Test Positive Rate</strong></td>
+                            <td>
+                                <2%< /td>
+                            <td>Food safety; regulatory requirement; market access</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- TRANSFORMATIONS -->
+            <section id="transformation" class="section">
+                <h2>Las 7 Transformaciones Críticas Compartidas</h2>
+
+                <p>Aunque Metro (hotelería) y Kikes (poultry) operan en mundos diferentes, enfrentan transformaciones
+                    sorprendentemente paralelas:</p>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c4df6e363d03030ff98bc096187502ce/80e88748-2a50-4dd0-a824-08ecebcfe9bc/90ea10be.png"
+                        alt="Transformation Journey"
+                        style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                </div>
+
+                <h3><span class="h3-emoji">1️⃣</span> Data Latency → Real-Time Visibility</h3>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Problema:</strong> Reportes 15-20 días después de mes-cierre. Oportunidades
+                        operacionales desaparecen.<br>
+                        <strong>Solución:</strong> Dashboards actualizados diariamente. Gerentes ven anomalías dentro de
+                        horas, no semanas.<br>
+                        <strong>Impacto:</strong> 2-3% mejora en RevPAR (Metro) o margen (Kikes) por visibilidad y
+                        respuesta rápida.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">2️⃣</span> Silos Operacionales → Portfolio/Supply Chain Coordination</h3>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Problema:</strong> Cada propiedad/granja corre en paralelo. Benchmarking es manual.
+                        Learnings no transfieren.<br>
+                        <strong>Solución:</strong> Playbooks operacionales estandarizados. Benchmarking automático.
+                        "Mejor práctica" se propaga en semanas, no años.<br>
+                        <strong>Impacto:</strong> 5-8% reducción en costo laboral o insumos por optimización
+                        cross-property.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">3️⃣</span> Costo Opaco → Granularidad y Visibilidad de Margen</h3>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Problema:</strong> Sabemos costo total, pero no quién es ineficiente o qué canal es más
+                        rentable.<br>
+                        <strong>Solución:</strong> Contabilidad a nivel de propiedad/granja/línea de producto. Margin
+                        analysis por canal y cliente.<br>
+                        <strong>Impacto:</strong> Identifica oportunidades de 2-5% de margen mejora por foco en
+                        high-performers.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">4️⃣</span> Stack Tech Fragmentado → Cloud Integrado</h3>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Problema:</strong> PMS, ERP, HR, Finance, Logistics en sistemas desconectados.
+                        Importación manual. Errores.<br>
+                        <strong>Solución:</strong> Cloud unificado. APIs conectadas. Single source of truth para
+                        datos.<br>
+                        <strong>Impacto:</strong> 20-30 horas/mes liberadas de trabajo manual. Decisiones más rápidas.
+                        Menos errores.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">5️⃣</span> Intuición + Manual → AI-Augmented Decision Making</h3>
+                <div class="card purple">
+                    <div class="card-content">
+                        <strong>Problema:</strong> Revenue managers fijan precios a ojo. Farm managers ajustan staffing
+                        por experiencia. Inconsistente.<br>
+                        <strong>Solución:</strong> AI predice demanda, recomienda precio, sugiere staffing levels.
+                        Humano refina, aprueba, ejecuta.<br>
+                        <strong>Impacto:</strong> 2-3% RevPAR/margen mejora. Mayor consistencia. Menos fatiga
+                        decisional.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">6️⃣</span> Compliance como Carga → Compliance como Diferenciador</h3>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Problema:</strong> Cumplimiento regulatorio es visto como overhead. Audits son
+                        estresantes. Documentación es reactiva.<br>
+                        <strong>Solución:</strong> Compliance proactivo + automático. Documentación en tiempo real.
+                        Certificaciones son asset de marketing.<br>
+                        <strong>Impacto:</strong> Acceso a mercados nuevos. Confianza de clientes institucionales. Evita
+                        multas y cierre de mercados.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">7️⃣</span> Linear Supply Chain → Circular, Sustainable Value</h3>
+                <div class="card">
+                    <div class="card-content">
+                        <strong>Problema:</strong> Byproducts son desperdicio. Agua/energía per-unit es ineficiente. No
+                        hay historia de sustentabilidad.<br>
+                        <strong>Solución:</strong> Cierra loops (cáscara→calcio, mortalidades→meal, estiércol→gas).
+                        Mejora eficiencia per-unit. ESG como brújula.<br>
+                        <strong>Impacto:</strong> Nuevos ingresos de byproducts. Costo reducido. Acceso a inversores
+                        ESG-focused. Brand diferenciación.
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI SOLUTIONS -->
+            <section id="ai-solutions" class="section">
+                <h2>Soluciones con IA: El "Operating System" para LatAm</h2>
+
+                <p>AI Huevos propone un enfoque <strong>freemium diagnostic + phased deployment</strong> de agentes
+                    inteligentes que abordan las transformaciones críticas sin disrupción.</p>
+
+                <h3><span class="h3-emoji">🔍</span> Fase 0: Diagnostic (Gratis o Low-Cost)</h3>
+                <p>Primero, entendemos tu realidad:</p>
+
+                <div class="card highlight">
+                    <div class="card-title">Qué Analizamos</div>
+                    <div class="card-content">
+                        ✓ Mapeo de flujos de datos hoy<br>
+                        ✓ Latencia de información (cuántos días hasta junta sabe?)<br>
+                        ✓ Horas de trabajo en reportes manuales<br>
+                        ✓ Dónde están las grietas (blind spots)<br>
+                        ✓ Oportunidades cuantificadas (costo de ineficiencia)
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">🤖</span> Ola 1: High-ROI Agents (Inmediato)</h3>
+
+                <div class="card">
+                    <div class="card-title">Agent 1: Portfolio Brain (Visibilidad en Vivo)</div>
+                    <div class="card-content">
+                        <strong>¿Qué hace?</strong> Centraliza datos en tiempo real de todas tus propiedades/granjas.
+                        Dashboard ejecutivo: ocupancia, ADR, caja, labor cost, biosecurity incidents.<br>
+                        <strong>¿Valor?</strong> 200-400 horas/año ahorradas en reportes + decisiones más rápidas =
+                        $100K-300K de valor.<br>
+                        <strong>Tiempo a ROI:</strong> 60-90 días.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Agent 2: Board Pack Generator (Automatización de Reportes)</div>
+                    <div class="card-content">
+                        <strong>¿Qué hace?</strong> Cada semana, compila narrativa lista-para-junta: trends, variances,
+                        alerts, recomendaciones.<br>
+                        <strong>¿Valor?</strong> 15-20 días/mes de CFO + controller liberados. Reportes consistentes y
+                        data-driven.<br>
+                        <strong>Tiempo a ROI:</strong> 45-60 días.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">Agent 3: Anomaly Detector (Alertas en Tiempo Real)</div>
+                    <div class="card-content">
+                        <strong>¿Qué hace?</strong> Compara KPIs contra baselines y tendencias. Si algo está "off"
+                        (ocupancia -8%, incidentes arriba), alerta al GM y regional manager con contexto.<br>
+                        <strong>¿Valor?</strong> Problemas se detectan en horas, no semanas. Correcciones evitan
+                        pérdidas. $50K-200K/año en crisis prevenidas.<br>
+                        <strong>Tiempo a ROI:</strong> 30-45 días.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">📈</span> Ola 2: Mid-Term Agents (6-12 Meses)</h3>
+
+                <div class="card purple">
+                    <div class="card-title">Revenue Optimization Agent (Metro) / Pricing & Margin Agent (Kikes)</div>
+                    <div class="card-content">
+                        <strong>¿Qué hace?</strong> Integra forecast de demanda, precios de competidores, seasonality,
+                        booking pace. Recomienda pricing diario (Metro) o pricing por canal (Kikes).<br>
+                        <strong>¿Valor?</strong> 2-3% de RevPAR/margen mejora = $600K-1.2M anual para portfolio/supply
+                        chain de Metro o Kikes scale.
+                    </div>
+                </div>
+
+                <div class="card purple">
+                    <div class="card-title">Labor Forecasting & Scheduling Agent</div>
+                    <div class="card-content">
+                        <strong>¿Qué hace?</strong> Predice ocupancia/actividad 90 días adelante. Recomienda staffing
+                        levels (housekeeping shifts, front-desk, farm management).<br>
+                        <strong>¿Valor?</strong> Labor es 20-25% de costo. 5-8% mejora = $400K-800K anual.
+                    </div>
+                </div>
+
+                <div class="card purple">
+                    <div class="card-title">Predictive Maintenance Agent (Metro) / Biosecurity Predictive Agent (Kikes)
+                    </div>
+                    <div class="card-content">
+                        <strong>¿Qué hace?</strong> IoT + ML detectan anomalías antes de crisis (equipment failure,
+                        disease outbreak).<br>
+                        <strong>¿Valor?</strong> Downtime evitado = ingresos preservados. Outbreak prevented = $25K-500K
+                        salvados por incident.
+                    </div>
+                </div>
+
+                <h3><span class="h3-emoji">🎯</span> Ola 3: Transformación Profunda (12+ Meses)</h3>
+
+                <ul>
+                    <li><strong>Proceso Automation:</strong> Order-to-cash, invoice-to-pay, requisition-to-procure
+                        completamente automático.</li>
+                    <li><strong>Org Learning Platform:</strong> Captura best practices, entrena equipos, mide adoption.
+                    </li>
+                    <li><strong>Circular Economy Optimization:</strong> Maximiza byproduct value. Minimiza waste.</li>
+                </ul>
+
+                <div class="cta-section">
+                    <h4 style="color: #fff;">¿Cuál es tu mayor oportunidad?</h4>
+                    <p style="color: #f0f0f0; margin-bottom: 20px;">Nuestro diagnostic te mostrará dónde está escondida.
+                        Gratis.</p>
+                    <button class="cta-button">Solicitar Diagnostic</button>
+                </div>
+
+                <h3><span class="h3-emoji">💡</span> Principios de Diseño de Soluciones AI Huevos</h3>
+
+                <ol>
+                    <li><strong>Respeta la Experiencia:</strong> AI amplifica decisiones de expertos, no las reemplaza.
+                        Humano siempre en control.</li>
+                    <li><strong>Empieza Simple:</strong> Ola 1 es low-risk, high-value. Ganas confianza antes de
+                        escalar.</li>
+                    <li><strong>Data First:</strong> Antes de AI, obtén datos limpios y centralizados. AI sin data es
+                        adivinanza cara.</li>
+                    <li><strong>Lenguaje del Operador:</strong> Hablamos de RevPAR, GOP, ocupancia, margen,
+                        bioseguridad—no de ML, algoritmos, o matrices.</li>
+                    <li><strong>ROI Transparent:</strong> Cada agent tiene caso económico claro. Mides y reportas valor
+                        realmente entregado.</li>
+                    <li><strong>Cultural Fit:</strong> Cambio es difícil. Entrenamos, comunicamos, alineamos incentivos
+                        con nuevas métricas.</li>
+                </ol>
+            </section>
+
+            <!-- BACK COVER -->
+            <section id="back" class="section">
+                <div class="back-cover">
+                    <h2 style="color: #000000;">El Futuro de tu Operación</h2>
+
+                    <div class="back-cover-content">
+                        <p style="font-size: 18px; margin-bottom: 20px;">
+                            <strong>LatAm está en transición.</strong> Los operadores que aceptan hoy la realidad de
+                            datos fragmentados, reportes lentos, y decisiones parcialmente ciegas serán dejados atrás.
+                        </p>
+
+                        <p>Los que se atreven a integrar, automatizar, y aumentar sus decisiones con IA van a:</p>
+
+                        <ul style="text-align: left; margin: 20px 0;">
+                            <li>✅ Responder a oportunidades en horas, no semanas</li>
+                            <li>✅ Mejorar márgenes 2-5% vía data-driven optimization</li>
+                            <li>✅ Liberar equipos de trabajo manual → análisis estratégico</li>
+                            <li>✅ Cumplir regulaciones proactivamente (no reactivamente)</li>
+                            <li>✅ Escalar con confianza (data + playbooks replicables)</li>
+                        </ul>
+
+                        <p style="margin-top: 30px; font-weight: 600; font-size: 16px;">
+                            <strong>AI Huevos está aquí para hacer eso realidad.</strong>
+                        </p>
+
+                        <div class="contact-info">
+                            <strong>Contáctanos Hoy</strong>
+                            <p style="margin-top: 10px; color: #666;">Queremos entender tu operación, mapearte las
+                                oportunidades, y construir un camino claro hacia la transformación.</p>
+                            <a href="https://aihuevos.com" style="margin-top: 15px; display: inline-block;">🌐
+                                aihuevos.com</a>
+                        </div>
+
+                        <div
+                            style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0e0e0; text-align: center; color: #999; font-size: 12px;">
+                            <p><strong>"Pa' emprender se necesitan huevos"</strong></p>
+                            <p>AI tastes better with eggs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            <p>&copy; 2026 AI Huevos. Todos los derechos reservados. | Confidencial</p>
+            <p>Este eBook está diseñado para líderes operacionales en hotelería y agroindustria de LatAm.</p>
+        </div>
+    </div>
+
+    <script>
+        // Navigation
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const sections = document.querySelectorAll('.section');
+
+        navButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetSection = btn.dataset.section;
+
+                // Remove active class from all buttons and sections
+                navButtons.forEach(b => b.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+
+                // Add active class to clicked button and target section
+                btn.classList.add('active');
+                document.getElementById(targetSection).classList.add('active');
+
+                // Scroll to top of content
+                document.querySelector('.content').scrollTop = 0;
+            });
+        });
+
+        // Share function
+        function shareBook() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'LatAm Operator Archetypes',
+                    text: 'Estrategias de transformación digital para operadores inmobiliarios y agroindustriales',
+                    url: window.location.href
+                });
+            } else {
+                alert('Comparte este eBook: ' + window.location.href);
+            }
+        }
+
+        // Print styling
+        window.addEventListener('beforeprint', () => {
+            document.querySelector('.sidebar').style.display = 'none';
+        });
+
+        window.addEventListener('afterprint', () => {
+            document.querySelector('.sidebar').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
