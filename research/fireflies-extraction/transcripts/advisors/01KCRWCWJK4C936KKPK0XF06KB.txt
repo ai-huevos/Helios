@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCRWCWJK4C936KKPK0XF06KB
+Title: Marketing Sync Vistage Colombia
+Date: 2025-12-22T19:00:00.000Z
+Duration: 60 minutes
+Participants: srodriguez@vistage.co, tools@womenofthefuture.org, jenn@womenofthefuture.org, hola@huevos.ai, nati@womenofthefuture.org, data@themagichack.com, nicolas@switchon.dev, maripaugomezr@gmail.com
+Fireflies URL: https://meet.google.com/wtc-xyoi-pjb
+
+---
+TRANSCRIPT SUMMARY:
+El equipo ha implementado un sistema operativo de growth utilizando la plataforma CRM Go HighLevel, que permite gestionar leads de manera escalable. Daniel Cardona detalló que el objetivo es captar 18 nuevos miembros mensuales con un costo de adquisición de cliente (CAC) de 181 dólares y proyectar entre 200 y 300 leads mensuales con una tasa de conversión esperada del 30-40%. Además, se discutió la nueva narrativa de marca que humaniza el liderazgo y busca empatizar con los CEOs, resaltando su vulnerabilidad y la soledad que enfrentan. Se planificaron 70 piezas de contenido hasta febrero, incorporando un enfoque más humano. La capacitación técnica y la migración a la plataforma se consideran esenciales para mejorar el análisis y optimización de campañas, y se establecieron compromisos claros para avanzar en la implementación de estos planes.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCRWCWJK4C936KKPK0XF06KB]

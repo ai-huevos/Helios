@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KENK6JJRTCS3MV276G691K7H
+Title: Founding team call
+Date: 2026-01-11T22:00:00.000Z
+Duration: 44 minutes
+Participants: col.drestrepo@gmail.com, cristian.mendivelso@moatlabs-ventures.com, hola@huevos.ai
+Fireflies URL: https://meet.google.com/xru-tdac-ear
+
+---
+TRANSCRIPT SUMMARY:
+Se definió un programa estructurado para levantar capital en 4 a 8 semanas, liderado por Cristian Mendivelso, quien presentó el BC Ready Sprint para preparar materiales clave como el pitch deck y simulaciones con inversionistas. Daniel Cardona subrayó la necesidad de un documento guía para establecer una base operativa sólida y definir roles. Se discutió la valoración de la empresa, estimada en 16 millones de dólares, y cómo emitir nuevas acciones para atraer inversionistas. Además, se establecieron fundamentos para negociar con ángeles inversionistas y se definieron pasos claros para la próxima reunión, buscando mostrar un plan financiero realista. La experiencia del equipo y su enfoque en AI fueron destacados como ventajas competitivas.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KENK6JJRTCS3MV276G691K7H]

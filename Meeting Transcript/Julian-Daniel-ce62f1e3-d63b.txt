@@ -1,0 +1,280 @@
+
+00:12
+Daniel Cardona
+Yo a vos no podía hacer por unos cuatro años por . 
+
+00:17
+Julian Andrade
+No, mentiras. Menos. Sí, yo puede ser como unos dos. 
+
+00:24
+Daniel Cardona
+¿Cuántos años tiene tu chiquito. 
+
+00:28
+Julian Andrade
+O chiquita? Siete. 
+
+00:31
+Daniel Cardona
+Siete años. OK, sí. Entonces sí, por unos dos, tres años. 
+
+00:36
+Julian Andrade
+Por más o menos. 
+
+00:38
+Daniel Cardona
+Bien negro. 
+
+00:39
+Julian Andrade
+¿Vos bien, todo bien? Todo bien, todo al pelo. 
+
+00:43
+Daniel Cardona
+¿Cómo lo trata la vida? 
+
+00:45
+Julian Andrade
+Con mucho trabajo, muchas cosas. Yo cambié de trabajo hace poco, entonces al principio le toca camellar a uno mucho para tratar de entender la dinámica, pero bien. 
+
+00:57
+Daniel Cardona
+Bueno, ¿Pero siempre has estado en logística? 
+
+01:00
+Julian Andrade
+No, no siempre. Yo Pues bueno, hace 9 años, casi 10, estoy en logística, pero no, yo estaba en casi todos los sectores. 
+
+01:12
+Daniel Cardona
+OK, OK. Bueno, bacano. Bueno, chévere. Mil gracias por aceptarme el tiempito en verdad. 
+
+01:22
+Julian Andrade
+No, todo bien, todo bien. Lo que se puede hacer. 
+
+01:26
+Daniel Cardona
+Firme. Bueno, te voy a. Es decir, te puedo compartir un poquito como de. No te voy a presentar ni mierda, te voy a contar y ya después si vemos si profundizamos o no de qué estamos haciendo y cómo creo que te puedo ayudar. Yo salí de Fincargo, no sé si conoces Fincargo. Sí, Financiamiento de carga para importadores. 
+
+01:52
+Julian Andrade
+Sí, sí, sí. 
+
+01:54
+Daniel Cardona
+Yo era el director de mercadeo allá y mi último rol fue director de nuevos productos digitales a través de inteligencia artificial y automatización de procesos. Entonces básicamente lo que hice fue entender muy bien dentro del panorama logístico y particularmente logística internacional, cuáles eran aquellos puntos de contacto o flujos de trabajo que podrían ser altamente automatizables. Primero en un flujo de trabajo de automatización, luego colocándole un agente de inteligencia artificial y luego empezar a construir las bases para hacer un proceso end to end de agentic workflows, que eso es básicamente cuáles son aquellos procesos que no necesitan que un humano esté presente y cuáles son aquellos procesos en los que sí se necesita un humano presente. Entonces te doy un ejemplo. Cotizaciones. Cuánto tiempo pierde el equipo mandando la misma cotización, revisando los proveedores, revisando, bajando los documentos, gestionando documentos, mandando vainas. 
+
+03:02
+Daniel Cardona
+Si tengo un set de tarifas específico y ese set de tarifas específico depende de unas rutas específicas y luego todo lo que necesita hacer el departamento comercial para volver esas tarifas y enviarlas en un correo. Prospección de nuevos contactos para el departamento comercial, de dónde están sacando nuevos contactos, qué están haciendo, cómo están moviendo y demás. Pero cuando te vas a la parte financiera es donde empieza a ser el tabú, el rollo más grande. Cómo empiezo a hacer conciliaciones contables, cómo empiezo a cruzar facturas de los diferentes shippers, brokers, clientes para empezar a tener un cierre contable que normalmente se me extiende en 15 y 20 días para saber cuáles son los costos del P L donde estoy actualmente. 
+
+03:43
+Daniel Cardona
+Entonces cuando empecé a entender como toda esta matriz de cosas, me di cuenta que hay procesos altamente automatizables pero que sí o sí necesitan hacer un humano en el medio. Y hay procesos que muchas veces desde recursos humanos no es que no lo hayan pensado, sino que es muy difícil conceptualizarlo de lado a negocio porque no se sabe dónde empezar a implementar qué para generar qué retornos y cuáles son las mejores herramientas para hacer. Y básicamente eso fue lo que salí a hacer de trabajar allá y me salí a montar una empresa haciendo exactamente eso. 
+
+04:22
+Daniel Cardona
+Yo te hago un diagnóstico tanto ya sea para el departamento comercial o para operativo en donde en tres días te digo, estos son tus gaps, esto lo podrías automatizar, estos son los prompts si los quieres hacer tú y estas son las herramientas específicas que podrías utilizar y pasan una de tres cosas con ese entregable. Muchas gracias mijo, estamos hablando o venga, acompáñenos a implementar toda esta vaina o venga y construya con nosotros este camino y este proceso ya sea o de cara comercial o de cara operativa. 
+
+05:01
+Julian Andrade
+OK, OK. Solamente, o sea, es o comercial u operativo o los dos. 
+
+05:11
+Daniel Cardona
+Piénsalo así, cualquier proceso en el cual tengas una persona sacando información de un sistema y colocando información en otro sistema es propenso a automatizar scraping de hojas de vida, postulaciones de perfiles. ¿Cuántas reuniones estás teniendo en la organización hoy por hoy que no se están guardando y no se está haciendo nada con eso? Pues porque este robot sirve una chimba para grabar todas las conversaciones. ¿Cuánta gente se pone a escuchar las grabaciones? 
+
+05:47
+Julian Andrade
+Sí, total. 
+
+05:49
+Daniel Cardona
+Entonces lo que hago yo es un descubrimiento general de la compañía en donde les doy puntos específicos de trabajo en donde hoy por hoy estén perdiendo mucha plata o donde puedan estar ganando más plata. 
+
+06:03
+Julian Andrade
+OK, OK. Bueno, si va, es una compañía, SIVA es una compañía que al ser francesa es hiper mega estructurada y tiene un problema de fondo y es que al ser francesa son mega hiper mega desconfiados. De hecho el tema ahorita nosotros estamos. Todo este tema inteligencia artificial, yo lo tengo súper aplicado en mí mismo. Digamos que yo llegué a revolucionar un poco el tema con mi gente porque pues obviamente hacíamos todos estos procesos a la vieja, a lo duro. Y tuvimos un momento coyuntural en el cual dos personas del equipo se fueron por mejores oportunidades y demás y a mí me llegaron alrededor de 3.500 hojas de vida y estas viejas iban a enloquecer. Les dije, uno, me encanta porque es el deseo de trabajar. Dos, les voy a enseñar cómo se hace. 
+
+07:11
+Julian Andrade
+Entonces hicimos todo el mapeo, empezamos a trabajar, hicimos un proceso sencillo y empezamos a innovar en este tipo de cosas que nos hacían falta en el área para poder hacer el aprendizaje. Es sí nosotros esto lo hice muy autónomo o eso lo hice yo, digamos con mis propios recursos y empezamos a trabajar en eso porque me favorecía en el cambio. Pero descubriendo, por eso te digo, descubriendo lo que es la organización, ellos invierten mucho en dos vertientes importantes y es el tema de tecnología y el tema de. Aunque las empresas de logística invierten mucho en tecnología, esto no solamente SIVA, DSB también lo era y KN también lo es, pero también en los temas desarrollo y particularmente los temas desarrollo humano, de su propio capital humano, empezaron a incluir temas de inteligencia artificial. 
+
+08:00
+Julian Andrade
+De hecho, en temas de aprendizaje y demás, crearon una herramienta que se llama Maia Maya, es la inteligencia artificial prácticamente de nosotros, donde tú le preguntas lo que sea y te ayuda a tener precisamente prompts para poder trabajar de una manera más armoniosa en el día a día. En eso estamos. Ahora, entrar a SIVA es complicado porque precisamente al ser de una directriz multinacional toca ir a la regional, decir, hablar, crear una necesidad y empezar a trabajar. Entonces, aunque podríamos llegar a proponerlo, porque yo también creo que estamos en un momento chévere para poderlo hacer, precisamente porque queremos empezar a trabajar mucho más en los modelos comerciales que actualmente tenemos, que son muy tradicionales. 
+
+08:49
+Julian Andrade
+Y esto ya lo he discutido un montón de veces con mucha gente, de hecho con gente por fuera del mercado no, por fuera de la organización, amigos que yo tengo en logística y demás, que inclusive me han hablado acerca de cómo son los nuevos modelos y nosotros ya sabemos cómo son los modelos consultivos. Los modelos consultivos de venta para logística no existe, esto no existe en el mercado, es lo tradicional que existe. Si usted tiene una necesidad, usted me da su carga y yo se la llevo y punto. 
+
+09:20
+Julian Andrade
+Pero no hemos caído en cuenta que una de las falencias que tenemos por lo menos en Expo y mucho en Impo, aunque en Impo es mucho más fácil porque digamos un proveedor en China me manda el contenedor y me lo pone en Colombia, yo solamente tengo que conseguir la aduana y a veces eso por el mismo desconocimiento del mercado chino, pasa también al revés que cuando yo voy a exportar, alguien que exporta, y esto es un ejemplo real, alguien que exporta trajes de baño a Costa Rica no sabe cómo carajos estoy diciendo que me la cargue, no, es que yo solamente sé vender vestidos, yo sé hacer vestidos de baño, yo no sé cómo ponerlos allá, pero a mí me están diciendo que yo los mande y el modelo consultivo no existe en el mercado. 
+
+10:06
+Julian Andrade
+Entonces vamos un poco más hacia allá y estamos tratando de cambiar el modelo y creo que es un buen momento porque yo llegué con esta idea y todo el mundo me decía no, pero es que vender no es así, yo le decía vender es así, sus clientes no tienen idea de esto, no tienen ustedes, nosotros somos su departamento de comercio exterior externo, ellos no tienen un departamento de comercio exterior, tienen alguna idea, alguna noción de lo que es el comercio, pero ellos no tienen, no saben de estos rollos. Entonces hemos estado como trabajando en esto. Entonces sí es claro que hay cosas que se pueden mejorar precisamente en el negocio a todo nivel, o sea todos, porque todos sufrimos exactamente lo mismo. 
+
+10:45
+Julian Andrade
+Yo conozco cinco comerciales con estas herramientas en el mercado, son los más deseados en el mercado, son amigos míos y no se han querido venir a trabajar conmigo porque están muy bien posicionados a las empresas de donde están. ¿Pero sí toca empezar a relanzar este tipo de dinámicas al mercado, si se puede con inteligencia mucho mejor, porque? Porque al final del día yo ya tengo el discurso planteado para poder llegarle a un cliente de una manera mucho más apropiada y mucho más asertiva, mucho más empática además para poder trabajar. Entonces sí creo que hay algunas oportunidades de poderlo hacer. Ahora, ¿Cómo nos podemos meter en el rollo, o sea, ¿Cómo podemos trabajar, Dani? Porque el tema es, yo te puedo empezar a abrir la puerta, obviamente con la nosotros nos manejamos en SIVA también existe una diferencia. 
+
+11:35
+Julian Andrade
+Yo soy mi propio jefe como producto de Recursos Humanos, por así decirlo, y cada uno es exactamente igual. Aduana tiene Aduana es su propio jefe porque es su propio producto, Air Ocean es su propio producto, Ground es su propio producto y así sucesivamente. Cada uno es su propio producto y cada uno hacemos que el cumplimiento de Colombia se dé muy democráticamente a través de una junta directiva que se une a vamos para allá y vamos a invertir en esto y vamos a hacer esto y esto es lo que estamos haciendo en este momento. Entonces yo puedo abrir la puerta, por lo menos por el momento con Air Enocean como para mirar a ver dónde podemos encontrar oportunidades para poder darle un poquito la vuelta a este modelo consultivo y empezar a trabajar. 
+
+12:22
+Daniel Cardona
+Si quieres. Te propongo una cosa. Dime. Ustedes hacen, vos desde Recursos Humanos estás encargado de formación también, todo. Te propongo, yo tengo una charla ya lista sobre ai mindset y piense que la manera en la cual nos enseñaron a trabajar está hecha para un mundo que ya no existe. 
+
+12:50
+Julian Andrade
+Sí. 
+
+12:51
+Daniel Cardona
+Y hoy no se trata de las herramientas, sino del proceso que usted le quiera dar a su mismo proceso dentro de la organización para hacer las cosas no solo más rápido y más eficiente, sino para que usted disfrute aquellas tareas que realmente lo hacen ser a usted humano. Entonces, asumo que ustedes tienen n cantidad de. Nuevamente, esto es como simplemente asunciones específicas que quiero hacer del mercado, de la experiencia que ya he vivido en otras empresas tienes un montón de datos de cuántos fletes has hecho, a quiénes se los han hecho, cuál es la cantidad de carga que está moviendo, de qué tipología de compañías, de dónde lo estás teniendo. Toda esa información normalmente se queda en un silo del negocio, ¿Cierto? 
+
+13:36
+Daniel Cardona
+Eso no se traslada a listo, si necesito hacer prospección porque sabemos que somos más eficientes en una ruta específica, ¿Cómo empiezo a hacer prospección para que lleguen más clientes de esta ruta? Un ejemplo específico, o antes de que el mismo comercial llegue a sentarse en una reunión que le llegue un reporte específico, como usted se va a sentar con esta persona está haciendo esto, esta es la empresa, esto está moviendo, estas son las tipologías de carga que puede llegar a mover. Y esto es más o menos un. No sé si ustedes tienen acceso fijo. Sí. A volúmenes de carga de la gente. 
+
+14:12
+Julian Andrade
+Sí. 
+
+14:13
+Daniel Cardona
+Entonces, para que el comercial se siente y diga, estas son las tres o cuatro y cinco cosas que tengo que empezar a decirle. ¿Y cuál es el modelo de venta consultiva queremos crear en SIVA? Por ejemplo, en un Discovery Call, usted debería preguntar A, B, C y D, y esas preguntas deberían llegar a un repositorio de información. Que construyan un perfil del cliente ideal general. Porque ¿Qué pasa? Muchas veces empezamos y tienes departamentos que hacen todo lo posible para que lo que sea que vendió comercial se dé, pero los problemas y los retos que tienen estos departamentos operativos casi nunca llegan realmente a los departamentos de ventas y se empiezan a cometer los mismos errores una y otra vez, porque no hay un loop a menos de que se prenda una alarma. 
+
+14:54
+Julian Andrade
+Totalmente. 
+
+14:56
+Daniel Cardona
+Entonces entender que hoy la responsabilidad que nosotros tenemos como miembros de una organización no es adaptarnos a las herramientas, sino hay que adaptarnos a una nueva forma de trabajar y descubriendo nosotros mismos cuál es nuestra forma de trabajar es el camino más rápido para hacer. Entonces empoderar a la gente. Para empezar a entender, ¿Ustedes tienen TEC interno? Asumo que sí, pero entonces el departamento de tecnología está tratando de resolver un montón de rollos que cuando cada departamento le pide cosas, el backlog se vuelve eterno y nadie responde por nada. Tecnología pone los lineamientos específicos para que cada departamento empiece a construir lo que necesite de la manera más low code posible, teniendo en cuenta que hoy las herramientas bajo las cuales operan va a hacer que ustedes hagan mejor su trabajo. Entonces, protocolos específicos de listo, ¿Dónde se van a guardar todas las reuniones? 
+
+15:52
+Daniel Cardona
+Eso va a caer en un data lake, ¿Sí o no, TEC, Dígame en dónde? No necesito que lo haga, simplemente dígame dónde le mando la información y luego cómo consumo esa información para tomar decisiones de producto en comercial o en diferentes cosas. ¿Sí me hago entender? 
+
+16:07
+Julian Andrade
+Totalmente. 
+
+16:09
+Daniel Cardona
+Entonces esa puede ser una entrada y es, podemos hacer una charla tipo workshop en donde ponemos a todos los líderes como literalmente a construir sobre la mesa. ¿Tengo un par de facilitadores de Lego Serious Play donde cómo empezamos a entender nosotros cuáles son los sistemas, los procesos y la gente que necesitamos poner para empezar a tener un roadmap de experimentación de los próximos 30, 60 y 90 días para saber cómo nos comemos el primer marrano qué nos duele más hoy? Prospección, datos. No sé, tengo una idea. OK, listo. ¿Cuáles son los próximos 60 días? ¿Cuáles son los Próximos 90 días? Y esto un poquito mi visión de esto es que la mejor consultoría de que vos puedas recibir es algo que ponga a tu gente a hacer y a perderle el miedo a la tecnología. 
+
+16:57
+Julian Andrade
+Total. La verdad es que, y este es un peligro gigante que tienen las empresas de logística desde mi perspectiva y bueno, empresas del mercado también, es que precisamente por el temor de perder el trabajo y por todo este tipo de cosas, se dejan de meter en temas de inteligencia artificial y al final del día yo sí soy muy partidario y la utilizo mucho en que yo no puedo perder el tiempo en cosas que no me generan valor y lo que no me genera valor se le estoy dando a la inteligencia artificial para que lo haga y genere valor a través de eso. Entonces un poco la discusión que tiene y me ha facilitado la vida, me dedico tanto, soy mucho más eficiente en el trabajo, punto. 
+
+17:36
+Julian Andrade
+Esto es una discusión ya hecha y ya lo que se necesita humano es humano, pero hagámoslo de esa manera. Yo creo que es una buena forma de venderlo con Ellen. Pero entonces sería abrir la discusión en este momento que está súper álgido como para tratar de entender un poco mejor cómo atacar estos temas comerciales que pues obviamente es algo diferente que tenemos que empezar a trabajar. 
+
+18:05
+Daniel Cardona
+Divino. ¿Qué necesitas de mi parte para eso? 
+
+18:08
+Julian Andrade
+Yo me voy a llevar la información. Yo no sé si tienes algo que me pueda dar como algún paquete, información, alguna cosa así que yo pueda llegar a decir como mira tengo esta información, quiero empezar a trabajarlo. Conocí a este tipo y me pareció súper interesante lo que estaban hablando y creo que nos haría bien por lo menos escuchar y entender, o sea que él entienda un poco las necesidades de nosotros a ver si nos puede llegar a servir o no dentro de la compañía. Y está alineada tu estrategia. Yo creo que esa sería la forma de entrar. 
+
+18:37
+Daniel Cardona
+De una. ¿Normalmente prefieres este documento? ¿Puede ser un documento escrito o lo quieres más en presentación? One pager. 
+
+18:46
+Julian Andrade
+No, one pager es mucho más fácil para mí. Así es. 
+
+18:54
+Daniel Cardona
+De una. Pues negrito, mil gracias por la puerta. 
+
+18:58
+Julian Andrade
+No todo bien. Lo que podamos hacer. Lo que podamos hacer. Lo que te digo esto tiene mucho camino. Esto tiene mucho camino por delante. Creo que muchas compañías que podrían engancharse con el tema y tiene mucha salida. Nadie se preocupa. Nadie, nadie, o sea, todo el mundo habla. Eso es una cosa que hablamos en INAL de hace ocho días. Estamos hablando mucho acerca de que la inteligencia artificial y la inteligencia artificial está quedando en nada. Y la verdad nadie se está preocupando desde recursos humanos, por lo menos de la perspectiva. Me sorprendía mucho que yo hablaba otras cosas muy diferentes y en otro carril. Otro carril totalmente diferente a lo tradicional. Entonces me preocupó bastante que colegas estaban totalmente nulos en temas de inteligencia artificial. Nulos. 
+
+19:47
+Julian Andrade
+Y pues uno tampoco puede dejar coger el bus de la manera tan horrible y que lo arrolla uno después. ¿De acuerdo? 
+
+19:53
+Daniel Cardona
+Pues porque es que es una realidad ya. ¿Si me entiendes? Y cuando uno salta el charco y se pone a ver qué está pasando en Estados Unidos, en China o en Europa con las restricciones que hay. Pero es que, o sea, el cambio es nuevamente y por eso mi tesis es la manera en la cual nos enseñaron a trabajar está hecho por un mundo que ya no existe. Total, usted no necesita hacer tecnología, pero necesita entender qué pedirle a tecnología. Creo que ese es el gran cambio. OK. Esto es un API. Por ejemplo, hay una. ¿Ustedes qué utilizan como sistema interno? Microsoft. 
+
+20:26
+Julian Andrade
+Microsoft. 
+
+20:28
+Daniel Cardona
+OK, marica, odio Teams, pero yo también. 
+
+20:33
+Julian Andrade
+Tengo unos temas con Teams, pero es lo que permeó. 
+
+20:39
+Daniel Cardona
+Por ejemplo, hace poquito, ¿Conoces a Carolina Staiza? 
+
+20:43
+Julian Andrade
+Me suena. 
+
+20:45
+Daniel Cardona
+Es una vieja, la HR Manager de un montón departamentos, de un montón de empresas. La vieja se colgó al API de Microsoft Teams y con el API de Teams empezó a sacar un dashboard de cuáles eran los empleados que más y menos interacciones estaban teniendo. Y eso lo cruzó con los performance reviews. Entonces se empezó a dar cuenta si hay correlación entre si más gente está respondiendo más rápido los mensajes, qué tan eficientes está haciendo con sus KPIs versus los que no están haciendo nada. Y ya a partir de empezó a sacar data points de estos probablemente suma que tengan, acreen si había un pico muy alto. Y después esta persona empezó a caer. Probablemente aquí necesitemos coaching, pero ya con los datos que tienes hoy por hoy, ¿Qué vas a hacer con los datos? Ya está. 
+
+21:36
+Julian Andrade
+Así es, así es. Y si uno, y si se encuentra un montón de cosas para los temas de mejora, o sea, al final el cómo estamos dimensionando lo, cómo estamos dimensionando el mundo moderno, estamos muy chiquito en la mente humana a lo que en realidad es para todo, para desarrollo, para un montón de vainas. Algo que me causó demasiado dolor de cabeza hace poco es que yo llego a esta compañía y encuentro que las estructuras de cargo, pensemos que eran perfiles de cargo, anteriormente las estructuras de cargo no existían para absolutamente nada y yo decía solamente los temas legales, una demanda que me caiga en este momento ni siquiera sé cómo responderla porque no tengo nada. ¿Y mi equipo me decía pero cómo las vamos a sacar? Yo les dije tranquilos, yo se las saco. 
+
+22:29
+Julian Andrade
+¿Una tarde literalmente que estaba desparchado totalmente, saqué las estructuras de cargo y le dije aquí están las estructuras de cargo de todas, pero como hiciste? Yo decía es que uno, yo ya no debo pensar en cómo los. Yo le estoy dando la información, ellos me están sacando y me están estructurando toda la. ¿Toda la data que yo les estoy dando, chao, váyanse ustedes, o sea yo no necesito este tipo de cosas pues claro, empieza como esa disrupción también de ellos en su cabeza decir pero cómo es así? Pero entonces ya no me necesitas, No, es que yo necesito para otra vaina. 
+
+22:59
+Daniel Cardona
+Exacto. Y creo que lo primero, o sea, de las cosas que he visto yo en las charlas que he dado y en los workshops que hemos dado es una vez uno empieza a hacer, el hacer te rompe el miedo porque la SER te acerca, es como cuando le dices inteligencia artificial a 10 personas diferentes, dependiendo de lo que hayan jugado o no, van a tener una concepción diferente. Pero es claro, yo lo hice una vez y no me sirvió y no lo volví a hacer. Ya, ¿Y de quién es la culpa? ¿De la tecnología o del herrero? 
+
+23:35
+Julian Andrade
+Del indio, de la flecha. 
+
+23:36
+Daniel Cardona
+Exacto. 
+
+23:41
+Julian Andrade
+María está metida mucho en el tema, en su tema de psicología clínica y ella se empezó a meter unos cursos que me parecieron súper interesantes y hubiera escuchado por allá cacharreando y el que empezó a cacharrear después fui yo. Entonces cuando empezó a escribir un libro, fue donde dije uy, un momento, cómo así OK, entonces no, y ahora vender libro y ahora voy a hacer no sé qué y ahora tal y otra cosa y otro no sé qué y ta ta. Y yo momento me pareció aquí hay algo, aquí hay mucho, aquí hay una mina interesante. Eso me pareció algo que hizo ella, que me pareció súper loco en la cabeza y que me volvió en ese momento y me puso a pensar mucho y cambió todo. 
+
+24:30
+Daniel Cardona
+Bueno, chévere, cuente conmigo para lo que necesite. 
+
+24:33
+Julian Andrade
+Dale, mándame la información. 
+
+24:35
+Daniel Cardona
+De una te paso un one pager chiquitico, básicamente de mindset, cómo se cambia, qué ejemplos he visto, qué se puede hacer y la propuesta. 
+
+24:46
+Julian Andrade
+Listo, de una, al pelo. 
+
+24:48
+Daniel Cardona
+Así que hagamos un abrazo y saludos a Mar. 

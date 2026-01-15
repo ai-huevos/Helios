@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCA1G3NWAXQX5J6C7R6S3VDP
+Title: COM / Finanzas
+Date: 2025-12-12T19:44:39.612Z
+Duration: 20 minutes
+Participants: 
+Fireflies URL: https://teams.microsoft.com/light-meetings/launch?agent=web&anon=true&coords=eyJtZWV0aW5nVXJsIjoiaHR0cHM6Ly90ZWFtcy5taWNyb3NvZnQuY29tL21lZXQvMjU4NjE2MjA0ODEyMTE/cD1uS3owZGUxQ3N6dmE1UEc0UzMmYW5vbj10cnVlJmxpZ2h0RXhwZXJpZW5jZT10cnVlJmNvcnJlbGF0aW9uSWQ9ZWMwOGU4N2YtMzEwZS00YTkxLWIxYmItMmYyZDVjMTgzOWE2JmFub249dHJ1ZSIsIm1lZXRpbmdDb2RlIjoiMjU4NjE2MjA0ODEyMTEiLCJwYXNzY29kZSI6Im5LejBkZTFDc3p2YTVQRzRTMyJ9&correlationId=ec08e87f-310e-4a91-b1bb-2f2d5c1839a6&deeplinkId=f51fec1c-3932-40ff-b1e7-3f5b62141580&lightExperience=true&p=nKz0de1Cszva5PG4S3&version=25111315502
+
+---
+TRANSCRIPT SUMMARY:
+Se discutió la necesidad de mejorar la calidad y segmentación de los indicadores financieros y operativos con el fin de apoyar decisiones estratégicas. Luis Nogales presentó un análisis de costos y ventas del proyecto Green Tower Santa Cruz, sugiriendo usar indicadores genéricos como ROE y EBITDA para una visión clara. Además, se destacó la importancia de segmentar el desempeño hotelero más allá de la ocupación y tarifa diaria, incluyendo nacionalidades y segmentos específicos. Se propuso desarrollar un sistema automatizado para la extracción de datos operativos, mejorando la eficiencia en la toma de decisiones. También se abordó la necesidad de mejorar la comunicación y clarificar responsabilidades entre equipos, y se acordó ajustar costos para evitar malentendidos, con un compromiso de subir información a SharePoint para acceso continuo.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCA1G3NWAXQX5J6C7R6S3VDP]

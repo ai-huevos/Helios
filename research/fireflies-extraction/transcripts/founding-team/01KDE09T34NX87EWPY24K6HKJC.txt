@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KDE09T34NX87EWPY24K6HKJC
+Title: Marce - Daniel
+Date: 2025-12-26T19:00:00.000Z
+Duration: 21 minutes
+Participants: daniel.cardona@holaamigo.ai, hola@huevos.ai, marcelac@goglt.com
+Fireflies URL: https://meet.google.com/sce-xueq-znp
+
+---
+TRANSCRIPT SUMMARY:
+Se discutió la integración de los modelos de ICP y Health Core para optimizar la gestión de cuentas. Marcela destacó la falta de implementación del ICP en Clay y Salesforce, que limita la segmentación automática. Santi, quien realiza el enriquecimiento manual de cuentas, busca líderes en cuentas existentes para cross-selling. Daniel y Marcela acordaron que Health Core debe ser una alerta en Salesforce, mientras que ICP se integrará en Clay, Salesforce y HubSpot. Se estableció un flujo claro de datos y la necesidad de mapear la nutrición de cuentas. Un cronograma apunta a tener entregables claros para el 30 de diciembre, y se enfatizó la importancia de construir un ecosistema de datos integrado para decisiones más efectivas.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KDE09T34NX87EWPY24K6HKJC]

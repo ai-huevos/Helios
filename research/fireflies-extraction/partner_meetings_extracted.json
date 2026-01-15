@@ -1,0 +1,84 @@
+{
+  "meeting_id": "01KEZ9D75CJBK5DWTGC4PES0XY",
+  "title": "Magichack Sync",
+  "date": "2026-01-14T22:18:20.204Z",
+  "summary": "Se discutió la implementación de un sistema para restaurantes con un costo mensual de 70 dólares por cliente, con el equipo operativo encargado de la transición. Sebastián Montoya confirmó que la configuración inicial incluirá la integración con plataformas como Instagram y WhatsApp, además de embudos de ventas personalizados. Para el sector hotelero, se identificaron desafíos debido al uso del sistema Oracle Ópera, que limita la integración directa y requiere soluciones manuales. Se propuso formalizar una alianza estratégica entre los equipos de Daniel Cardona y Sebastián Montoya para ampliar operaciones en diferentes mercados. También se abordó la automatización del marketing mediante la generación de contenido automático, con el objetivo de optimizar recursos y ahorrar tiempo. Finalmente, se priorizó cerrar el sistema de restaurantes antes de abordar otros proyectos.",
+  "topics_discussed": [
+    "Daniel Cardona"
+  ],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KD6NHYQTNW3KGVHZQDXQHRZR",
+  "title": "twillio",
+  "date": "2025-12-23T22:33:49.094Z",
+  "summary": "Se abordó la casi finalización de la integración del sistema de verificación con Twilio y WhatsApp, donde Daniel Cardona y Henry Bravo confirmaron el código de verificación y trabajan en la conexión del número. Se determinó que el número se conectará sin necesidad de un teléfono físico para evitar desconexiones. Además, se discutió la carga de datos de inmuebles, que será realizada inicialmente con un solo registro para validar el sistema antes de una carga masiva. La fecha límite para esta prueba se estableció para el 26 de diciembre, tras una pausa operativa por festividades. Roles claros fueron asignados, con Henry revisando ajustes técnicos y Daniel preparando los archivos, lo que optimiza la gestión del proyecto y asegura la calidad del trabajo a pesar de la pausa.",
+  "topics_discussed": [
+    "Daniel Cardona"
+  ],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KD6JV4F8AT7E5T4R57JANY7X",
+  "title": "GLT -Daniel",
+  "date": "2025-12-23T21:46:30.760Z",
+  "summary": "En la reunión, el equipo definió dos iniciativas clave para mejorar la inteligencia del sistema y optimizar la gestión de cuentas actuales: la división del trabajo en dos frentes, uno enfocado en agentes y otro en el calentamiento de cuentas, y el enfoque en el crecimiento de cuentas existentes. Mateo y Daniel destacaron la importancia de enriquecer datos internos para personalizar el seguimiento, con la meta de tener herramientas listas para enero. Se estableció un plan de mensajería comercial liderado por Marcela, que busca alinear el contenido con el análisis de clientes. Además, se discutió la creación de un diagnóstico breve como lead magnet para generar leads y validar hipótesis. El equipo también acordó limitar iniciativas a tres para asegurar resultados concretos antes de las vacaciones y mejorar la colaboración interdepartamental.",
+  "topics_discussed": [],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KD3YWZ50RBZ4FF6BS930C0Z2",
+  "title": "Magic - Huevos - Druo V2",
+  "date": "2025-12-22T21:19:23.797Z",
+  "summary": "En la reunión se definieron estrategias clave para la captación de clientes, destacando la creación de una landing page donde los usuarios ingresen su volumen de transacciones y ahorro estimado para precalificarse, con el apoyo de Daniel Cardona en la historia de valor y Sebastián Montoya en el diseño y backend. Se acordó que esta landing será fundamental para la campaña de email marketing, buscando generar leads calificados rápidamente. Además, se establecieron acuerdos sobre facturación y la necesidad de implementar una Customer Data Platform (CDP) para centralizar datos dispersos y mejorar la gestión comercial. Se acordó realizar reuniones semanales para revisar avances y priorizar tareas, asegurando una comunicación efectiva entre los participantes.",
+  "topics_discussed": [
+    "Daniel Cardona"
+  ],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KCSH85GCX8JGFYCD47S4WX63",
+  "title": "review database",
+  "date": "2025-12-18T20:08:25.709Z",
+  "summary": "El equipo se enfocó en consolidar un reporte sobre el desempeño de los pagos por débito automático en Colombia para mejorar su visibilidad y seguimiento. Daniel Cardona presentó un reporte inicial que contenía 10 registros, pero se identificaron problemas de datos y filtros complejos que afectaban la precisión. Se acordó simplificar la base de datos y asegurar la inclusión de departamentos clave como Finanzas y Administración. Además, se definió una estrategia de email marketing utilizando HubSpot, con una landing page para capturar datos de 128 compañías de sectores diversificados como educación y tecnología. Sebastian Montoya se encargará de consolidar y limpiar la base de datos, excluyendo clientes actuales y optimizando el uso de créditos para búsquedas de emails. La coordinación operativa se estableció para garantizar la calidad y eficiencia en la campaña.",
+  "topics_discussed": [
+    "Daniel Cardona"
+  ],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KCSF3S7BKJ5SDBR3M5ERRKM7",
+  "title": "durcolax dos",
+  "date": "2025-12-18T19:30:00.000Z",
+  "summary": "Jacqueline Valderrama Machado enfrenta una compleja situación financiera que afecta su capacidad operativa, con pagos mensuales de tarjetas que superan los 1.8 millones de pesos y un pagaré de 1.3 millones hasta junio del próximo año. Debido a estos problemas, ha cambiado de abogados, lo que ha implicado costos adicionales. Daniel Cardona ofrece apoyo financiero y un modelo empresarial sostenible, sugiriendo que Jacqueline estabilice sus ingresos fijos antes de expandirse. También se plantea la tercerización de operaciones para optimizar recursos y se están desarrollando dos patentes para proteger la propiedad intelectual. Jacqueline considera implementar Notion para mejorar la gestión documental, y ambos establecen canales de comunicación para avanzar en propuestas financieras y operativas.",
+  "topics_discussed": [
+    "Daniel Cardona"
+  ],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KCSB1SXQ4CN4SW13JZ2Y55FE",
+  "title": "Tu durcolax de confianza",
+  "date": "2025-12-18T18:30:00.000Z",
+  "summary": "La reunión abordó la gestión y estrategia comercial de Druo, con un enfoque en cerrar un reporte curado de empresas en Colombia para la prospección outbound en el primer trimestre de 2026. Daniel Cardona destacó la importancia de estructurar una lista de empresas y desarrollar un CRM para optimizar la prospección. Además, se discutió la implementación de procesos documentados con Conversa, con la entrega de un reporte final que refleje oportunidades de automatización. Se abordaron aspectos financieros, incluyendo la necesidad de definir un salario fijo para Jacqueline y controlar gastos. La optimización de servicios se centró en automatizaciones escalables y un modelo de ingresos recurrentes. También se mencionaron riesgos con proveedores y la necesidad de claridad en las expectativas, junto con la visión a largo plazo de Jacqueline para su estabilidad financiera.",
+  "topics_discussed": [
+    "Daniel Cardona"
+  ],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KCRWRYZR48XYEHMKHGWCTPQW",
+  "title": "Atina - Sync",
+  "date": "2025-12-18T14:10:36.486Z",
+  "summary": "Se abordó la necesidad de construir una arquitectura de datos integrada que elimine procesos manuales, consolidando fuentes como Opera, SAP y SATCOM para automatizar conciliaciones y reportes financieros. La empresa enfrenta retos por fragmentación en tres instancias de SAP Business One, dificultando la integración y toma de decisiones. Se identificó que la conciliación manual de inventarios toma hasta 30 días y requiere un alto personal, lo que genera errores y ciclos largos. La estrategia incluye transformar la empresa hacia un modelo 'AI first' para optimizar procesos y reducir costos laborales. Se propuso iniciar con un MVP para automatizar tres reportes clave y se coordinará un diagnóstico con el gerente financiero para validar prioridades, justificando así la inversión en automatización por pérdidas anuales de 26,000 dólares por ineficiencias.",
+  "topics_discussed": [],
+  "companies_mentioned": []
+}
+{
+  "meeting_id": "01KCMBX484ZAY7TTBS0GNRRHK4",
+  "title": "GLT - Mateo Folador Sync",
+  "date": "2025-12-16T19:58:49.544Z",
+  "summary": "Se definió un sistema mensual de procesamiento de datos que incluye un flujo automatizado para analizar información exportada desde Power BI, permitiendo identificar oportunidades de venta cruzada y mejorar la efectividad comercial. Juan Uribe implementará la integración la próxima semana, centralizando archivos en Google Drive. Se enfatizó la importancia de integrar datos directamente con el CRM y Power BI para que los vendedores tengan acceso a información categorizada. Además, se avanzó en un sistema que analiza correos para medir la efectividad de los seguimientos comerciales, capturando hasta 20,000 correos mensuales. Se acordó crear un grupo de trabajo con Natalia para mejorar la alineación y comunicación entre equipos. Finalmente, se planea utilizar un modelo \"lookalike\" para identificar perfiles de clientes con potencial de expansión.",
+  "topics_discussed": [],
+  "companies_mentioned": []
+}

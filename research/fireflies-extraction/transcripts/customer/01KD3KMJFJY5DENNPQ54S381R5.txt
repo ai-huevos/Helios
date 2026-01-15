@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KD3KMJFJY5DENNPQ54S381R5
+Title: Reunión con Luis N - Proyecto IA
+Date: 2025-12-22T18:30:00.000Z
+Duration: 44 minutes
+Participants: hola@huevos.ai, lnogales@comversa.com.bo, nmonje@comversa.com.bo
+Fireflies URL: https://teams.microsoft.com/l/meetup-join/19:meeting_ZWM4OWRkZTQtNjExYS00NjQzLWJjZTUtMDE4N2IzNmMyMzg3@thread.v2/0?context={"Tid":"040230de-1f66-478b-8e5c-84cf0e679ee2","Oid":"eb615bea-41d3-413b-b351-0b4453d45615"}
+
+---
+TRANSCRIPT SUMMARY:
+Se llevó a cabo una reunión para diagnosticar los problemas financieros y operativos del hotel. Daniel Cardona destacó que Samuel es el cuello de botella en decisiones clave, limitando la capacidad de respuesta y la delegación. El hotel quema caja, mientras Bolivian Foods genera flujo de caja positivo con una rentabilidad baja del 5-6%. La infraestructura tecnológica fragmentada entre varios sistemas provoca trabajo manual excesivo y retrasa la eficiencia operativa. Luis Nogales subrayó la falta de visibilidad financiera para los gerentes y la necesidad de desarrollar estrategias claras para cada unidad de negocio. Se acordó la creación de un reporte inicial que refleje la realidad operativa y financiera del hotel, y se enfatizó la importancia de definir responsables claros para avanzar en la transformación.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KD3KMJFJY5DENNPQ54S381R5]

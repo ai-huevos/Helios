@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KD8D7DEKMFB5TR508V4AJAX5
+Title: Proyecto IA
+Date: 2025-12-24T14:45:00.000Z
+Duration: 42 minutes
+Participants: hola@huevos.ai, nmonje@comversa.com.bo
+Fireflies URL: https://teams.microsoft.com/l/meetup-join/19:meeting_NzA5MjVlZDgtN2U0NS00MWYwLWI5YzUtMzVmMDMyZmY0NjI0@thread.v2/0?context={"Tid":"040230de-1f66-478b-8e5c-84cf0e679ee2","Oid":"eb615bea-41d3-413b-b351-0b4453d45615"}
+
+---
+TRANSCRIPT SUMMARY:
+El análisis del grupo reveló serias ineficiencias operativas derivadas de la fragmentación de sistemas, con 142 sistemas identificados que generan 277 fricciones. Samuel actúa como único punto de decisión, lo que crea cuellos de botella y retrasa procesos. La falta de KPIs y métricas operativas limita la supervisión del directorio, mientras que Bolivian Foods es la única empresa rentable con un margen del 2.3%. Se propone la implementación de un data warehouse para diciembre de 2026 y la automatización de procesos para mejorar la eficiencia. El presupuesto del diagnóstico se incrementó a 47,000 dólares por la inclusión de más procesos, y se reconoce la necesidad de cambiar la cultura organizacional hacia mayor transparencia y responsabilidad.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KD8D7DEKMFB5TR508V4AJAX5]

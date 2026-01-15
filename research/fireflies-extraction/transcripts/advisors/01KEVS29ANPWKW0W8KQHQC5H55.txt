@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KEVS29ANPWKW0W8KQHQC5H55
+Title: Touchpoint Daniel Restrepo
+Date: 2026-01-13T13:35:01.461Z
+Duration: 94 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/vsq-xdwa-pqt
+
+---
+TRANSCRIPT SUMMARY:
+La reunión abordó la creación de una nueva empresa con un modelo de negocio sostenible, evitando inversiones externas inmediatas y asegurando dos años de salario para el equipo. Daniel Cardona destacó la importancia de comenzar con un equipo pequeño y concentrarse en un producto rentable desde el inicio, específicamente un servicio de transformación digital para empresas tradicionales. Se identificaron ahorros potenciales en Bolivia de USD 15 millones anuales mediante la automatización de procesos. La estrategia tecnológica se centrará en el uso de agentes de código para desarrollar soluciones rápidas que se integren en sistemas legacy. Además, se enfatizó la necesidad de establecer relaciones claras y justas con inversionistas, evitando roadshows agresivos y priorizando alianzas estratégicas. El equipo inicial será pequeño y técnico, con un enfoque en entregas rápidas.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KEVS29ANPWKW0W8KQHQC5H55]

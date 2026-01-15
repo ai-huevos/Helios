@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KDEB1G7C4167KN567D307B5B
+Title: Mateo Messaging
+Date: 2025-12-26T22:03:59.348Z
+Duration: 31 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/eho-yqvf-nid
+
+---
+TRANSCRIPT SUMMARY:
+El equipo decidió delegar la creación del Health Score a la contraparte, permitiendo que el equipo interno se enfoque en el diseño y la calidad de los datos. Se acordó que la contraparte tiene los datos necesarios y solo necesita instrucciones sobre formatos de entrega. Además, se discutió la integración flexible de datos desde Clay, Salesforce y HubSpot, priorizando la mejor fuente para cada cliente. También se establecieron secuencias de mensajería personalizadas para la activación de clientes, y se identificaron desafíos en la comunicación y coordinación con la contraparte, resaltando la necesidad de documentación clara. El modelo desarrollado es escalable y puede aplicarse a nuevos mercados, como Bolivia, donde la automatización y la visibilidad de resultados son clave para la competitividad.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KDEB1G7C4167KN567D307B5B]

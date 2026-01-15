@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KDN1EQ8N8KNP45V95VS2Q597
+Title: AI ideas
+Date: 2025-12-29T12:31:07.941Z
+Duration: 1 minutes
+Participants: daniel.restrepo@finkargo.com
+Fireflies URL: https://meet.google.com/odd-nyrb-kpi
+
+---
+TRANSCRIPT SUMMARY:
+None
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KDN1EQ8N8KNP45V95VS2Q597]

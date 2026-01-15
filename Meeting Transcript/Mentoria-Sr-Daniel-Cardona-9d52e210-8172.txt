@@ -1,0 +1,896 @@
+
+00:18
+Daniel Cardona
+Ricardo, buenos días. 
+
+00:19
+Ricardo Alejandro Ortiz Deulofeut
+¿Me escuchas? 
+
+00:23
+Ricardo Alejandro Ortiz Deulofeut
+Un segundo, por favor. ¿Aló? 
+
+00:39
+Ricardo Alejandro Ortiz Deulofeut
+Hola, ¿Cómo estás? 
+
+00:41
+Daniel Cardona
+Creo que me va a tocar conectarme desde otro computador. 
+
+00:46
+Ricardo Alejandro Ortiz Deulofeut
+No te preocupes. ¿Por qué? 
+
+00:48
+Ricardo Alejandro Ortiz Deulofeut
+Estás. 
+
+00:52
+Daniel Cardona
+Listo ya por la cámara. ¿Cómo estás? Muy bien, todo muy bien, afortunadamente. 
+
+00:58
+Ricardo Alejandro Ortiz Deulofeut
+Bueno, me alegro, hombre. 
+
+01:00
+Daniel Cardona
+Tenés toda la pinta de estar en un tierra caliente. 
+
+01:04
+Ricardo Alejandro Ortiz Deulofeut
+No, yo vivo acá en Bogotá, en una casa en Santana. 
+
+01:07
+Ricardo Alejandro Ortiz Deulofeut
+Ya. 
+
+01:08
+Ricardo Alejandro Ortiz Deulofeut
+Pero que tiene su jardín atrás y toda la cosa, entonces sí parece tierra caliente. Sí, sí, sí. 
+
+01:16
+Ricardo Alejandro Ortiz Deulofeut
+Lo pensé por los. Están bonitos los. La decoración. 
+
+01:22
+Ricardo Alejandro Ortiz Deulofeut
+Muchas gracias. 
+
+01:25
+Daniel Cardona
+Bueno Ricardo, mil gracias por el tiempo en verdad y por aceptarme este espacio, hombre. 
+
+01:31
+Ricardo Alejandro Ortiz Deulofeut
+Con mucho cariño. 
+
+01:34
+Ricardo Alejandro Ortiz Deulofeut
+Con mucho cariño. 
+
+01:36
+Daniel Cardona
+Por estuve hablando con, no sé si te acordás de Alejandro López de Bosi, los de Inteligencia Conversacional, Agentes de. 
+
+01:45
+Ricardo Alejandro Ortiz Deulofeut
+Voz, tal vez Si, alguna vez hablé con ellos, pero no recuerdo bien. 
+
+01:50
+Daniel Cardona
+Sí, por me dijo disfrute su mentoría, es una persona que es muy directa. 
+
+01:57
+Ricardo Alejandro Ortiz Deulofeut
+Vale, pues cuéntame Dani, ¿Qué es lo que haces tú? 
+
+02:00
+Daniel Cardona
+Listo. A ver, yo estoy en una etapa muy temprana del negocio, ya generé mis primeras 50 mil dólares de ventas. Llevo 15 años con muy tempranas salida hace un mes al mercado. Yo llevo 15 años de experiencia en marketing y en growth, empresas que le venden específicamente en BB que estén entre el millón de dólares de revenue anual y los 15 millones de dólares. Y mi experiencia radicó en marketing, growth, producto y sistemas de adquisición de usuarios. Y básicamente cómo crecer el revenue a partir de estrategias para venderle más a los clientes existentes o cómo reactivar clientes o cómo adquirir clientes. Y lo que me empecé a dar cuenta en el mercado, sobre todo con inteligencia artificial, es que a los departamentos de marketing siempre, normalmente les piden que hagan más con menos plata para hacer más eficiente la compañía. Y hay dos mundos. 
+
+03:09
+Daniel Cardona
+Está la gente que lo puede ejecutar, pero necesita un equipo detrás y está la gente que está apenas usando inteligencia artificial y no tiene ni idea cómo implementarla. Entonces yo salí a ofrecer como consultorías o un servicio que une las dos puntas. Y usted no necesita contratar un equipo de 10 personas, usted lo que necesita es un sistema de adquisición predecible, conectando unos buenos sistemas. Y por eso estoy cobrando 3.500 dólares mensuales más un porcentaje del revenue share. Yo me encargo de ponerle pipeline al founder, que normalmente es el equipo de. 
+
+03:44
+Ricardo Alejandro Ortiz Deulofeut
+Ventas. 
+
+03:46
+Daniel Cardona
+Post product market fit. Yo no meto con empresas que no tengan ya como una atracción en el mercado y cobro un porcentaje del revenue generado en el año. 
+
+03:58
+Ricardo Alejandro Ortiz Deulofeut
+Y el gran reto del revenue agregado por ti. 
+
+04:02
+Daniel Cardona
+Correcto. El delta del crecimiento. 
+
+04:04
+Ricardo Alejandro Ortiz Deulofeut
+OK. 
+
+04:06
+Daniel Cardona
+Y el reto que estoy teniendo ahorita es que mientras construyo el producto, que finalmente esto serán pues una serie de agentes que usted entra a una plataforma, le hace un diagnóstico, el diagnóstico le dice usted dónde quiere estar y cómo lo tiene estar. Hoy por hoy me están comprando a mí, no necesariamente ni al producto ni al servicio. 
+
+04:28
+Ricardo Alejandro Ortiz Deulofeut
+Entonces, pero cuando tú dices que te están comprando a ti, ¿Tú ya te apoyas en herramientas de IA o ya es pura experiencia tuya? 
+
+04:38
+Daniel Cardona
+No, yo los últimos tres años estuve trabajando en una empresa que se llama Fincargo. Fincargo hace financiamiento de comercio exterior. Yo entré a la empresa cuando estaban teniendo, cuando tenían una cartera de 3 millones de dólares y me fui con una cartera de 120 millones de dólares. Y yo lo que hice fue hacer lo que hace un equipo de marketing de 20 a 30 personas con un equipo de 6, teniendo protocolos y sistemas y eso fue lo que salí a montar. 
+
+05:05
+Ricardo Alejandro Ortiz Deulofeut
+OK, o sea, tú quieres es monetizar ese aprendizaje que tuviste allá en la empresa. 
+
+05:12
+Daniel Cardona
+Porque mi visión del mercado actual, llevo estudiando inteligencia artificial más o menos un año y medio, es que la tecnología es un commodity. Hoy las automatizaciones son un commodity. Inteligencia artificial pues va a ser un commodity. Lo que realmente va a cobrar mucho valor a futuro es los flujos de trabajo dentro de las organizaciones, los agentes y los datos que se estén moviendo entre esas tres verticales con el cliente en el centro. Creo que es donde va a cobrar mucha relevancia lo que sea que uno vaya a hacer. Sobre todo porque hoy es mucho más fácil replicar cualquier cosa que uno quiera hacer en tecnología. 
+
+05:55
+Daniel Cardona
+Entonces creo que la dicotomía en la que estoy en este momento sigo desarrollando un producto o un servicio que probablemente va a ser fácilmente replicable o cómo encontrar ese hito de una propuesta de valor lo suficientemente robusta en donde yo no tenga que dedicarle el 100% del tiempo a atender al cliente, sino que se apoye como en otras verticales. Hay un par de hipótesis que . 
+
+06:27
+Ricardo Alejandro Ortiz Deulofeut
+Tú tienes que definir bien qué tipo de mercado quieres tener. 
+
+06:33
+Daniel Cardona
+OK. 
+
+06:34
+Ricardo Alejandro Ortiz Deulofeut
+Digamos que cuando tú hablas de empresas de un millón a 15 millones de dólares, pues ya está segmentando. No son tan MIPIMES, no son tan chiquitas. 
+
+06:43
+Ricardo Alejandro Ortiz Deulofeut
+Correcto. 
+
+06:44
+Ricardo Alejandro Ortiz Deulofeut
+Y obviamente cuando el mercado tiende a ser más corporativo, el valor agregado humano tiende a ser más grande. Cuando tú quieres un producto que sea masificable, pues obviamente es cuando el valor agregado humano tiene que ser mínimo para poder llegar a muchos clientes, ¿Cierto? Entonces, digamos que en este mundo de la IA, pues el que tiene la ventaja es el que sabe entrenar modelos. Y como tú lo dices, cualquiera lo puede hacer, pero no cualquiera tiene el conocimiento para poderlo entrenar bien. Porque lo que está pasando en ese mundo es que tú coges un Gemini o un Chat GPT o cualquiera de estos y te pones a creer que lo estás entrenando bien porque es bacano. Pues yo lo hago, yo ya soy abogado también y ya no le pago a los abogados, sino que yo lo hago todo . 
+
+07:48
+Ricardo Alejandro Ortiz Deulofeut
+Pero cuando yo le entrego al abogado ya el producto final, cuando la cosa ya es muy heavy, pues me dice, hombre, no se tuvo en cuenta esto y lo otro. Es donde uno se da cuenta que el entrenador, yo lo digo como cuando tiene un buen profesor, hace la diferencia. Entonces el tema es que si tú tienes un conocimiento ya probado con la. 
+
+08:14
+Ricardo Alejandro Ortiz Deulofeut
+Experiencia de tuviste en esta empresa, pues. 
+
+08:17
+Ricardo Alejandro Ortiz Deulofeut
+El arte tuyo y el diferencial tuyo debería ser que también entrenados tengo estos modelos, ¿Cierto? Ahora, si tú me preguntas a mí qué mercado me gusta a mí personalmente más, pues el masivo. Y tiene muchas razones, es decir, sigo tuvo una crisis cuando fue adquirido por Exac Software de Holanda, que es que nos llevaron al mercado medio alto y conquistamos clientes muy robustos y nos dimos cuenta que el cliente entre más grande, más jode. 
+
+08:51
+Daniel Cardona
+Obvio, entre más paga, más razones tienes para molestar. 
+
+08:55
+Ricardo Alejandro Ortiz Deulofeut
+Exacto. Y ellos piensan que lo compraron a uno con familia incluida, ¿No? Y que pueden hacer con lo que. 
+
+09:01
+Ricardo Alejandro Ortiz Deulofeut
+Se les da la gana. 
+
+09:03
+Ricardo Alejandro Ortiz Deulofeut
+Y tiene otros problemas y es que los ciclos comerciales son muy largos, es decir, un negocio puede tardar de 4 a 12 meses en cocinarse porque son negocios más costosos, donde hay estructuras burocráticas más complejas con procesos de tomas decisiones mucho más lentos, ¿Cierto? Entonces, si uno se pone a mirar la virtud del cliente que tiende a ser corporativo, pues es bacano porque son tickets altísimos y con poquitos haces tú un buen volumen de ventas, pero compras unas problemáticas grandísimas y escalar el negocio se vuelve más complejo porque depende de muchos humanos, es decir, el negocio de consultoría que es en el que te metes tú hoy más o menos es que a ti se te acaban tus 12 horas de producción diarias y te jodiste, ya no puedes crecer más. 
+
+10:04
+Ricardo Alejandro Ortiz Deulofeut
+Y si buscas a un humano que sea tan bueno mejor que tú, pues muy jodido porque la gente buena pues también está pensando como tú en dispararse y en emprender. Entonces uno coge gente muy junior que lo hace uno quedar mal y empiezan a destruir valores del negocio. No es que no funcione, porque fíjate que las grandes consultoras lo que hicieron fue meter socios en lugar de meter empleados para poder escalar para que hubiera dolientes arriba igual que uno. Ahora, yo no estoy en contra de ese mercado es bacano, de hecho tengo una empresa que se dedica a ese nicho y van, pero escalan, pues va lento, no crece dos dígitos y se da una palmada en la espalda, dice Bueno, logramos un 12, un 14%, ¿Verdad? 
+
+10:59
+Ricardo Alejandro Ortiz Deulofeut
+Y rentan, si renta, pero también tiene sus estreses fuertes por el nivel de exigencia que tiene el cliente sobre uno. Ahora, cuando tú te vas al mercado masivo, eso es otro mundo totalmente diferente porque realmente tú les estás entregando más de lo que ellos están esperando. Siempre un cliente de sigo, la usabilidad de sigo promedio llega solo al 36%. La usabilidad, sí, sí, solo promedio, o sea que es lo mismo que un Excel, No sé si tú sabes que la usabilidad del Excel es el 11% nomás. Tú tienes una herramienta que te hace de todo, pero tú usas lo básico y ya con eso estás feliz. Y el estrés que tienen estos tipos es saber cómo usarlo porque están encartados con una vaina que ni siquiera ellos son capaces de explotarla al máximo. 
+
+12:01
+Ricardo Alejandro Ortiz Deulofeut
+Entonces no joden para nada ellos la única joda que tienen ellos es preguntar cómo se hace, pero no quieren que les hagan cosas nuevas y que les personalicen y que les ayuden casi en el proceso de toma decisiones. Son ciclos comerciales que nunca pasan de 60 días. 
+
+12:22
+Ricardo Alejandro Ortiz Deulofeut
+Métase y pague. 
+
+12:24
+Ricardo Alejandro Ortiz Deulofeut
+Se acabó la cosa. Y por otro lado, tú logras conseguir niveles de satisfacción con mucha facilidad Es decir, yo te preguntaría a ti si existe un cliente que no está satisfecho con Excel, todos están felices y usan el 11% de la tecnología y de pronto los que no están felices son los que se ponen a usar lo. 
+
+12:48
+Ricardo Alejandro Ortiz Deulofeut
+Que, Lo que realmente el que se. 
+
+12:52
+Ricardo Alejandro Ortiz Deulofeut
+Metió en el mundo de las macros y de las tablas analíticas y todas esas huevonadas que a veces está emberracado porque no es fácil hacer. Entonces digamos que son dos mundos, que son agua y aceite. Ahora, si tú me preguntas qué necesidades hay en escalamiento real, pues tiene más necesidad el mercado bajo que el alto, porque el alto tiene cómo financiarlo. Es decir, el alto tiene un departamento de marketing, contrata una agencia de marketing para que les vaya mal, pero al menos tienen de que cogerse para poder hacer las cosas. Al chiquito le toca improvisar todos los días. Cierto. Y se vuelve su propio community manager y se vuelve su propio creador de contenidos. Y todo lo hacen porque no tienen con qué. 
+
+13:48
+Ricardo Alejandro Ortiz Deulofeut
+Entonces, si tú me preguntas, si hubiera una herramienta de IA bien estructurada, bien entrenada para que un chiquito la consuma, tendrías un éxito. Ni el hijueputa. Pero tiene que ser algo muy fácil de usar, muy. ¿Como te diría yo? Donde el valor agregado humano sea mínimo. 
+
+14:12
+Daniel Cardona
+Así que se explique solo el producto. 
+
+14:15
+Ricardo Alejandro Ortiz Deulofeut
+Exacto. Si yo hago el símil consigo, hay un proceso boarding de 8 horas y chao pescado, hasta me trajo el río. Si usted quiere más, vea los vídeos. Pero yo ya no le. Si le pongo un humano, se lo pongo a un precio que no me lo compre. Y es hecho de adrede. Nosotros le estamos poniendo la hora a un cliente chiquito en 275 mil pesos, pero no porque ese sea nuestro negocio, sino es para que nos lo compre. 
+
+14:46
+Ricardo Alejandro Ortiz Deulofeut
+De acuerdo. 
+
+14:47
+Daniel Cardona
+Para que no lo utilicen. 
+
+14:48
+Ricardo Alejandro Ortiz Deulofeut
+Exacto. Entonces ellos acuden mejor a los contadores que están en la calle, que conocen, para que les ayuden a hacer cosas que ellos no son capaces de hacer o que no son capaces de ver un video y resolverlo. 
+
+15:02
+Ricardo Alejandro Ortiz Deulofeut
+¿Cierto? 
+
+15:03
+Ricardo Alejandro Ortiz Deulofeut
+Ya, pero por eso nosotros somos capaces de generar de 11 a 12 mil clientes nuevos por mes. Porque imagínate haciéndole onboarding profundo. 
+
+15:13
+Ricardo Alejandro Ortiz Deulofeut
+Imposible. 
+
+15:14
+Ricardo Alejandro Ortiz Deulofeut
+No tienes. Es decir, entonces tú tendrías que analizar eso, es decir, ¿Qué mercado quiero? Y si coges uno, no cojas el. 
+
+15:23
+Daniel Cardona
+Otro con esto y quisiera irme a la conversación un poquito más filosófica. Cuando uno arranca a emprender, y me encantó algo que dijiste en la conferencia y es nosotros queremos que la vida de nuestros clientes sea mejor, que creo que es un poquito como la visión propósito que se empieza a traducir en. ¿Cómo traduce usted eso en propuesta de valor y cómo su propuesta de valor se traduce en el producto o en el servicio que usted está ofreciendo? ¿Tenés alguna metodología para llegar a entender uno qué es lo que realmente? ¿Como que hacia dónde va el barco? 
+
+16:03
+Ricardo Alejandro Ortiz Deulofeut
+¿Pues mira, yo lo que digo es que al margen de tenerlo claro o no, cierto? Todos los emprendedores, sin excepción, excepto pues los del narco y todos esos ilegales, pues queremos ayudarle al mundo. Es decir, nosotros, todos los negocios parten siempre de una necesidad sentida de un mercado. Es decir, yo transformo la papa porque. Porque el mercado quiere papa rica y yo quiero facilitar la vida. Es decir, sin excepción alguna, todos los empresarios están viendo cómo a través de su producto o servicio transforman al mundo para bien, le vuelven más fácil la vida a la gente. Y cualquier cosa que tú te imagines que se inventan, siempre está enfocada hacia eso, hacia facilitarle la vida a la gente. 
+
+16:57
+Ricardo Alejandro Ortiz Deulofeut
+Entonces yo creo que si uno parte de ese principio, uno y si tú hiciste esto es porque encontraste un problema y les estás brindando una solución a un problema, ¿Cierto? Y el simple hecho de que yo le quite un problema a la gente de encima, lo estoy ayudando a que él esté más feliz, que esté más tranquilo, porque le estoy minimizando el impacto de un problema en su. En su vida normal. Porque el que diga yo le estoy resolviendo el problema a la empresa, eso es pura mierda, hermano, porque la empresa no es. No es nadie. Es decir, la empresa es la gente. 
+
+17:33
+Ricardo Alejandro Ortiz Deulofeut
+Que lo que hace. 
+
+17:37
+Ricardo Alejandro Ortiz Deulofeut
+Exacto. Entonces tú estás transformando de alguna manera la vida de estas personas porque les estás dando herramientas para que estén más tranquilos. A veces uno dice mi herramienta lo que hace es bajar costos, pues también está más tranquilos, porque en la medida en que sean más rentables, pues vuelven más tranquilos y pagan mejor y. Y de pronto impactan más al mundo y empiezan a crecer y emplean más y qué sé yo. Todo ese trasfondo filosófico es muy cierto. Entre más ricas sean las empresas, pues más crece la economía y mejor le va todo el mundo. Hay más empleo, hay más movimiento económico. Todo ocurre, todo es una bola de nieve que va creciendo. 
+
+18:19
+Ricardo Alejandro Ortiz Deulofeut
+Entonces, fíjate que eso es lo que uno hace al final del camino, es darle tranquilidad a las personas a través de un producto o servicio que le resuelve un problema que porque si no estuviera resolviendo nada, no te lo compraría. 
+
+18:33
+Ricardo Alejandro Ortiz Deulofeut
+Claro. 
+
+18:33
+Ricardo Alejandro Ortiz Deulofeut
+Así de simple. Y si tú se lo resuelves, pues si tú te quedas en el problema, pues baila. Pero si te quedas en lo que genera la solución del problema de ese ser humano, pues está el propósito real que tiene uno como empresario, como emprendedor. 
+
+18:50
+Ricardo Alejandro Ortiz Deulofeut
+Pues es donde. 
+
+18:55
+Daniel Cardona
+Me estás llevando como a dos autores. El primero es Napoleon Hill en el libro de Piense y hágase rico, donde la base del capitalismo es básicamente usted está generando valor en un sistema en donde cada pedazo de ese sistema le está brindando la posibilidad de que usted esté más tranquilo en esto. Y el segundo es enamorarse del problema y no de la solución. 
+
+19:16
+Ricardo Alejandro Ortiz Deulofeut
+De acuerdo. 
+
+19:17
+Ricardo Alejandro Ortiz Deulofeut
+Y fíjate que al final del camino es que si uno. Si uno se va al trasfondo, por ejemplo, que emoción ha sido que si ya tenemos muchos empleados bien pagos, pues ellos compran más mercado, más carros, más bicicletas, consumen más médicos, consumen más colegios. Y al final del camino eso hace que otras empresas les vaya también mejor, que es lo que finalmente el motor económico es que entre más ricas sean las empresas, el impacto económico es mucho más grande. Por eso no hay que tenerle miedo a enriquecer las empresas. 
+
+19:55
+Daniel Cardona
+Claro, cuando se ve como un sistema. 
+
+19:59
+Ricardo Alejandro Ortiz Deulofeut
+Exactamente, exactamente. 
+
+20:02
+Ricardo Alejandro Ortiz Deulofeut
+Y finalmente es el motor económico de todos los países. 
+
+20:11
+Daniel Cardona
+Estaba bien bonito. 
+
+20:17
+Ricardo Alejandro Ortiz Deulofeut
+¿Entonces, lo que yo te decía es, en esta etapa en que estás tú tienes que tomar una decisión a qué mercado quieres ir? Y un error garrafal, te lo advierto desde ya, es meterse en Los dos son agua y aceite. 
+
+20:34
+Ricardo Alejandro Ortiz Deulofeut
+Cierto. 
+
+20:35
+Ricardo Alejandro Ortiz Deulofeut
+Tanto que a muchos empresarios, inclusive en emprendimientos donde yo he invertido, los he llevado a hacer spin offs de sus compañeros. Si usted cree un management team que se dedique una cosa y otro a. 
+
+20:48
+Ricardo Alejandro Ortiz Deulofeut
+Otra, pero no lo revuelva. 
+
+20:50
+Ricardo Alejandro Ortiz Deulofeut
+Es más, cuando sigo, se divorció de todo ese producto de gama media, hizo su spin off y creó B Excellence. Los seis primeros meses no se podían hablar entre ellos, ni siquiera intercambiar ideas, porque el marketing, la gestión de servicios, todo es diferente. Y te vuelves al final mediocre en las dos. 
+
+21:14
+Ricardo Alejandro Ortiz Deulofeut
+Claro. 
+
+21:16
+Daniel Cardona
+Que me lleva al. Hay un principio y un valor de vida que tengo y es como ser excelente en lo que uno hace. Y para mí es la excelencia viene de mi experiencia trabajando con empresas que le venden a empresas que tienen un tamaño ya como grande, asegurado. Si te soy completamente honesto, meterme al masivo me asusta un montón. 
+
+21:41
+Ricardo Alejandro Ortiz Deulofeut
+OK, no lo conoces bien. 
+
+21:44
+Ricardo Alejandro Ortiz Deulofeut
+De acuerdo. 
+
+21:45
+Ricardo Alejandro Ortiz Deulofeut
+Entonces métete en el mercado alto y tienes que ser consciente de que vas a necesitar un equipo de gente pues de alto nivel para poder. Para poder enfrentar el crecimiento en ese mercado alto, porque va a haber un componente humano grande. Ahora, vuelvo y te repito, eso no está mal. ¿Y esas empresas escalan también, cierto? Y escalan bien. Pero lo que tú tienes que meterte es en el concepto de empresas de servicios basadas en tecnología. No empresa de tecnología, sino que tienes una empresa de servicios que se apoya en la tecnología para prestar bien el servicio. Y eso es un diferencial en el mundo moderno grandísimo. Si yo tengo un emprendimiento que se llama Tus Cuentas Puntocom, que es un outsourcing contable, punto de outsourcing contables, pues hay millones, ¿Cierto? Pero la diferencia nuestra es que nuestro servicio es basado en tecnología. 
+
+22:53
+Ricardo Alejandro Ortiz Deulofeut
+¿Nosotros tenemos herramientas de IA, tenemos herramientas de automatización de procesos, tenemos herramientas de reporting detrás del consultor, del contador como tal, cierto? Entonces logras un nivel de estandarización en tu servicio tan alto y una reducción en, digamos, mano de obra no calificada demasiado grande, en gestión documental, en registro de información, qué sé yo, en todo lo que tú te imagines. Entonces tú puedes dar un precio más bajo que la competencia, pero siendo más rentable inclusive que la competencia, porque la tecnología que hay detrás es alta. Pero no es una empresa de tecnología. 
+
+23:35
+Ricardo Alejandro Ortiz Deulofeut
+Claro. 
+
+23:36
+Daniel Cardona
+Es una empresa de servicios que se basa en tecnología para prestar el servicio. Hay algo que. Digamos que yo tengo estas dos tesis. La primera es, en qué industria puedo hacer exactamente el mismo trabajo que me triplique el ingreso o que yo por hacer exactamente lo mismo le genere mayor valor al usuario, ¿Cierto? Ejemplo, cuando te vas al área de tecnología y desarrollos, simplificas el proceso de adquisición, son ventas de 150 a 200 millones de pesos versus financiero, que son tickets de 20, 30, 40 millones de pesos haciendo exactamente lo mismo. Y acabaste decir algo interesantísimo y es las industrias más aburridas son las que más oportunidades de automatización y de gestión desde la tecnología existen. 
+
+24:30
+Ricardo Alejandro Ortiz Deulofeut
+Sí, claro. ¿Y como son tan paquidérmicas, porque tú cuando tú miras estas empresas, yo digo corporativas, no? Pero que tienden a ser corporativas, se vuelven cada vez más lentas. Yo si tú me preguntas por sigo, yo oigo así voy. Porque cuando se vuelven gigantes eso, la burocracia se los traga, el aparato de toma decisiones se vuelve. Es decir, ya no es el chasquido dedos que el dueño dijo hágase esto y se hizo, sino viene una cantidad de implicaciones. Entonces digamos que cuando uno tiene una empresa de servicio basada en tecnología puede entrar a agregarle mucho valor a este tipo de organizaciones. Muchísimo valor, porque obviamente el sueño de ellos es tener tecnología que les haga ese servicio, pero no tienen el músculo para hacerlo. Y no solo músculo financiero, sino el músculo en procesos y en recursos humanos para poderlo lograr. 
+
+25:32
+Ricardo Alejandro Ortiz Deulofeut
+Porque normalmente uno como empresario se concentra en el cliente. Todos los recursos están de la puerta. 
+
+25:41
+Daniel Cardona
+Hacia afuera, nunca hacia adentro y por eso los tecnología nunca atienden al cliente. 
+
+25:47
+Ricardo Alejandro Ortiz Deulofeut
+Interno y por eso terminan haciendo inversiones absurdas. Los que se compran un SAP y le meten 2 millones de dólares o 3 millones de dólares, los que compran un Salesforce y se tiran otro millón de dólares es porque andan desesperados tratando de resolver su problema interno, porque toda su mentalidad, que no está mal, está pensando por fuera. ¿Cómo hago yo para engrandecer a mi cliente? ¿Y no cómo hago yo para fortalecer mi back office? Entonces digamos que son productos muy apetecidos y por eso te digo yo, tú dices que se va a comoditizar, es cierto, pero para mí el que va a hacer la diferencia en el mundo de la IA es el que sepa entrenar modelos bien entrenados y se los entregue entrenados al cliente. Exactamente. Y que el entrenamiento del cliente ya sea complementario, no sea la base. 
+
+26:47
+Ricardo Alejandro Ortiz Deulofeut
+Que fíjate, si tú miras, por ejemplo, experiencia, sigo entrenando modelos desarrollo de software basados en Copilot, pues nos demoramos un año y medio entrenando el modelo para que si el código como nosotros queríamos que saliera obviamente ya nos sobraron 60 personas en desarrollo, pero nos tiramos año y medio y nos poníamos a pensar, esto no es nuestra misión entrenar un modelo. Si alguien nos hubiera entregado el modelo entrenado, nosotros si le hubiéramos pagado por lo que nos hubiera cobrado, ¿Si me entiendes? Porque el core nuestro no es entrenar desarrollo en software, nuestro core es hacer el software y ya, y salir a. 
+
+27:32
+Ricardo Alejandro Ortiz Deulofeut
+Venderlo, ¿Si me entiendes? 
+
+27:35
+Ricardo Alejandro Ortiz Deulofeut
+Y lo mismo está pasando con el entrenamiento de agentes de servicio al cliente, que ya hay muchos que están entrenando, pero es que no está entrenando el Daniel que ya lleva una empresa de 4 a 100 millones, el que tiene el know how suficientemente fuerte para que ese modelo quede con un entrenamiento bien hecho, porque la IA está disponible para todo el mundo y cualquier pendejo lo. 
+
+28:01
+Ricardo Alejandro Ortiz Deulofeut
+Entrena tal cual, o sea que el. 
+
+28:05
+Ricardo Alejandro Ortiz Deulofeut
+Diferencial tuyo está en cómo lo entrenaste para llevárselo al cliente. Pues no terminado, porque finalmente cada empresa va a tener sus propias particularidades, pero que tengas un core metodológico súper bien estructurado y un modelo que se pueda también autoentrenar dentro del mismo proceso que esté viviendo la compañía. 
+
+28:29
+Ricardo Alejandro Ortiz Deulofeut
+Hay un. 
+
+28:33
+Daniel Cardona
+Digamos que con esto que me estás diciendo, me llevo varias cosas de esto último que me dijiste, y es cuando uno vende servicios basados en tecnología, uno tiene que estar parado en tres tecnología, procesos y personas, que al final es como el principio del diseño de servicios. Se mueven unos activos, se mueven unos procesos y se mueven unos recursos específicos. Y creo que el valor agregado más grande que yo aprendí a las malas, sobre todo con IA, esto nos lleva inherentemente a acelerar el pensamiento de experimentación dentro de las organizaciones, sobre todo en áreas de marketing y ventas. Entonces te doy un ejemplo muy cortico. 
+
+29:17
+Daniel Cardona
+La metodología que yo usé para que los equipos de venta produjeran 2x más conversión demo a cierre, fue colgándole un robot a la llamada, sacándole un transcript a ese robot, sacándole un scoring a cada llamada de ventas, y ese scoring de llamada de ventas iba directamente a producto y al jet de ventas sin que el vendedor tuviera que hacer nada. ¿No quiere meter la información en CRM? No se preocupe, no pasa nada, simplemente pongo un robot, yo jalo todo. Y después de la semana, el head de ventas tenía un reporte de vea de sus 10 clientes, las 5 preguntas que tenían que hacer de sus 10 representantes de venta las 5 preguntas que tiene que hacer desde el requerimiento de marketing que se haga. Solamente uno hizo las cinco y esa persona cerró cuatro veces más. Mandeles todos sus vendedores. 
+
+30:06
+Ricardo Alejandro Ortiz Deulofeut
+¿De acuerdo? Fíjate que eso me parece el putas. Y fíjate cuando tú hablas de servicios basados en tecnología, tú no les licencias ninguna tecnología a tus clientes, tú la consumes para ellos. 
+
+30:19
+Ricardo Alejandro Ortiz Deulofeut
+Claro. 
+
+30:20
+Ricardo Alejandro Ortiz Deulofeut
+Ahora si el cliente ya te hablo del mundo de la IA a dónde está llevando y es que es el temor a hacer pública la información propia y hacer pública pues el entrenamiento propio. Digamos que chat GPT es feliz porque todos nosotros los huevones vamos diciéndole que está mal y que está bien. Va aprendiendo. Entonces al próximo se lo da más perfecto porque él se aprovechó de mi know how y de mi información para engrandecerse. Entonces si tú por ejemplo miras a Sigo por dentro, lo que hizo Sigo fue licenciar Copilot internamente para que su IA sea propietaria. 
+
+31:06
+Ricardo Alejandro Ortiz Deulofeut
+¿Ya? 
+
+31:07
+Ricardo Alejandro Ortiz Deulofeut
+¿Y probablemente eso sí vas a tener que decirle al cliente usted quiere esta vaina suya propia? Pues hay que licenciar esta tecnología para que esto no sea público, sino que sea suyo. 
+
+31:20
+Ricardo Alejandro Ortiz Deulofeut
+¿Se me entiende? 
+
+31:21
+Ricardo Alejandro Ortiz Deulofeut
+Que probablemente con lo que tú me cuentas es posible que a Sigo le interese tu servicio, ¿Cierto? Aunque Sigo se sale de tu rango que es una empresa de 160 millones. Pero por ejemplo tú estás monitoreando los 1200 vendedores en eso que tú me dices y le das una herramienta a los gerentes comerciales decir en que la están cagando de acuerdo a los modelos, pues probablemente ha sido le guste mucho esa vaina, ¿Si me entiendes? Porque obviamente eso va a mejorar la conversión. Entonces fíjate que se tienen los retos bien interesantes porque ellos no licencian tu tecnología, sino la tecnología que tú consumes para tus modelos de inteligencia artificial. OK. Donde mucha empresa grande va a decir no marica, yo no quiero seguirle enseñando huevón, yo no quiero que esto se vuelva público si no es mío. 
+
+32:24
+Ricardo Alejandro Ortiz Deulofeut
+Y por otro lado, pues como estás consumiendo información interna las empresas, pues a muchos no les va a gustar eso tampoco. Claro que en el mercado de 1 a 15 muchos ni saben que eso ocurre, ¿No? 
+
+32:36
+Daniel Cardona
+Yo lo he visto hace poquito estuve en Singapur en una conferencia de inteligencia artificial y si te soy completamente honesto, hay algo que me preocupa fundamentalmente en Latinoamérica y es que nosotros usamos inteligencia artificial, no creamos inteligencia artificial. Y la conversación y las empresas que estoy viendo, sobre todo ahorita que estuve en este evento de gofest, son wrappers encima de tecnología, pero realmente no hay, o sea, cuando tú miras las startups que están saliendo en China, algunas en India y tal vez algo en África, la conversación de inteligencia artificial es otra cosa. 
+
+33:17
+Ricardo Alejandro Ortiz Deulofeut
+Sí, claro. 
+
+33:19
+Ricardo Alejandro Ortiz Deulofeut
+Pero es que son emprendimientos muy intensos en capital, porque cuando tú te dedicas a desarrollar algoritmos de inteligencia artificial, primero necesitas unas una infraestructura por detrás ni la hijueputa de grande. Por otro lado, pues necesitas un ramillete de ingenieros super seniors demasiado grandes, ¿Cierto? Entonces lo que ocurre en China, que es el problema no estar allá, el gobierno en cualquier emprendimiento que sea de alta tecnología pone toda la plata, ¿De acuerdo? Es más, termina regalándoselas y no si son exitosos. Entonces esta que salió China, que es una berraquera, pues el gobierno le puso 900 millones de dólares a un emprendedor huevón, pues un Daniel o un Ricardo que nada que ver, pero que era pilo y tenía una idea la verraca y le puso un equipo de 150 ingenieros super senior y el gobierno le ayudó. Pero el resto del mundo, ¿Quién le ayuda? 
+
+34:24
+Ricardo Alejandro Ortiz Deulofeut
+¿Quién? 
+
+34:25
+Ricardo Alejandro Ortiz Deulofeut
+Nadie. Eso es muy berraco. Y en Estados Unidos, pues una economía capitalista, pues llega Microsoft y le pone 10 millones a Open, pues cualquiera con 10 millones logra. Pero digamos que sí la visión es diferente, la visión del tercer mundo es cómo desarrollar sobre la inteligencia artificial y a eso se están dedicando muchos emprendimientos. 
+
+34:56
+Ricardo Alejandro Ortiz Deulofeut
+Y no está mal, ¿De acuerdo? 
+
+34:58
+Ricardo Alejandro Ortiz Deulofeut
+Está mal porque la IA per se, lo que pasa es que están dándoles en bandeja de oro toda la información a estos grandes. 
+
+35:05
+Ricardo Alejandro Ortiz Deulofeut
+Ese es el gran problema. 
+
+35:08
+Ricardo Alejandro Ortiz Deulofeut
+Por eso cobran tan barata las suscripciones, porque están captando la información tiene un valor ni el hijo de puta futuro. 
+
+35:16
+Ricardo Alejandro Ortiz Deulofeut
+¿De acuerdo? 
+
+35:17
+Daniel Cardona
+Pues porque cuando el producto es gratis, tú eres el producto, es así de sencillo. Total, que eso me lleva a otro punto y es dentro del esquema de generación de valor y escala de monetización, y esto se me está ocurriendo en nuestra conversación, pero es. 
+
+35:38
+Ricardo Alejandro Ortiz Deulofeut
+Si yo de. 
+
+35:39
+Daniel Cardona
+Una u otra manera doy a precio huevo el modelo, sobre todo de generación demanda, pero lo que estoy haciendo realmente es aprender qué es lo que les está funcionando y qué es lo que está funcionando a las compañías esa data yo después la puedo llegar a monetizar. Móntele un DSP, montele unos algoritmos de publicidad, haga lo que quiera, ya después con eso. Pero ese modelo de negocio es muy diferente a un servicio. Es decir, sí necesitas un extensivo de capital para que te soporte la X cantidad de conversaciones y de empresas a las cuales estás subsidiando el servicio y después la monetización viene X cantidad de años después. 
+
+36:19
+Ricardo Alejandro Ortiz Deulofeut
+De acuerdo, de acuerdo. ¿Pero eso lo hacen los ricos, eso lo hace Google y Microsoft y Apple y todos ellos hacen eso que uno dice por qué me regalan WhatsApp? Esto no tiene sentido. Pero ya empieza a tener sentido porque ya empiezan a monetizar lo que ellos tienen. Ahora, yo lo que digo es pensar en un modelo de negocio así difícil, pero tú tienes por ejemplo la sartén por el mando mango. Si tuvieras un poco de músculo económico y decirte solo por un exit fee dentro de una prima de éxito, pues solamente sin monetizar. Porque qué pasa tú, tú llegas ahorita y me dices a mí por ejemplo en B Excellence que tu servicio me encantaría, me dices que es una empresa un millón de dólares hoy me dice yo te cobro 3500 dólares. 
+
+37:16
+Ricardo Alejandro Ortiz Deulofeut
+Y fue puta, yo aprieto el rabo porque hemos contratado muchas empresas de marketing digital que nos cobran 6 millones mensuales, 7 millones y han sido un rotundo fracaso. Y uno dice puta, botea la caneca esta plata que eso es un problema que tú vas a enfrentar, que el mercado lo pudrieron y se. 
+
+37:37
+Ricardo Alejandro Ortiz Deulofeut
+Nos cagaron con ganas los malos, los. 
+
+37:40
+Ricardo Alejandro Ortiz Deulofeut
+Que los que creen que lo saben, pero no lo saben. Entonces si tú llegas por ejemplo a Excellence y dice mire yo no cobro nada, yo le voy a cobrar a usted el 5%, el markup que haga de ventas de aquí para adelante, pues uno dice, pues lo peor que puede pasar es que este huevo no funcione. Y si funciona, pues no valer un huevo. ¿Porque? Porque si me lleva mi empresa a 10 millones, yo digo marica, yo a qué hora le dije a este huevón que le daba tanta plata y ya sí se le convierte en socio. ¿Entonces también puedes poner unas condiciones de negociación que digas que cuando llegue a 10.000 mensuales, pues yo ya par por decir una cifra, que eso genera confianza también, cierto? 
+
+38:28
+Ricardo Alejandro Ortiz Deulofeut
+Pero empiezas tú a generar un recurrete en empresas que van a estar siempre agradecidas contigo, siempre, porque las escalaste por. 
+
+38:40
+Ricardo Alejandro Ortiz Deulofeut
+Free, entre comillas, ¿De acuerdo? 
+
+38:43
+Ricardo Alejandro Ortiz Deulofeut
+Entonces tú dices, yo lo voy a escalar a usted me dará el 5% de lo que venda de más y cuando llegue a tal cifra, pues ya ese se vuelve mi horario mensual por los próximos seis años. Porque tienes que también amarrar largo plazo. 
+
+38:59
+Ricardo Alejandro Ortiz Deulofeut
+En eso, ¿Si me entiendes? 
+
+39:01
+Ricardo Alejandro Ortiz Deulofeut
+¿Pero la empresa va a tener toda la confianza decir bueno, mucho marica. 
+
+39:05
+Ricardo Alejandro Ortiz Deulofeut
+Pues entre no tengo nada que perder, cierto? 
+
+39:09
+Ricardo Alejandro Ortiz Deulofeut
+Pero obviamente tú tienes un costo de adquisición de clientes muy alto porque tu proceso. Ahora, eso lo haría yo de ti si ya tengo una tecnología detrás, Claro, que me minimice el costo de servicio, pero también que me garantice el resultado de mi servicio. 
+
+39:29
+Daniel Cardona
+Porque te voy a dar dos hipótesis que tengo yo en go to market, yo siempre he tenido los mismos problemas y ventas no quiere al de marketing, el CEO no tiene ni idea qué pedirle al de marketing cuando no sabe el producto se vende y no tiene ni idea por qué, pero no hay un sistema detrás de cómo se entregan, qué se entregan, qué se gestiona, cómo se organiza, posicionamiento, etc. Etc. A mí el único reto detrás de este modelo es que yo no controlo la venta. Y me ha pasado como gerente de marketing, Yo he metido 300 millones de dólares en mi carrera de pipeline, del cual se ha cerrado el 30-40% dependiendo del vendedor que tenga enfrente. El pipeline lo genero, pero como yo no estoy gestionando la venta, por eso me tocó meterme en. 
+
+40:20
+Daniel Cardona
+Yo le hago un score de su llamada, pero es que si sus vendedores no venden, no es culpa mía, yo. 
+
+40:25
+Ricardo Alejandro Ortiz Deulofeut
+Le metí en pipeline por eso, pues tú puedes meter el servicio agregado hasta allá si tiene la tecnología, ¿Si me entiendes? Ya, porque tú le dices, mi problema no es solo generación demanda, mi problema es conversión, es decir, la generación yo me encargo, pero si usted no me deja meter las manos en conversión, yo no le jalo, porque yo voy a llegar a decirle vote a estos tres vendedores marica o que no sirven. 
+
+40:51
+Ricardo Alejandro Ortiz Deulofeut
+Para un culo, ¿Cierto? 
+
+40:54
+Ricardo Alejandro Ortiz Deulofeut
+Después de darle todas las alertas de por qué no sirve para un culo el tipo. Pero si tú vas, si tú te metes en el ciclo comercial completo, yo estoy seguro que las empresas te lo van a agradecer infinitamente porque es que el mismo dueño de un negocio no sabe dónde está la cagada. No sabe si el problema son las campañas, si el problema es la calificación de leads, si el problema es que el vendedor no sabe cerrar. Nunca saben qué es lo que está pasando, ¿Cierto? A no ser que tengan un volumen de vendedores tan grandes que ya lo que hacen es leer al bueno para. Para pasarle al mano la información del bueno. Eso es lo que hace. 
+
+41:31
+Ricardo Alejandro Ortiz Deulofeut
+Sigo, sigo. 
+
+41:34
+Ricardo Alejandro Ortiz Deulofeut
+Cuando un vendedor no cumple la cuota, le ponen a oír las llamadas de uno que sí cumple. Dice, si usted no aprende de este, pues usted no sirve. ¿Cierto? Y le escuchan las llamadas a él también. Pero es que eso es lo que tú haces electrónicamente. Nosotros nos ponemos a escucharle la llamada a los tipos a ver dónde la cagó para retroalimentarlo hasta llegar a la conclusión o de que el tipo sí es capaz de lograrlo o de que definitivamente el tipo no sirve para eso porque ya se le dio todo y No logró. ¿Si me entiendes? Pero si tú automatizas ese proceso, marica, es decir, un gerente te lo va a agradecer en el alma. 
+
+42:15
+Daniel Cardona
+Y que creo que es que. 
+
+42:19
+Ricardo Alejandro Ortiz Deulofeut
+Es. 
+
+42:19
+Daniel Cardona
+Decir, y con esto, A ver, yo en este momento estoy buscando socios para que vengan a montar, preferiblemente una mujer. Quiero meterme una mujer CTO y necesito una persona de operaciones muy alineado con nuestra conversación inicial de gente muy buena que esté arriba. Hay tantas oportunidades en go to market que ese creo que es el gran problema. Porque cuando uno abarca un montón de cosas termina siendo muy mal. 
+
+42:50
+Ricardo Alejandro Ortiz Deulofeut
+Muchas. 
+
+42:50
+Daniel Cardona
+La tecnología de las llamadas funciona y eso como un producto standalone, como un add on que le quiera meter, está divino. Pero detrás de. Hay muchas conversaciones que hoy por hoy yo tengo con mis clientes y usted no tiene un posicionamiento claro, su propuesta de valor, usted no tiene ni idea y no la ha validado. Y lo que usted cree que es propuesta de valor, sus clientes no lo están entendiendo. Toca así hacer como un trabajo detrás de. Sobre todo basado en experimentación y en llamadas. Y por eso fue que metí en llamadas, porque no es lo que Daniel dice que es la propuesta de valores. Cuando usted está en las llamadas y usted dice esto y esto y el cliente le abre los ojos, está. 
+
+43:29
+Ricardo Alejandro Ortiz Deulofeut
+Sí el cliente el que le dice. 
+
+43:31
+Ricardo Alejandro Ortiz Deulofeut
+A uno todo finalmente, pues fíjate que. 
+
+43:35
+Ricardo Alejandro Ortiz Deulofeut
+Tienes una cosa, pucha, es muy robusta, pero podría sacarla del estadio. El problema es que si necesitas manos y manos de muy alta calidad para poderlo lograr. Porque digamos que está la herramienta de generación demanda, que ya la de calificación de vendedor es tal, pero si es propuesta de valor también es otro mundo. Y de pronto vas a tener que también meterte en ajuste del mismo proceso comercial de las compañías ¿Para que? Para que haga más sentido, ¿Cierto? Porque es decir, uno de los grandes errores que cometen las empresas que están en ese proceso es que la. Es que revuelven todo en uno. El mismo de marketing es el vendedor y el mismo vendedor es el que hace la campaña. Entonces uno les dice, huevón, si usted no cambia la mentalidad, pues esta vaina no va a escalar. Es muy berraco. 
+
+44:35
+Ricardo Alejandro Ortiz Deulofeut
+Es una oferta de valor muy ampliada, que ya no la podrías hacer solo como prima de éxito porque el periodo de maduración de cada empresa. 
+
+44:43
+Ricardo Alejandro Ortiz Deulofeut
+Va a ser largo y te. 
+
+44:46
+Ricardo Alejandro Ortiz Deulofeut
+Vas a quebrar pues invirtiendo en una empresa a esperar a que las cosas se den. Se va a tener que comprar un fee, pero ya la entrada tuya al mercado se vuelve complicada porque la gente no le cree hoy a las agencias, no le cree yo. 
+
+45:03
+Daniel Cardona
+Y por eso hay un diagnóstico. 
+
+45:05
+Ricardo Alejandro Ortiz Deulofeut
+Si tenés. 
+
+45:07
+Daniel Cardona
+Te voy a mostrar el diagnóstico que se entrega inicial. El diagnóstico son 300 preguntas de Go to Market. Esto lo hice con el director comercial de Globant, nos aliamos, yo le vendo el servicio que él ofrece, que es una parte del diagnóstico, yo me encargo de la implementación del resto. Y por eso es que tengo tanta confianza en decir lo que hago. ¿Si me entiendes? Más allá de tener 15 años de experiencia, esto es experimentación pura y dura sobre go to marketing. El entregable de las 300 preguntas te empieza a dar un resultado más o menos así y es como logras que. 
+
+45:50
+Ricardo Alejandro Ortiz Deulofeut
+Te contesten 300 preguntas, tres llamadas de. 
+
+45:55
+Daniel Cardona
+45 minutos cada una con el founder en respuestas de sí, no, si, no, si, no, si, no, si, no, chao. Sobre los cuatro modelos de ingresos de cualquier compañía, la auditoría te dice, vea de sus revenue stream, su pricing no está claro, tiene una documentación estratégica comercial, tiene claro sus territorios de expansión, tiene claro su modelo de datos y tiene claro su ciclo de ventas. ¿Este es el to be y este es el ases, cierto? ¿El go to market tiene definido sus ICPs, sus funneles, su modelo de adquisición, los hacks para crearlos, y tiene claro los decision makers de su empresa, sí o no? 
+
+46:30
+Daniel Cardona
+Límite es el nivel 1, este es el asist y el esto con cuota a cash, que esto es otro dolor de cabeza impresionante y es usted sabe exactamente cuánto pipeline necesita usted hoy, un año antes de, para generar el billete que usted necesita aquí a un año. Y capacidades específicas del equipo en capacitaciones, en capacidades, en el modelo operativo, en sous solutioning, que esto es muy diferente cuando se vende algo de tecnología y eso, usted tiene un equipo de technical sales que puede entregar el valor que su vendedor está diciendo, o cuando usted entrega al vendedor, se empezó a inventar un montón de features que después el equipo operativo tiene que salir a implementar en el time spending. Es súper fácil. 
+
+47:11
+Daniel Cardona
+Hoy por hoy vos te colgas al API de Google Calendar, te jalas todas las reuniones de un equipo comercial y le decís, vea, de las reuniones y el tiempo comercial de su equipo De ventas, el 43% están con clientes, 25% en reuniones internas, 20% del tiempo libre y 9% en horas personales. Aquí simplemente son preguntas y conclusiones específicas sobre el tiempo comercial. ¿Aquí es cosas específicas de dónde está el esfuerzo, cuáles son los diferentes playbooks para hacer una estrategia específica de go to market, qué es el play to win? Y básicamente es un marco estratégico que tiene que definir el CEO o el cro cuánto quiere ganar, dónde quiere jugar, cómo va a ganar, qué capacidades necesita implementar hoy, y qué sistemas de gestión son necesarios para eso. 
+
+47:56
+Daniel Cardona
+Tiene teniendo en cuenta que cada vertical de revenue stream, cada nuevo producto, nuevo feature que usted tiene una estrategia de go to market absolutamente diferente. Usted no puede vender 10 productos de la misma forma con el mismo equipo. Y luego ya finalmente empieza a tener las priorizaciones y estructuras críticas sobre where to play, how to win, cuáles son los capabilities y los management systems, con unas sugerencias específicas. Y yo aquí ya es donde vendo el resto del paquete. Entonces esto cuesta mil dólares y ya. 
+
+48:26
+Ricardo Alejandro Ortiz Deulofeut
+De entrada ya les mil dólares le cobras por el diagnóstico. 
+
+48:30
+Daniel Cardona
+Correcto. Ese es mi. Ese es mi entry mientras. 
+
+48:34
+Ricardo Alejandro Ortiz Deulofeut
+¿Y después contratas por tres mil quinientos la asistencia contrato que empieza que? ¿A un año? 
+
+48:41
+Daniel Cardona
+A un año con revenue share a seis meses. Primero hacemos la primera experimentación, los ciclos de experimentación son 90 días. Se definen las hipótesis, se establecen los canales, se establece el marco de mensajes, se establecen los canales y se ejecuta. Si hay que hacer PAID usted. Es decir, yo le puedo poner el equipo de PAID y no es como deme 40 millones de pesos y le cobro el 5. Vea, la pauta está específicamente enfocada en conversión. 
+
+49:11
+Ricardo Alejandro Ortiz Deulofeut
+Dame un segundito, por favor. Qué pena. 
+
+49:49
+Ricardo Alejandro Ortiz Deulofeut
+Acompáñame. 
+
+49:51
+Ricardo Alejandro Ortiz Deulofeut
+¿Cuántos clientes tienes ahorita, Ango? 
+
+49:56
+Daniel Cardona
+Dos clientes, uno en diagnóstico, otro ya cerrado. Y tengo una ejecución ahorita en Bolivia de un grupo empresarial grande que me va a consumir el 40% del tiempo 3 meses. 
+
+50:08
+Ricardo Alejandro Ortiz Deulofeut
+Te voy a aprender a hablar con el CIO de SIG. 
+
+50:11
+Ricardo Alejandro Ortiz Deulofeut
+¿Ok? 
+
+50:12
+Ricardo Alejandro Ortiz Deulofeut
+Pero para que le cuentes más que todo el modelo, porque digamos que ya hay mucha madurez en marketing, ¿OK? Es decir, hay muchas cosas que las tenemos demasiado claras, pero con todas esas herramientas de scoring de los leads, eso sería una vaina, ¿Verdad? Te voy a abrir una cita con Esteban para que hables del tema. 
+
+50:36
+Ricardo Alejandro Ortiz Deulofeut
+Divino. 
+
+50:38
+Ricardo Alejandro Ortiz Deulofeut
+Y lo que yo te digo es, mi consejo es, necesitas equipo porque vas a vender servicios basados en tecnología, pero servicios que tienen una cobertura muy amplia. 
+
+50:52
+Ricardo Alejandro Ortiz Deulofeut
+Como te digo o como me dices. 
+
+50:54
+Ricardo Alejandro Ortiz Deulofeut
+Si no cumples toda la cadena de. 
+
+50:56
+Ricardo Alejandro Ortiz Deulofeut
+Valor, pues va a fracasar, ¿Cierto? 
+
+51:00
+Ricardo Alejandro Ortiz Deulofeut
+Un segundo, por favor. 
+
+51:01
+Ricardo Alejandro Ortiz Deulofeut
+Dale, dale, tranquila. 
+
+51:24
+Ricardo Alejandro Ortiz Deulofeut
+Preciso. Están fumigando la casa, hermano, y el ruido es muy berraco, pero dale tranquilo. Y lo que yo te aconsejaría también es que si vas a meter un equipo, cuando me dices que quieres meter un CTO y de pronto un CEO, dales vesting. ¿Dales vesting en la empresa para que? Porque probablemente ahorita no vas a tener suficiente dinero para pagar lo que vale un man de estos. 
+
+51:52
+Ricardo Alejandro Ortiz Deulofeut
+No, De acuerdo. 
+
+51:53
+Daniel Cardona
+Y es decir, ahorita estoy es. Si te soy completamente honesto, yo salí a vender bruto, pero decidido. 
+
+52:03
+Ricardo Alejandro Ortiz Deulofeut
+Y así empieza uno, hermano. Eso no es. Eso no es. No es diferente a lo que ocurre con el resto de emprendedores. Si tienes ya unas alertas tempranas de éxito. Por eso te preguntaba ¿Cuántos clientes tienes? Pues espérate un poquito a que completes. 
+
+52:17
+Daniel Cardona
+Unos 10 y empiezo a contratar. 
+
+52:22
+Ricardo Alejandro Ortiz Deulofeut
+No, yo creo que la contratación si debías empezarla de una vez, pero con mecanismo de vesting. OK, encontrar a la persona adecuada en tecnología y decirle mire, usted viene por el 5 % de la empresa y por ahora trabaje por los laditos. Pueda que no esté incorporada en la nómina todavía, pero que se empiece a meter y le haces un buen contrato de vesting a tres años, porque el problema es que uno sabe si va a ser bueno o va a ser mal. 
+
+52:51
+Daniel Cardona
+Hay una gran pregunta en socios. ¿Para vos, cuáles son los criterios para escoger un buen socio? 
+
+53:01
+Ricardo Alejandro Ortiz Deulofeut
+No marica, ninguno. Si me preguntas a mí, es puro feeling. Es que tanto conecto yo con la persona, porque es que el socio es un matrimonio para toda la vida. 
+
+53:12
+Ricardo Alejandro Ortiz Deulofeut
+Tal cual. 
+
+53:13
+Ricardo Alejandro Ortiz Deulofeut
+Entonces si tú buscas solo conocimiento e inteligencia, pues para que encuentres lo mejor. Pero si es un petardo que no conecta contigo, no es empático contigo, pues eso va a ser una pieza de zapato todavía. ¿Yo creo que para mí la variable más más importante es que también me conecto yo, cierto? ¿Es lo número uno y obviamente el conocimiento, sino para qué lo tiene uno ? 
+
+53:39
+Ricardo Alejandro Ortiz Deulofeut
+Cierto. 
+
+53:42
+Ricardo Alejandro Ortiz Deulofeut
+Y con vesting tú puedes conseguir a esos dos personajes ahorita no para que esté en tiempo completo, que no van a poder siente que va a tener que vivir de algo, pero que sí tenga el sueño de que en dos o tres años se va a retirar y se va a incorporar 100 % a su negocio porque tú les haces el vesting a unos dos o tres años o para medirlos, compre estos hitos y tal, pues usted va a tener esta vaina y lo que usted está invirtiendo es su conocimiento y su trabajo por ahora. Y ya cuando tengas unos diez, doce clientes, probado el modelo, ya podrías entrar a hacer una ronda para buscar capital y financiar el negocio. Ahorita si la haces, pues yo te daría 50.000 dólares por el 60%. Claro, tienes una buena idea y es una huevonada. 
+
+54:38
+Ricardo Alejandro Ortiz Deulofeut
+¿Si me entiendes? 
+
+54:39
+Ricardo Alejandro Ortiz Deulofeut
+De acuerdo. 
+
+54:40
+Ricardo Alejandro Ortiz Deulofeut
+Pero ya cuando tengas unas alertas tempranas de éxito, pues ya vas a poder levantar con una valorización un poco más robusta de la empresa. Ahorita va a ser imposible que consigas lo que necesitas por una porción chiquita de tu negocio. 
+
+54:58
+Ricardo Alejandro Ortiz Deulofeut
+Mucho de la empresa y de la idea per se muy temprano y pon. 
+
+55:02
+Ricardo Alejandro Ortiz Deulofeut
+Bien la promesa de valor en todas las puntas. Porque Porque resulta bacán, resulta bacano para una empresa decir yo por ejemplo, en Vía Excellence. Si quieres cogerla como conejillo de indias y hacerle un modelo, montase. Es una empresa que vende soluciones y business al mercado medio. 
+
+55:24
+Ricardo Alejandro Ortiz Deulofeut
+OK. 
+
+55:24
+Ricardo Alejandro Ortiz Deulofeut
+Y te voy a conectar también con Germán para que miren a ver. Pero él no te va a pagar ahorita tres mil quinientos dólares mensuales ni por putas. 
+
+55:33
+Daniel Cardona
+No, está. Podemos revisar tranquilamente si me dejan experimentar. 
+
+55:38
+Ricardo Alejandro Ortiz Deulofeut
+Y vemos qué hacer y con toda seguridad lo vamos a apreciar muchísimo. Y probablemente tenemos otra empresa en donde puedes experimentar que se llama Lookup. Esta otra se llama B Excellence en Lookup. Es una empresa que vende estudios de mercado. Está Mauricio Cagiao. 
+
+56:01
+Daniel Cardona
+No sé si Mauricio Cagiao. Yo trabajé en Malboro con él hace muchos años. 
+
+56:06
+Ricardo Alejandro Ortiz Deulofeut
+Si, él es el emprendedor detrás de eso. Yo les invertí cuando. Cuando hacía inversiones en emprendimientos, en startups, invertí en ellos y van. Van. Pero si les falta escalar. Creo que el go to market no está bien hecho . Donde está el talón de Aquiles de ellos es la percepción que yo tengo con ellos. 
+
+56:34
+Daniel Cardona
+Con esto que me estás diciendo, lo más bonito de mi modelo es que el diagnóstico se lo estoy vendiendo a los VCs que se lo bajan a los emprendedores. Es como, oiga, vea, conocí a este man, tiene mil dólares, eso le cuesta una persona coja y me muestra los resultados para saber, venga, ahora sí como experimentamos. 
+
+56:50
+Ricardo Alejandro Ortiz Deulofeut
+Exactamente. Entonces te voy a hacer ese par de contactos. 
+
+56:54
+Ricardo Alejandro Ortiz Deulofeut
+Perfecto. 
+
+56:54
+Ricardo Alejandro Ortiz Deulofeut
+Yo ya tengo tus datos y hablo con ellos y ya te doy para que te llame y consigo. Entonces me quedo con esas tres tareas. Te voy a poner con Esteban, pero obviamente el discurso con los tres es totalmente diferente. 
+
+57:10
+Ricardo Alejandro Ortiz Deulofeut
+De acuerdo, Sigo. 
+
+57:11
+Ricardo Alejandro Ortiz Deulofeut
+Ya es demasiado maduro para que llegues a decirle que le va a hacer un diagnóstico. Tienes que llegar directamente con estas herramientas de IA para el scoring de los vendedores. Esa vaina de pronto les va a encantar muchísimo. 
+
+57:25
+Ricardo Alejandro Ortiz Deulofeut
+Divino. 
+
+57:27
+Ricardo Alejandro Ortiz Deulofeut
+Hablo con Germán Lezaman, que es el de Be Excellence y con Mauricio Cajeado del UCAP. 
+
+57:35
+Daniel Cardona
+Y quisiera pedirte un último feedback, si es posible. La empresa se llama por muchas cosas. Se llama Hay Huevos y de inteligencia artificial y huevos de romper en Go to Market. Cuando se habla del huevo o la gallina, uno nunca sabe cuál resolver primero marketing o ventas. 
+
+57:57
+Ricardo Alejandro Ortiz Deulofeut
+¿Pero lo pusiste en español o en inglés? 
+
+57:59
+Ricardo Alejandro Ortiz Deulofeut
+En español. 
+
+58:00
+Daniel Cardona
+Entonces lo que pasa en las reuniones esto. ¿Cómo se llama tu empresa? 
+
+58:03
+Ricardo Alejandro Ortiz Deulofeut
+Hay huevos. Sí, así se llama. Está buena. 
+
+58:09
+Ricardo Alejandro Ortiz Deulofeut
+Ya lo disruptivo en esta época está. Es muy válido, ¿No? 
+
+58:18
+Ricardo Alejandro Ortiz Deulofeut
+Tal cual. 
+
+58:19
+Daniel Cardona
+Listo, perfecto. Ricardo, mil gracias. 
+
+58:24
+Ricardo Alejandro Ortiz Deulofeut
+Encantadísimo. 
+
+58:25
+Ricardo Alejandro Ortiz Deulofeut
+Lo mismo. 
+
+58:26
+Ricardo Alejandro Ortiz Deulofeut
+Que te vaya súper bien. Cuídate. 
+
+58:28
+Ricardo Alejandro Ortiz Deulofeut
+Chao, chao, chao. 

@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KEYA3RAXHH6R1QP1KJ8406QG
+Title: Sync / AI Huevos founders
+Date: 2026-01-14T13:11:24.253Z
+Duration: 68 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/mct-wypm-xqy?authuser=0
+
+---
+TRANSCRIPT SUMMARY:
+Se llevó a cabo una reunión para definir una propuesta comercial que se enfoque en soluciones concretas para grandes empresas con operaciones complejas. Daniel Cardona destacó que el cliente ideal no son startups, sino empresas con alto willingness to pay y que permiten iteraciones creativas. Daniel Restrepo mencionó la importancia de construir showcases rápidos basados en experiencias previas, y se acordó que un prototipo tangible debe ser entregado en menos de una semana para captar el interés de los inversionistas. Se enfatizó en el desarrollo agéntico para optimizar flujos operativos y en el proceso de discovery que combina entrevistas cualitativas con herramientas de automatización. Además, se propuso usar GitHub como base para el desarrollo y mantener una documentación rigurosa para asegurar la escalabilidad del proyecto.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KEYA3RAXHH6R1QP1KJ8406QG]

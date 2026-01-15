@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCPNWJK237W77FBMK54DWSHJ
+Title: Magihack + Comversa - Whatsapp
+Date: 2025-12-17T17:31:45.916Z
+Duration: 32 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/eai-xhsn-xfe
+
+---
+TRANSCRIPT SUMMARY:
+Se abordó la gestión y configuración de cuentas digitales para varios restaurantes, acordando crear y vincular cinco cuentas en Go High Level para La Terraza, Cielo Bar Santa Cruz, Cielo Bar La Paz, Jardín de Asia y Nazca. Se estableció la centralización de accesos y contraseñas mediante el gestor Dashlane, facilitando la administración eficiente de perfiles en Meta Manager, Facebook, Instagram y TikTok. Se planteó integrar el WhatsApp Business API al CRM de cada restaurante para facilitar la automatización de respuestas y gestión de clientes. También se discutió la conexión del sistema de reservas Maitre al CRM para mejorar la experiencia del cliente, así como la integración de plataformas de pago como Stripe y PayPal. Finalmente, se enfatizó la necesidad de validar accesos con los clientes para evitar problemas de autenticación antes de iniciar la configuración definitiva.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCPNWJK237W77FBMK54DWSHJ]

@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KF0XYF10V106MRMZ97CA27G6
+Title: Moat Labs - Checkpoint 1
+Date: 2026-01-15T13:36:31.264Z
+Duration: 86 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/jrq-crrp-yfn?authuser=0
+
+---
+TRANSCRIPT SUMMARY:
+El equipo discutió la creación de un pitch claro y conciso que diagnostique y solucione ineficiencias operativas en grandes empresas de Latinoamérica. Han lanzado siete productos en menos de cinco meses, generando $134,000 en ingresos confirmados y detectando $1.5 millones en valor potencial. El modelo de negocio se basa en un diagnóstico inicial que permite automatizaciones rápidas, con un enfoque fuerte en la retención de clientes. Se consideraron las implicaciones de involucrar corporativos como inversionistas, donde se enfatizó la necesidad de mantener el control y la cultura de la empresa. Para la próxima presentación a inversionistas, se definieron objetivos claros, buscando un pitch atractivo y sin tecnicismos, resaltando resultados y diferenciadores.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KF0XYF10V106MRMZ97CA27G6]

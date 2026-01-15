@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCEMZMAQS48QQB7S5VWJEZAT
+Title: Daniel - Daniel Sync
+Date: 2025-12-14T14:42:08.320Z
+Duration: 556 minutes
+Participants: hola@huevos.ai
+Fireflies URL: None
+
+---
+TRANSCRIPT SUMMARY:
+Se llevó a cabo una reunión para discutir la entrega de un diagnóstico corporativo completo, el cual incluye un análisis de 44 entrevistas y la identificación de problemas operativos y financieros, como un aumento del 15% en la cartera vencida. Se definieron las herramientas tecnológicas a utilizar, destacando una arquitectura modular con backend en FastAPI y base de datos en Postgres, y se propusieron diferentes opciones para la entrega de reportes. Se presentó una oportunidad comercial valorada en USD 120,000, con un enfoque en la estandarización y automatización de procesos. Además, se planteó la creación de una comunidad para generar contenido recurrente y oportunidades de ingresos a través de un modelo de suscripción y capacitación.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCEMZMAQS48QQB7S5VWJEZAT]

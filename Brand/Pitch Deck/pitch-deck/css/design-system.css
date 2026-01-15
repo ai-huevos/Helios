@@ -1,0 +1,457 @@
+/*
+  AI Huevos Pitch Deck - Design System
+  SF Minimalist Aesthetic + AI Huevos Brand Guidelines
+  Version: 1.0
+*/
+
+/* ========================================
+   1. CSS CUSTOM PROPERTIES (VARIABLES)
+   ======================================== */
+
+:root {
+  /* Colors - Primary Palette */
+  --white: #FFFFFF;
+  --black: #000000;
+  --yellow: #FFE03D;
+  --blue: #4D9FFF;
+
+  /* Colors - Secondary/Accents */
+  --purple: #B8A0FF;
+  --red-orange: #FF5C3D;
+  --light-gray: #E5E5E5;
+  --dark-gray: #9B9B9B;
+
+  /* Typography - Font Families */
+  --font-primary: 'Scandia', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', 'SF Mono', Consolas, Monaco, monospace;
+
+  /* Typography - Sizes */
+  --type-display: 130px;
+  --type-display-lh: 120px;
+  --type-h1: 100px;
+  --type-h1-lh: 92px;
+  --type-h2: 75px;
+  --type-h2-lh: 70px;
+  --type-h3: 60px;
+  --type-h3-lh: 56px;
+  --type-h4: 48px;
+  --type-h4-lh: 48px;
+  --type-body-large: 32px;
+  --type-body-large-lh: 40px;
+  --type-body: 24px;
+  --type-body-lh: 32px;
+  --type-caption: 18px;
+  --type-caption-lh: 24px;
+  --type-cta: 20px;
+  --type-cta-lh: 24px;
+  --type-label: 16px;
+  --type-label-lh: 20px;
+
+  /* Typography - Weights */
+  --weight-medium: 500;
+  --weight-regular: 400;
+
+  /* Typography - Letter Spacing */
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0em;
+
+  /* Layout - Dimensions */
+  --slide-width: 1920px;
+  --slide-height: 1080px;
+  --grid-margin: 80px;
+  --grid-padding-top: 120px;
+  --grid-padding-bottom: 80px;
+  --content-width: 1760px; /* 1920 - (80 × 2) */
+  --content-max-width: 1200px;
+
+  /* Spacing Scale */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 96px;
+  --space-2xl: 128px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* ========================================
+   2. FONT LOADING (Web Fonts)
+   ======================================== */
+
+/* Scandia - Medium (for headlines) */
+@font-face {
+  font-family: 'Scandia';
+  src: url('../fonts/Scandia/Scandia-Medium.woff2') format('woff2'),
+       url('../fonts/Scandia/Scandia-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Scandia - Regular (for body) */
+@font-face {
+  font-family: 'Scandia';
+  src: url('../fonts/Scandia/Scandia-Regular.woff2') format('woff2'),
+       url('../fonts/Scandia/Scandia-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Geist Mono - Regular (for CTAs) */
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('../fonts/Geist_Mono/GeistMono-Regular.woff2') format('woff2'),
+       url('../fonts/Geist_Mono/GeistMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========================================
+   3. TYPOGRAPHY SYSTEM
+   ======================================== */
+
+/* Display Headline (130px) */
+.headline-display {
+  font-family: var(--font-primary);
+  font-size: var(--type-display);
+  line-height: var(--type-display-lh);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+}
+
+/* H1 Headline (100px) */
+.headline-h1 {
+  font-family: var(--font-primary);
+  font-size: var(--type-h1);
+  line-height: var(--type-h1-lh);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+}
+
+/* H2 Headline (75px) */
+.headline-h2 {
+  font-family: var(--font-primary);
+  font-size: var(--type-h2);
+  line-height: var(--type-h2-lh);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+}
+
+/* H3 Headline (60px) */
+.headline-h3 {
+  font-family: var(--font-primary);
+  font-size: var(--type-h3);
+  line-height: var(--type-h3-lh);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+}
+
+/* H4 Headline (48px) */
+.headline-h4 {
+  font-family: var(--font-primary);
+  font-size: var(--type-h4);
+  line-height: var(--type-h4-lh);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+}
+
+/* Body Large (32px) */
+.body-large {
+  font-family: var(--font-primary);
+  font-size: var(--type-body-large);
+  line-height: var(--type-body-large-lh);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+}
+
+/* Body (24px) */
+.body-text {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  line-height: var(--type-body-lh);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+}
+
+/* Caption (18px) */
+.caption-text {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  line-height: var(--type-caption-lh);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-normal);
+  color: var(--dark-gray);
+}
+
+/* CTA/Label (Geist Mono, lowercase) */
+.cta-text,
+.tagline-mono {
+  font-family: var(--font-mono);
+  font-size: var(--type-cta);
+  line-height: var(--type-cta-lh);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-normal);
+  text-transform: lowercase;
+  color: var(--dark-gray);
+}
+
+/* ========================================
+   4. COMPONENT STYLES
+   ======================================== */
+
+/* Bullet Lists with Em Dash */
+.pain-points,
+.bullet-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pain-points li,
+.bullet-list li {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  line-height: var(--type-body-lh);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+  margin-bottom: var(--space-md);
+  position: relative;
+  padding-left: 40px;
+}
+
+.pain-points li::before,
+.bullet-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: var(--weight-medium);
+}
+
+/* Data Tables */
+.comparison-table,
+.data-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: var(--space-xl) auto;
+  border-collapse: collapse;
+  font-family: var(--font-primary);
+}
+
+.comparison-table th,
+.data-table th {
+  font-size: var(--type-body-large);
+  font-weight: var(--weight-medium);
+  text-align: left;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 3px solid var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comparison-table td,
+.data-table td {
+  font-size: var(--type-body);
+  font-weight: var(--weight-regular);
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.comparison-table td:first-child,
+.data-table td:first-child {
+  color: var(--dark-gray);
+}
+
+/* Stat Callouts (Big Numbers) */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.stat-number {
+  font-family: var(--font-primary);
+  font-size: 80px;
+  line-height: 76px;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--yellow);
+}
+
+.stat-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-cta);
+  line-height: var(--type-cta-lh);
+  font-weight: var(--weight-regular);
+  color: var(--dark-gray);
+  text-align: center;
+  max-width: 200px;
+}
+
+/* Dividers */
+.divider-horizontal {
+  width: 80px;
+  height: 3px;
+  background: var(--yellow);
+  margin: var(--space-md) 0;
+}
+
+/* Punchline/Tagline Styles */
+.punchline {
+  position: relative;
+  display: inline-block;
+}
+
+.punchline::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: var(--yellow);
+}
+
+.punchline-h4 {
+  font-family: var(--font-primary);
+  font-size: var(--type-h4);
+  line-height: var(--type-h4-lh);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--blue);
+  margin-top: var(--space-xl);
+}
+
+/* Egg Character Placeholders */
+.egg-placeholder {
+  width: 80px;
+  height: 100px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: var(--weight-medium);
+  color: var(--white);
+}
+
+.egg-blue {
+  background: var(--blue);
+}
+
+.egg-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.egg-purple {
+  background: var(--purple);
+}
+
+.egg-orange {
+  background: var(--red-orange);
+}
+
+/* ========================================
+   5. UTILITIES
+   ======================================== */
+
+/* Text color utilities */
+.text-white { color: var(--white); }
+.text-black { color: var(--black); }
+.text-yellow { color: var(--yellow); }
+.text-blue { color: var(--blue); }
+.text-gray { color: var(--dark-gray); }
+
+/* Yellow text variant for punchlines */
+.yellow-text {
+  color: var(--yellow) !important;
+}
+
+/* Background color utilities */
+.bg-white { background: var(--white); }
+.bg-black { background: var(--black); }
+.bg-yellow { background: var(--yellow); }
+.bg-blue { background: var(--blue); }
+
+/* Text alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Display utilities */
+.hidden { display: none; }
+.visible { display: block; }
+
+/* ========================================
+   6. ANIMATIONS
+   ======================================== */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide transition class */
+.slide-enter {
+  animation: fadeIn var(--transition-medium);
+}
+
+/* Element reveal class */
+.reveal-element {
+  animation: slideUp var(--transition-slow);
+}
+
+/* ========================================
+   7. ACCESSIBILITY
+   ======================================== */
+
+/* High contrast focus for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+/* Ensure readable contrast */
+.slide-dark .headline-h1,
+.slide-dark .headline-h2,
+.slide-dark .headline-h3,
+.slide-dark .body-text,
+.slide-dark .loop-step {
+  color: var(--white);
+}
+
+.slide-dark .punchline-h4 {
+  color: var(--yellow);
+}

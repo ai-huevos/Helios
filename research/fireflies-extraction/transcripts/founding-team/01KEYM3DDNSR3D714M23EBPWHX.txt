@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KEYM3DDNSR3D714M23EBPWHX
+Title: Sync - Huevos y Next Steps
+Date: 2026-01-14T21:00:00.000Z
+Duration: 35 minutes
+Participants: nmonje@comversa.com.bo, hola@huevos.ai
+Fireflies URL: https://meet.google.com/mxy-soxm-inq
+
+---
+TRANSCRIPT SUMMARY:
+El equipo se reunió para establecer un plan de automatización de contratos clave, comenzando con la implementación de una plataforma que permite gestionar minutas de compraventa. Se asignaron responsabilidades claras para la revisión y gestión de estos contratos, buscando maximizar la eficiencia del equipo legal. Además, se desarrolló un prototipo del Service Desk que permitirá la autogestión de tickets, con un objetivo de funcionamiento en 2 a 3 semanas. Se priorizarán tres proyectos de inteligencia artificial, incluyendo un CRM para restaurantes, buscando mejorar la gestión de leads y ventas. También se discutió la centralización de datos comerciales para potenciar ingresos cruzados entre servicios y se presentó un bot de recursos humanos que simplificará la gestión documental. Finalmente, se establecieron reuniones semanales para asegurar el seguimiento de los avances en estos proyectos.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KEYM3DDNSR3D714M23EBPWHX]

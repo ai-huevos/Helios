@@ -1,0 +1,1421 @@
+/*
+  AI Huevos Pitch Deck - Slide Layouts
+  Individual slide styling and layout
+*/
+
+/* ========================================
+   DECK CONTAINER & GLOBAL SLIDE STYLES
+   ======================================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--black);
+  font-family: var(--font-primary);
+}
+
+.deck-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  animation: fadeIn var(--transition-medium);
+}
+
+.slide-content {
+  width: 100%;
+  max-width: var(--content-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: var(--grid-padding-top) var(--grid-margin) var(--grid-padding-bottom);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centered content variant */
+.slide-content.centered {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ========================================
+   SLIDE COUNTER & NAVIGATION HINT
+   ======================================== */
+
+.slide-counter {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-family: var(--font-mono);
+  font-size: var(--type-label);
+  color: var(--dark-gray);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.slide-dark ~ .slide-counter {
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--light-gray);
+}
+
+.nav-hint {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--dark-gray);
+  opacity: 0.5;
+  z-index: 1000;
+  transition: opacity var(--transition-fast);
+}
+
+.nav-hint:hover {
+  opacity: 1;
+}
+
+/* ========================================
+   SLIDE 1: TITLE
+   ======================================== */
+
+.slide-title {
+  background: var(--white);
+}
+
+.slide-title .slide-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: var(--space-lg);
+}
+
+.logo-primary {
+  width: 200px;
+  height: auto;
+}
+
+.slide-title .headline-h1 {
+  margin-bottom: var(--space-md);
+}
+
+.slide-title .tagline {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  line-height: var(--type-body-lh);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tight);
+  color: var(--black);
+  margin-bottom: var(--space-sm);
+}
+
+.slide-title .subline {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  line-height: var(--type-caption-lh);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-normal);
+  color: var(--dark-gray);
+}
+
+/* ========================================
+   SLIDE 2: THE PROBLEM
+   ======================================== */
+
+.slide-problem {
+  background: var(--white);
+}
+
+.slide-problem .slide-content {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.content-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: var(--space-md);
+}
+
+.slide-problem .headline-h2 {
+  margin-bottom: var(--space-md);
+}
+
+.slide-problem .pain-points {
+  margin-bottom: var(--space-lg);
+}
+
+.punchline-container {
+  margin-top: var(--space-xl);
+}
+
+.egg-character {
+  position: relative;
+}
+
+/* ========================================
+   SLIDE 3: THE INSIGHT
+   ======================================== */
+
+.slide-insight {
+  background: var(--white);
+}
+
+.slide-insight .headline-h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.slide-insight .comparison-table {
+  margin-bottom: var(--space-xl);
+}
+
+.slide-insight .punchline-h4 {
+  max-width: 900px;
+}
+
+/* ========================================
+   SLIDE 4: THE WEDGE
+   ======================================== */
+
+.slide-wedge {
+  background: var(--white);
+}
+
+.slide-wedge .headline-h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.visual-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.flow-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.flow-icon.egg-yellow {
+  background: var(--yellow);
+}
+
+.flow-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-regular);
+  color: var(--black);
+}
+
+.flow-arrow {
+  font-size: 40px;
+  color: var(--yellow);
+  font-weight: var(--weight-medium);
+}
+
+.proof-points {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.slide-wedge .tagline-mono {
+  text-align: center;
+  font-style: italic;
+}
+
+/* ========================================
+   SLIDE 5: THE PRODUCT (Dark Slide)
+   ======================================== */
+
+.slide-product {
+  background: var(--black);
+}
+
+.slide-product .slide-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-product .headline-h1 {
+  color: var(--white);
+  margin-bottom: var(--space-2xl);
+}
+
+.loop-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  max-width: 600px;
+}
+
+.loop-step {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  line-height: var(--type-body-lh);
+  font-weight: var(--weight-regular);
+  color: var(--white);
+  text-align: center;
+  padding: var(--space-md) var(--space-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  min-width: 400px;
+}
+
+.loop-arrow {
+  font-size: var(--type-body-large);
+  color: var(--blue);
+  font-weight: var(--weight-medium);
+  margin: var(--space-xs) 0;
+}
+
+.loop-arrow.loop-back {
+  font-size: 48px;
+  color: var(--yellow);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+.slide-product .punchline-h4 {
+  color: var(--yellow);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   SLIDE 6: DIRECTOR AI
+   ======================================== */
+
+.slide-director {
+  background: var(--white);
+}
+
+.slide-director .headline-h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.hub-diagram {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.hub-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-label);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--dark-gray);
+  margin-bottom: var(--space-md);
+}
+
+.hub-item {
+  font-family: var(--font-mono);
+  font-size: var(--type-cta);
+  color: var(--black);
+  padding: var(--space-sm) 0;
+  text-transform: lowercase;
+}
+
+.hub-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hub-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-size: var(--type-body-large);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  color: var(--black);
+}
+
+.capabilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.capability-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+}
+
+.capability-number {
+  font-weight: var(--weight-medium);
+  color: var(--black);
+}
+
+.capability-title {
+  font-weight: var(--weight-medium);
+  color: var(--blue);
+}
+
+.capability-desc {
+  color: var(--black);
+}
+
+/* ========================================
+   SLIDE 7: THE VISION
+   ======================================== */
+
+.slide-vision {
+  background: var(--white);
+}
+
+.slide-vision .headline-h2 {
+  margin-bottom: var(--space-2xl);
+}
+
+.three-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.step-box {
+  flex: 1;
+  max-width: 300px;
+  min-height: 200px;
+  background: var(--light-gray);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-sm);
+}
+
+.step-number {
+  font-family: var(--font-primary);
+  font-size: 80px;
+  font-weight: var(--weight-medium);
+  color: var(--yellow);
+  line-height: 1;
+}
+
+.step-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+}
+
+.step-detail {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--dark-gray);
+}
+
+.step-arrow-large {
+  font-size: 60px;
+  color: var(--blue);
+  font-weight: var(--weight-medium);
+}
+
+.unlocks-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.unlock-item {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--black);
+  padding-left: 40px;
+  position: relative;
+}
+
+.unlock-item::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: var(--weight-medium);
+}
+
+.egg-character-optimism {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+/* ========================================
+   SLIDE 8: BUSINESS MODEL
+   ======================================== */
+
+.slide-business {
+  background: var(--white);
+}
+
+.slide-business .headline-h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.business-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto var(--space-xl);
+  border-collapse: collapse;
+  font-family: var(--font-primary);
+}
+
+.business-table th {
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 3px solid var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.business-table td {
+  font-size: var(--type-body);
+  font-weight: var(--weight-regular);
+  text-align: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.business-table .row-label {
+  font-weight: var(--weight-medium);
+  text-align: left;
+  color: var(--dark-gray);
+}
+
+.business-table .highlight-yellow {
+  color: var(--black);
+  font-weight: var(--weight-medium);
+  background: rgba(255, 224, 61, 0.2);
+}
+
+.flywheel-text {
+  font-family: var(--font-mono);
+  font-size: var(--type-cta);
+  text-align: center;
+  color: var(--dark-gray);
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+/* ========================================
+   SLIDE 9: WHY NOW
+   ======================================== */
+
+.slide-why-now {
+  background: var(--white);
+}
+
+.slide-why-now .headline-h2 {
+  margin-bottom: var(--space-2xl);
+}
+
+.forces-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: var(--space-2xl);
+}
+
+.force-item {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
+.force-number {
+  font-family: var(--font-primary);
+  font-size: var(--type-h3);
+  font-weight: var(--weight-medium);
+  color: var(--blue);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.force-content {
+  flex: 1;
+}
+
+.force-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-body-large);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-sm);
+}
+
+.force-detail {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--dark-gray);
+}
+
+.force-divider {
+  width: 80px;
+  height: 3px;
+  background: var(--yellow);
+  margin: var(--space-lg) 0;
+  margin-left: 80px;
+}
+
+/* ========================================
+   SLIDE 10: TRACTION
+   ======================================== */
+
+.slide-traction {
+  background: var(--white);
+}
+
+.slide-traction .headline-h2 {
+  margin-bottom: var(--space-2xl);
+}
+
+.big-metrics {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.metric-number {
+  font-family: var(--font-primary);
+  font-size: 80px;
+  line-height: 76px;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--yellow);
+}
+
+.metric-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-cta);
+  font-weight: var(--weight-regular);
+  color: var(--dark-gray);
+  text-align: center;
+  max-width: 200px;
+}
+
+.supporting-metrics {
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: center;
+  margin-bottom: var(--space-xl);
+}
+
+.supporting-item {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--black);
+  position: relative;
+  padding-left: 20px;
+}
+
+.supporting-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+}
+
+.egg-character-bottom {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+/* ========================================
+   SLIDE 11: SHIPPING VELOCITY
+   ======================================== */
+
+.slide-shipping {
+  background: var(--white);
+}
+
+.slide-shipping .headline-h1 {
+  margin-bottom: var(--space-2xl);
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  position: relative;
+}
+
+.timeline-month {
+  font-family: var(--font-primary);
+  font-size: var(--type-body-large);
+  font-weight: var(--weight-medium);
+  color: var(--blue);
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--yellow);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-product {
+  font-family: var(--font-primary);
+  font-size: var(--type-cta);
+  color: var(--black);
+  text-align: center;
+  max-width: 150px;
+}
+
+.timeline-line {
+  width: 60px;
+  height: 3px;
+  background: var(--blue);
+  margin: 0 var(--space-sm);
+  position: relative;
+  top: -48px;
+}
+
+.ongoing-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.ongoing-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--dark-gray);
+}
+
+.ongoing-item {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--black);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(77, 159, 255, 0.1);
+  border-radius: 4px;
+}
+
+.egg-character-timeline {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ========================================
+   SLIDE 12: TEAM
+   ======================================== */
+
+.slide-team {
+  background: var(--white);
+}
+
+.slide-team .headline-h2 {
+  margin-bottom: var(--space-2xl);
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.founder-box {
+  background: var(--light-gray);
+  padding: var(--space-xl);
+  min-height: 300px;
+}
+
+.founder-name {
+  font-family: var(--font-primary);
+  font-size: var(--type-body-large);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-sm);
+}
+
+.founder-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-cta);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-lg);
+}
+
+.founder-stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.founder-stat {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+}
+
+.founder-role {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--blue);
+}
+
+.founder-bg {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--dark-gray);
+}
+
+.founder-divider {
+  width: 3px;
+  background: var(--yellow);
+}
+
+.advisors-section {
+  margin-bottom: var(--space-lg);
+}
+
+.advisors-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-cta);
+  font-weight: var(--weight-medium);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-md);
+}
+
+.advisors-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.advisor-item {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--black);
+}
+
+.finkargo-context {
+  font-family: var(--font-mono);
+  font-size: var(--type-caption);
+  color: var(--dark-gray);
+  text-align: center;
+  font-style: italic;
+}
+
+/* ========================================
+   SLIDE 13: THE ASK
+   ======================================== */
+
+.slide-ask {
+  background: var(--white);
+}
+
+.slide-ask .headline-h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.amount-display {
+  font-family: var(--font-primary);
+  font-size: var(--type-display);
+  line-height: var(--type-display-lh);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--yellow);
+  margin-bottom: var(--space-2xl);
+}
+
+.use-of-funds {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+  max-width: 800px;
+}
+
+.fund-item {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
+.fund-number {
+  font-family: var(--font-primary);
+  font-size: var(--type-h4);
+  font-weight: var(--weight-medium);
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.fund-content {
+  flex: 1;
+}
+
+.fund-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-xs);
+}
+
+.fund-detail {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--dark-gray);
+}
+
+.milestones-text {
+  font-family: var(--font-primary);
+  font-size: var(--type-cta);
+  color: var(--dark-gray);
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ========================================
+   SLIDE 14: CLOSING VISION
+   ======================================== */
+
+.slide-closing {
+  background: var(--blue);
+}
+
+.slide-closing .headline-display {
+  color: var(--white);
+  margin-bottom: var(--space-2xl);
+  max-width: 1200px;
+}
+
+.vision-points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+  max-width: 900px;
+}
+
+.vision-item {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--white);
+  padding-left: 40px;
+  position: relative;
+}
+
+.vision-item::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--yellow);
+  font-weight: var(--weight-medium);
+}
+
+.closing-tagline {
+  font-family: var(--font-primary);
+  font-size: var(--type-h3);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  color: var(--yellow);
+  margin-bottom: var(--space-xl);
+}
+
+.egg-network {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  align-items: center;
+}
+
+.egg-mini {
+  width: 40px;
+  height: 50px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.egg-mini.egg-yellow {
+  background: var(--yellow);
+}
+
+.egg-mini.egg-blue {
+  background: var(--white);
+}
+
+.egg-mini.egg-purple {
+  background: var(--purple);
+}
+
+.egg-mini.egg-orange {
+  background: var(--red-orange);
+}
+
+/* ========================================
+   NEW COMPONENTS (Updated Narrative)
+   ======================================== */
+
+/* Slide 4 - Wedge Updates */
+.client-context {
+  background: var(--light-gray);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  border-radius: 8px;
+}
+
+.client-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-md);
+}
+
+.business-models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.business-model {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--dark-gray);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--white);
+  border-radius: 4px;
+}
+
+.replication-play {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--black);
+  text-align: center;
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: rgba(255, 224, 61, 0.1);
+  border-left: 3px solid var(--yellow);
+}
+
+/* Slide 7 - Vision + Moat */
+.moat-section {
+  margin-top: var(--space-2xl);
+}
+
+.moat-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-body-large);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.moat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.moat-item {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--black);
+  padding: var(--space-lg);
+  background: var(--light-gray);
+  border-radius: 8px;
+  border-left: 3px solid var(--blue);
+}
+
+.moat-item strong {
+  font-size: var(--type-body);
+  color: var(--blue);
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+/* Slide 8 - Trojan Horse */
+.flywheel-box {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: rgba(77, 159, 255, 0.05);
+  border-left: 3px solid var(--blue);
+}
+
+.flywheel-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-md);
+}
+
+.flywheel-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.flywheel-steps div {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--black);
+}
+
+/* Slide 10 - Traction Updates */
+.client-showcase {
+  margin-bottom: var(--space-xl);
+}
+
+.showcase-label {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--dark-gray);
+  margin-bottom: var(--space-sm);
+}
+
+.showcase-items {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--black);
+}
+
+.showcase-items span {
+  display: inline;
+}
+
+.unit-economics-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: rgba(255, 224, 61, 0.1);
+  border-radius: 8px;
+  max-width: 900px;
+}
+
+.unit-economics-box div {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--black);
+}
+
+.replication-showcase {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--black);
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--light-gray);
+  border-left: 3px solid var(--yellow);
+}
+
+/* Slide 11 - Unit Economics & Margin Expansion */
+.slide-unit-economics {
+  background: var(--white);
+}
+
+.capacity-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto var(--space-2xl);
+  border-collapse: collapse;
+  font-family: var(--font-primary);
+}
+
+.capacity-table th {
+  font-size: var(--type-caption);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  padding: var(--space-md);
+  border-bottom: 3px solid var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.capacity-table td {
+  font-size: var(--type-caption);
+  font-weight: var(--weight-regular);
+  text-align: center;
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.margin-expansion-timeline {
+  margin-bottom: var(--space-xl);
+}
+
+.timeline-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.margin-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.margin-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background: var(--light-gray);
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+.margin-period {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.margin-value {
+  font-family: var(--font-primary);
+  font-size: 60px;
+  font-weight: var(--weight-medium);
+  color: var(--yellow);
+  line-height: 1;
+}
+
+.margin-note {
+  font-family: var(--font-primary);
+  font-size: var(--type-label);
+  color: var(--black);
+  text-align: center;
+}
+
+.margin-arrow {
+  font-size: 40px;
+  color: var(--blue);
+  font-weight: var(--weight-medium);
+}
+
+.flywheel-reminder {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--black);
+  text-align: center;
+  padding: var(--space-lg);
+  background: rgba(77, 159, 255, 0.05);
+  border-radius: 8px;
+  max-width: 900px;
+}
+
+/* Slide 14 - The Ask Updates */
+.runway-note {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.milestones-box {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--light-gray);
+  border-radius: 8px;
+  max-width: 900px;
+}
+
+.milestones-title {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  font-weight: var(--weight-medium);
+  color: var(--black);
+  margin-bottom: var(--space-md);
+}
+
+.milestones-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.milestones-list div {
+  font-family: var(--font-primary);
+  font-size: var(--type-caption);
+  color: var(--black);
+}
+
+.unlock-note {
+  font-family: var(--font-primary);
+  font-size: var(--type-body);
+  color: var(--black);
+  text-align: center;
+  margin-top: var(--space-xl);
+  padding: var(--space-md);
+  background: rgba(255, 224, 61, 0.1);
+  border-left: 3px solid var(--yellow);
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 1920px) {
+  .slide-content {
+    padding: 80px 60px 60px;
+  }
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --type-display: 100px;
+    --type-h1: 80px;
+    --type-h2: 60px;
+    --type-h3: 48px;
+    --type-h4: 36px;
+    --type-body-large: 28px;
+    --type-body: 20px;
+    --type-caption: 16px;
+  }
+
+  .slide-content {
+    padding: 60px 40px 40px;
+  }
+
+  .stat-number {
+    font-size: 60px;
+    line-height: 58px;
+  }
+}
+
+/* ========================================
+   PRINT STYLES (PDF Export)
+   ======================================== */
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .slide {
+    display: block !important;
+    opacity: 1 !important;
+    position: relative;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .slide-counter,
+  .nav-hint {
+    display: none;
+  }
+}

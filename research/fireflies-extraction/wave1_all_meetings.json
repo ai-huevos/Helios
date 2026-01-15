@@ -1,0 +1,783 @@
+[
+  {
+    "meeting_id": "01KF14PMH7KASEFHPR107FEG47",
+    "title": "Checkpoint",
+    "date": "2026-01-15T15:30:00.000Z",
+    "participants": [
+      "shuktomas1@gmail.com",
+      "col.drestrepo@gmail.com",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 41,
+    "fireflies_url": "https://meet.google.com/acd-isss-bec",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión abordó la propuesta de establecer una holding que agrupe empresas autónomas, liderada por Tomás Shuk, quien enfatizó la importancia de contar con socios estratégicos que aporten valor. Daniel Restrepo apoyó la idea de validar propuestas en entornos reales antes de escalar regionalmente, destacando la necesidad de enfocarse en el cliente y los resultados. En el ámbito tecnológico, Daniel Cardona presentó un roadmap de automatización que optimizará procesos y mejorará la eficiencia mediante inteligencia artificial. Además, se acordó la importancia de mostrar casos de éxito concretos a los clientes y preparar presentaciones claras que evidencien mejoras. La colaboración del equipo será esencial para implementar automatizaciones y asegurar resultados medibles en el futuro."
+  },
+  {
+    "meeting_id": "01KF0XYF10V106MRMZ97CA27G6",
+    "title": "Moat Labs - Checkpoint 1",
+    "date": "2026-01-15T13:36:31.264Z",
+    "participants": [],
+    "duration_minutes": 86,
+    "fireflies_url": "https://meet.google.com/jrq-crrp-yfn?authuser=0",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo discutió la creación de un pitch claro y conciso que diagnostique y solucione ineficiencias operativas en grandes empresas de Latinoamérica. Han lanzado siete productos en menos de cinco meses, generando $134,000 en ingresos confirmados y detectando $1.5 millones en valor potencial. El modelo de negocio se basa en un diagnóstico inicial que permite automatizaciones rápidas, con un enfoque fuerte en la retención de clientes. Se consideraron las implicaciones de involucrar corporativos como inversionistas, donde se enfatizó la necesidad de mantener el control y la cultura de la empresa. Para la próxima presentación a inversionistas, se definieron objetivos claros, buscando un pitch atractivo y sin tecnicismos, resaltando resultados y diferenciadores."
+  },
+  {
+    "meeting_id": "01KEZ9D75CJBK5DWTGC4PES0XY",
+    "title": "Magichack Sync",
+    "date": "2026-01-14T22:18:20.204Z",
+    "participants": [],
+    "duration_minutes": 43,
+    "fireflies_url": "https://meet.google.com/snr-uwws-hgs?authuser=0",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutió la implementación de un sistema para restaurantes con un costo mensual de 70 dólares por cliente, con el equipo operativo encargado de la transición. Sebastián Montoya confirmó que la configuración inicial incluirá la integración con plataformas como Instagram y WhatsApp, además de embudos de ventas personalizados. Para el sector hotelero, se identificaron desafíos debido al uso del sistema Oracle Ópera, que limita la integración directa y requiere soluciones manuales. Se propuso formalizar una alianza estratégica entre los equipos de Daniel Cardona y Sebastián Montoya para ampliar operaciones en diferentes mercados. También se abordó la automatización del marketing mediante la generación de contenido automático, con el objetivo de optimizar recursos y ahorrar tiempo. Finalmente, se priorizó cerrar el sistema de restaurantes antes de abordar otros proyectos."
+  },
+  {
+    "meeting_id": "01KEYM3DDNSR3D714M23EBPWHX",
+    "title": "Sync - Huevos y Next Steps",
+    "date": "2026-01-14T21:00:00.000Z",
+    "participants": [
+      "nmonje@comversa.com.bo",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 35,
+    "fireflies_url": "https://meet.google.com/mxy-soxm-inq",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo se reunió para establecer un plan de automatización de contratos clave, comenzando con la implementación de una plataforma que permite gestionar minutas de compraventa. Se asignaron responsabilidades claras para la revisión y gestión de estos contratos, buscando maximizar la eficiencia del equipo legal. Además, se desarrolló un prototipo del Service Desk que permitirá la autogestión de tickets, con un objetivo de funcionamiento en 2 a 3 semanas. Se priorizarán tres proyectos de inteligencia artificial, incluyendo un CRM para restaurantes, buscando mejorar la gestión de leads y ventas. También se discutió la centralización de datos comerciales para potenciar ingresos cruzados entre servicios y se presentó un bot de recursos humanos que simplificará la gestión documental. Finalmente, se establecieron reuniones semanales para asegurar el seguimiento de los avances en estos proyectos."
+  },
+  {
+    "meeting_id": "01KEQ1B20EJV3NPQ0X7MMB1EZ3",
+    "title": "Marketing Sync Vistage Colombia",
+    "date": "2026-01-14T19:00:00.000Z",
+    "participants": [
+      "srodriguez@vistage.co",
+      "tools@womenofthefuture.org",
+      "jenn@womenofthefuture.org",
+      "hola@huevos.ai",
+      "nati@womenofthefuture.org",
+      "data@themagichack.com",
+      "nicolas@switchon.dev",
+      "maripaugomezr@gmail.com"
+    ],
+    "duration_minutes": 15,
+    "fireflies_url": "https://meet.google.com/wtc-xyoi-pjb",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutió la casi finalización de la integración de WhatsApp, que requiere un pago adicional de 10 dólares mensuales y una tarjeta de crédito para activar el servicio. Además, se presentaron resultados positivos de la campaña de email marketing, donde se enviaron casi 3,700 correos con una tasa de apertura del 40% y 460 clics. Se destacó la importancia del control financiero en el uso de servicios como WhatsApp y el correo. También se acordó un modelo de soporte con Magic Hack por 70 dólares mensuales para mantener la plataforma operativa. Daniel se comprometió a enviar un reporte final de resultados y recomendaciones, mientras que el equipo coordinará la configuración de WhatsApp y la gestión diaria de la plataforma."
+  },
+  {
+    "meeting_id": "01KEYA3RAXHH6R1QP1KJ8406QG",
+    "title": "Sync / AI Huevos founders",
+    "date": "2026-01-14T13:11:24.253Z",
+    "participants": [],
+    "duration_minutes": 68,
+    "fireflies_url": "https://meet.google.com/mct-wypm-xqy?authuser=0",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se llevó a cabo una reunión para definir una propuesta comercial que se enfoque en soluciones concretas para grandes empresas con operaciones complejas. Daniel Cardona destacó que el cliente ideal no son startups, sino empresas con alto willingness to pay y que permiten iteraciones creativas. Daniel Restrepo mencionó la importancia de construir showcases rápidos basados en experiencias previas, y se acordó que un prototipo tangible debe ser entregado en menos de una semana para captar el interés de los inversionistas. Se enfatizó en el desarrollo agéntico para optimizar flujos operativos y en el proceso de discovery que combina entrevistas cualitativas con herramientas de automatización. Además, se propuso usar GitHub como base para el desarrollo y mantener una documentación rigurosa para asegurar la escalabilidad del proyecto."
+  },
+  {
+    "meeting_id": "01KEVS29ANPWKW0W8KQHQC5H55",
+    "title": "Touchpoint Daniel Restrepo",
+    "date": "2026-01-13T13:35:01.461Z",
+    "participants": [],
+    "duration_minutes": 94,
+    "fireflies_url": "https://meet.google.com/vsq-xdwa-pqt",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión abordó la creación de una nueva empresa con un modelo de negocio sostenible, evitando inversiones externas inmediatas y asegurando dos años de salario para el equipo. Daniel Cardona destacó la importancia de comenzar con un equipo pequeño y concentrarse en un producto rentable desde el inicio, específicamente un servicio de transformación digital para empresas tradicionales. Se identificaron ahorros potenciales en Bolivia de USD 15 millones anuales mediante la automatización de procesos. La estrategia tecnológica se centrará en el uso de agentes de código para desarrollar soluciones rápidas que se integren en sistemas legacy. Además, se enfatizó la necesidad de establecer relaciones claras y justas con inversionistas, evitando roadshows agresivos y priorizando alianzas estratégicas. El equipo inicial será pequeño y técnico, con un enfoque en entregas rápidas."
+  },
+  {
+    "meeting_id": "01KENK6JJRTCS3MV276G691K7H",
+    "title": "Founding team call",
+    "date": "2026-01-11T22:00:00.000Z",
+    "participants": [
+      "col.drestrepo@gmail.com",
+      "cristian.mendivelso@moatlabs-ventures.com",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 44,
+    "fireflies_url": "https://meet.google.com/xru-tdac-ear",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se definió un programa estructurado para levantar capital en 4 a 8 semanas, liderado por Cristian Mendivelso, quien presentó el BC Ready Sprint para preparar materiales clave como el pitch deck y simulaciones con inversionistas. Daniel Cardona subrayó la necesidad de un documento guía para establecer una base operativa sólida y definir roles. Se discutió la valoración de la empresa, estimada en 16 millones de dólares, y cómo emitir nuevas acciones para atraer inversionistas. Además, se establecieron fundamentos para negociar con ángeles inversionistas y se definieron pasos claros para la próxima reunión, buscando mostrar un plan financiero realista. La experiencia del equipo y su enfoque en AI fueron destacados como ventajas competitivas."
+  },
+  {
+    "meeting_id": "01KEQ1BHXB20SF0XQ6DDV93WTA",
+    "title": "Retirement Planner - Bambos",
+    "date": "2026-01-11T17:23:41.251Z",
+    "participants": [
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 16,
+    "fireflies_url": null,
+    "organizer_email": "hola@huevos.ai",
+    "summary": "The discussion covered the detailed design of user inputs necessary for creating accurate retirement models and financial forecasts. Key inputs include user demographics, current savings, asset types, and spending assumptions, which are crucial for tailoring scenarios. Assumptions about asset returns and inflation can be adjusted, providing users with flexibility. The backend logic calculates portfolio growth year by year and tracks net worth until the death age input. Visualisation features like interactive charts and CSV exports are essential for user engagement, although some functionalities require urgent fixes. The meeting also highlighted the need for scenario planning to simulate market crashes, enhancing risk modelling capabilities, and emphasised the importance of user engagement, with the expectation that users will interact with the tool a few times per year to update their plans based on life changes."
+  },
+  {
+    "meeting_id": "01KE74PAS119ASABS81Y9QHWBV",
+    "title": "Feedback Helios",
+    "date": "2026-01-05T13:15:00.000Z",
+    "participants": [
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 21,
+    "fireflies_url": "https://meet.google.com/tyx-jsco-erd",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión se centró en los problemas técnicos que afectan el procesamiento de entrevistas cargadas a través de WhatsApp, como errores 400 y 422 en la carga de formatos JSON, CSV y TXT. Daniel Cardona destacó que la segmentación de hablantes es ineficaz, con más de 500 hablantes identificados cuando solo hay dos, lo que limita la extracción precisa de datos y la generación de insights útiles. Se identificó la necesidad de implementar extractores independientes para diferentes tipos de datos, garantizando que cada extractor funcione sin interferencias, lo que permitiría una mejor organización y trazabilidad. Además, se enfatizó la importancia de inicializar la base de datos Neo4j para desbloquear funcionalidades completas en el análisis. Mejorar estos aspectos impulsará la calidad de insights y ayudará en la toma de decisiones efectivas."
+  },
+  {
+    "meeting_id": "01KDH18P5G3FZH4ANYF75MEZXD",
+    "title": "Sesión #1 Daniel - Lina",
+    "date": "2025-12-29T20:00:00.000Z",
+    "participants": [
+      "lina@abclogistica.mx",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 75,
+    "fireflies_url": "https://meet.google.com/nwy-ydgx-ghy",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Daniel Cardona enfrenta una situación financiera complicada, con deudas de aproximadamente 120 millones de pesos, lo que refleja un patrimonio negativo. Su principal preocupación es la educación de su hija, quien se graduará en tres años. Daniel ha comenzado a generar ingresos con su emprendimiento, facturando entre 120.000 y 150.000 dólares en seis meses, y su meta es alcanzar 10.000 dólares mensuales en ingresos pasivos. A través de esta mentoría con Lina García, se busca no solo mejorar su situación financiera, sino también transformar su mentalidad hacia la abundancia y la responsabilidad. Los patrones emocionales y traumas familiares que afectan su relación con el dinero son abordados, así como la necesidad de comunicación financiera con su pareja, estableciendo un sistema de control de gastos y compromisos claros para el futuro."
+  },
+  {
+    "meeting_id": "01KD6JSE17TYGR3RGPF7F6GY57",
+    "title": "Marketing Sync Vistage Colombia",
+    "date": "2025-12-29T19:00:00.000Z",
+    "participants": [
+      "srodriguez@vistage.co",
+      "tools@womenofthefuture.org",
+      "jenn@womenofthefuture.org",
+      "hola@huevos.ai",
+      "nati@womenofthefuture.org",
+      "data@themagichack.com",
+      "nicolas@switchon.dev",
+      "maripaugomezr@gmail.com"
+    ],
+    "duration_minutes": 29,
+    "fireflies_url": "https://meet.google.com/wtc-xyoi-pjb",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutió una estrategia de contenido flexible y escalable, que incluye aproximadamente 70 documentos nuevos y modificados, destacando 20 ganchos iniciales para personalizar la comunicación. La importancia de la alineación del tono y narrativa en todas las plataformas fue subrayada, con un enfoque en la adaptación del contenido a diferentes audiencias. Además, se planificó la producción audiovisual, incluyendo una nueva entrevista con Fernando después del 13 de enero. La integración de WhatsApp en el CRM se identificó como un área que aún necesita atención técnica. Se fomentó un modelo de trabajo iterativo para ajustar la estrategia basándose en resultados y feedback, con fechas clave establecidas para la entrega de reportes y otros entregables."
+  },
+  {
+    "meeting_id": "01KDN1EQ8N8KNP45V95VS2Q597",
+    "title": "AI ideas",
+    "date": "2025-12-29T12:31:07.941Z",
+    "participants": [
+      "daniel.restrepo@finkargo.com"
+    ],
+    "duration_minutes": 1,
+    "fireflies_url": "https://meet.google.com/odd-nyrb-kpi",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "None"
+  },
+  {
+    "meeting_id": "01KDEB1G7C4167KN567D307B5B",
+    "title": "Mateo Messaging",
+    "date": "2025-12-26T22:03:59.348Z",
+    "participants": [],
+    "duration_minutes": 31,
+    "fireflies_url": "https://meet.google.com/eho-yqvf-nid",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo decidió delegar la creación del Health Score a la contraparte, permitiendo que el equipo interno se enfoque en el diseño y la calidad de los datos. Se acordó que la contraparte tiene los datos necesarios y solo necesita instrucciones sobre formatos de entrega. Además, se discutió la integración flexible de datos desde Clay, Salesforce y HubSpot, priorizando la mejor fuente para cada cliente. También se establecieron secuencias de mensajería personalizadas para la activación de clientes, y se identificaron desafíos en la comunicación y coordinación con la contraparte, resaltando la necesidad de documentación clara. El modelo desarrollado es escalable y puede aplicarse a nuevos mercados, como Bolivia, donde la automatización y la visibilidad de resultados son clave para la competitividad."
+  },
+  {
+    "meeting_id": "01KDE09T34NX87EWPY24K6HKJC",
+    "title": "Marce - Daniel",
+    "date": "2025-12-26T19:00:00.000Z",
+    "participants": [
+      "daniel.cardona@holaamigo.ai",
+      "hola@huevos.ai",
+      "marcelac@goglt.com"
+    ],
+    "duration_minutes": 21,
+    "fireflies_url": "https://meet.google.com/sce-xueq-znp",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutió la integración de los modelos de ICP y Health Core para optimizar la gestión de cuentas. Marcela destacó la falta de implementación del ICP en Clay y Salesforce, que limita la segmentación automática. Santi, quien realiza el enriquecimiento manual de cuentas, busca líderes en cuentas existentes para cross-selling. Daniel y Marcela acordaron que Health Core debe ser una alerta en Salesforce, mientras que ICP se integrará en Clay, Salesforce y HubSpot. Se estableció un flujo claro de datos y la necesidad de mapear la nutrición de cuentas. Un cronograma apunta a tener entregables claros para el 30 de diciembre, y se enfatizó la importancia de construir un ecosistema de datos integrado para decisiones más efectivas."
+  },
+  {
+    "meeting_id": "01KDDN9PEY4VQV5SWXQEC9TZKQ",
+    "title": "Dashboad - Informe comversa",
+    "date": "2025-12-26T15:44:06.110Z",
+    "participants": [],
+    "duration_minutes": 23,
+    "fireflies_url": "https://teams.microsoft.com/light-meetings/launch?agent=web&anon=true&context={%22Tid%22:%22040230de-1f66-478b-8e5c-84cf0e679ee2%22,%22Oid%22:%22eb615bea-41d3-413b-b351-0b4453d45615%22}&coords=eyJjb252ZXJzYXRpb25JZCI6IjE5Om1lZXRpbmdfTVdRNE56Wm1NR1F0TUdSaU1DMDBNbVV3TFdJeU16a3ROREl3TURobFl6QmtZV1F3QHRocmVhZC52MiIsInRlbmFudElkIjoiMDQwMjMwZGUtMWY2Ni00NzhiLThlNWMtODRjZjBlNjc5ZWUyIiwib3JnYW5pemVySWQiOiJlYjYxNWJlYS00MWQzLTQxM2ItYjM1MS0wYjQ0NTNkNDU2MTUiLCJtZXNzYWdlSWQiOiIwIn0=&correlationId=a456de73-6f5c-41b6-a21a-72ce3eeca55a&deeplinkId=e769b600-39ab-4f97-83c8-4dafa1d4b806&lightExperience=true&version=25111315502",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión abordó la necesidad de mejorar la estructura financiera y la autonomía operativa de Bolivian Foods, que es la única unidad generadora de ingresos y subsidia otros negocios. Se identificó la dependencia financiera y la falta de seguimiento de KPIs claros. Se acordó mantener un mapa de calor por empresa y simplificar los reportes financieros para evitar duplicaciones. Se enfatizó la importancia de identificar problemas clave y oportunidades de IA generativa para implementar mejoras rápidas. Además, se decidió priorizar sistemas core y eliminar redundancias en soporte TI. La planificación se enfocará en quick wins, dejando discusiones sobre inversiones para futuras reuniones. Finalmente, se subrayó la necesidad de mejorar la comunicación interna para reducir conflictos y aumentar la eficiencia organizacional."
+  },
+  {
+    "meeting_id": "01KDDHC3T4K90BK4H9NMR1EAWC",
+    "title": "AI initiatives",
+    "date": "2025-12-26T14:35:24.445Z",
+    "participants": [
+      "daniel.restrepo@finkargo.com"
+    ],
+    "duration_minutes": 1,
+    "fireflies_url": "https://meet.google.com/kpk-ygrz-kvm",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "None"
+  },
+  {
+    "meeting_id": "01KD8D7DEKMFB5TR508V4AJAX5",
+    "title": "Proyecto IA",
+    "date": "2025-12-24T14:45:00.000Z",
+    "participants": [
+      "hola@huevos.ai",
+      "nmonje@comversa.com.bo"
+    ],
+    "duration_minutes": 42,
+    "fireflies_url": "https://teams.microsoft.com/l/meetup-join/19:meeting_NzA5MjVlZDgtN2U0NS00MWYwLWI5YzUtMzVmMDMyZmY0NjI0@thread.v2/0?context={\"Tid\":\"040230de-1f66-478b-8e5c-84cf0e679ee2\",\"Oid\":\"eb615bea-41d3-413b-b351-0b4453d45615\"}",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El análisis del grupo reveló serias ineficiencias operativas derivadas de la fragmentación de sistemas, con 142 sistemas identificados que generan 277 fricciones. Samuel actúa como único punto de decisión, lo que crea cuellos de botella y retrasa procesos. La falta de KPIs y métricas operativas limita la supervisión del directorio, mientras que Bolivian Foods es la única empresa rentable con un margen del 2.3%. Se propone la implementación de un data warehouse para diciembre de 2026 y la automatización de procesos para mejorar la eficiencia. El presupuesto del diagnóstico se incrementó a 47,000 dólares por la inclusión de más procesos, y se reconoce la necesidad de cambiar la cultura organizacional hacia mayor transparencia y responsabilidad."
+  },
+  {
+    "meeting_id": "01KD6NHYQTNW3KGVHZQDXQHRZR",
+    "title": "twillio",
+    "date": "2025-12-23T22:33:49.094Z",
+    "participants": [
+      "henry@seika.ai"
+    ],
+    "duration_minutes": 6,
+    "fireflies_url": "https://meet.google.com/heu-kjnc-yug",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se abordó la casi finalización de la integración del sistema de verificación con Twilio y WhatsApp, donde Daniel Cardona y Henry Bravo confirmaron el código de verificación y trabajan en la conexión del número. Se determinó que el número se conectará sin necesidad de un teléfono físico para evitar desconexiones. Además, se discutió la carga de datos de inmuebles, que será realizada inicialmente con un solo registro para validar el sistema antes de una carga masiva. La fecha límite para esta prueba se estableció para el 26 de diciembre, tras una pausa operativa por festividades. Roles claros fueron asignados, con Henry revisando ajustes técnicos y Daniel preparando los archivos, lo que optimiza la gestión del proyecto y asegura la calidad del trabajo a pesar de la pausa."
+  },
+  {
+    "meeting_id": "01KD6JV4F8AT7E5T4R57JANY7X",
+    "title": "GLT -Daniel",
+    "date": "2025-12-23T21:46:30.760Z",
+    "participants": [],
+    "duration_minutes": 35,
+    "fireflies_url": "https://meet.google.com/znf-ntad-bgm",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "En la reunión, el equipo definió dos iniciativas clave para mejorar la inteligencia del sistema y optimizar la gestión de cuentas actuales: la división del trabajo en dos frentes, uno enfocado en agentes y otro en el calentamiento de cuentas, y el enfoque en el crecimiento de cuentas existentes. Mateo y Daniel destacaron la importancia de enriquecer datos internos para personalizar el seguimiento, con la meta de tener herramientas listas para enero. Se estableció un plan de mensajería comercial liderado por Marcela, que busca alinear el contenido con el análisis de clientes. Además, se discutió la creación de un diagnóstico breve como lead magnet para generar leads y validar hipótesis. El equipo también acordó limitar iniciativas a tres para asegurar resultados concretos antes de las vacaciones y mejorar la colaboración interdepartamental."
+  },
+  {
+    "meeting_id": "01KD3YWZ50RBZ4FF6BS930C0Z2",
+    "title": "Magic - Huevos - Druo V2",
+    "date": "2025-12-22T21:19:23.797Z",
+    "participants": [],
+    "duration_minutes": 6,
+    "fireflies_url": "https://meet.google.com/zum-tqdn-saa",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "En la reunión se definieron estrategias clave para la captación de clientes, destacando la creación de una landing page donde los usuarios ingresen su volumen de transacciones y ahorro estimado para precalificarse, con el apoyo de Daniel Cardona en la historia de valor y Sebastián Montoya en el diseño y backend. Se acordó que esta landing será fundamental para la campaña de email marketing, buscando generar leads calificados rápidamente. Además, se establecieron acuerdos sobre facturación y la necesidad de implementar una Customer Data Platform (CDP) para centralizar datos dispersos y mejorar la gestión comercial. Se acordó realizar reuniones semanales para revisar avances y priorizar tareas, asegurando una comunicación efectiva entre los participantes."
+  },
+  {
+    "meeting_id": "01KD3WH98AA9BHH2PQM0SXS9NQ",
+    "title": "Magic - AI Huevos - Druo",
+    "date": "2025-12-22T20:38:03.141Z",
+    "participants": [],
+    "duration_minutes": 42,
+    "fireflies_url": "https://meet.google.com/zum-tqdn-saa",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se estableció un nuevo modelo de agencia de growth que prioriza resultados claros y la autonomía operativa, con un fee mensual de USD 3,250. La agencia asumirá el control total del growth, incluyendo CRM y metodologías, y se mejorará la subutilización de HubSpot. Se lanzará un piloto en Latinoamérica para validar 2-3 canales de conversión, optimizando la pauta digital. Además, se presentó un producto de pagos directos vía débito con una tasa de éxito del 94%, superando la media del mercado. Se definió un cronograma para el lanzamiento en enero de 2024 y se propuso una estrategia de contenido que involucra a los fundadores para educar el mercado y generar confianza."
+  },
+  {
+    "meeting_id": "01KD3QRSED91EHNMPTM4QF1HPA",
+    "title": "Marketing Sync Vistage Colombia",
+    "date": "2025-12-22T19:14:46.229Z",
+    "participants": [
+      "srodriguez@vistage.co",
+      "tools@womenofthefuture.org",
+      "jenn@womenofthefuture.org",
+      "nati@womenofthefuture.org",
+      "data@themagichack.com",
+      "nicolas@switchon.dev",
+      "maripaugomezr@gmail.com"
+    ],
+    "duration_minutes": 48,
+    "fireflies_url": "https://meet.google.com/wtc-xyoi-pjb",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo estableció un sistema robusto para la adquisición de miembros, con un objetivo de 18 nuevos miembros mensuales y un costo de adquisición de $181. Se proyecta recibir entre 200 y 300 leads mensuales, con un 30-40% de conversión hacia SQL y demos. Se identificaron canales clave como LinkedIn y Meta Ads, con un costo publicitario entre $400 y $600 al mes. Además, se implementó un sistema de Lead Scoring y se definió una narrativa de liderazgo emocional para conectar con CEOs en Latam. Se discutió la optimización del CRM GoHighLevel y se planificaron 70 contenidos hasta febrero, buscando humanizar la comunicación. Finalmente, se establecieron próximos pasos y se priorizó la entrega de contenido optimizado para el 24 del mes."
+  },
+  {
+    "meeting_id": "01KCRWCWJK4C936KKPK0XF06KB",
+    "title": "Marketing Sync Vistage Colombia",
+    "date": "2025-12-22T19:00:00.000Z",
+    "participants": [
+      "srodriguez@vistage.co",
+      "tools@womenofthefuture.org",
+      "jenn@womenofthefuture.org",
+      "hola@huevos.ai",
+      "nati@womenofthefuture.org",
+      "data@themagichack.com",
+      "nicolas@switchon.dev",
+      "maripaugomezr@gmail.com"
+    ],
+    "duration_minutes": 60,
+    "fireflies_url": "https://meet.google.com/wtc-xyoi-pjb",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo ha implementado un sistema operativo de growth utilizando la plataforma CRM Go HighLevel, que permite gestionar leads de manera escalable. Daniel Cardona detalló que el objetivo es captar 18 nuevos miembros mensuales con un costo de adquisición de cliente (CAC) de 181 dólares y proyectar entre 200 y 300 leads mensuales con una tasa de conversión esperada del 30-40%. Además, se discutió la nueva narrativa de marca que humaniza el liderazgo y busca empatizar con los CEOs, resaltando su vulnerabilidad y la soledad que enfrentan. Se planificaron 70 piezas de contenido hasta febrero, incorporando un enfoque más humano. La capacitación técnica y la migración a la plataforma se consideran esenciales para mejorar el análisis y optimización de campañas, y se establecieron compromisos claros para avanzar en la implementación de estos planes."
+  },
+  {
+    "meeting_id": "01KD3KMJFJY5DENNPQ54S381R5",
+    "title": "Reunión con Luis N - Proyecto IA",
+    "date": "2025-12-22T18:30:00.000Z",
+    "participants": [
+      "hola@huevos.ai",
+      "lnogales@comversa.com.bo",
+      "nmonje@comversa.com.bo"
+    ],
+    "duration_minutes": 44,
+    "fireflies_url": "https://teams.microsoft.com/l/meetup-join/19:meeting_ZWM4OWRkZTQtNjExYS00NjQzLWJjZTUtMDE4N2IzNmMyMzg3@thread.v2/0?context={\"Tid\":\"040230de-1f66-478b-8e5c-84cf0e679ee2\",\"Oid\":\"eb615bea-41d3-413b-b351-0b4453d45615\"}",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se llevó a cabo una reunión para diagnosticar los problemas financieros y operativos del hotel. Daniel Cardona destacó que Samuel es el cuello de botella en decisiones clave, limitando la capacidad de respuesta y la delegación. El hotel quema caja, mientras Bolivian Foods genera flujo de caja positivo con una rentabilidad baja del 5-6%. La infraestructura tecnológica fragmentada entre varios sistemas provoca trabajo manual excesivo y retrasa la eficiencia operativa. Luis Nogales subrayó la falta de visibilidad financiera para los gerentes y la necesidad de desarrollar estrategias claras para cada unidad de negocio. Se acordó la creación de un reporte inicial que refleje la realidad operativa y financiera del hotel, y se enfatizó la importancia de definir responsables claros para avanzar en la transformación."
+  },
+  {
+    "meeting_id": "01KD1M4X61SAVH22QVY2VH2WQE",
+    "title": "Reunión de Macroprocesos Comversa - Proyecto IA",
+    "date": "2025-12-22T15:30:00.000Z",
+    "participants": [
+      "hola@huevos.ai",
+      "apacheco@comversa.com.bo",
+      "lnogales@comversa.com.bo",
+      "nmonje@comversa.com.bo"
+    ],
+    "duration_minutes": 61,
+    "fireflies_url": "https://teams.microsoft.com/l/meetup-join/19:meeting_MjBkZDVkOTMtOTg3ZS00Nzc4LWFkNTYtODYwZTJhZWI1NWQ5@thread.v2/0?context={\"Tid\":\"040230de-1f66-478b-8e5c-84cf0e679ee2\",\"Oid\":\"eb615bea-41d3-413b-b351-0b4453d45615\"}",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión se centró en la gestión de proyectos de construcción, destacando los desafíos en el control de inventarios, la supervisión del avance físico y la coordinación técnica. La renuncia de Gabriel Quinteros genera incertidumbre en la continuidad de procesos críticos, mientras que la falta de un responsable en el almacén afecta la trazabilidad de materiales valorados en 15 millones de dólares. Se discutió la importancia de una planificación rigurosa y el control presupuestario, que actualmente depende de múltiples actores sin integración clara. Además, se identificaron descoordinaciones en el flujo comercial entre ventas y construcción, lo que puede generar insatisfacción en los clientes. La concentración de decisiones en la alta gerencia limita la capacidad operativa y se propuso una reunión para abordar estos cuellos de botella."
+  },
+  {
+    "meeting_id": "01KD1M2SZKE15QR7H2M26F2C2J",
+    "title": "Reunión Macroprocesos LTH - Proyecto IA",
+    "date": "2025-12-22T14:30:00.000Z",
+    "participants": [
+      "hola@huevos.ai",
+      "aayaviri@lostajiboshotel.com",
+      "apacheco@comversa.com.bo",
+      "lnogales@comversa.com.bo",
+      "nmonje@comversa.com.bo"
+    ],
+    "duration_minutes": 59,
+    "fireflies_url": "https://teams.microsoft.com/l/meetup-join/19:meeting_YmQwMzY0NTUtOTEwMy00NjQwLThjZDEtMGMyNThkNTA0ZTIy@thread.v2/0?context={\"Tid\":\"040230de-1f66-478b-8e5c-84cf0e679ee2\",\"Oid\":\"eb615bea-41d3-413b-b351-0b4453d45615\"}",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutieron diversos procesos relacionados con la gestión y mantenimiento de activos, la estructura comercial y las operaciones de habitaciones. Se priorizó la gestión de tickets de incidencia y la simplificación de gateways por parte del Jefe de Ingeniería, Daniel Cardona, quien destacó la falta de integración entre el sistema de mantenimiento y las órdenes de compra, lo que genera ineficiencias. En el ámbito comercial, se estableció una matriz de aprobación para las cotizaciones y se identificaron tiempos de respuesta críticos. Las operaciones de habitaciones también se revisaron, señalando la falta de trazabilidad en la limpieza y el check-in. Por último, se propuso segmentar procesos y KPIs según unidades de negocio para optimizar la gestión y se identificaron oportunidades para mejorar la automatización y la experiencia del cliente."
+  },
+  {
+    "meeting_id": "01KD1KZRAZCQBMA6Z4XE491Y70",
+    "title": "Reunión Macroprocesos BF - Proyecto IA",
+    "date": "2025-12-22T13:30:00.000Z",
+    "participants": [
+      "hola@huevos.ai",
+      "apacheco@comversa.com.bo",
+      "eescobar@comversa.com.bo",
+      "lnogales@comversa.com.bo",
+      "nmonje@comversa.com.bo"
+    ],
+    "duration_minutes": 50,
+    "fireflies_url": "https://teams.microsoft.com/l/meetup-join/19:meeting_YzUyYzQ5NTEtNzU5MS00ZjkyLTg2YzEtNTA2ZGIwYmRlODNl@thread.v2/0?context={\"Tid\":\"040230de-1f66-478b-8e5c-84cf0e679ee2\",\"Oid\":\"eb615bea-41d3-413b-b351-0b4453d45615\"}",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "En la reunión se discutió la migración a SAP, que alcanzará su fase final el 1 de enero, garantizando continuidad operativa. Se destacó la integración de sistemas como Symfony y Salar, lo que mejora el flujo de datos. Se estableció un proceso claro para la gestión de mantenimiento que comienza con la detección de fallas y termina con la reparación, aunque la complejidad aumenta con las 24 operaciones. La gestión de inventarios, que actualmente es manual, podría verse afectada por la falta de automatización en SAP, mientras que el cierre contable involucra múltiples departamentos. Además, se abordó el proceso manual de cierre de ventas y la necesidad de una estrategia de pricing dinámico. Finalmente, se definieron los procesos de compras locales, que necesitan promover el uso del sistema de pagos."
+  },
+  {
+    "meeting_id": "01KCVS0D85M5SRY4Y3RP6AFNA7",
+    "title": "Contabilidad AI Huevos",
+    "date": "2025-12-19T17:02:29.671Z",
+    "participants": [
+      "jcatalinarc@gmail.com"
+    ],
+    "duration_minutes": 59,
+    "fireflies_url": "https://meet.google.com/jyq-rxyt-mxa",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se llevó a cabo una reunión con el objetivo de priorizar la reconciliación de ingresos y gastos para clarificar el flujo de caja y prevenir problemas fiscales. Daniel Cardona y Jenny Catalina Riaño señalaron que muchos ingresos se han registrado en la cuenta personal de Daniel, lo que genera riesgos fiscales. Para mitigar esto, se decidió tratar esos movimientos como préstamos entre socios. Catalina destacó la importancia de cruzar cuentas y asegurar que los pagos a proveedores estén respaldados por facturas. Se identificó una falta de liquidez en caja de 80 millones de pesos, lo que llevó a la necesidad de ajustes. Se discutió la facturación y el control de proveedores, así como una estrategia fiscal más sencilla para optimizar la carga tributaria y se acordó mantener un control riguroso sobre los pagos y conciliaciones para facilitar el crecimiento futuro."
+  },
+  {
+    "meeting_id": "01KCVNPKSPBPZFE87PGQ4E98EP",
+    "title": "PLANEACION TRIBUTARIA DC/AIHUEVOS",
+    "date": "2025-12-19T16:04:42.741Z",
+    "participants": [
+      "jcatalinarc@gmail.com"
+    ],
+    "duration_minutes": 56,
+    "fireflies_url": "https://meet.google.com/boe-hoiu-ibn",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión se centró en cerrar la facturación pendiente para diciembre, acordando facturas a Hola Amigo y Druo por aproximadamente 13 millones de pesos y 2,500 dólares. Se detectaron errores en facturas y la necesidad de gestionar cuentas de cobro para evitar problemas fiscales. Se proyectaron ingresos anuales de 308 millones de pesos con deducciones de 58 millones, lo que resultaría en un impuesto cercano a 3 millones. Se acordó migrar al régimen simple en enero de 2025 para reducir la carga fiscal, y se enfatizó la importancia de recopilar facturas para optimizar las deducciones. También se definió que la facturación para 2025 se manejará con Daniel como persona natural, mientras se negocia un nuevo modelo tributario para 2026."
+  },
+  {
+    "meeting_id": "01KCSH85GCX8JGFYCD47S4WX63",
+    "title": "review database",
+    "date": "2025-12-18T20:08:25.709Z",
+    "participants": [
+      "sebastian@themagichack.com"
+    ],
+    "duration_minutes": 20,
+    "fireflies_url": "https://meet.google.com/ces-nper-tht",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo se enfocó en consolidar un reporte sobre el desempeño de los pagos por débito automático en Colombia para mejorar su visibilidad y seguimiento. Daniel Cardona presentó un reporte inicial que contenía 10 registros, pero se identificaron problemas de datos y filtros complejos que afectaban la precisión. Se acordó simplificar la base de datos y asegurar la inclusión de departamentos clave como Finanzas y Administración. Además, se definió una estrategia de email marketing utilizando HubSpot, con una landing page para capturar datos de 128 compañías de sectores diversificados como educación y tecnología. Sebastian Montoya se encargará de consolidar y limpiar la base de datos, excluyendo clientes actuales y optimizando el uso de créditos para búsquedas de emails. La coordinación operativa se estableció para garantizar la calidad y eficiencia en la campaña."
+  },
+  {
+    "meeting_id": "01KCSF3S7BKJ5SDBR3M5ERRKM7",
+    "title": "durcolax dos",
+    "date": "2025-12-18T19:30:00.000Z",
+    "participants": [
+      "dan.kardona@gmail.com",
+      "jacqueline.valderrama94@gmail.com",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 11,
+    "fireflies_url": "https://meet.google.com/jir-dyhe-yon",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Jacqueline Valderrama Machado enfrenta una compleja situación financiera que afecta su capacidad operativa, con pagos mensuales de tarjetas que superan los 1.8 millones de pesos y un pagaré de 1.3 millones hasta junio del próximo año. Debido a estos problemas, ha cambiado de abogados, lo que ha implicado costos adicionales. Daniel Cardona ofrece apoyo financiero y un modelo empresarial sostenible, sugiriendo que Jacqueline estabilice sus ingresos fijos antes de expandirse. También se plantea la tercerización de operaciones para optimizar recursos y se están desarrollando dos patentes para proteger la propiedad intelectual. Jacqueline considera implementar Notion para mejorar la gestión documental, y ambos establecen canales de comunicación para avanzar en propuestas financieras y operativas."
+  },
+  {
+    "meeting_id": "01KCSB1SXQ4CN4SW13JZ2Y55FE",
+    "title": "Tu durcolax de confianza",
+    "date": "2025-12-18T18:30:00.000Z",
+    "participants": [
+      "dan.kardona@gmail.com",
+      "jacqueline.valderrama94@gmail.com",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 60,
+    "fireflies_url": "https://meet.google.com/abx-onmo-yhy",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión abordó la gestión y estrategia comercial de Druo, con un enfoque en cerrar un reporte curado de empresas en Colombia para la prospección outbound en el primer trimestre de 2026. Daniel Cardona destacó la importancia de estructurar una lista de empresas y desarrollar un CRM para optimizar la prospección. Además, se discutió la implementación de procesos documentados con Conversa, con la entrega de un reporte final que refleje oportunidades de automatización. Se abordaron aspectos financieros, incluyendo la necesidad de definir un salario fijo para Jacqueline y controlar gastos. La optimización de servicios se centró en automatizaciones escalables y un modelo de ingresos recurrentes. También se mencionaron riesgos con proveedores y la necesidad de claridad en las expectativas, junto con la visión a largo plazo de Jacqueline para su estabilidad financiera."
+  },
+  {
+    "meeting_id": "01KCRWRYZR48XYEHMKHGWCTPQW",
+    "title": "Atina - Sync",
+    "date": "2025-12-18T14:10:36.486Z",
+    "participants": [],
+    "duration_minutes": 43,
+    "fireflies_url": "https://meet.google.com/srj-vtrf-has",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se abordó la necesidad de construir una arquitectura de datos integrada que elimine procesos manuales, consolidando fuentes como Opera, SAP y SATCOM para automatizar conciliaciones y reportes financieros. La empresa enfrenta retos por fragmentación en tres instancias de SAP Business One, dificultando la integración y toma de decisiones. Se identificó que la conciliación manual de inventarios toma hasta 30 días y requiere un alto personal, lo que genera errores y ciclos largos. La estrategia incluye transformar la empresa hacia un modelo 'AI first' para optimizar procesos y reducir costos laborales. Se propuso iniciar con un MVP para automatizar tres reportes clave y se coordinará un diagnóstico con el gerente financiero para validar prioridades, justificando así la inversión en automatización por pérdidas anuales de 26,000 dólares por ineficiencias."
+  },
+  {
+    "meeting_id": "01KCQ6J7QW5RB4GXM018DVK34M",
+    "title": "Comversa - Nicolas sync entregable",
+    "date": "2025-12-17T22:23:19.804Z",
+    "participants": [],
+    "duration_minutes": 33,
+    "fireflies_url": "https://teams.microsoft.com/light-meetings/launch?agent=web&anon=true&context={%22Tid%22:%22040230de-1f66-478b-8e5c-84cf0e679ee2%22,%22Oid%22:%22eb615bea-41d3-413b-b351-0b4453d45615%22}&coords=eyJjb252ZXJzYXRpb25JZCI6IjE5Om1lZXRpbmdfWlRnNE0yWTNZVGN0TVdZeFppMDBORFkzTFRneFlURXRNR1F5Tmpsa1ptRTVaak0zQHRocmVhZC52MiIsInRlbmFudElkIjoiMDQwMjMwZGUtMWY2Ni00NzhiLThlNWMtODRjZjBlNjc5ZWUyIiwib3JnYW5pemVySWQiOiJlYjYxNWJlYS00MWQzLTQxM2ItYjM1MS0wYjQ0NTNkNDU2MTUiLCJtZXNzYWdlSWQiOiIwIn0=&correlationId=dbb02abb-3c63-4911-b603-524110540170&deeplinkId=89c9f84f-ba01-4719-8ccc-b92f090f19db&lightExperience=true&version=25111315502",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo se reunió para definir la creación de un dashboard inicial que combine indicadores operativos y financieros, enfocándose en mejorar la visibilidad del estado del negocio y facilitar la toma de decisiones. Se validó un reporte ejecutivo que analiza la distribución de procesos y brechas críticas. Enfocándose en ventas, se priorizaron iniciativas rápidas que impacten directamente los ingresos, limitando a tres proyectos abiertos simultáneamente para mantener claridad. Además, se discutió la automatización de procesos, como la conciliación manual que genera altos costos. Se enfatizó la necesidad de involucrar a los equipos de ventas en el desarrollo del CRM para asegurar que las soluciones tecnológicas respondan a sus necesidades reales."
+  },
+  {
+    "meeting_id": "01KCPNWJK237W77FBMK54DWSHJ",
+    "title": "Magihack + Comversa - Whatsapp",
+    "date": "2025-12-17T17:31:45.916Z",
+    "participants": [],
+    "duration_minutes": 32,
+    "fireflies_url": "https://meet.google.com/eai-xhsn-xfe",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se abordó la gestión y configuración de cuentas digitales para varios restaurantes, acordando crear y vincular cinco cuentas en Go High Level para La Terraza, Cielo Bar Santa Cruz, Cielo Bar La Paz, Jardín de Asia y Nazca. Se estableció la centralización de accesos y contraseñas mediante el gestor Dashlane, facilitando la administración eficiente de perfiles en Meta Manager, Facebook, Instagram y TikTok. Se planteó integrar el WhatsApp Business API al CRM de cada restaurante para facilitar la automatización de respuestas y gestión de clientes. También se discutió la conexión del sistema de reservas Maitre al CRM para mejorar la experiencia del cliente, así como la integración de plataformas de pago como Stripe y PayPal. Finalmente, se enfatizó la necesidad de validar accesos con los clientes para evitar problemas de autenticación antes de iniciar la configuración definitiva."
+  },
+  {
+    "meeting_id": "01KCPKQEKNXMY9M68ZASXEN7KR",
+    "title": "Vistage - Closing",
+    "date": "2025-12-17T16:54:01.147Z",
+    "participants": [
+      "nati@womenofthefuture.org"
+    ],
+    "duration_minutes": 23,
+    "fireflies_url": "https://meet.google.com/jib-ndkz-emd",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión se centró en evaluar la estrategia de marketing, que generó 400 leads calificados, pero solo 8 de 70 contenidos se publicaron, afectando el cierre de oportunidades. Se identificaron problemas de seguimiento y control interno, especialmente con la gestión de bases de datos, lo que limitó el avance en el funnel de ventas. Se discutieron costos pendientes de 1500 dólares y se acordó un cierre profesional hasta el 15 de enero, buscando mejorar la relación con Vista. Daniel y Natalia propusieron grabar llamadas y estandarizar procesos para mejorar la efectividad del cierre comercial. Finalmente, se enfatizó la importancia de mantener una comunicación clara y abierta para facilitar la transición y el aprendizaje futuro."
+  },
+  {
+    "meeting_id": "01KCPKPG2CATP1JDP1WBE2QT5F",
+    "title": "Vistage - Closing",
+    "date": "2025-12-17T16:45:00.000Z",
+    "participants": [
+      "nati@womenofthefuture.org",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 22,
+    "fireflies_url": "https://meet.google.com/jib-ndkz-emd",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Durante la reunión, se analizó el estado del proyecto de marketing que generó 400 leads calificados y un pipeline de $2,150, aunque solo 6 leads están activos. Daniel Cardona destacó que de 70 contenidos propuestos, solo se publicaron 8, lo que refleja una ejecución deficiente. Se identificó que la administración de Santiago afectó la gestión operativa y se decidió restringir su acceso a bases de datos para proteger la calidad de los leads. Además, se discutieron los pagos pendientes de Vista, que adeuda $1,500 y $500 mensuales por contenidos no pagados. Se propuso mejorar el uso de la plataforma GoHighLevel y se acordó un plan de cierre para el 15 de enero, buscando cerrar la relación en buenos términos y aprender de los errores cometidos."
+  },
+  {
+    "meeting_id": "01KCPF2CJQFGC9DNQ3ZPDV2FYC",
+    "title": "Marketing Sync Vistage Colombia",
+    "date": "2025-12-17T15:32:36.727Z",
+    "participants": [
+      "srodriguez@vistage.co",
+      "tools@womenofthefuture.org",
+      "jenn@womenofthefuture.org",
+      "nati@womenofthefuture.org",
+      "data@themagichack.com",
+      "nicolas@switchon.dev"
+    ],
+    "duration_minutes": 82,
+    "fireflies_url": "https://meet.google.com/wtc-xyoi-pjb",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "La reunión abordó la estrategia de contenido y la generación de leads, revelando que un quiz para identificar liderazgo atrajo a 60 participantes, pero no logró cerrar ventas ni conectar emocionalmente con la audiencia en tres meses. Daniel Cardona explicó que el contenido, mayormente generado por IA, carecía de una narrativa clara, afectando la conexión con el público. Además, la generación de leads cayó de 140 a 40 mensuales al pausar la pauta, con solo 400 contactos calificados avanzando lentamente en el funnel. La falta de sincronización entre equipos y confusión sobre la parrilla de contenidos fueron temas destacados, señalando la necesidad de validación conjunta. Se definió un plan de cierre para ajustar contenidos y mantener la cuenta actual de Go High Level, evitando costos adicionales. Finalmente, se identificaron lecciones aprendidas para mejorar en futuros proyectos."
+  },
+  {
+    "meeting_id": "01KC2BGAKW753ZFAB66KB4Z515",
+    "title": "Marketing Sync Vistage Colombia",
+    "date": "2025-12-17T15:30:00.000Z",
+    "participants": [
+      "srodriguez@vistage.co",
+      "tools@womenofthefuture.org",
+      "jenn@womenofthefuture.org",
+      "hola@huevos.ai",
+      "nati@womenofthefuture.org",
+      "data@themagichack.com",
+      "nicolas@switchon.dev"
+    ],
+    "duration_minutes": 83,
+    "fireflies_url": "https://meet.google.com/wtc-xyoi-pjb",
+    "organizer_email": "nicolas@switchon.dev",
+    "summary": "La reunión abordó la necesidad de revisar la estrategia de generación de leads y contenido, que ha sido insuficiente al generar casi 10,400 impresiones pero sin contactos en tres meses. Daniel Cardona destacó la falta de una narrativa clara en el contenido, mientras que Nicolás Gnecco sugirió evaluar si continuar con el enfoque actual. Jenny Sua y Natalia Jiménez expresaron frustración por la falta de resultados visibles y de aprendizaje, subrayando la necesidad de asumir responsabilidades colectivas. Se acordaron acciones concretas, como coordinar un webinar y ajustar la narrativa de los contenidos. Además, se decidió mantener el sistema Go High Level para evitar complicaciones, mientras que el equipo se comprometió a cerrar la etapa con transparencia y aprendizaje de los errores cometidos."
+  },
+  {
+    "meeting_id": "01KC7ND66410QQWK3W3W969MXZ",
+    "title": "Tribu iA/Papers. Study session",
+    "date": "2025-12-17T00:00:00.000Z",
+    "participants": [
+      "tribuiacolombia@gmail.com",
+      "jorgeaguilar2761@gmail.com",
+      "alcarrillop@gmail.com",
+      "anderson__alvarado@hotmail.com",
+      "andiagudelo@gmail.com",
+      "andres-lh@outlook.com",
+      "andresceb181@gmail.com",
+      "andresfe.baron@gmail.com",
+      "arkatechie@gmail.com",
+      "armatostre@gmail.com",
+      "auditor400@gmail.com",
+      "bi.willy9@gmail.com",
+      "bmayorga@gmail.com",
+      "camilo.gj94@gmail.com",
+      "carlos.orjuelaz@gmail.com",
+      "carlosds57@gmail.com",
+      "cfigmart@unicauca.edu.co",
+      "cheloperalta22@gmail.com",
+      "christian.paeres@gmail.com",
+      "cristian.meneses.asesor.mpal@gmail.com",
+      "cristianhurtado06@gmail.com",
+      "dani@ui-wow.com",
+      "dani_herrera_macias@hotmail.com",
+      "daniel.gomez@solwia.com",
+      "danielavarelatabares@gmail.com",
+      "danilo@robotipy.com",
+      "danilosutachans@outlook.com",
+      "dannybravo@gmail.com",
+      "davidrlunag@gmail.com",
+      "deyaniramontano@gmail.com",
+      "diego.bustos@bitergy.iacsas.co",
+      "diego.giraldo2@utp.edu.co",
+      "diegoarturoangulo30@gmail.com",
+      "djkde.co@gmail.com",
+      "dubanpoto@unicauca.edu.co",
+      "dvargas@glovarservices.com",
+      "ecasallas07@gmail.com",
+      "ediaz.ceo@gmail.com",
+      "eduardoescobar7@gmail.com",
+      "eduvera@gmail.com",
+      "edwinreyes@racionalist.com",
+      "elianismedina05@outlook.com",
+      "elvhernandez117@gmail.com",
+      "estebancho20006@gmail.com",
+      "fabioreyes@racionalist.com",
+      "faroamroa@gmail.com",
+      "felipe.arboleda@twelv.net.co",
+      "frankif@unicauca.edu.co",
+      "gabriel.andres.alzate@gmail.com",
+      "gabrielaggarcia70@gmail.com",
+      "gabrieldivenuto@gmail.com",
+      "garciasaf17@gmail.com",
+      "gogirald@gmail.com",
+      "hacanaval@hotmail.com",
+      "harolduribe28@gmail.com",
+      "heanfig@gmail.com",
+      "hola@huevos.ai",
+      "imguzmanb@gmail.com",
+      "jahesogu@gmail.com",
+      "javhur@gmail.com",
+      "javier@comunidadweb.com",
+      "jdalzater@hotmail.com",
+      "jdvalenca@unal.edu.co",
+      "je772718@gmail.com",
+      "jero0137@gmail.com",
+      "jessica.romerol85@gmail.com",
+      "jgilc1@ucentral.edu.co",
+      "jhoan-94g@hotmail.com",
+      "jhsolanom@unal.edu.co",
+      "johpaz252@gmail.com",
+      "jorgeyhv@gmail.com",
+      "jose.zanini.g@gmail.com",
+      "jose@seagnite.com",
+      "josearmandodiazhernandez1@gmail.com",
+      "josecastrillon@gmail.com",
+      "josegonzalez@unicauca.edu.co",
+      "jphernandezr@outlook.com",
+      "jqlaverde@gmail.com",
+      "jsarangoq@gmail.com",
+      "juan7sebastian@gmail.com",
+      "juan_p14@hotmail.com",
+      "juanjozam@unicauca.edu.co",
+      "juanmeza.meet@gmail.com",
+      "juanpabloduqueo@gmail.com",
+      "juanpabloegido@gmail.com",
+      "juanpafergut@gmail.com",
+      "juanpedraza1002@gmail.com",
+      "jugigalo@gmail.com",
+      "juleetto@gmail.com",
+      "julian.sanchez.rodriguez2010@gmail.com",
+      "julianarchilacaro@gmail.com",
+      "juliangomezni@gmail.com",
+      "julioarriagada@gmail.com",
+      "kiketachira@gmail.com",
+      "linagiraldo182@gmail.com",
+      "luzaida.rozo@gmail.com",
+      "ma.alejandra.rojas.garzon@gmail.com",
+      "maeuza@hotmail.com",
+      "manu@acaseofidentity.com",
+      "manuel.henao.p@hotmail.com",
+      "manuel.mra@gmail.com",
+      "manuelamoj@gmail.com",
+      "mateopp96@outlook.com",
+      "mateosossa@gmail.com",
+      "michellgutierrez@gmail.com",
+      "miguelvilag@gmail.com",
+      "mortiz9806@gmail.com",
+      "mortizhi@unal.edu.co",
+      "nandodev.me@gmail.com",
+      "nediaz@unicauca.edu.co",
+      "nicolasmmunoz68@gmail.com",
+      "nicolay@bluulabs.com",
+      "oscar.mesag@grupofi.com.co",
+      "ovalle.rogert@gmail.com",
+      "ramiro.ledezma@utp.edu.co",
+      "rbrt.rojas@gmail.com",
+      "rcamilo152622@hotmail.com",
+      "riosjose541@gmail.com",
+      "rodriguezdavid2712@gmail.com",
+      "ros.mldndc@gmail.com",
+      "rubencho66@hotmail.com",
+      "saaristizabalco@gmail.com",
+      "sadid_05@hotmail.com",
+      "santiboterodaza@outlook.com",
+      "saraviabra@outlook.com",
+      "sasha@mimeia.com",
+      "sebasjimenez.parra@gmail.com",
+      "sebastian.castelbl01@gmail.com",
+      "smottad@unal.edu.co",
+      "solucion.empresarialeducativa.ia@gmail.com",
+      "sos401@gmail.com",
+      "szevallos2014@gmail.com",
+      "taniaborraez@gmail.com",
+      "tatiana.paucard@gmail.com",
+      "tenjodiego961@gmail.com",
+      "tomas.barong@gmail.com",
+      "uni_ingivan@hotmail.es",
+      "unmecaniko@gmail.com",
+      "userjjat00@gmail.com",
+      "valentina.diaz@working-bits.com",
+      "velascosebastian@hotmail.com",
+      "vmtorresa@unal.edu.co",
+      "yendhy@airtica.net"
+    ],
+    "duration_minutes": 12,
+    "fireflies_url": "https://meet.google.com/jww-icob-jjc",
+    "organizer_email": "armatostre@gmail.com",
+    "summary": "None"
+  },
+  {
+    "meeting_id": "01KCMFNTMZGNDPDPEQ3MVD1BBN",
+    "title": "Comversa - Entregables Fase 1 - Feedback ",
+    "date": "2025-12-16T21:04:44.235Z",
+    "participants": [
+      "nmonje@comversa.com.bo",
+      "apacheco@comversa.com.bo"
+    ],
+    "duration_minutes": 29,
+    "fireflies_url": "https://meet.google.com/htz-ewnt-zha",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se realizó un diagnóstico exhaustivo de procesos y sistemas en la organización, destacando la identificación de 7 u 8 macroprocesos clave en áreas como ventas y compras, con un enfoque en mejorar la precisión y evitar cruces de información. Se detectaron 40 sistemas en uso, con ineficiencias y una dependencia crítica de Finanzas, la cual genera cuellos de botella operativos. La falta de documentación en procesos clave se evidenció como una gran preocupación, aumentando el riesgo operativo. En cuanto a los sistemas de mantenimiento, se discutió el costo y la efectividad de Maintenex, que no cumple con las necesidades de TI. Finalmente, se presentó un roadmap preliminar para la transformación digital, que aún está en fase diagnóstica y requiere ajustes para una implementación efectiva."
+  },
+  {
+    "meeting_id": "01KCKYWK31GGB94N9DCMG3WS1F",
+    "title": "Fase 1 Entregables",
+    "date": "2025-12-16T21:00:00.000Z",
+    "participants": [
+      "nmonje@comversa.com.bo",
+      "apacheco@comversa.com.bo",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 31,
+    "fireflies_url": "https://meet.google.com/htz-ewnt-zha",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El diagnóstico de procesos y sistemas reveló un ecosistema con 40 sistemas, muchos sin documentación e integración, lo que limita la eficiencia operativa. Daniel Cardona presentó un análisis de macroprocesos, destacando problemas en finanzas, donde 52 procesos dependen de un solo gerente, y la falta de documentación crítica que pone en riesgo la continuidad operativa. Se identificaron cuellos de botella en finanzas y operaciones, generando ineficiencias. Además, se analizó el sistema de mantenimiento Maintenex, con un gasto anual de 50 mil dólares, que no cumple con las funciones esperadas. Se estructuraron 7-8 macroprocesos por empresa, cada uno con oportunidades de optimización. Se acordó que la transformación digital comenzará tras el diagnóstico y debe ser liderada por PMOs y equipos locales."
+  },
+  {
+    "meeting_id": "01KCMBX484ZAY7TTBS0GNRRHK4",
+    "title": "GLT - Mateo Folador Sync",
+    "date": "2025-12-16T19:58:49.544Z",
+    "participants": [],
+    "duration_minutes": 40,
+    "fireflies_url": "https://meet.google.com/znf-ntad-bgm",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se definió un sistema mensual de procesamiento de datos que incluye un flujo automatizado para analizar información exportada desde Power BI, permitiendo identificar oportunidades de venta cruzada y mejorar la efectividad comercial. Juan Uribe implementará la integración la próxima semana, centralizando archivos en Google Drive. Se enfatizó la importancia de integrar datos directamente con el CRM y Power BI para que los vendedores tengan acceso a información categorizada. Además, se avanzó en un sistema que analiza correos para medir la efectividad de los seguimientos comerciales, capturando hasta 20,000 correos mensuales. Se acordó crear un grupo de trabajo con Natalia para mejorar la alineación y comunicación entre equipos. Finalmente, se planea utilizar un modelo \"lookalike\" para identificar perfiles de clientes con potencial de expansión."
+  },
+  {
+    "meeting_id": "01KCHW1GC2X34T352JAF7YFNG5",
+    "title": "DRUO - Mrketing Campaign",
+    "date": "2025-12-15T20:43:13.666Z",
+    "participants": [],
+    "duration_minutes": 82,
+    "fireflies_url": "https://meet.google.com/jqm-sdsh-kds?authuser=0",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutió la estrategia y posicionamiento de marca de Druo, enfocándose en una campaña que resalte el concepto \"Join the Movement\" para el primer trimestre. Este concepto busca conectar emocionalmente con diversos públicos, posicionando a Druo como un movimiento innovador en pagos directos, alineado con las metas empresariales para 2026. Se acordó que la campaña priorizará a merchants con un enfoque freemium, pero evitando que el mensaje central sea el costo. Además, se enfatizó la importancia de crear contenido específico y medible, con un mensaje universal que se adapte culturalmente a cada región. La propuesta de valor del producto se fundamenta en la facilidad de uso y la confianza, y se establecieron próximos pasos claros para cerrar el concepto y planificar la ejecución de la campaña de marketing."
+  },
+  {
+    "meeting_id": "01KCHGBDANQMKK728JNDX0CV21",
+    "title": "vistage sync - dani + nico",
+    "date": "2025-12-15T17:18:48.701Z",
+    "participants": [
+      "nicolas@switchon.dev"
+    ],
+    "duration_minutes": 46,
+    "fireflies_url": "https://meet.google.com/rtr-hqhv-oac",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutió la necesidad de alinear roles, expectativas y entregables para el proyecto Vistach, destacando que la falta de claridad ha generado confusión y baja ejecución. Daniel Cardona y Nicolas Gnecco señalaron que no se definieron adecuadamente los alcances ni las horas para cumplir con el objetivo de cerrar 10 clientes al mes. Fernando, representante de Vistach en Colombia, exige resultados claros, enfocándose en la obtención de más clientes y organización de eventos. Se propuso un plan realista para la generación de leads, con un enfoque en la calidad y una estrategia colaborativa. Además, se acordó crear un reporte ejecutivo simple para monitorear avances y definir responsabilidades claras entre los miembros del equipo, con el objetivo de mejorar la coordinación y evitar malentendidos."
+  },
+  {
+    "meeting_id": "01KCHFCGP4YQ9M15HS44ZJHT5K",
+    "title": "vistage sync - dani + nico",
+    "date": "2025-12-15T17:15:00.000Z",
+    "participants": [
+      "nicolas@switchon.dev",
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 46,
+    "fireflies_url": "https://meet.google.com/rtr-hqhv-oac",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo discutió la necesidad de alinear roles, responsabilidades y expectativas en el proyecto Vistach, tras la promesa de conseguir 10 clientes mensuales que no se ha cumplido. Daniel Cardona destacó la falta de comunicación y entregables concretos, lo que ha generado desconfianza entre los stakeholders, especialmente con Fernando. Nicolás Gnecco enfatizó que alcanzar 10 clientes al mes es poco realista con la actual base de 3,000 seguidores en LinkedIn y propuso un enfoque en la generación de leads. Se acordó la creación de un plan claro con entregables específicos, reportes periódicos y una estrategia conjunta. La relación con los chairs de Vista es crucial para el cierre de ventas, mientras que el equipo externo debe enfocarse en la generación de leads y contenidos. Se subrayó la importancia de una comunicación efectiva para optimizar recursos y mantener la confianza de los stakeholders."
+  },
+  {
+    "meeting_id": "01KCEMZMAQS48QQB7S5VWJEZAT",
+    "title": "Daniel - Daniel Sync",
+    "date": "2025-12-14T14:42:08.320Z",
+    "participants": [
+      "hola@huevos.ai"
+    ],
+    "duration_minutes": 556,
+    "fireflies_url": null,
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se llevó a cabo una reunión para discutir la entrega de un diagnóstico corporativo completo, el cual incluye un análisis de 44 entrevistas y la identificación de problemas operativos y financieros, como un aumento del 15% en la cartera vencida. Se definieron las herramientas tecnológicas a utilizar, destacando una arquitectura modular con backend en FastAPI y base de datos en Postgres, y se propusieron diferentes opciones para la entrega de reportes. Se presentó una oportunidad comercial valorada en USD 120,000, con un enfoque en la estandarización y automatización de procesos. Además, se planteó la creación de una comunidad para generar contenido recurrente y oportunidades de ingresos a través de un modelo de suscripción y capacitación."
+  },
+  {
+    "meeting_id": "01KCA2MN8WDKD7H3WF3BTSDZJE",
+    "title": "GenAI Applications",
+    "date": "2025-12-12T20:04:30.563Z",
+    "participants": [
+      "daniel.restrepo@finkargo.com"
+    ],
+    "duration_minutes": 28,
+    "fireflies_url": "https://meet.google.com/dfv-eeub-iqf",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "El equipo discutió la consolidación y arquitectura de datos críticos para crear dashboards que impulsen el revenue, presentando un tablero inicial por Daniel Cardona. Se identificó la necesidad de migrar información a un sistema unificado, optimizando la interacción del chatbot y la conexión con Notion mediante API. Además, se planteó la creación de un data lake y un data warehouse para gestionar datos de manera segura. En cuanto a automatizaciones, Daniel Restrepo propuso iniciar con soluciones simples antes de avanzar a agentes conversacionales complejos. Se propuso consolidar solicitudes en una mesa de servicio multifuncional para mejorar la gestión. Finalmente, se acordó validar propuestas con usuarios finales para ajustar prioridades y garantizar que los desarrollos generen valor real, mientras se definió un esquema para gestionar código y evitar interferencias en el desarrollo."
+  },
+  {
+    "meeting_id": "01KCA1G3NWAXQX5J6C7R6S3VDP",
+    "title": "COM / Finanzas",
+    "date": "2025-12-12T19:44:39.612Z",
+    "participants": [],
+    "duration_minutes": 20,
+    "fireflies_url": "https://teams.microsoft.com/light-meetings/launch?agent=web&anon=true&coords=eyJtZWV0aW5nVXJsIjoiaHR0cHM6Ly90ZWFtcy5taWNyb3NvZnQuY29tL21lZXQvMjU4NjE2MjA0ODEyMTE/cD1uS3owZGUxQ3N6dmE1UEc0UzMmYW5vbj10cnVlJmxpZ2h0RXhwZXJpZW5jZT10cnVlJmNvcnJlbGF0aW9uSWQ9ZWMwOGU4N2YtMzEwZS00YTkxLWIxYmItMmYyZDVjMTgzOWE2JmFub249dHJ1ZSIsIm1lZXRpbmdDb2RlIjoiMjU4NjE2MjA0ODEyMTEiLCJwYXNzY29kZSI6Im5LejBkZTFDc3p2YTVQRzRTMyJ9&correlationId=ec08e87f-310e-4a91-b1bb-2f2d5c1839a6&deeplinkId=f51fec1c-3932-40ff-b1e7-3f5b62141580&lightExperience=true&p=nKz0de1Cszva5PG4S3&version=25111315502",
+    "organizer_email": "hola@huevos.ai",
+    "summary": "Se discutió la necesidad de mejorar la calidad y segmentación de los indicadores financieros y operativos con el fin de apoyar decisiones estratégicas. Luis Nogales presentó un análisis de costos y ventas del proyecto Green Tower Santa Cruz, sugiriendo usar indicadores genéricos como ROE y EBITDA para una visión clara. Además, se destacó la importancia de segmentar el desempeño hotelero más allá de la ocupación y tarifa diaria, incluyendo nacionalidades y segmentos específicos. Se propuso desarrollar un sistema automatizado para la extracción de datos operativos, mejorando la eficiencia en la toma de decisiones. También se abordó la necesidad de mejorar la comunicación y clarificar responsabilidades entre equipos, y se acordó ajustar costos para evitar malentendidos, con un compromiso de subir información a SharePoint para acceso continuo."
+  }
+]
