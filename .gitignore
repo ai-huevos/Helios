@@ -1,0 +1,140 @@
+# AI Huevos Brand Guidelines - .gitignore
+
+# ============================================
+# Operating System Files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# ============================================
+# IDE and Editor Files
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.vs/
+*.code-workspace
+
+# ============================================
+# Node.js / JavaScript / TypeScript
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+.next/
+.nuxt/
+.cache/
+.turbo/
+*.tsbuildinfo
+.eslintcache
+
+# ============================================
+# Python (for AI/ML workflows)
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ============================================
+# AI/ML Specific
+# ============================================
+*.ckpt
+*.pth
+*.h5
+*.pkl
+*.joblib
+models/
+checkpoints/
+data/raw/
+data/processed/
+wandb/
+mlruns/
+.mlflow/
+
+# ============================================
+# Environment and Secrets
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+secrets/
+*.key
+*.pem
+*.p12
+credentials.json
+service-account*.json
+
+# ============================================
+# Build and Distribution
+# ============================================
+*.log
+logs/
+*.bak
+*.tmp
+temp/
+tmp/
+coverage/
+.nyc_output/
+
+# ============================================
+# Documentation Build
+# ============================================
+docs/_build/
+site/
+.docusaurus/
+
+# ============================================
+# Claude Code / MCP Specific
+# ============================================
+.claude/sessions/
+.claude/cache/
+mcp-output/
+
+# ============================================
+# Database
+# ============================================
+*.sqlite
+*.sqlite3
+*.db
+
+# ============================================
+# Media and Assets (keep source files only)
+# ============================================
+# Uncomment if you want to exclude large processed files
+# *.mp4
+# *.mov
+# *.avi
+# processed-assets/
+
+# ============================================
+# Project Specific
+# ============================================
+# Add project-specific ignores below
+testing-outputs/
+experiments/
+sandbox/
