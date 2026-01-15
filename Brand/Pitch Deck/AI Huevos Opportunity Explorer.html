@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Huevos Market Opportunity Explorer</title>
     <style>
         :root {
-            --primary: #0284c7;
-            --primary-hover: #0369a1;
+            /* Brand Colors */
+            --primary: #4D9FFF;
+            /* Blue as primary for this dashboard feel */
+            --primary-hover: #3988FF;
+            --secondary: #FFE03D;
+            /* Yellow */
             --success: #22c55e;
             --warning: #f59e0b;
-            --danger: #ef4444;
-            --neutral: #64748b;
-            --bg: #ffffff;
+            --danger: #FF5C3D;
+            /* Use Brand Red/Orange for danger */
+
+            /* Neutrals */
+            --neutral: #9B9B9B;
+            --bg: #FFFFFF;
             --bg-secondary: #f8fafc;
-            --text: #1e293b;
-            --text-secondary: #64748b;
+            --text: #000000;
+            --text-secondary: #555555;
             --border: #e2e8f0;
+
+            /* Typography */
+            --font-primary: 'Scandia', 'Inter', sans-serif;
+            --font-mono: 'Geist Mono', 'Roboto Mono', monospace;
         }
 
         * {
@@ -26,8 +38,10 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            font-family: var(--font-primary);
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            /* Dark mode feeling for explorer or Light? Let's stick to Dashboard feeling */
+            background: #F5F7FA;
             color: var(--text);
             min-height: 100vh;
             padding: 20px;
@@ -43,7 +57,8 @@
             border-radius: 12px;
             padding: 30px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid var(--secondary);
         }
 
         h1 {
@@ -99,6 +114,7 @@
         }
 
         .metric-value {
+            font-family: var(--font-mono);
             font-size: 24px;
             font-weight: 700;
             color: var(--primary);
@@ -167,6 +183,7 @@
         .tab-btn.active {
             background: var(--primary);
             color: white;
+            font-weight: 600;
         }
 
         .tab-content {
@@ -255,6 +272,7 @@
         }
 
         .slider-value {
+            font-family: var(--font-mono);
             font-size: 12px;
             color: var(--primary);
             font-weight: 600;
@@ -283,6 +301,7 @@
         }
 
         .result-value {
+            font-family: var(--font-mono);
             font-size: 22px;
             font-weight: 700;
             color: var(--primary);
@@ -317,10 +336,13 @@
             display: inline-block;
             padding: 4px 8px;
             border-radius: 4px;
+            font-family: var(--font-mono);
             font-size: 11px;
             font-weight: 600;
-            text-transform: uppercase;
+            text-transform: lowercase;
         }
+
+        /* Brand style for mono is lowercase usually, but badges can be exception. Adhering to lowercase rule for Geist Mono */
 
         .threat-high {
             background: rgba(239, 68, 68, 0.1);
@@ -506,7 +528,9 @@
             font-size: 12px;
             margin-top: 30px;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--brand-black);
+            color: white;
+            border-top: 4px solid var(--secondary);
             border-radius: 8px;
         }
 
@@ -532,6 +556,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <!-- HEADER -->
@@ -544,7 +569,10 @@
         <div class="executive-summary">
             <h2>Executive Summary</h2>
             <div class="thesis">
-                <strong>Market Opportunity:</strong> USD 300M–1B serviceable addressable market for diagnostic-led, AI-native automation services targeting LatAm family offices and multi-business groups, with 40–65% diagnostic-to-implementation conversion rates, 50–60% gross margins, and proven 12–18 month payback periods.
+                <strong>Market Opportunity:</strong> USD 300M–1B serviceable addressable market for diagnostic-led,
+                AI-native automation services targeting LatAm family offices and multi-business groups, with 40–65%
+                diagnostic-to-implementation conversion rates, 50–60% gross margins, and proven 12–18 month payback
+                periods.
             </div>
 
             <div class="metrics-grid">
@@ -569,7 +597,8 @@
             <div class="attractiveness">
                 <div class="signal"></div>
                 <span class="signal-text"><strong>Market Attractiveness:</strong> HIGH</span>
-                <span style="color: var(--text-secondary); margin-left: auto; font-size: 12px;">Problem validated | Model proven | Timing favorable</span>
+                <span style="color: var(--text-secondary); margin-left: auto; font-size: 12px;">Problem validated |
+                    Model proven | Timing favorable</span>
             </div>
         </div>
 
@@ -587,7 +616,8 @@
         <div id="market" class="tab-content active">
             <div class="section">
                 <h2>Market Sizing Explorer</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 15px;">Adjust assumptions to explore different market scenarios. All figures in USD millions.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">Adjust assumptions to explore different
+                    market scenarios. All figures in USD millions.</p>
 
                 <div class="scenario-toggle">
                     <button class="scenario-btn active" onclick="setScenario('conservative')">Conservative</button>
@@ -598,37 +628,43 @@
                 <div class="input-group">
                     <div class="input-field">
                         <label for="target-fos">Target Family Offices / Groups</label>
-                        <input type="number" id="target-fos" value="500" min="100" max="5000" step="50" onchange="recalculate()">
+                        <input type="number" id="target-fos" value="500" min="100" max="5000" step="50"
+                            onchange="recalculate()">
                         <div class="slider-value" id="target-fos-desc">~500 in region; 30-50% digitization-ready</div>
                     </div>
 
                     <div class="input-field">
                         <label for="avg-bus-units">Avg Business Units per Group</label>
-                        <input type="number" id="avg-bus-units" value="5" min="2" max="20" step="1" onchange="recalculate()">
+                        <input type="number" id="avg-bus-units" value="5" min="2" max="20" step="1"
+                            onchange="recalculate()">
                         <div class="slider-value">Hospitality, F&B, construction, real estate mixes</div>
                     </div>
 
                     <div class="input-field">
                         <label for="diagnostic-price">Diagnostic Price (USD K)</label>
-                        <input type="number" id="diagnostic-price" value="40" min="20" max="75" step="5" onchange="recalculate()">
+                        <input type="number" id="diagnostic-price" value="40" min="20" max="75" step="5"
+                            onchange="recalculate()">
                         <div class="slider-value">Entry engagement; 4–6 weeks</div>
                     </div>
 
                     <div class="input-field">
                         <label for="impl-price">Implementation Price per BU (USD K)</label>
-                        <input type="number" id="impl-price" value="70" min="30" max="150" step="5" onchange="recalculate()">
+                        <input type="number" id="impl-price" value="70" min="30" max="150" step="5"
+                            onchange="recalculate()">
                         <div class="slider-value">Design + pilot + full rollout</div>
                     </div>
 
                     <div class="input-field">
                         <label for="monthly-retainer">Monthly Retainer (USD K)</label>
-                        <input type="number" id="monthly-retainer" value="5" min="1" max="15" step="1" onchange="recalculate()">
+                        <input type="number" id="monthly-retainer" value="5" min="1" max="15" step="1"
+                            onchange="recalculate()">
                         <div class="slider-value">Ongoing optimization + new automations</div>
                     </div>
 
                     <div class="input-field">
                         <label for="diagnostic-conv">Diagnostic → Implementation Conv. %</label>
-                        <input type="number" id="diagnostic-conv" value="50" min="20" max="80" step="5" onchange="recalculate()">
+                        <input type="number" id="diagnostic-conv" value="50" min="20" max="80" step="5"
+                            onchange="recalculate()">
                         <div class="slider-value">Industry benchmark: 40–65%</div>
                     </div>
                 </div>
@@ -653,7 +689,10 @@
                 </div>
 
                 <div class="note">
-                    <strong>Key Assumptions:</strong> Conservative scenario uses lower market penetration rates and longer sales cycles. Base case assumes 50% diagnostic-to-implementation conversion (industry benchmark). Aggressive assumes strong vertical focus and viral customer acquisition. SAM derived from 5-7% of mid-market enterprises considering automation; SOM assumes 2–4% capture by new entrant.
+                    <strong>Key Assumptions:</strong> Conservative scenario uses lower market penetration rates and
+                    longer sales cycles. Base case assumes 50% diagnostic-to-implementation conversion (industry
+                    benchmark). Aggressive assumes strong vertical focus and viral customer acquisition. SAM derived
+                    from 5-7% of mid-market enterprises considering automation; SOM assumes 2–4% capture by new entrant.
                 </div>
             </div>
         </div>
@@ -662,7 +701,8 @@
         <div id="competitors" class="tab-content">
             <div class="section">
                 <h2>Competitive Landscape</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 15px;">10 competitors across software factories, consulting, boutiques, and your positioning.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">10 competitors across software factories,
+                    consulting, boutiques, and your positioning.</p>
 
                 <div class="filter-group">
                     <span style="font-weight: 600; align-self: center;">Filter by threat:</span>
@@ -689,7 +729,10 @@
                 </table>
 
                 <div class="note" style="margin-top: 20px;">
-                    <strong>Positioning Insight:</strong> You're not competing with Globant/BairesDev (developer supply model) or McKinsey (USD 500K+ minimums). Your direct competition is regional RPA boutiques and mid-tier consulting. Your advantage: AI-native diagnostics + vertical playbooks + trojan horse model with managed services retention.
+                    <strong>Positioning Insight:</strong> You're not competing with Globant/BairesDev (developer supply
+                    model) or McKinsey (USD 500K+ minimums). Your direct competition is regional RPA boutiques and
+                    mid-tier consulting. Your advantage: AI-native diagnostics + vertical playbooks + trojan horse model
+                    with managed services retention.
                 </div>
             </div>
         </div>
@@ -698,42 +741,49 @@
         <div id="economics" class="tab-content">
             <div class="section">
                 <h2>Unit Economics Playground</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 15px;">Model your margins, breakeven, and unit economics.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">Model your margins, breakeven, and unit
+                    economics.</p>
 
                 <div class="input-group">
                     <div class="input-field">
                         <label for="utilization">Delivery Utilization %</label>
-                        <input type="number" id="utilization" value="70" min="40" max="90" step="5" onchange="recalculateEconomics()">
+                        <input type="number" id="utilization" value="70" min="40" max="90" step="5"
+                            onchange="recalculateEconomics()">
                         <div class="slider-value">70% billable; 30% admin/sales/training</div>
                     </div>
 
                     <div class="input-field">
                         <label for="gross-margin">Target Gross Margin %</label>
-                        <input type="number" id="gross-margin" value="55" min="30" max="80" step="5" onchange="recalculateEconomics()">
+                        <input type="number" id="gross-margin" value="55" min="30" max="80" step="5"
+                            onchange="recalculateEconomics()">
                         <div class="slider-value">Diagnostic: 60%, Implementation: 50%, Managed: 30%</div>
                     </div>
 
                     <div class="input-field">
                         <label for="team-size">Team Size (FTEs)</label>
-                        <input type="number" id="team-size" value="3" min="1" max="10" step="1" onchange="recalculateEconomics()">
+                        <input type="number" id="team-size" value="3" min="1" max="10" step="1"
+                            onchange="recalculateEconomics()">
                         <div class="slider-value">Founding team + 0–2 hires</div>
                     </div>
 
                     <div class="input-field">
                         <label for="avg-salary">Avg All-in Cost per FTE (USD K)</label>
-                        <input type="number" id="avg-salary" value="85" min="50" max="150" step="5" onchange="recalculateEconomics()">
+                        <input type="number" id="avg-salary" value="85" min="50" max="150" step="5"
+                            onchange="recalculateEconomics()">
                         <div class="slider-value">Salary + benefits + taxes</div>
                     </div>
 
                     <div class="input-field">
                         <label for="annual-marketing">Annual Marketing Spend (USD K)</label>
-                        <input type="number" id="annual-marketing" value="25" min="5" max="100" step="5" onchange="recalculateEconomics()">
+                        <input type="number" id="annual-marketing" value="25" min="5" max="100" step="5"
+                            onchange="recalculateEconomics()">
                         <div class="slider-value">LinkedIn, events, content, partnerships</div>
                     </div>
 
                     <div class="input-field">
                         <label for="annual-overhead">Other Annual Overhead (USD K)</label>
-                        <input type="number" id="annual-overhead" value="35" min="10" max="100" step="5" onchange="recalculateEconomics()">
+                        <input type="number" id="annual-overhead" value="35" min="10" max="100" step="5"
+                            onchange="recalculateEconomics()">
                         <div class="slider-value">Office, tools, legal, professional services</div>
                     </div>
                 </div>
@@ -766,7 +816,10 @@
                 </div>
 
                 <div class="note" style="margin-top: 20px;">
-                    <strong>Methodology:</strong> Break-even revenue = OpEx / Gross margin %. LTV assumes diagnostic (35% conv to impl) + implementation (60% conv to managed svc) + 18-month retainer. CAC = (salaries + marketing) / # customers acquired. These are conservative estimates; actual may improve with viral growth and product-market fit.
+                    <strong>Methodology:</strong> Break-even revenue = OpEx / Gross margin %. LTV assumes diagnostic
+                    (35% conv to impl) + implementation (60% conv to managed svc) + 18-month retainer. CAC = (salaries +
+                    marketing) / # customers acquired. These are conservative estimates; actual may improve with viral
+                    growth and product-market fit.
                 </div>
             </div>
         </div>
@@ -775,7 +828,8 @@
         <div id="risks" class="tab-content">
             <div class="section">
                 <h2>Risk & Failure Modes Matrix</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 15px;">10 key risks with likelihood, impact, and mitigations for this business model.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">10 key risks with likelihood, impact, and
+                    mitigations for this business model.</p>
 
                 <div class="filter-group">
                     <span style="font-weight: 600; align-self: center;">Filter by:</span>
@@ -792,7 +846,9 @@
                             <span class="risk-tag impact-high">Impact: HIGH</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Embed change management in diagnostic phase. Assign customer champion (COO/CFO). Quarterly training cadence. Clear governance & decision rights. Structure implementation as phased rollout with quick wins.
+                            <strong>Mitigation:</strong> Embed change management in diagnostic phase. Assign customer
+                            champion (COO/CFO). Quarterly training cadence. Clear governance & decision rights.
+                            Structure implementation as phased rollout with quick wins.
                         </div>
                     </div>
 
@@ -803,7 +859,9 @@
                             <span class="risk-tag impact-high">Impact: HIGH</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Phased, fixed-price delivery. Tight change order discipline (all adds charge separately). Enforce 80/20 rule: 80% template, 20% custom maximum. Build customization as separate offering Y2+.
+                            <strong>Mitigation:</strong> Phased, fixed-price delivery. Tight change order discipline
+                            (all adds charge separately). Enforce 80/20 rule: 80% template, 20% custom maximum. Build
+                            customization as separate offering Y2+.
                         </div>
                     </div>
 
@@ -814,7 +872,9 @@
                             <span class="risk-tag impact-high">Impact: HIGH</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Aggressive vertical + geographic diversification. Target 2–3 customers per vertical by Y2. No customer >25% of revenue. Monthly cohort analysis & acquisition tracking.
+                            <strong>Mitigation:</strong> Aggressive vertical + geographic diversification. Target 2–3
+                            customers per vertical by Y2. No customer >25% of revenue. Monthly cohort analysis &
+                            acquisition tracking.
                         </div>
                     </div>
 
@@ -825,7 +885,9 @@
                             <span class="risk-tag impact-high">Impact: HIGH</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Refuse customization in Y1 (narrow focus on playbooks). Define "out-of-scope" explicitly in SOW. Build productized customization module Y2+ with clear pricing.
+                            <strong>Mitigation:</strong> Refuse customization in Y1 (narrow focus on playbooks). Define
+                            "out-of-scope" explicitly in SOW. Build productized customization module Y2+ with clear
+                            pricing.
                         </div>
                     </div>
 
@@ -836,7 +898,9 @@
                             <span class="risk-tag impact-high">Impact: HIGH</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Shorter pilot cycles (1–2 week PoCs vs. full diagnostics). Executive engagement at CEO/CFO level. Proof of concept model de-risks implementation. Offer 50% discount for reference cases.
+                            <strong>Mitigation:</strong> Shorter pilot cycles (1–2 week PoCs vs. full diagnostics).
+                            Executive engagement at CEO/CFO level. Proof of concept model de-risks implementation. Offer
+                            50% discount for reference cases.
                         </div>
                     </div>
 
@@ -847,7 +911,9 @@
                             <span class="risk-tag">Impact: MEDIUM</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Build defensible brand in targeted verticals. Managed services = switching cost (recurring, embedded, proprietary). Invest in vertical IP (playbooks, templates, proprietary tools).
+                            <strong>Mitigation:</strong> Build defensible brand in targeted verticals. Managed services
+                            = switching cost (recurring, embedded, proprietary). Invest in vertical IP (playbooks,
+                            templates, proprietary tools).
                         </div>
                     </div>
 
@@ -858,7 +924,9 @@
                             <span class="risk-tag">Impact: MEDIUM</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Comprehensive data audit in diagnostic phase. Remediation budget/timeline explicit in SOW. Build as separate project if needed (not included in automation scope). Customer accountability for data quality.
+                            <strong>Mitigation:</strong> Comprehensive data audit in diagnostic phase. Remediation
+                            budget/timeline explicit in SOW. Build as separate project if needed (not included in
+                            automation scope). Customer accountability for data quality.
                         </div>
                     </div>
 
@@ -869,7 +937,9 @@
                             <span class="risk-tag">Impact: MEDIUM</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Partner with subcontractors early. Use templates & junior staff + templates. Offshore support team (monitoring, scheduling). Invest in process documentation & playbooks.
+                            <strong>Mitigation:</strong> Partner with subcontractors early. Use templates & junior staff
+                            + templates. Offshore support team (monitoring, scheduling). Invest in process documentation
+                            & playbooks.
                         </div>
                     </div>
 
@@ -880,7 +950,9 @@
                             <span class="risk-tag">Impact: MEDIUM</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Built-in compliance checks in diagnostic. Data handling protocols explicit in contracts. Legal review for new verticals. ISO 27001 / SOC 2 long-term.
+                            <strong>Mitigation:</strong> Built-in compliance checks in diagnostic. Data handling
+                            protocols explicit in contracts. Legal review for new verticals. ISO 27001 / SOC 2
+                            long-term.
                         </div>
                     </div>
 
@@ -891,13 +963,18 @@
                             <span class="risk-tag impact-high">Impact: HIGH</span>
                         </div>
                         <div class="risk-mitigation">
-                            <strong>Mitigation:</strong> Position as ROI-positive (not discretionary). Link to cost savings & labor efficiency. Target companies with strong financials. Diversify across industries (not all hospitality, etc.).
+                            <strong>Mitigation:</strong> Position as ROI-positive (not discretionary). Link to cost
+                            savings & labor efficiency. Target companies with strong financials. Diversify across
+                            industries (not all hospitality, etc.).
                         </div>
                     </div>
                 </div>
 
                 <div class="note" style="margin-top: 20px;">
-                    <strong>Risk Assessment Approach:</strong> High-likelihood, high-impact risks (top left quadrant) are critical to mitigate. Medium-likelihood, high-impact risks can derail if underestimated. Medium-likelihood, medium-impact risks require attention but are often addressable with discipline. Low-likelihood risks are monitored but not primary focus.
+                    <strong>Risk Assessment Approach:</strong> High-likelihood, high-impact risks (top left quadrant)
+                    are critical to mitigate. Medium-likelihood, high-impact risks can derail if underestimated.
+                    Medium-likelihood, medium-impact risks require attention but are often addressable with discipline.
+                    Low-likelihood risks are monitored but not primary focus.
                 </div>
             </div>
         </div>
@@ -906,53 +983,73 @@
         <div id="cases" class="tab-content">
             <div class="section">
                 <h2>Comparable Company Case Studies</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 15px;">6 case studies showing diagnostic → implementation → subscription models in similar contexts.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">6 case studies showing diagnostic →
+                    implementation → subscription models in similar contexts.</p>
 
                 <div class="case-study">
                     <div class="case-study-title">1. FundCount (RPA for Family Offices)</div>
                     <div class="case-study-meta">
-                        <div><span class="meta-item">Region:</span> <span class="meta-value">Global (LatAm case studies)</span></div>
-                        <div><span class="meta-item">Client:</span> <span class="meta-value">Family offices, multi-asset platforms</span></div>
-                        <div><span class="meta-item">Model:</span> <span class="meta-value">RPA discovery → automation → support</span></div>
+                        <div><span class="meta-item">Region:</span> <span class="meta-value">Global (LatAm case
+                                studies)</span></div>
+                        <div><span class="meta-item">Client:</span> <span class="meta-value">Family offices, multi-asset
+                                platforms</span></div>
+                        <div><span class="meta-item">Model:</span> <span class="meta-value">RPA discovery → automation →
+                                support</span></div>
                     </div>
                     <div class="case-study-results">
-                        <strong>Results:</strong> 10+ hours/month saved per employee. Eliminated manual data entry. Full audit trails automated. Engagement: $50K–150K implementation + $2–5K/month. Retention: 12+ months typical.
+                        <strong>Results:</strong> 10+ hours/month saved per employee. Eliminated manual data entry. Full
+                        audit trails automated. Engagement: $50K–150K implementation + $2–5K/month. Retention: 12+
+                        months typical.
                     </div>
                 </div>
 
                 <div class="case-study">
                     <div class="case-study-title">2. Regional Automation Boutique (Hospitality/F&B, LatAm)</div>
                     <div class="case-study-meta">
-                        <div><span class="meta-item">Region:</span> <span class="meta-value">Colombia / Mexico</span></div>
-                        <div><span class="meta-item">Client:</span> <span class="meta-value">Hospitality groups, restaurant franchises</span></div>
-                        <div><span class="meta-item">Model:</span> <span class="meta-value">Assessment → automation → managed svc</span></div>
+                        <div><span class="meta-item">Region:</span> <span class="meta-value">Colombia / Mexico</span>
+                        </div>
+                        <div><span class="meta-item">Client:</span> <span class="meta-value">Hospitality groups,
+                                restaurant franchises</span></div>
+                        <div><span class="meta-item">Model:</span> <span class="meta-value">Assessment → automation →
+                                managed svc</span></div>
                     </div>
                     <div class="case-study-results">
-                        <strong>Results:</strong> 30–40% close time reduction. 20–30% back-office labor savings. Engagement: $40K–120K diagnostic + $60–150K implementation. Diagnostic → implementation conversion: ~50%.
+                        <strong>Results:</strong> 30–40% close time reduction. 20–30% back-office labor savings.
+                        Engagement: $40K–120K diagnostic + $60–150K implementation. Diagnostic → implementation
+                        conversion: ~50%.
                     </div>
                 </div>
 
                 <div class="case-study">
                     <div class="case-study-title">3. Hyperise (Document Automation SaaS + Services)</div>
                     <div class="case-study-meta">
-                        <div><span class="meta-item">Region:</span> <span class="meta-value">Global (used by LatAm agencies)</span></div>
-                        <div><span class="meta-item">Client:</span> <span class="meta-value">SMB marketing / services agencies</span></div>
-                        <div><span class="meta-item">Model:</span> <span class="meta-value">Productized SaaS + custom services</span></div>
+                        <div><span class="meta-item">Region:</span> <span class="meta-value">Global (used by LatAm
+                                agencies)</span></div>
+                        <div><span class="meta-item">Client:</span> <span class="meta-value">SMB marketing / services
+                                agencies</span></div>
+                        <div><span class="meta-item">Model:</span> <span class="meta-value">Productized SaaS + custom
+                                services</span></div>
                     </div>
                     <div class="case-study-results">
-                        <strong>Results:</strong> 70–90% template reuse across 500+ customers. Scaled from boutique to platform. Engagement: $1–5K/month SaaS + $10–30K custom work. Template replication key to margin improvement.
+                        <strong>Results:</strong> 70–90% template reuse across 500+ customers. Scaled from boutique to
+                        platform. Engagement: $1–5K/month SaaS + $10–30K custom work. Template replication key to margin
+                        improvement.
                     </div>
                 </div>
 
                 <div class="case-study">
                     <div class="case-study-title">4. Zapier / Make (Workflow Automation Platform)</div>
                     <div class="case-study-meta">
-                        <div><span class="meta-item">Region:</span> <span class="meta-value">Global; growing LatAm adoption</span></div>
-                        <div><span class="meta-item">Client:</span> <span class="meta-value">All SMBs; multi-business workflows</span></div>
-                        <div><span class="meta-item">Model:</span> <span class="meta-value">Platform templates + consulting</span></div>
+                        <div><span class="meta-item">Region:</span> <span class="meta-value">Global; growing LatAm
+                                adoption</span></div>
+                        <div><span class="meta-item">Client:</span> <span class="meta-value">All SMBs; multi-business
+                                workflows</span></div>
+                        <div><span class="meta-item">Model:</span> <span class="meta-value">Platform templates +
+                                consulting</span></div>
                     </div>
                     <div class="case-study-results">
-                        <strong>Results:</strong> 70–90% template reuse. Marketplace model scales delivery. Typical custom project: $30–200K. Proof that standardized templates drive rapid scaling.
+                        <strong>Results:</strong> 70–90% template reuse. Marketplace model scales delivery. Typical
+                        custom project: $30–200K. Proof that standardized templates drive rapid scaling.
                     </div>
                 </div>
 
@@ -960,11 +1057,14 @@
                     <div class="case-study-title">5. Petrobras (Enterprise AI/Automation, Brazil)</div>
                     <div class="case-study-meta">
                         <div><span class="meta-item">Region:</span> <span class="meta-value">Brazil</span></div>
-                        <div><span class="meta-item">Client:</span> <span class="meta-value">Large enterprise (internal transform)</span></div>
-                        <div><span class="meta-item">Model:</span> <span class="meta-value">Diagnostic → AI implementation → optimization</span></div>
+                        <div><span class="meta-item">Client:</span> <span class="meta-value">Large enterprise (internal
+                                transform)</span></div>
+                        <div><span class="meta-item">Model:</span> <span class="meta-value">Diagnostic → AI
+                                implementation → optimization</span></div>
                     </div>
                     <div class="case-study-results">
-                        <strong>Results:</strong> Predictive maintenance saved millions. AI-driven supply chain optimization. Multi-year transformation. LatAm proof point that enterprise AI has strong ROI.
+                        <strong>Results:</strong> Predictive maintenance saved millions. AI-driven supply chain
+                        optimization. Multi-year transformation. LatAm proof point that enterprise AI has strong ROI.
                     </div>
                 </div>
 
@@ -972,16 +1072,23 @@
                     <div class="case-study-title">6. Accenture AI Pods (New LatAm Model, 2025)</div>
                     <div class="case-study-meta">
                         <div><span class="meta-item">Region:</span> <span class="meta-value">LatAm</span></div>
-                        <div><span class="meta-item">Client:</span> <span class="meta-value">Mid-to-large enterprises</span></div>
-                        <div><span class="meta-item">Model:</span> <span class="meta-value">Diagnostic + AI pod subscription (NEW)</span></div>
+                        <div><span class="meta-item">Client:</span> <span class="meta-value">Mid-to-large
+                                enterprises</span></div>
+                        <div><span class="meta-item">Model:</span> <span class="meta-value">Diagnostic + AI pod
+                                subscription (NEW)</span></div>
                     </div>
                     <div class="case-study-results">
-                        <strong>Results:</strong> Faster AI deployment than traditional consulting. Recurring revenue model. High client stickiness. Engagement: $250K+/year subscription + custom projects. Validates trojan horse + subscription model.
+                        <strong>Results:</strong> Faster AI deployment than traditional consulting. Recurring revenue
+                        model. High client stickiness. Engagement: $250K+/year subscription + custom projects. Validates
+                        trojan horse + subscription model.
                     </div>
                 </div>
 
                 <div class="note" style="margin-top: 20px;">
-                    <strong>Key Takeaway:</strong> All case studies validate the diagnostic → implementation → subscription model. Template reuse (70–90%) is the key to scaling margins. FundCount + regional boutiques prove model works in family office / mid-market context. Accenture's AI Pods validates that trojan horse + subscription is the modern enterprise service model.
+                    <strong>Key Takeaway:</strong> All case studies validate the diagnostic → implementation →
+                    subscription model. Template reuse (70–90%) is the key to scaling margins. FundCount + regional
+                    boutiques prove model works in family office / mid-market context. Accenture's AI Pods validates
+                    that trojan horse + subscription is the modern enterprise service model.
                 </div>
             </div>
         </div>
@@ -990,7 +1097,8 @@
         <div id="downloads" class="tab-content">
             <div class="section">
                 <h2>Research Assets & Downloads</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 15px;">Download all data tables, research findings, and supporting documentation.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 15px;">Download all data tables, research
+                    findings, and supporting documentation.</p>
 
                 <div class="download-section">
                     <h3 style="margin-bottom: 15px;">Data Tables (CSV)</h3>
@@ -1003,25 +1111,43 @@
 
                 <div class="download-section" style="margin-top: 15px;">
                     <h3 style="margin-bottom: 15px;">Full Research Package</h3>
-                    <button class="download-btn" onclick="downloadData('full-report')">📄 Full Market Research Report (Markdown)</button>
-                    <button class="download-btn" onclick="downloadData('workplan')">🎯 Research Execution Workplan (8–10 weeks)</button>
+                    <button class="download-btn" onclick="downloadData('full-report')">📄 Full Market Research Report
+                        (Markdown)</button>
+                    <button class="download-btn" onclick="downloadData('workplan')">🎯 Research Execution Workplan (8–10
+                        weeks)</button>
                     <button class="download-btn" onclick="downloadData('all')">📦 All Assets (ZIP)</button>
                 </div>
 
                 <div class="note" style="margin-top: 20px;">
-                    <strong>Data Sources & Transparency:</strong> All research data is from publicly available sources (2023–2025) or industry benchmarks. Market sizing uses Grand View Research, IMARC, Statista, IDC data. Competitor data from public sources (Clutch, GSA contracts, published rates). Unit economics derived from consulting firm benchmarks (McKinsey, Accenture, regional LatAm firms). Case studies from public sources (FundCount, Hyperise case studies, Petrobras announcements, Accenture press releases). Conservative assumptions built into models; flagged where data is proxy or estimated.
+                    <strong>Data Sources & Transparency:</strong> All research data is from publicly available sources
+                    (2023–2025) or industry benchmarks. Market sizing uses Grand View Research, IMARC, Statista, IDC
+                    data. Competitor data from public sources (Clutch, GSA contracts, published rates). Unit economics
+                    derived from consulting firm benchmarks (McKinsey, Accenture, regional LatAm firms). Case studies
+                    from public sources (FundCount, Hyperise case studies, Petrobras announcements, Accenture press
+                    releases). Conservative assumptions built into models; flagged where data is proxy or estimated.
                 </div>
 
                 <div style="margin-top: 20px; padding: 15px; background: var(--bg-secondary); border-radius: 8px;">
                     <h3 style="margin-bottom: 10px;">💡 Key Insights Summary</h3>
                     <ul style="color: var(--text); line-height: 1.6; padding-left: 20px;">
-                        <li><strong>Market:</strong> USD 300M–1B SAM. Growing 25–30% CAGR. Problem is real: 2–3x slower close cycles, 2–3x higher overhead in LatAm family offices.</li>
-                        <li><strong>Model:</strong> Diagnostic USD 30–50K → Implementation USD 50–90K → Managed Services USD 2–10K/month. 40–65% diagnostic-to-implementation conversion (proven). 70–85% managed services retention.</li>
-                        <li><strong>Unit Economics:</strong> 50–60% gross margin path to 65–75% by Y3. Break-even at 8–12 customers. LTV:CAC ratio healthy at 3–5x scale.</li>
-                        <li><strong>Competition:</strong> Low threat from Globant (dev shops). Medium threat from Big 4 (but high minimums). High threat from local RPA boutiques (but you have AI advantage). Defensible with vertical focus + managed services.</li>
-                        <li><strong>Timing:</strong> Favorable. Labor cost curves improve ROI. AI readiness in LatAm growing. Regulatory pressure drives compliance automation. Recent Petrobras, Nubank, Coca-Cola FEMSA AI successes prove LatAm appetite.</li>
-                        <li><strong>Risks:</strong> Change management, scope creep, customer concentration are top 3. All mitigable with disciplined execution. No deal-breaker risks.</li>
-                        <li><strong>Success Path:</strong> Close 2–3 pilot customers in Colombia/Mexico (H1 2026). Validate diagnostic process. Build 2 case studies per vertical. Then seed capital USD 150–250K to scale team + go-to-market.</li>
+                        <li><strong>Market:</strong> USD 300M–1B SAM. Growing 25–30% CAGR. Problem is real: 2–3x slower
+                            close cycles, 2–3x higher overhead in LatAm family offices.</li>
+                        <li><strong>Model:</strong> Diagnostic USD 30–50K → Implementation USD 50–90K → Managed Services
+                            USD 2–10K/month. 40–65% diagnostic-to-implementation conversion (proven). 70–85% managed
+                            services retention.</li>
+                        <li><strong>Unit Economics:</strong> 50–60% gross margin path to 65–75% by Y3. Break-even at
+                            8–12 customers. LTV:CAC ratio healthy at 3–5x scale.</li>
+                        <li><strong>Competition:</strong> Low threat from Globant (dev shops). Medium threat from Big 4
+                            (but high minimums). High threat from local RPA boutiques (but you have AI advantage).
+                            Defensible with vertical focus + managed services.</li>
+                        <li><strong>Timing:</strong> Favorable. Labor cost curves improve ROI. AI readiness in LatAm
+                            growing. Regulatory pressure drives compliance automation. Recent Petrobras, Nubank,
+                            Coca-Cola FEMSA AI successes prove LatAm appetite.</li>
+                        <li><strong>Risks:</strong> Change management, scope creep, customer concentration are top 3.
+                            All mitigable with disciplined execution. No deal-breaker risks.</li>
+                        <li><strong>Success Path:</strong> Close 2–3 pilot customers in Colombia/Mexico (H1 2026).
+                            Validate diagnostic process. Build 2 case studies per vertical. Then seed capital USD
+                            150–250K to scale team + go-to-market.</li>
                     </ul>
                 </div>
             </div>
@@ -1031,7 +1157,8 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>AI Huevos Market Opportunity Explorer | Research Date: January 15, 2026 | Data sourced from public 2023–2025 sources | For internal use only</p>
+        <p>AI Huevos Market Opportunity Explorer | Research Date: January 15, 2026 | Data sourced from public 2023–2025
+            sources | For internal use only</p>
     </footer>
 
     <script>
@@ -1235,4 +1362,5 @@
         filterRisks('all');
     </script>
 </body>
+
 </html>

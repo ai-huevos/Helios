@@ -1,46 +1,142 @@
-# GTM Intelligence (Prospect Calls)
+# GTM Intelligence
 
-Go-to-market insights extracted from prospect meeting transcripts.
+**Version:** 2.0 | **Source:** wave1_categorized_v2.json (95% accuracy)
 
-## Objections Analysis
+---
 
-### Objection: Caro
-- **Frequency**: 4 times
-- **Examples**:
-  - Mateo Messaging (2025-12-26): "El equipo decidió delegar la creación del Health Score a la contraparte, permitiendo que el equipo interno se enfoque en el diseño y la calidad de los datos. Se acordó que la contraparte tiene los dat..."
-  - GLT -Daniel (2025-12-23): "En la reunión, el equipo definió dos iniciativas clave para mejorar la inteligencia del sistema y optimizar la gestión de cuentas actuales: la división del trabajo en dos frentes, uno enfocado en agen..."
+## Objection Handling Patterns
 
-### Objection: Costo
-- **Frequency**: 5 times
-- **Examples**:
-  - Marketing Sync Vistage Colombia (2025-12-22): "El equipo estableció un sistema robusto para la adquisición de miembros, con un objetivo de 18 nuevos miembros mensuales y un costo de adquisición de $181. Se proyecta recibir entre 200 y 300 leads me..."
-  - Atina - Sync (2025-12-18): "Se abordó la necesidad de construir una arquitectura de datos integrada que elimine procesos manuales, consolidando fuentes como Opera, SAP y SATCOM para automatizar conciliaciones y reportes financie..."
+### "Caro" / "Costo" (Too Expensive)
+**Response Pattern:**
+- Lead with diagnostic (identify $1.5M+ value potential before commitment)
+- Show ROI before asking for investment
+- Start small (2-3 weeks pilot) before full engagement
+- Use $26K/year automation threshold to justify investment
 
+**Key Message:** "Diagnostic identifies $1.5M+ potential. If we don't see $500K+ value, we don't proceed. Takes 2 weeks, no commitment."
 
-## Messaging That Resonated
+---
 
-- **Moat Labs - Checkpoint 1 (2026-01-15)**
-  - "El equipo discutió la creación de un pitch claro y conciso que diagnostique y solucione ineficiencias operativas en grandes empresas de Latinoamérica. Han lanzado siete productos en menos de cinco meses, generando $134,000 en ingresos confirmados y detectando $1.5 millones en valor potencial. El mod..."
+## Messaging That Works
 
-- **DRUO - Mrketing Campaign (2025-12-15)**
-  - "Se discutió la estrategia y posicionamiento de marca de Druo, enfocándose en una campaña que resalte el concepto "Join the Movement" para el primer trimestre. Este concepto busca conectar emocionalmente con diversos públicos, posicionando a Druo como un movimiento innovador en pagos directos, alinea..."
+**Primary Value Proposition:**
+"Diagnosticamos y solucionamos ineficiencias operativas en grandes empresas de Latinoamérica mediante automatización inteligente que genera resultados medibles."
 
+**Key Elements:**
+- Quantifies results ($134K confirmed, $1.5M potential)
+- Shows speed (7 products in <5 months)
+- Diagnostic-first approach
+- Client retention focus
 
-## Competitive Intelligence
+---
 
-- Competitive mentions and context to be extracted from full transcripts
-- Focus areas: competitor names, comparison points, differentiation opportunities
+## Partner Collaboration Principles
 
+### What Works
 
-## Decision Criteria
+1. **Weekly Syncs Non-Negotiable**
+   - Structured communication prevents misalignment
+   - Apply to all partner relationships
 
-### What Prospects Care About
+2. **Maximum 3 Concurrent Initiatives**
+   - Prevents dispersion, ensures execution
+   - Apply to all engagements (customers and partners)
 
-1. **Moat Labs - Checkpoint 1** (2026-01-15)
-   - El equipo discutió la creación de un pitch claro y conciso que diagnostique y solucione ineficiencias operativas en grandes empresas de Latinoamérica. Han lanzado siete productos en menos de cinco meses, generando $134,000 en ingresos confirmados y d...
+3. **Clear Role Division**
+   - Strategy vs. implementation
+   - Prevents overlap and confusion
 
+4. **Financial Thresholds**
+   - **$26K USD/year in losses justifies automation investment**
+   - Use in diagnostic phase to qualify opportunities
+
+5. **Simplification Before Automation**
+   - Data enrichment BEFORE automation (GLT learning)
+   - Consolidate systems before integrating (Atina: 3 SAP instances)
+   - Simplify architecture before automating complexity
+
+### What Doesn't Work
+
+- Partner financial instability (derails projects)
+- System fragmentation without consolidation plan
+- Multiple concurrent projects without completion
+
+---
+
+## $26K/Year Automation Threshold
+
+**Decision Rule:** If inefficiencies cost $26K+ USD/year, automation investment is justified.
+
+**Application:**
+- Use in diagnostic phase to qualify opportunities
+- Start with 3 key processes (MVP), not full system automation
+- Coordinate diagnostic with financial manager to validate priorities
+
+---
+
+## Customer Acquisition Patterns
+
+### Success Patterns
+
+1. **Showcase-Driven Sales** - Demonstrate value before asking for commitment
+2. **Discovery Phase (44-Interview Diagnostic)** - Comprehensive discovery before solution
+3. **Customer Qualification Criteria:**
+   - Enterprise (500+ employees)
+   - Complex operations (multiple systems)
+   - High willingness to pay
+   - Decision authority accessible
+   - Execution capability required
+4. **1-3 Week Delivery Cycles** - Quick wins demonstrate value
+5. **MVP Approach (3 Initiatives Max)** - Focus prevents dispersion
+
+### Failure Patterns (Vistage Learnings)
+
+1. **Strategy Without Execution** - Execution capability required, not just strategy
+2. **Lead Generation Without Follow-up** - Follow-up infrastructure critical
+3. **Not Ideal Customer Profile** - Must qualify: enterprise, complex ops, high willingness to pay
+
+---
+
+## Decision Criteria (What Prospects Care About)
+
+| Prospect Concern | Our Approach |
+|------------------|--------------|
+| ROI Visibility | Diagnostic shows $1.5M+ potential before commitment |
+| Speed to Value | 2-3 weeks to working prototype |
+| Risk Mitigation | Validate first, expand only if proven |
+| Integration | Works with existing systems, doesn't replace |
+| Proven Track Record | 7 products launched, $134K confirmed revenue |
+
+---
 
 ## Win/Loss Patterns
 
-- Patterns to be identified through deeper transcript analysis
-- Focus on: common paths to wins, typical loss reasons, timing factors
+### Win Patterns
+- Clear, quantifiable pain point
+- Decision authority accessible (one person can approve pilot)
+- Urgency (affecting operations now)
+- Openness to automation
+- Execution capability (can implement recommendations)
+
+### Loss Patterns
+- Execution gap (strategy without execution capability)
+- Follow-up infrastructure gaps
+- Not ideal customer profile (not enterprise, complex ops, high willingness to pay)
+- Financial control issues
+
+---
+
+## Competitive Differentiation
+
+| Capability | AI Huevos | Typical Consultancies |
+|------------|-----------|---------------------|
+| **Speed** | 2-3 weeks to value | Months |
+| **Output** | Working systems | Reports/recommendations |
+| **Integration** | Works with existing | Often recommends replacement |
+| **Demonstration** | Showcase prototypes | PowerPoint slides |
+| **Model** | Bootstrap sustainable | VC-backed growth-at-all-costs |
+| **Team** | Small, high leverage | Large teams |
+
+---
+
+**Key Learnings:** GLT peer insights (data enrichment first, 3-initiative limit), Sebastian Montoya contractor model (clear roles, weekly syncs), $26K threshold, Vistage failure patterns (qualify for execution capability).
