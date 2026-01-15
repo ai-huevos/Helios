@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCKYWK31GGB94N9DCMG3WS1F
+Title: Fase 1 Entregables
+Date: 2025-12-16T21:00:00.000Z
+Duration: 31 minutes
+Participants: nmonje@comversa.com.bo, apacheco@comversa.com.bo, hola@huevos.ai
+Fireflies URL: https://meet.google.com/htz-ewnt-zha
+
+---
+TRANSCRIPT SUMMARY:
+El diagnóstico de procesos y sistemas reveló un ecosistema con 40 sistemas, muchos sin documentación e integración, lo que limita la eficiencia operativa. Daniel Cardona presentó un análisis de macroprocesos, destacando problemas en finanzas, donde 52 procesos dependen de un solo gerente, y la falta de documentación crítica que pone en riesgo la continuidad operativa. Se identificaron cuellos de botella en finanzas y operaciones, generando ineficiencias. Además, se analizó el sistema de mantenimiento Maintenex, con un gasto anual de 50 mil dólares, que no cumple con las funciones esperadas. Se estructuraron 7-8 macroprocesos por empresa, cada uno con oportunidades de optimización. Se acordó que la transformación digital comenzará tras el diagnóstico y debe ser liderada por PMOs y equipos locales.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCKYWK31GGB94N9DCMG3WS1F]

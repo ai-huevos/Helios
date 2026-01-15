@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KDDN9PEY4VQV5SWXQEC9TZKQ
+Title: Dashboad - Informe comversa
+Date: 2025-12-26T15:44:06.110Z
+Duration: 23 minutes
+Participants: 
+Fireflies URL: https://teams.microsoft.com/light-meetings/launch?agent=web&anon=true&context={%22Tid%22:%22040230de-1f66-478b-8e5c-84cf0e679ee2%22,%22Oid%22:%22eb615bea-41d3-413b-b351-0b4453d45615%22}&coords=eyJjb252ZXJzYXRpb25JZCI6IjE5Om1lZXRpbmdfTVdRNE56Wm1NR1F0TUdSaU1DMDBNbVV3TFdJeU16a3ROREl3TURobFl6QmtZV1F3QHRocmVhZC52MiIsInRlbmFudElkIjoiMDQwMjMwZGUtMWY2Ni00NzhiLThlNWMtODRjZjBlNjc5ZWUyIiwib3JnYW5pemVySWQiOiJlYjYxNWJlYS00MWQzLTQxM2ItYjM1MS0wYjQ0NTNkNDU2MTUiLCJtZXNzYWdlSWQiOiIwIn0=&correlationId=a456de73-6f5c-41b6-a21a-72ce3eeca55a&deeplinkId=e769b600-39ab-4f97-83c8-4dafa1d4b806&lightExperience=true&version=25111315502
+
+---
+TRANSCRIPT SUMMARY:
+La reunión abordó la necesidad de mejorar la estructura financiera y la autonomía operativa de Bolivian Foods, que es la única unidad generadora de ingresos y subsidia otros negocios. Se identificó la dependencia financiera y la falta de seguimiento de KPIs claros. Se acordó mantener un mapa de calor por empresa y simplificar los reportes financieros para evitar duplicaciones. Se enfatizó la importancia de identificar problemas clave y oportunidades de IA generativa para implementar mejoras rápidas. Además, se decidió priorizar sistemas core y eliminar redundancias en soporte TI. La planificación se enfocará en quick wins, dejando discusiones sobre inversiones para futuras reuniones. Finalmente, se subrayó la necesidad de mejorar la comunicación interna para reducir conflictos y aumentar la eficiencia organizacional.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KDDN9PEY4VQV5SWXQEC9TZKQ]

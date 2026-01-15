@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KEZ9D75CJBK5DWTGC4PES0XY
+Title: Magichack Sync
+Date: 2026-01-14T22:18:20.204Z
+Duration: 43 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/snr-uwws-hgs?authuser=0
+
+---
+TRANSCRIPT SUMMARY:
+Se discutió la implementación de un sistema para restaurantes con un costo mensual de 70 dólares por cliente, con el equipo operativo encargado de la transición. Sebastián Montoya confirmó que la configuración inicial incluirá la integración con plataformas como Instagram y WhatsApp, además de embudos de ventas personalizados. Para el sector hotelero, se identificaron desafíos debido al uso del sistema Oracle Ópera, que limita la integración directa y requiere soluciones manuales. Se propuso formalizar una alianza estratégica entre los equipos de Daniel Cardona y Sebastián Montoya para ampliar operaciones en diferentes mercados. También se abordó la automatización del marketing mediante la generación de contenido automático, con el objetivo de optimizar recursos y ahorrar tiempo. Finalmente, se priorizó cerrar el sistema de restaurantes antes de abordar otros proyectos.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KEZ9D75CJBK5DWTGC4PES0XY]

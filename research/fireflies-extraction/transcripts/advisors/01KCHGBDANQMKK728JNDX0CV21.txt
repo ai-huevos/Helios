@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCHGBDANQMKK728JNDX0CV21
+Title: vistage sync - dani + nico
+Date: 2025-12-15T17:18:48.701Z
+Duration: 46 minutes
+Participants: nicolas@switchon.dev
+Fireflies URL: https://meet.google.com/rtr-hqhv-oac
+
+---
+TRANSCRIPT SUMMARY:
+Se discutió la necesidad de alinear roles, expectativas y entregables para el proyecto Vistach, destacando que la falta de claridad ha generado confusión y baja ejecución. Daniel Cardona y Nicolas Gnecco señalaron que no se definieron adecuadamente los alcances ni las horas para cumplir con el objetivo de cerrar 10 clientes al mes. Fernando, representante de Vistach en Colombia, exige resultados claros, enfocándose en la obtención de más clientes y organización de eventos. Se propuso un plan realista para la generación de leads, con un enfoque en la calidad y una estrategia colaborativa. Además, se acordó crear un reporte ejecutivo simple para monitorear avances y definir responsabilidades claras entre los miembros del equipo, con el objetivo de mejorar la coordinación y evitar malentendidos.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCHGBDANQMKK728JNDX0CV21]

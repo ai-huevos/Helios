@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KDDHC3T4K90BK4H9NMR1EAWC
+Title: AI initiatives
+Date: 2025-12-26T14:35:24.445Z
+Duration: 1 minutes
+Participants: daniel.restrepo@finkargo.com
+Fireflies URL: https://meet.google.com/kpk-ygrz-kvm
+
+---
+TRANSCRIPT SUMMARY:
+None
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KDDHC3T4K90BK4H9NMR1EAWC]

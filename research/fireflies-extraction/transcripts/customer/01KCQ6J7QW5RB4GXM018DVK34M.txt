@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCQ6J7QW5RB4GXM018DVK34M
+Title: Comversa - Nicolas sync entregable
+Date: 2025-12-17T22:23:19.804Z
+Duration: 33 minutes
+Participants: 
+Fireflies URL: https://teams.microsoft.com/light-meetings/launch?agent=web&anon=true&context={%22Tid%22:%22040230de-1f66-478b-8e5c-84cf0e679ee2%22,%22Oid%22:%22eb615bea-41d3-413b-b351-0b4453d45615%22}&coords=eyJjb252ZXJzYXRpb25JZCI6IjE5Om1lZXRpbmdfWlRnNE0yWTNZVGN0TVdZeFppMDBORFkzTFRneFlURXRNR1F5Tmpsa1ptRTVaak0zQHRocmVhZC52MiIsInRlbmFudElkIjoiMDQwMjMwZGUtMWY2Ni00NzhiLThlNWMtODRjZjBlNjc5ZWUyIiwib3JnYW5pemVySWQiOiJlYjYxNWJlYS00MWQzLTQxM2ItYjM1MS0wYjQ0NTNkNDU2MTUiLCJtZXNzYWdlSWQiOiIwIn0=&correlationId=dbb02abb-3c63-4911-b603-524110540170&deeplinkId=89c9f84f-ba01-4719-8ccc-b92f090f19db&lightExperience=true&version=25111315502
+
+---
+TRANSCRIPT SUMMARY:
+El equipo se reunió para definir la creación de un dashboard inicial que combine indicadores operativos y financieros, enfocándose en mejorar la visibilidad del estado del negocio y facilitar la toma de decisiones. Se validó un reporte ejecutivo que analiza la distribución de procesos y brechas críticas. Enfocándose en ventas, se priorizaron iniciativas rápidas que impacten directamente los ingresos, limitando a tres proyectos abiertos simultáneamente para mantener claridad. Además, se discutió la automatización de procesos, como la conciliación manual que genera altos costos. Se enfatizó la necesidad de involucrar a los equipos de ventas en el desarrollo del CRM para asegurar que las soluciones tecnológicas respondan a sus necesidades reales.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCQ6J7QW5RB4GXM018DVK34M]

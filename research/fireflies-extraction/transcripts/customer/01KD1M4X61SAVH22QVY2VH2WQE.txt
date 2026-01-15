@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KD1M4X61SAVH22QVY2VH2WQE
+Title: Reunión de Macroprocesos Comversa - Proyecto IA
+Date: 2025-12-22T15:30:00.000Z
+Duration: 61 minutes
+Participants: hola@huevos.ai, apacheco@comversa.com.bo, lnogales@comversa.com.bo, nmonje@comversa.com.bo
+Fireflies URL: https://teams.microsoft.com/l/meetup-join/19:meeting_MjBkZDVkOTMtOTg3ZS00Nzc4LWFkNTYtODYwZTJhZWI1NWQ5@thread.v2/0?context={"Tid":"040230de-1f66-478b-8e5c-84cf0e679ee2","Oid":"eb615bea-41d3-413b-b351-0b4453d45615"}
+
+---
+TRANSCRIPT SUMMARY:
+La reunión se centró en la gestión de proyectos de construcción, destacando los desafíos en el control de inventarios, la supervisión del avance físico y la coordinación técnica. La renuncia de Gabriel Quinteros genera incertidumbre en la continuidad de procesos críticos, mientras que la falta de un responsable en el almacén afecta la trazabilidad de materiales valorados en 15 millones de dólares. Se discutió la importancia de una planificación rigurosa y el control presupuestario, que actualmente depende de múltiples actores sin integración clara. Además, se identificaron descoordinaciones en el flujo comercial entre ventas y construcción, lo que puede generar insatisfacción en los clientes. La concentración de decisiones en la alta gerencia limita la capacidad operativa y se propuso una reunión para abordar estos cuellos de botella.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KD1M4X61SAVH22QVY2VH2WQE]

@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KF14PMH7KASEFHPR107FEG47
+Title: Checkpoint
+Date: 2026-01-15T15:30:00.000Z
+Duration: 41 minutes
+Participants: shuktomas1@gmail.com, col.drestrepo@gmail.com, hola@huevos.ai
+Fireflies URL: https://meet.google.com/acd-isss-bec
+
+---
+TRANSCRIPT SUMMARY:
+La reunión abordó la propuesta de establecer una holding que agrupe empresas autónomas, liderada por Tomás Shuk, quien enfatizó la importancia de contar con socios estratégicos que aporten valor. Daniel Restrepo apoyó la idea de validar propuestas en entornos reales antes de escalar regionalmente, destacando la necesidad de enfocarse en el cliente y los resultados. En el ámbito tecnológico, Daniel Cardona presentó un roadmap de automatización que optimizará procesos y mejorará la eficiencia mediante inteligencia artificial. Además, se acordó la importancia de mostrar casos de éxito concretos a los clientes y preparar presentaciones claras que evidencien mejoras. La colaboración del equipo será esencial para implementar automatizaciones y asegurar resultados medibles en el futuro.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KF14PMH7KASEFHPR107FEG47]

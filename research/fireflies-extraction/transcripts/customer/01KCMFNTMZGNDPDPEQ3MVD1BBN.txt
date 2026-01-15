@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCMFNTMZGNDPDPEQ3MVD1BBN
+Title: Comversa - Entregables Fase 1 - Feedback 
+Date: 2025-12-16T21:04:44.235Z
+Duration: 29 minutes
+Participants: nmonje@comversa.com.bo, apacheco@comversa.com.bo
+Fireflies URL: https://meet.google.com/htz-ewnt-zha
+
+---
+TRANSCRIPT SUMMARY:
+Se realizó un diagnóstico exhaustivo de procesos y sistemas en la organización, destacando la identificación de 7 u 8 macroprocesos clave en áreas como ventas y compras, con un enfoque en mejorar la precisión y evitar cruces de información. Se detectaron 40 sistemas en uso, con ineficiencias y una dependencia crítica de Finanzas, la cual genera cuellos de botella operativos. La falta de documentación en procesos clave se evidenció como una gran preocupación, aumentando el riesgo operativo. En cuanto a los sistemas de mantenimiento, se discutió el costo y la efectividad de Maintenex, que no cumple con las necesidades de TI. Finalmente, se presentó un roadmap preliminar para la transformación digital, que aún está en fase diagnóstica y requiere ajustes para una implementación efectiva.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCMFNTMZGNDPDPEQ3MVD1BBN]

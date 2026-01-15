@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCSH85GCX8JGFYCD47S4WX63
+Title: review database
+Date: 2025-12-18T20:08:25.709Z
+Duration: 20 minutes
+Participants: sebastian@themagichack.com
+Fireflies URL: https://meet.google.com/ces-nper-tht
+
+---
+TRANSCRIPT SUMMARY:
+El equipo se enfocó en consolidar un reporte sobre el desempeño de los pagos por débito automático en Colombia para mejorar su visibilidad y seguimiento. Daniel Cardona presentó un reporte inicial que contenía 10 registros, pero se identificaron problemas de datos y filtros complejos que afectaban la precisión. Se acordó simplificar la base de datos y asegurar la inclusión de departamentos clave como Finanzas y Administración. Además, se definió una estrategia de email marketing utilizando HubSpot, con una landing page para capturar datos de 128 compañías de sectores diversificados como educación y tecnología. Sebastian Montoya se encargará de consolidar y limpiar la base de datos, excluyendo clientes actuales y optimizando el uso de créditos para búsquedas de emails. La coordinación operativa se estableció para garantizar la calidad y eficiencia en la campaña.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCSH85GCX8JGFYCD47S4WX63]

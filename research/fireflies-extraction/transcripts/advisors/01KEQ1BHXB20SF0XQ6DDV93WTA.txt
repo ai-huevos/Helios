@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KEQ1BHXB20SF0XQ6DDV93WTA
+Title: Retirement Planner - Bambos
+Date: 2026-01-11T17:23:41.251Z
+Duration: 16 minutes
+Participants: hola@huevos.ai
+Fireflies URL: None
+
+---
+TRANSCRIPT SUMMARY:
+The discussion covered the detailed design of user inputs necessary for creating accurate retirement models and financial forecasts. Key inputs include user demographics, current savings, asset types, and spending assumptions, which are crucial for tailoring scenarios. Assumptions about asset returns and inflation can be adjusted, providing users with flexibility. The backend logic calculates portfolio growth year by year and tracks net worth until the death age input. Visualisation features like interactive charts and CSV exports are essential for user engagement, although some functionalities require urgent fixes. The meeting also highlighted the need for scenario planning to simulate market crashes, enhancing risk modelling capabilities, and emphasised the importance of user engagement, with the expectation that users will interact with the tool a few times per year to update their plans based on life changes.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KEQ1BHXB20SF0XQ6DDV93WTA]

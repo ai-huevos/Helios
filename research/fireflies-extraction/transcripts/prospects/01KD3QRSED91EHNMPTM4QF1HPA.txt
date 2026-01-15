@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KD3QRSED91EHNMPTM4QF1HPA
+Title: Marketing Sync Vistage Colombia
+Date: 2025-12-22T19:14:46.229Z
+Duration: 48 minutes
+Participants: srodriguez@vistage.co, tools@womenofthefuture.org, jenn@womenofthefuture.org, nati@womenofthefuture.org, data@themagichack.com, nicolas@switchon.dev, maripaugomezr@gmail.com
+Fireflies URL: https://meet.google.com/wtc-xyoi-pjb
+
+---
+TRANSCRIPT SUMMARY:
+El equipo estableció un sistema robusto para la adquisición de miembros, con un objetivo de 18 nuevos miembros mensuales y un costo de adquisición de $181. Se proyecta recibir entre 200 y 300 leads mensuales, con un 30-40% de conversión hacia SQL y demos. Se identificaron canales clave como LinkedIn y Meta Ads, con un costo publicitario entre $400 y $600 al mes. Además, se implementó un sistema de Lead Scoring y se definió una narrativa de liderazgo emocional para conectar con CEOs en Latam. Se discutió la optimización del CRM GoHighLevel y se planificaron 70 contenidos hasta febrero, buscando humanizar la comunicación. Finalmente, se establecieron próximos pasos y se priorizó la entrega de contenido optimizado para el 24 del mes.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KD3QRSED91EHNMPTM4QF1HPA]

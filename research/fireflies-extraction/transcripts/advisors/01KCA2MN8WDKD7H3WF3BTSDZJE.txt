@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCA2MN8WDKD7H3WF3BTSDZJE
+Title: GenAI Applications
+Date: 2025-12-12T20:04:30.563Z
+Duration: 28 minutes
+Participants: daniel.restrepo@finkargo.com
+Fireflies URL: https://meet.google.com/dfv-eeub-iqf
+
+---
+TRANSCRIPT SUMMARY:
+El equipo discutió la consolidación y arquitectura de datos críticos para crear dashboards que impulsen el revenue, presentando un tablero inicial por Daniel Cardona. Se identificó la necesidad de migrar información a un sistema unificado, optimizando la interacción del chatbot y la conexión con Notion mediante API. Además, se planteó la creación de un data lake y un data warehouse para gestionar datos de manera segura. En cuanto a automatizaciones, Daniel Restrepo propuso iniciar con soluciones simples antes de avanzar a agentes conversacionales complejos. Se propuso consolidar solicitudes en una mesa de servicio multifuncional para mejorar la gestión. Finalmente, se acordó validar propuestas con usuarios finales para ajustar prioridades y garantizar que los desarrollos generen valor real, mientras se definió un esquema para gestionar código y evitar interferencias en el desarrollo.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCA2MN8WDKD7H3WF3BTSDZJE]

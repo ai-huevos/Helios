@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KEQ1B20EJV3NPQ0X7MMB1EZ3
+Title: Marketing Sync Vistage Colombia
+Date: 2026-01-14T19:00:00.000Z
+Duration: 15 minutes
+Participants: srodriguez@vistage.co, tools@womenofthefuture.org, jenn@womenofthefuture.org, hola@huevos.ai, nati@womenofthefuture.org, data@themagichack.com, nicolas@switchon.dev, maripaugomezr@gmail.com
+Fireflies URL: https://meet.google.com/wtc-xyoi-pjb
+
+---
+TRANSCRIPT SUMMARY:
+Se discutió la casi finalización de la integración de WhatsApp, que requiere un pago adicional de 10 dólares mensuales y una tarjeta de crédito para activar el servicio. Además, se presentaron resultados positivos de la campaña de email marketing, donde se enviaron casi 3,700 correos con una tasa de apertura del 40% y 460 clics. Se destacó la importancia del control financiero en el uso de servicios como WhatsApp y el correo. También se acordó un modelo de soporte con Magic Hack por 70 dólares mensuales para mantener la plataforma operativa. Daniel se comprometió a enviar un reporte final de resultados y recomendaciones, mientras que el equipo coordinará la configuración de WhatsApp y la gestión diaria de la plataforma.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KEQ1B20EJV3NPQ0X7MMB1EZ3]

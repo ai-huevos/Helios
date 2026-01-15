@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCRWRYZR48XYEHMKHGWCTPQW
+Title: Atina - Sync
+Date: 2025-12-18T14:10:36.486Z
+Duration: 43 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/srj-vtrf-has
+
+---
+TRANSCRIPT SUMMARY:
+Se abordó la necesidad de construir una arquitectura de datos integrada que elimine procesos manuales, consolidando fuentes como Opera, SAP y SATCOM para automatizar conciliaciones y reportes financieros. La empresa enfrenta retos por fragmentación en tres instancias de SAP Business One, dificultando la integración y toma de decisiones. Se identificó que la conciliación manual de inventarios toma hasta 30 días y requiere un alto personal, lo que genera errores y ciclos largos. La estrategia incluye transformar la empresa hacia un modelo 'AI first' para optimizar procesos y reducir costos laborales. Se propuso iniciar con un MVP para automatizar tres reportes clave y se coordinará un diagnóstico con el gerente financiero para validar prioridades, justificando así la inversión en automatización por pérdidas anuales de 26,000 dólares por ineficiencias.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCRWRYZR48XYEHMKHGWCTPQW]

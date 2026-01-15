@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCPF2CJQFGC9DNQ3ZPDV2FYC
+Title: Marketing Sync Vistage Colombia
+Date: 2025-12-17T15:32:36.727Z
+Duration: 82 minutes
+Participants: srodriguez@vistage.co, tools@womenofthefuture.org, jenn@womenofthefuture.org, nati@womenofthefuture.org, data@themagichack.com, nicolas@switchon.dev
+Fireflies URL: https://meet.google.com/wtc-xyoi-pjb
+
+---
+TRANSCRIPT SUMMARY:
+La reunión abordó la estrategia de contenido y la generación de leads, revelando que un quiz para identificar liderazgo atrajo a 60 participantes, pero no logró cerrar ventas ni conectar emocionalmente con la audiencia en tres meses. Daniel Cardona explicó que el contenido, mayormente generado por IA, carecía de una narrativa clara, afectando la conexión con el público. Además, la generación de leads cayó de 140 a 40 mensuales al pausar la pauta, con solo 400 contactos calificados avanzando lentamente en el funnel. La falta de sincronización entre equipos y confusión sobre la parrilla de contenidos fueron temas destacados, señalando la necesidad de validación conjunta. Se definió un plan de cierre para ajustar contenidos y mantener la cuenta actual de Go High Level, evitando costos adicionales. Finalmente, se identificaron lecciones aprendidas para mejorar en futuros proyectos.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCPF2CJQFGC9DNQ3ZPDV2FYC]

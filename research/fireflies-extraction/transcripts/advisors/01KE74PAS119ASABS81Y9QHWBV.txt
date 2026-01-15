@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KE74PAS119ASABS81Y9QHWBV
+Title: Feedback Helios
+Date: 2026-01-05T13:15:00.000Z
+Duration: 21 minutes
+Participants: hola@huevos.ai
+Fireflies URL: https://meet.google.com/tyx-jsco-erd
+
+---
+TRANSCRIPT SUMMARY:
+La reunión se centró en los problemas técnicos que afectan el procesamiento de entrevistas cargadas a través de WhatsApp, como errores 400 y 422 en la carga de formatos JSON, CSV y TXT. Daniel Cardona destacó que la segmentación de hablantes es ineficaz, con más de 500 hablantes identificados cuando solo hay dos, lo que limita la extracción precisa de datos y la generación de insights útiles. Se identificó la necesidad de implementar extractores independientes para diferentes tipos de datos, garantizando que cada extractor funcione sin interferencias, lo que permitiría una mejor organización y trazabilidad. Además, se enfatizó la importancia de inicializar la base de datos Neo4j para desbloquear funcionalidades completas en el análisis. Mejorar estos aspectos impulsará la calidad de insights y ayudará en la toma de decisiones efectivas.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KE74PAS119ASABS81Y9QHWBV]

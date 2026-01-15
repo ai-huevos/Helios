@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KD3YWZ50RBZ4FF6BS930C0Z2
+Title: Magic - Huevos - Druo V2
+Date: 2025-12-22T21:19:23.797Z
+Duration: 6 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/zum-tqdn-saa
+
+---
+TRANSCRIPT SUMMARY:
+En la reunión se definieron estrategias clave para la captación de clientes, destacando la creación de una landing page donde los usuarios ingresen su volumen de transacciones y ahorro estimado para precalificarse, con el apoyo de Daniel Cardona en la historia de valor y Sebastián Montoya en el diseño y backend. Se acordó que esta landing será fundamental para la campaña de email marketing, buscando generar leads calificados rápidamente. Además, se establecieron acuerdos sobre facturación y la necesidad de implementar una Customer Data Platform (CDP) para centralizar datos dispersos y mejorar la gestión comercial. Se acordó realizar reuniones semanales para revisar avances y priorizar tareas, asegurando una comunicación efectiva entre los participantes.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KD3YWZ50RBZ4FF6BS930C0Z2]

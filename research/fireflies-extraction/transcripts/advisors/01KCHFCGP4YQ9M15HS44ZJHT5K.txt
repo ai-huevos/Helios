@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCHFCGP4YQ9M15HS44ZJHT5K
+Title: vistage sync - dani + nico
+Date: 2025-12-15T17:15:00.000Z
+Duration: 46 minutes
+Participants: nicolas@switchon.dev, hola@huevos.ai
+Fireflies URL: https://meet.google.com/rtr-hqhv-oac
+
+---
+TRANSCRIPT SUMMARY:
+El equipo discutió la necesidad de alinear roles, responsabilidades y expectativas en el proyecto Vistach, tras la promesa de conseguir 10 clientes mensuales que no se ha cumplido. Daniel Cardona destacó la falta de comunicación y entregables concretos, lo que ha generado desconfianza entre los stakeholders, especialmente con Fernando. Nicolás Gnecco enfatizó que alcanzar 10 clientes al mes es poco realista con la actual base de 3,000 seguidores en LinkedIn y propuso un enfoque en la generación de leads. Se acordó la creación de un plan claro con entregables específicos, reportes periódicos y una estrategia conjunta. La relación con los chairs de Vista es crucial para el cierre de ventas, mientras que el equipo externo debe enfocarse en la generación de leads y contenidos. Se subrayó la importancia de una comunicación efectiva para optimizar recursos y mantener la confianza de los stakeholders.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCHFCGP4YQ9M15HS44ZJHT5K]

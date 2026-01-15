@@ -1,0 +1,15 @@
+FIREFLIES TRANSCRIPT
+Meeting ID: 01KCMBX484ZAY7TTBS0GNRRHK4
+Title: GLT - Mateo Folador Sync
+Date: 2025-12-16T19:58:49.544Z
+Duration: 40 minutes
+Participants: 
+Fireflies URL: https://meet.google.com/znf-ntad-bgm
+
+---
+TRANSCRIPT SUMMARY:
+Se definió un sistema mensual de procesamiento de datos que incluye un flujo automatizado para analizar información exportada desde Power BI, permitiendo identificar oportunidades de venta cruzada y mejorar la efectividad comercial. Juan Uribe implementará la integración la próxima semana, centralizando archivos en Google Drive. Se enfatizó la importancia de integrar datos directamente con el CRM y Power BI para que los vendedores tengan acceso a información categorizada. Además, se avanzó en un sistema que analiza correos para medir la efectividad de los seguimientos comerciales, capturando hasta 20,000 correos mensuales. Se acordó crear un grupo de trabajo con Natalia para mejorar la alineación y comunicación entre equipos. Finalmente, se planea utilizar un modelo "lookalike" para identificar perfiles de clientes con potencial de expansión.
+
+---
+FULL TRANSCRIPT:
+[Full transcript will be fetched via Fireflies MCP - use fireflies_get_transcript with ID: 01KCMBX484ZAY7TTBS0GNRRHK4]
