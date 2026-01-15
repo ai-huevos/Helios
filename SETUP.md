@@ -162,6 +162,14 @@ git push origin v1.0.0
 
 ## 🤖 Claude Code Integration
 
+### MCP Servers Configurados
+
+#### Fireflies MCP
+- **Configurado**: Acceso a meeting transcripts y brand context
+- **Ubicación**: `~/.cursor/mcp.json`
+- **Setup**: Ver `.cursor/FIREFLIES_MCP_SETUP.md` para instrucciones completas
+- **Requisito**: Necesitas obtener tu Fireflies API Key desde Settings → Developer en Fireflies.ai
+
 ### Comandos Disponibles
 ```bash
 /sc:git         # Git operations con smart commits

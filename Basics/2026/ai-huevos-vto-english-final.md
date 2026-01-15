@@ -145,7 +145,7 @@ They've tried:
 
 # PART 3: WHY WE WIN
 
-## Value Proposition (One Sentence)
+## Value Proposition (One Sentence) 
 
 > **We find $500K+ in automation opportunities inside LatAm enterprises, then we build the first ones to prove they work.**
 
