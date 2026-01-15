@@ -1,0 +1,1032 @@
+
+00:00
+Daniel Cardona
+No, bien, afortunadamente. Que han hecho. 
+
+00:08
+Juan Francisco Reyes Mora
+Bien, afortunadamente. ¿Oye, ustedes me ven o no? 
+
+00:13
+Luis Felipe Camargo Pulido
+Yo no lo veo. Juan Francisco, de todo el mundo hay mucho que ver. No, pero cuando nos conectamos yo siempre no, pero sin molestar, sin amargallo. Cuando entró a la reunión sí lo veía. 
+
+00:28
+Juan Francisco Reyes Mora
+Levanta otra vez. 
+
+00:41
+Daniel Cardona
+Y entonces usted Luis, trabaja en marketing. 
+
+00:45
+Luis Felipe Camargo Pulido
+No, No, sí, tal cual. 
+
+00:47
+Daniel Cardona
+Bien, sirve. 
+
+00:49
+Juan Francisco Reyes Mora
+Perfecto. 
+
+00:51
+Daniel Cardona
+¿Ustedes cómo definen marketing allá? 
+
+00:55
+Luis Felipe Camargo Pulido
+El torero. El torero. 
+
+01:00
+Daniel Cardona
+Como que picamos piedra con lo que hay. 
+
+01:03
+Luis Felipe Camargo Pulido
+Sí, es como. No saben cómo solucionar un problema, a ver si marketing logra. Pero eso me gusta, eso me parece chévere. Creo que mi computador entró en un momento de muerte lenta. 
+
+01:37
+Juan Francisco Reyes Mora
+Listo. Bien, bien. Le presento a Luis Felipe. ¿Dice que es de marketing. 
+
+01:55
+Daniel Cardona
+Que ha hecho bien o qué? 
+
+01:57
+Juan Francisco Reyes Mora
+Bien. ¿Cómo le acabó con todo? Buena jornada en el de horno bacano. 
+
+02:09
+Daniel Cardona
+Es que a uno mamado para recoger con cucharitas, pues de un trote. Tres semanas de eventos. 
+
+02:18
+Juan Francisco Reyes Mora
+Yo fui como dos días nomás. Pero me alegra. Sí es un pilo, va a sacar harta, ven. 
+
+02:31
+Luis Felipe Camargo Pulido
+Bueno, pues me alegra. 
+
+02:35
+Daniel Cardona
+¿Yo no sé, Juárez, usted le contó algo a Luis Felipe o si? ¿Arrancamos desde ceros? 
+
+02:39
+Luis Felipe Camargo Pulido
+Arranquemos de cero porque sé poco. 
+
+02:43
+Daniel Cardona
+Listo, firme, no pasa nada. Yo llevo básicamente 15 años trabajando en marketing, en ventas y en producto digital. Hasta hace muy poco dirigía todo lo que era marketing de fincargo, la empresa de financiamiento de comercio exterior. Yo arranqué cuando estaban en 3 millones de dólares en GLP y me fui en 150 millones. Es básicamente como el recorrido que he tenido, teniendo en cuenta que le vendíamos a importadores en Colombia, SMB, ese era nuestro foco BB. Antes de eso estuve como head de marketing de Bosi, también BB, pero este foco enterprise para todo LATAM. Y he tenido como diferentes roles. Entonces ahorita lo que hago es diseñar y optimizar estrategias de go to market, sobre todo si uno le vende a la Enterprise, porque hay que tener una maquinita comercial aceitada para entender estos manes. 
+
+03:42
+Daniel Cardona
+Uno cómo compran, qué tan largos son los ciclos de compra, qué tan complejos son, cuántas autorizaciones hay que tener, porque yo no tengo ni idea de tu negocio. Como sea, si me entiende, Como que yo no sé si eso se venda fácil, si no. Creo que tienen un gran mercado y por la conversación que tuve con. ¿Cómo se llama? 
+
+04:01
+Luis Felipe Camargo Pulido
+Juan Carlos. Juan Carlos. 
+
+04:08
+Daniel Cardona
+Cuando hablamos en vivo. Entonces la oportunidad les puedo mostrar como un poquito de dónde nace el diagnóstico de go to market. Y sobre el diagnóstico de go to market ya uno empieza a tomar ciertas decisiones o en inteligencia artificial o en workflows o en desarrollo de campañas y demás, pero la base estratégica y conceptual de un modelo de go to market bien montado normalmente está estructurado bajo unos pilares específicos de tamaño de mercado, cómo se está moviendo la macroeconomía, cuáles son las industrias a las cuales usted está yendo, crecimientos o no de las personas, modelos comerciales, qué tanto tiene documentado o no, como que hay diferentes aristas para lograr ese tipo de cosas. Y eso es un poquito lo que me puse a hacer después de que salí de FICAR. 
+
+05:03
+Luis Felipe Camargo Pulido
+Está en putas. Ahora sí que habló con Juan Francisco la última vez. ¿Qué es lo que estamos buscando o qué es lo que Juan Francisco está buscando esta reunión. 
+
+05:16
+Juan Francisco Reyes Mora
+Marica? Vender, vender mieto, traer empresas y este man es duro en BB y la idea es montar una estrategia. 
+
+05:27
+Luis Felipe Camargo Pulido
+Sí pues Daniel, nosotros estamos en pañales, en pañales es en pañales, estamos apenas creando CRM, estamos en el nivel 1 y la idea es empezar a crear esos embudos que nos ayuden a automatizar esos primeros acercamientos con las empresas que tenemos y empezar obviamente a hacer que el canal comercial tenga leads de calidad y todas esas cosas, pero estamos en pañales, estamos apenas en CRM, así que la idea es que pues, o supongo que lo que buscamos con Juan Francisco es empezar a definir cuál es el camino y empezar a recorrerlo. 
+
+06:05
+Daniel Cardona
+OK, OK. Y pregunta importante para ambos. ¿Ven esto más un esfuerzo comercial o en esto más un esfuerzo de mercader? Y voy a hacer una diferenciación súper importante, sobre todo habiendo estado en BB. Para mí una función de marketing en una empresa BB normalmente tiene dos objetivos. Que la historia se cuente bien en diferentes canales y que la gente, independientemente del canal donde uno cuente la historia, la gente entienda y diga OK, inversionistas, stakeholders, redes sociales, perfiles de los founders, etc. Prensa y mover el pipeline. 
+
+07:01
+Luis Felipe Camargo Pulido
+Tal cual. 
+
+07:01
+Daniel Cardona
+¿Cuánta cartera estoy colocando mes a mes? Si hay un equipo de ventas, entonces ¿Qué puede pasar? ¿Quiénes terminan vendiendo? ¿Ustedes dos, cierto? 
+
+07:12
+Luis Felipe Camargo Pulido
+Pues es que. 
+
+07:16
+Juan Francisco Reyes Mora
+La pregunta pues siempre he visto que muchas responsabilidades del equipo comercial, obviamente yo toda la vida ha sido comercial, entonces marketero no lo hecho, entonces pero entiendo que y he visto es una fuente de prospección bastante interesante y por la cual quiero seguir ese camino. Nosotros hoy tenemos un equipo comer gerentes de cuenta y tenemos un equipo de marketing en cabeza de Luis Felipe. Entonces nosotros como somos BBC, entonces monetizamos en el BC, pues digamos que en esa parte, digamos que nos hemos movido bien. Lo que hemos logrado ha sido a partir de eso a través de marketing digital, comunicaciones a las empresas que tienen convenio. Pero para nosotros como el origen para ser un ecosistema grande y sostenible tiene que ser a partir de traer convenios, empresas de ciertos sectores que muy identificados y que tengan mano de obra intensiva. 
+
+08:25
+Juan Francisco Reyes Mora
+Básicamente lo que nosotros buscamos, empresas de sectores de seguridad, transporte masivo, puede ser que tengan 500 mil empleados de en adelante todo eso es lo que a nosotros nos interesa porque le prestamos a todos sus empleados a través de la metodología libranza. Entonces tenemos hoy 130 convenios, todo ha sido por la metodología tradicional de consecución uno a uno, empresa, relacionamiento, personas que no te recomiendan, pero pues no hemos tenido un crecimiento jamás sostenido a través de una estrategia de ese estilo, excepto una vez que me dio por incursionar en LinkedIn para automatizar el proceso de un mensaje y tratamos de incursionar el año pasado a través de LinkedIn por mi LinkedIn con estrategia de buscar como esos personas que toman decisiones y lanzamos un mensaje de valor. 
+
+09:36
+Juan Francisco Reyes Mora
+Ese mensaje de valor pues muchas personas me aceptaron en su red social y cuando ya me aceptaba mandaba un mensaje pues invitándolo a seguir. Pero pues digamos el cierre fue muy bajo y de pronto me faltó mucho apoyarme de los comerciales, ya me llegaron a mí, yo no pude entre todas las cosas terminar resolviendo, entonces se diluye un poco y para este año pues no hemos hecho nada en ese aspecto. Hemos tratado mucho de profundizar las empresas, pero si ya estamos viendo la necesidad de otra vez traer otra vez nuevos BB que nos generen ese ecosistema, esa cantidad de personas para poder seguir trabajando. Eso es lo que hemos hecho y así lo veo. 
+
+10:21
+Luis Felipe Camargo Pulido
+Y tal cual hacemos puro BBC y nos falta meterle mucho al BB directo, o sea conseguir clientes y mover el pipeline. 
+
+10:29
+Juan Francisco Reyes Mora
+Tal cual, a las dos cosas. 
+
+10:33
+Luis Felipe Camargo Pulido
+Estás hablando con el micrófono. Apaga Daniel. 
+
+10:35
+Daniel Cardona
+¿Confírme una cosa, tenemos claro los cuántos comerciales tenés? 
+
+10:42
+Luis Felipe Camargo Pulido
+Cinco. 
+
+10:43
+Daniel Cardona
+Cuatro. 
+
+10:44
+Juan Francisco Reyes Mora
+Cuatro. 
+
+10:46
+Daniel Cardona
+¿Tenés un director comercial? 
+
+10:49
+Juan Francisco Reyes Mora
+Sí. 
+
+10:50
+Daniel Cardona
+Dentro de sus cuatro. 
+
+10:53
+Juan Francisco Reyes Mora
+Sí. Entonces sería hoy sean tres comerciales, un director comercial y una cartera que está manejado que son los clientes más pequeños que no requieren de un CAM, los maneja Luis Felipe, que son las empresas con un convenio muy pequeño de 30-40 personas. 
+
+11:12
+Daniel Cardona
+Hablemos un poquito de herramientas porfa. 
+
+11:16
+Luis Felipe Camargo Pulido
+Estamos implementando el CRM y el celular. Un CRM que se llama. 
+
+11:25
+Juan Francisco Reyes Mora
+Nacimos con Hotspot. Nacimos con hotspot y evolucionamos eso. Pero por temas de costos. 
+
+11:31
+Daniel Cardona
+Marica, es que no es, no hay necesidad. ¿Pero entonces sáquenme de una duda, tenemos un embudo BB y vamos a tener solamente un funnel de BB y luego un embudo BC y el funnel de BC, sí o qué? 
+
+11:48
+Luis Felipe Camargo Pulido
+Sí, correcto. 
+
+11:50
+Daniel Cardona
+¿Es decir, ustedes lo que necesita tienen un core bancario y ese core bancario manda una información específica a dónde? 
+
+12:03
+Luis Felipe Camargo Pulido
+Bueno, listo, venga, le explico rápidamente cómo lo entiendo yo y Juan Francisco me corrige si. Yo llego a decir acá una burrada. Básicamente yo me dedico a libranzas y pues para dar una libranza necesito tener un previo acuerdo con una empresa. 
+
+12:16
+Juan Francisco Reyes Mora
+Listo. 
+
+12:16
+Luis Felipe Camargo Pulido
+Por eso esto se vuelve BB, porque yo necesito convencer a la empresa de que trabaje conmigo y luego yo ya no tengo ningún beneficio directo para la empresa, sino para los trabajadores de esa empresa y es cuando yo vuelvo BBC. 
+
+12:28
+Juan Francisco Reyes Mora
+Listo. 
+
+12:29
+Luis Felipe Camargo Pulido
+¿Qué pasa? Yo ya no vuelvo a hablar con la empresa entre millones de comillas, excepto para cobrar pues, porque lo que necesito es que me muevan las personas dentro de esos acuerdos, pues la cartera, o sea literalmente que me digan ay préstame plata, bla, bla, o quiero tal cosa, tenemos un marketplace, bueno, tenemos un montón de cosas, pero básicamente lo que necesito es que las personas dentro de esos acuerdos nos funcionen. Hoy en día nosotros nos dedicamos a hacer más que todo profundizaciones y las hacemos sin nada, o sea sin CRM, sin nada, porque dentro de estas empresas que te estoy comentando, un ejemplo supositorio, un Coca Cola tiene mil usuarios. 
+
+13:04
+Luis Felipe Camargo Pulido
+Muchas veces por políticas de las empresas nos dejan acceder a esa base de datos, lo hacemos con el marketing tradicional, vamos a ferias, les decimos que les regalamos una visita de ramo y les regalamos el ponquisito ramo. 
+
+13:20
+Daniel Cardona
+Súper entendido. Pipe, simplemente quiero apuntar cosas a ver si le estoy. Lo voy a parafrasear a ver si le entiendo bien. Usted hace una acción comercial de BB para adquirir a un usuario. Ese usuario no ha sido su cliente todavía porque usted puede firmar un convenio, pero realmente el modelo de negocio está en la activación y adquisición de usuarios dentro del B, que es el sí que usted atiende. Por ende, acá empieza. Es decir, una cosa es fuerza de ventas BB para cerrar más cosas. Otra cosa es cuántos nuevos usuarios tengo yo por cada una de las cuentas y luego cuántos nuevos productos puedo colocar por usuario adquirido de cada cuenta. 
+
+14:03
+Luis Felipe Camargo Pulido
+Tal cual. Nosotros entendemos empresas como clientes y usuarios como los colaboradores de. Tal cual. 
+
+14:11
+Juan Francisco Reyes Mora
+Y monetizo en el usuario, no en mi cliente. 
+
+14:16
+Daniel Cardona
+Clarísimo, clarísimo. Listo. ¿Qué data tienen hoy? Por eso les pregunté ¿Cuál es el core bancario? 
+
+14:27
+Luis Felipe Camargo Pulido
+Para mí el core bancario es el de los clientes, ¿Verdad? 
+
+14:31
+Juan Francisco Reyes Mora
+No usuarios, no el producto que le entregamos a los usuarios. Si, entendemos así. Nosotros lo que entregamos son créditos digitales a través de libranza para personas que han tenido, no han tenido o algún día no pudieron pagar algún crédito y tienen algún pecado. Nosotros somos aquellos, esas personas. Eso le pega al 80% de las empresas que nosotros trabajamos. 
+
+15:00
+Luis Felipe Camargo Pulido
+Tenemos nombre, cédula, teléfono, correo, estrato. Creo que les pedimos y hacemos una pequeña encuesta antes de hacer cualquier crédito a estas personas como para poderlo aprobar antes de entregar. Pero es un formulario muy básico, creo que son. 
+
+15:18
+Daniel Cardona
+Listo. ¿Eso a dónde cae? 
+
+15:21
+Luis Felipe Camargo Pulido
+Eso cae a un CRM interno o a una base de datos de nosotros tenemos internamente pero no le damos uso. Quiero decir, almacenamos información pero no la utilizamos. 
+
+15:31
+Daniel Cardona
+OK, OK. 
+
+15:34
+Luis Felipe Camargo Pulido
+Ahora, ¿Por qué no lo utilizamos? Porque básicamente solamente podemos utilizar mensajes de texto y push notifications a las personas que ya hayan descargado mi aplicación, que es mi problema. ¿Me explico? Quiero decir, cuando yo firme con Coca Cola son mil empleados, pero Coca Cola no me da acceso directo a comunicarme con esas personas. 
+
+15:54
+Daniel Cardona
+Obvio, usted tiene que hacer todo el esfuerzo. 
+
+15:56
+Luis Felipe Camargo Pulido
+Exacto. 
+
+15:57
+Daniel Cardona
+Sí, sí, sí, sí. Tengo el modelo súper claro porque hice mis prácticas en una empresa que se llama Go. No era de libranza, sino de beneficios para empleados. Conozco el bot. Estás entrando por HR. Aparte de eso, financiero y aparte de eso, es crédito. Son dos estrategias de comunicación muy diferentes. ¿Tiene equipo? El reto está bonito porque creo que. Pero papi también tiene un montón de cosas muy físicas. Esto es de eventos, shows, rifas de espectáculo. ¿Por qué está el pueblo. 
+
+16:35
+Juan Francisco Reyes Mora
+Sí, Boli Rana? 
+
+16:39
+Daniel Cardona
+Las fiestas de las empresas sirven por algo, ¿Si me entiende? 
+
+16:44
+Juan Francisco Reyes Mora
+Allá estamos, hacemos la fiesta de viejas de Carmen y todo. Nosotros vamos allá y participamos de eso. Vendemos un mocho, convertimos un montón. 
+
+16:52
+Daniel Cardona
+Obvio es que usted debería patrocinar. Ese debería ser su costo de activación de usuarios. Después de. Piénselo como un modelo financiero. Hay dos cosas que les quiero resaltar de esto. Nosotros, digamos, cuando en Fincargo, nosotros hicimos una vaina a través de tecnología que asumo que lo que me está diciendo que esa base de usuarios es ¿Quién me pide? ¿Cuánto me pide, ¿En qué monto, a qué plazo, ¿Cuál es el perfil del usuario, sí o qué? Y de qué empresa es y que cargo es y que básicamente usted tiene. ¿Cuántos usuarios tiene ya? 
+
+17:42
+Luis Felipe Camargo Pulido
+24 mil. Y el universo posible son 100 mil. 92 mil. 
+
+17:45
+Daniel Cardona
+La verdad. ¿Cuántos tenemos? 
+
+17:50
+Luis Felipe Camargo Pulido
+24 mil. 24 mil y el universo son 92 mil. 
+
+17:55
+Juan Francisco Reyes Mora
+Usual. 
+
+17:55
+Daniel Cardona
+¿Y esos 24 mil usuarios, cuántos hay? ¿Activos? 
+
+17:58
+Luis Felipe Camargo Pulido
+24 mil usuarios. ¿Activos? 
+
+18:02
+Juan Francisco Reyes Mora
+Activos. ¿Tiene un crédito pagándome una tasa de interés o algún producto? 
+
+18:08
+Daniel Cardona
+¿Cuánto tiene ustedes en cartera? 
+
+18:11
+Juan Francisco Reyes Mora
+16 millones. 
+
+18:14
+Daniel Cardona
+OK. Y esto es decir, me muestran el producto. 
+
+18:27
+Juan Francisco Reyes Mora
+Daniel tenía fan y le han robado las maletas entonces. Y se hizo muy famoso por eso, pero por eso nos conocimos, pero no le pude mostrar y por eso este es el espacio. Por lo cual si quiere muéstrale la aplicación, muéstrale cómo entregamos el crédito y creo que va a estar parte de entender ya todo el modelo. 
+
+18:54
+Luis Felipe Camargo Pulido
+Compartir pantalla para que vea qué es el producto. Le voy a presentar lo que la gente consumiría. 
+
+19:00
+Juan Francisco Reyes Mora
+¿Listo? 
+
+19:00
+Luis Felipe Camargo Pulido
+Si se traba el computador, Juan me salva porque a veces mi compu muere. En este preciso momento me avisan. No, ya, creo que es ya. 
+
+19:19
+Daniel Cardona
+Sí, marica. Sí. 
+
+19:23
+Luis Felipe Camargo Pulido
+Bueno, nada, entonces le presento básicamente la aplicación móvil. Obviamente la estamos viendo en desktop, entonces se ve un poquito rara denario. Básicamente es una aplicación que está pensada para que usted haga créditos de libre consumo, ¿Listo? Dentro de estos créditos de libre inverso, de libre consumo o bueno, para que usted los use como quiera también tenemos varias cosas, un lugar donde usted puede recargar su celular, su teléfono, lo que sea. Plata inmediata quiere decir que usted de menos de 30 minutos creo que ya la puede tener en su cuenta. Un mercado en línea con productos de un marketplace que montamos bonos para ir al D por ejemplo a comprar cualquier cosa y turismo listo sacamos una D card que luego se la cuento, pero por ahora esto es lo importante. 
+
+20:13
+Luis Felipe Camargo Pulido
+Bueno, digamos que en una de nuestras múltiples decisiones lo que estamos buscando es enseñarle a las personas a endeudarse básicamente a que la gente no pida por pedir dinero o pues que no pida para echar pola, sino que sea para algo un poquito mejor. Entonces este fue el intento que teníamos donde pues obviamente le dábamos educación financiera a las personas, bueno le dábamos cursos en línea básicamente y sí ya Juan Francisco me complementará un poco. Nosotros lo que intentamos hacer es que las personas progresen, o sea nosotros no le prestamos dinero a las personas porque sí, sino pues con un objetivo y es que las personas puedan progresar. 
+
+20:50
+Luis Felipe Camargo Pulido
+Para que una persona pueda progresar según nuestra filosofía es obviamente pues usted necesita dinero para muchas cosas, así que a eso nos dedicamos, pero una de las cosas que hacemos durante este progreso es que usted pueda aprender o que tenga educación y usted pueda mejorar su casa. ¿Entonces digamos que acá en el mercado línea encontrar productos de hogar como no sé, la nevera, la estufa, cosas así vale? Ese es como nuestro principal foco. Obviamente pues el progreso para cada persona es diferente, por ejemplo podemos hablar de movilidad, no alcanzamos a tener una moto, pero sí por lo menos la patineta eléctrica me dijiste. 
+
+21:28
+Daniel Cardona
+Sí parece. Hábleme de números del producto financiero. El pareto de créditos que ustedes colocan ¿Tienen alguna incidencia sobre alguna de estas variables? 
+
+21:47
+Luis Felipe Camargo Pulido
+Más o menos el 90% son créditos de libre inversión, el 10% es dentro del marketplace o dentro de las. 
+
+21:53
+Juan Francisco Reyes Mora
+Me ha toca regáleme usted si quiere Pipe siga hablando me un segundo que estoy acá recogiendo el carro. 
+
+22:03
+Luis Felipe Camargo Pulido
+Sí, básicamente son 10% dentro de este marketplace, el resto del porcentaje es de libre inversión, son microcréditos más que todo lo que manejamos hasta tres millones y medio. 
+
+22:17
+Daniel Cardona
+¿Ustedes qué hacen con esa información? 
+
+22:20
+Luis Felipe Camargo Pulido
+¿No hacemos nada, la almacenamos y aquí quitándome la ropa no hacemos un culo. 
+
+22:27
+Daniel Cardona
+Tiene acceso a la base de datos? 
+
+22:30
+Luis Felipe Camargo Pulido
+No, no, es que es inconsumible. 
+
+22:37
+Daniel Cardona
+Fresco. 
+
+22:40
+Luis Felipe Camargo Pulido
+Pero claro, digamos que yo puedo ver en que las personas gastan su dinero. ¿Si yo meto ya al Corp, donde saldría cuánto debe cada persona? Puedo ver cómo son los hábitos de consumo de una persona, por ejemplo, si su dinero lo gasta más que todo en belleza, es un ejemplo, o si lo gasta en bonos del D, etcétera, etcétera. 
+
+23:00
+Daniel Cardona
+¿Qué ve la empresa? 
+
+23:03
+Luis Felipe Camargo Pulido
+La empresa, dueño, o sea, mi cliente. 
+
+23:05
+Daniel Cardona
+Sí. 
+
+23:06
+Luis Felipe Camargo Pulido
+No ve nada, no ve nada. 
+
+23:09
+Daniel Cardona
+¿Usted a quién le vende dentro de su cliente? 
+
+23:13
+Luis Felipe Camargo Pulido
+¿En la vida real? A recursos humanos. Y se los vendo con un discurso de que esto es bienestar para sus empleados. Y si, yo también quisiera mostrarle a la persona qué tanto bienestar le estamos dando a sus empleados, pero aún no se ha hecho. OK, pero en las ideas de crecimiento sí está eso, o sea, quiero decir. 
+
+23:32
+Daniel Cardona
+Fresco. Fresco. 
+
+23:33
+Luis Felipe Camargo Pulido
+Entonces vea, es para donde queremos llegar. 
+
+23:35
+Daniel Cardona
+Partamos de un principio y es, yo he sido gerente de marketing muchas veces, entonces yo sé lo que estar que pareciera que todo se está incendiando y uno tiene que hacer decisiones sabias sobre qué árbol incendiar, tal cuerpo, estamos alineados, mismo equipo. Fresco. Y si le pregunto cosas simplemente es para entender el modelo de negocio, ¿No? 
+
+23:57
+Luis Felipe Camargo Pulido
+Para mí también es súper importante que usted sepa la realidad. Como yo vendo bienestar y pues a la empresa, pues al final no se lo entrego y pues sí, es una de las como si se, tareas que tenemos que mejorar. Sí, lo que pasa es que está cero priorizado. 
+
+24:13
+Daniel Cardona
+Claro. Cuando usted hable un poquito del equipo que usted tiene, weón, ustedes, Jack o. 
+
+24:18
+Luis Felipe Camargo Pulido
+Trails de mi equipo de marketing, yo tengo una persona que se dedica a hacer toda la parte del marketplace, o sea, que se dedica literalmente a manejar esto en mercado en línea, porque es 100% manual. Tengo un diseñador y conseguí un analista de marketing para que me ayude a poder salir de cosas, porque también en las labores que tengo yo como de mercadeo, voy a estas visitas comerciales que le estaba comentando con Francisco, ¿Qué hacemos? 
+
+24:43
+Daniel Cardona
+Obvio, pues usted tiene que actuar porque es que usted no gana plata por lo que cierra en BB. 
+
+24:48
+Luis Felipe Camargo Pulido
+Tal cual. Entonces allá vamos a esas visitas, etcétera, etcétera. También vamos con los cams a esas visitas. 
+
+24:56
+Daniel Cardona
+Listo, Ese es mi equipo. Hablemos un poquito del objetivo de ventas que tienen para cerrar este año, por fa. 
+
+25:02
+Luis Felipe Camargo Pulido
+Listo, tenemos que hacer 45 millones y vamos 27 mil. 
+
+25:09
+Daniel Cardona
+45 mil y tienen que hacer 27 mil. 
+
+25:12
+Luis Felipe Camargo Pulido
+OK, al revés, pero sí por eso. 
+
+25:17
+Daniel Cardona
+Tiene que hacer 45 mil y van 27 mil. 
+
+25:19
+Luis Felipe Camargo Pulido
+Eso sí lo entendí al revés, pero sí. 
+
+25:22
+Daniel Cardona
+¿Cómo está compuesto este número? Número de usuarios, número de transacciones, número de tipologías de crédito, rango. 
+
+25:29
+Luis Felipe Camargo Pulido
+Ya que volvió, ¿Puedo mostrar el Corp? 
+
+25:32
+Juan Francisco Reyes Mora
+Sí, claro. No, muy fácil. Y claro. 
+
+25:39
+Luis Felipe Camargo Pulido
+Claro. 
+
+25:43
+Juan Francisco Reyes Mora
+Pero no, claro, puede mostrarle la. Digamos, cómo está compuesta la cartera. Obviamente es lo que más colocamos un crédito de libra. 
+
+25:59
+Luis Felipe Camargo Pulido
+Aunque no aparezca. Tranquilos, tranquilos. OK, tranquilos, ya hice clic. Es que se demora un poquito. 
+
+26:25
+Juan Francisco Reyes Mora
+Le. 
+
+26:25
+Daniel Cardona
+Tiene que echar carboncito al computador. 
+
+26:28
+Luis Felipe Camargo Pulido
+Tranquilos, tranquilos. Aquí, aquí es pedaleando. 
+
+26:35
+Daniel Cardona
+¿Es Windows o Mac? 
+
+26:37
+Juan Francisco Reyes Mora
+Windows. 
+
+26:38
+Luis Felipe Camargo Pulido
+Windows. Aguante, aguante, aguante. 
+
+26:48
+Daniel Cardona
+Simplemente para confirmar pips. Yo como empresa no tengo acceso a nada de la gente que está con ustedes. 
+
+27:00
+Luis Felipe Camargo Pulido
+Bueno, listo. ¿Qué pasa? Yo cuando le doy el crédito a las personas, hay dos formas de que yo apruebe ese crédito o me lo aprueba la empresa a la que él trabaja. Obviamente pues cuidando que no se pase de las reglas que tenemos, que es el 30% de sueldo o autogestión. Cuando es autogestión, ya la empresa no tiene que hacer nada de esto. Es el único momento donde las personas o las empresas entran a conocer o entran a la aplicación denario a hacer algo, creo. Bueno, sí, sí. ¿Algo más, Juan? Sí ya desconocimiento mío. ¿Las personas de recursos Humanos entran algo más aparte de aprobar créditos a la aplicación Denario? 
+
+27:48
+Juan Francisco Reyes Mora
+No. 
+
+27:53
+Daniel Cardona
+¿A quién tienen ustedes en producto? 
+
+27:56
+Luis Felipe Camargo Pulido
+No tenemos producto. 
+
+27:58
+Daniel Cardona
+¿No tienen producto? ¿Ustedes no han hecho nada con esta información? 
+
+28:08
+Juan Francisco Reyes Mora
+A ver, entonces acá ya estoy de regreso. Es que imagínense que mi esposa la estrellaron ayer, estaba trayendo el carro acá, la vena de colisiones, entonces. Pero bueno, ya estoy aquí de nuevo. Entonces, ¿Cuál es la pregunta, muchachos? 
+
+28:25
+Daniel Cardona
+¿Ustedes no han hecho nada con esta información? 
+
+28:30
+Juan Francisco Reyes Mora
+¿Hay un tono de gravedad de información de que para? De la data, digámoslo así. No, no, pero sí estamos con mucha intención de hacerla. Incluso en tema de producto, pues ya de pronto Dani pudo ver un poco. Nosotros hemos tratado de hacer un producto disruptivo a partir de la librancia, porque a pesar de que es un mismo crédito, lo hemos tratado de entregar diferente y eso ha hecho que podamos entender un poco los hábitos de los usuarios y entregar productos hechos a la medida, pues hechos a la medida, entenderlos para que ellos lo puedan consumir de una mejor forma. Entre esos lanzamos hace recientemente par de meses una tarjeta que se llama la D Card, que es una tarjeta recargable con crédito, no es una tarjeta de crédito, es recargable con crédito. 
+
+29:26
+Juan Francisco Reyes Mora
+Entonces una tarjeta para esas personas que nunca han tenido una tarjeta en sus vidas, somos su primera tarjeta que tiene un crédito. Y vamos a empezar a ver los hábitos de consumo de ellos, lo que hemos podido usar todo ese tiempo para recursos humanos, porque la idea es que recolectemos esa información y se la entreguemos como insumo de recursos humanos y ellos a su vez tomen unas decisiones de cómo las personas están tomando su usando el crédito, si lo usan para el hogar, si lo usan para irse a gastar en comida, en mercado, salud. Eso es un poco como lo que hemos podido ver y que hacia adelante las empresas nos han venido pidiendo. 
+
+30:10
+Juan Francisco Reyes Mora
+Lo hemos sacado de una forma muy manual, pero con el foco hacia futuro de tener una información en el sistema que le entreguemos a ellos en esta propuesta, que ellos puedan consultar ese tipo de información y pan de alguna otra forma tener un mapeo de dónde se están consumiendo los créditos, sus empleados y que obviamente no tengan. Lo que más les duele a ellos es el tema de que los sobreendeudemos. Entonces eso es lo que hemos hecho hasta el momento. 
+
+30:41
+Daniel Cardona
+Listo, Súper claro. Es decir, el back que me mostraron, ¿Esto está conectado a alguna base de datos, asumo yo, o esa es la base de datos? 
+
+30:52
+Luis Felipe Camargo Pulido
+Sí, tal cual. No, eso está conectado a alguna base de datos, pero esa base de datos nos da más información, quiere decir, si la podemos sacar más. No hacemos productos pensados en la información. 
+
+31:03
+Daniel Cardona
+Fresco, o sea, marica, esto está bueno, parce. Aquí hay dos maneras de comernos este marrano. A ver, pero quiero escucharlos a ustedes en este momento. Para llegar a ese número, ¿Tienen claro cómo llegar a ese número? Es decir, ¿Cuántos créditos, de qué segmento, de qué usuarios, de qué empresas necesito aumentar para llegar allá? 
+
+31:31
+Juan Francisco Reyes Mora
+Claro, digamos, el presupuesto que contó ahorita Luis Felipe es un presupuesto que teníamos y que pues obviamente ya nos vimos colgados de hacerlo. Primero digamos, hablemos de los números, hemos crecido un 35% interanual, lo cual ha sido muy bueno para nosotros, pero digamos que lo que nos propusimos nos quedamos colgado porque no tuvimos la capacidad, está el problema, de traer más empresas que me dieran más usuarios. Entonces ese ha sido donde nos quedamos nosotros más o menos tenemos medido que entre el 20 y el 30 por ciento profundizamos o los usuarios toman nuestro servicio en cada empresa que vamos. Entonces lo que dijimos fue, venga, tratemos de que ese número sea mayor y que más usuarios tengan nuestro servicio y a su vez revisemos si esos usuarios pueden, a nivel ya de riesgo de crédito, pueden acceder a más cupo de crédito. 
+
+32:36
+Juan Francisco Reyes Mora
+Eso es lo que hemos venido haciendo. ¿Qué es lo que sucede? Ya con eso que les estoy mencionando, si mi ticket promedio hoy son 500 mil pesos y llego entre el 20 y el 30 por ciento de penetración en una empresa o de profundización, como lo queramos llamar, pues tengo que tener por lo menos, no sé, mil o dos millones de pesos de crecimiento para poder hacer estos números, por lo cual no tengo todavía la masa y no tengo los clientes para hacerlos. Entonces, claro, ese es el dolor que tenemos nosotros porque sabemos que ya con lo que nos hace falta, nos falta por terminar de año, que obviamente por nuestra fórmula interna y nuestro algoritmo interno de aprobaciones de crédito está más enfocado a que este periodo de año pues tengamos más cupos, es decir, la gente tenga más dinero. 
+
+33:26
+Juan Francisco Reyes Mora
+Y explicarle un poco nuestro modelo es que en los primeros seis meses del año no tiene tanto cupo como en el segundo. ¿Sí? Y todo sea en función del riesgo, no por algún tema, ningún capricho, simplemente es un tema de riesgo porque las personas tienen más capacidad de que el día que se vaya me repagan. Entonces eso va, digamos que muy inherente al tema de riesgo de crédito. Pero pues digamos que ese es el reto y pues obviamente si hemos hecho el ejercicio mil veces de si yo tengo una empresa de 5.000 y le pegó al 20%, entonces quiere decir que a mil personas le estoy prestando plata y si tengo Tickets promedio de 500 mil, pues coloqué 500 millones, ¿Cuánto me hace falta para los 4 mil del mes? Están los números. 
+
+34:15
+Juan Francisco Reyes Mora
+Esa es la relación en regla de tres que nosotros hacemos para poder sacar un presupuesto y saber qué tan cerca, tan lejos tenemos. Esos son los datos que tenemos así como muy por encima de contar y mencionar. 
+
+34:32
+Daniel Cardona
+Listo. Entonces, a ver, yo me podría sentar a tratar de solucionarle go to market. ¿Yo le voy a decir mi punto de vista y yo qué haría? Perfecto. Utilizaría los últimos tres meses del año y me enfocaría en una campaña de marketing que sea diciembre y me concentro de hacer producto product marketing en activación. ¿Si usted hoy tiene una tasa de penetración del 23%, usted hoy no está incentivando a que más personas le coloquen más créditos dentro de la empresa? No, asumo que no. 
+
+35:17
+Juan Francisco Reyes Mora
+Tratamos, pero no lo hacemos masivamente porque. 
+
+35:21
+Daniel Cardona
+También, es decir, usted tiene muchos frentes que atacar. Muchos. Pero el que veo yo más cercano es sobre la misma data que usted ya tenga. Quiénes son los usuarios que han venido creciendo o que han tenido mayores que le han dado la vuelta más veces al mismo cupo para saber quiénes son sus power users. Y cuando usted ya entiende esos manes, usted ya se enfoca en comunicar que esos locos vayan y refieran. Entonces es una acción en activación, una acción en adquisición que es solamente campaña navidad y todo tiene que ir enfocado. Prepárese, prepárese, prepárese, prepárese, porque eso tiene todo que ver con su bienestar financiero, porque usted no tiene que estar en diciembre arrancando el año. Dicen cualquier mierda endeudado pues. Pero como que me entiendas. 
+
+36:10
+Daniel Cardona
+Sí me entiendes, me encantaría saber si en noviembre y diciembre de años pasados, cómo es su pico de nuevos registros y activaciones. Porque una gran hipótesis que tengo es que la gente necesita plata para diciembre y normalmente se deja colgar cuando ya está en el cuello. 
+
+36:29
+Luis Felipe Camargo Pulido
+Históricamente, los meses más. 
+
+36:34
+Juan Francisco Reyes Mora
+La gráfica que tenemos del número de operaciones por mes que toman las personas en esos meses del año pasado está en el dashboard. 
+
+36:44
+Daniel Cardona
+Sí, sí, sí. 
+
+36:48
+Luis Felipe Camargo Pulido
+Aguante, me aguante. 
+
+36:51
+Juan Francisco Reyes Mora
+Porque si, Dani, sí, es en esa etapa donde sobre todo el año pasado fue donde más hicimos colocación. 
+
+37:04
+Luis Felipe Camargo Pulido
+De este año contra el rosadito. El moradito es el año pasado. El rosadito, esos desembolsos. 
+
+37:13
+Juan Francisco Reyes Mora
+Bueno, da también el mismo sentido, pero muestren más el de abajo, la curva. Se ve perfectamente la tendencia del año que este año si ustedes se dan cuenta enero, febrero fueron los mejores años de toda la vida mundial, pero ya cuando se. Ya hacia mayo, junio empieza otra vez a apretarse un poco la curva y es donde pues obviamente hicimos marica, nos falta más el barco a los últimos tres meses. 
+
+37:50
+Daniel Cardona
+A ver, listo. Súper claro. Entonces vea que mi hipótesis puede llegar a tener valor si usted empieza a prepararla con una campaña específica muy enfocada en activar, perdón, en adquirir para diciembre de activación tiene que tener todos sus propios experimentos y los experimentos creo yo, ya no tienen que ser ni siquiera en el app, o sea, tecnología tendría que estar enfocado en vez de seis uno, un botón grande es lo que yo haría desde el producto. Usted necesita que la gente no piense. 
+
+38:28
+Juan Francisco Reyes Mora
+Concéntrese que en el app tenga solamente. 
+
+38:34
+Luis Felipe Camargo Pulido
+Sea crédito y listo, saque, váyase. 
+
+38:38
+Daniel Cardona
+Lo que les voy a decir es loco, pero bueno. Que sea una barra de texto que usted pueda conversar con Donar y decir marica, no sé en qué pedir el crédito, me explica porque es que hacia allá están yendo las interfaces del mundo, GPT, Gemini, Cloud, Perplexity, todo el mundo está pasando la conversación. 
+
+39:07
+Luis Felipe Camargo Pulido
+O sea, básicamente esto y listo. 
+
+39:11
+Daniel Cardona
+¿Marica, es un chat, es lo que haría yo en el producto, si me entiende? Es un chat que sea dígame que necesita hoy, cómo lo puedo ayudar con sus finanzas. Claro. 
+
+39:28
+Juan Francisco Reyes Mora
+Y como marica, que necesito un viaje, pues no saque un crédito, sino yo hago turismo por acá, yo necesito ir a un restaurante, tome su tarjeta, yo necesito comprar un televisor, tome su televisor acá y le proponga y coja. 
+
+39:43
+Daniel Cardona
+Ese modelo de datos y sobre ese modelo de datos es que usted construye cualquier otra línea de productos financieros. 
+
+39:54
+Luis Felipe Camargo Pulido
+OK. 
+
+39:58
+Daniel Cardona
+O sea, usted me está diciendo que tiene 24 mil personas conectadas a una aplicación por plata. 
+
+40:04
+Juan Francisco Reyes Mora
+Sí. 
+
+40:06
+Daniel Cardona
+Para mí la vuelta es fácil, weón. Se llama producto, foco en el producto. Se iteran los últimos tres meses del año hay una campaña específica para usted, no va de baja lo otro y le empieza a meter can. Es que el proyecto está divino. ¿Ustedes tienen CTO? 
+
+40:27
+Juan Francisco Reyes Mora
+¿Cto? Sí, Juan Carlos es mi socio. 
+
+40:31
+Daniel Cardona
+Ya, ya. ¿Pero no tienen producto? 
+
+40:36
+Luis Felipe Camargo Pulido
+No, nosotros no tenemos producto per se, Juan. 
+
+40:40
+Daniel Cardona
+Vea, yo le puedo dar la vuelta a esto en los próximos tres meses con un equipo de personas de exponencialidad bacanas, porque tiene muchos elementos para jugarse acá. Esto no es solamente go to market desde mi punto de vista, esto es un cambio tecnológico de producto del mindset, probablemente de ustedes también, porque incomoda, porque llegarle un ingeniero a decirle vamos a mandar a la mierda la interfaz y simplemente va a ser un chat, es como esperemos ni un segundo porque me pasó. En fin, cargo. Entonces, la exponencialidad cuesta, pero le juro por Dios que con los números que tiene ahorita, yo dividiría. Usted necesita sí o sí tres equipos de growth. Cómo adquiero más empresas y cómo mantengo empresas. Y mantener empresas significa cómo activo usuarios. 
+
+41:36
+Daniel Cardona
+Pero ya le pasa la bandera, ya le abrí el espacio, ya está el evento, ya está la cartera, ejecuto, tiene otro equipo de adquisición de usuarios. Y luego tiene que tener unas tácticas específicas para activación de usuarios. Y asimismo usted tiene que coger el presupuesto de la empresa y dividirlo. ¿Cuánto se va para BB y qué espero de BB? ¿Cuánto se va para adquisición de BC y cuánto se va para eso? ¿Y cuánto se me va a ir en activación? Y sobre todo cuánto se me va en retención. Y ese tiene que ser una persona encargada de coger ese número y subirlo un 1% todos los meses. Porque es que si usted le trata de hablar a tanta gente, papi, es imposible. Usted tiene. Es imposible que usted haga esa vuelta. Hay que concentrarse en hacer muy buen producto. 
+
+42:39
+Juan Francisco Reyes Mora
+Bueno, marica, ¿Y cómo es la vuelta? ¿Ustedes lo acompañan en esa asesoría? Digo, marica, este es el modelo que toca montar. Este es la haga esto, que con eso llegamos a esos números que usted quiere hacer. Es así la vuelta como una propuesta y acompañamiento. 
+
+42:59
+Daniel Cardona
+El acompañamiento normalmente arranca con un taller de exponencialidad para el equipo. Lo hago con Jiménez, la de Lulo. 
+
+43:07
+Juan Francisco Reyes Mora
+X. 
+
+43:12
+Luis Felipe Camargo Pulido
+La conozco, creo que fue jefe mía hace millones de años. 
+
+43:15
+Daniel Cardona
+Natalia Jiménez, la del Ulo X, la que montó el banking. 
+
+43:22
+Luis Felipe Camargo Pulido
+Ella viene de una empresa que se llama Grande de publicidad, ¿Cierto? LinkedIn y chismo es que. 
+
+43:31
+Daniel Cardona
+Arranca con ese taller. Y después de ese taller damos unos parámetros específicos de experimentación desde el producto. Juan. Entonces es cuántos MVP puedo yo ir sacando a la semana para cada una de las tres cosas específicas. ¿Sí me entiende? ¿Cuáles son los dos experimentos de esta semana en BB? ¿Cuáles son Los dos experimentos de la semana para adquirir más clientes, más usuarios? ¿Cuáles son los dos experimentos para activar más usuarios y cuáles son los dos experimentos PARA RETENCIÓN? Mariki Que se caiga el mundo, dos cosas por equipo parce, me quiero pegar a esto. ¿OK, dónde está el hueco más grande? Cierre el año, cierre BB, no haga BB, usted no va a crecer . 
+
+44:15
+Daniel Cardona
+Ciclos de cierre, tres meses, seis meses, no lo mate, deje una persona que haga farming y un proceso y automatice esa mierda eventualmente marica, cuando a recursos humanos le tocan la puerta y no tiene fondo de empleados, lleve asumo, o si tienen fondo de empleados tampoco tiene. 
+
+44:33
+Juan Francisco Reyes Mora
+La plata y si fondo de empleados no, el competidor más grande que tenemos se llama fondo empleados, donde hay fondo empleado no entramos. 
+
+44:43
+Daniel Cardona
+¿Entonces ICP súper claro, tiene fondo de empleados, no soy para usted y sabe por qué no soy para usted? Vea los números de lo que está haciendo nuestros usuarios con sus créditos, su casa, su fondo de empleados le da esa información, es que tienen un montón de data, no toca hacer nada, toca dedicarse a ser un muy buen producto. 
+
+45:08
+Luis Felipe Camargo Pulido
+Una decisión con huevos como dirían por. Así que el que paga sufra. ¿Así que yo no puedo decir nada. 
+
+45:23
+Juan Francisco Reyes Mora
+Pero como marica se manda una propuesta cómo está mierda, yo le mando la. 
+
+45:31
+Daniel Cardona
+Propuesta, necesitaría, es decir, tocaría firmar un NDA para que usted marica, para estar tranquilos, todos nos metemos en como hacerle una proyección y una sistematización y hay un número que le parezca escandaloso? Por lo que le estoy diciendo que usted me dice, como. 
+
+45:59
+Juan Francisco Reyes Mora
+Yo no estoy acostumbrado a pagar estas. ¿Todos los números pueden ser escandalosos, pero quiero saber cómo me como, porque es que yo como lo estoy viendo ahora no le estoy dando la vuelta, yo soy, nosotros somos muy, digamos que muy tradicionales, a pesar de que hemos entendido en esta vaina que todos somos ex banqueros, entonces el banquero es muy tradicionalista en muchas cosas no? Pero este negocio es tan profundo y tan grande que esto tiene que generar la plata para pagar estas vainas, entonces pues yo tengo que saber cómo me la como obviamente. ¿Entonces toca ver cuál es su número, cómo llegamos a él, me parece perfecto y sería por tres meses digamos o porque más o menos cuál es la sugerencia en el tiempo. 
+
+46:52
+Daniel Cardona
+Para un proceso? La idea es uno dejar sembrado, pero estos son más o menos seis meses, porque en tres meses apenas estamos entendiendo las Bases del Negocio, sistemas y demás. Idealmente es un año, porque en un contrato de un año usted tiene todo el ciclo comercial completo de los cuatro CUS y lo más bonito de todo es que yo le pongo el equipo para que usted empiece a experimentar sobre producto digital. 
+
+47:18
+Luis Felipe Camargo Pulido
+Yo me voy a ir aquí con Daniel, porque digamos que Daniel nos puede solucionar este año, pero y luego la parte BB que también vamos a tener el mismo problema en cuatro meses. Así que me parecería que lo más lógico es que hagamos ese año y pues de una vez que nos ayuden a realizar el producto, porque pues aunque Juan Francisco lo sabía, ya lo estaba hablando con Viviana, con la directora comercial y es que pues sí necesitamos alguien de producto que nos ayude a que el producto que nosotros tengamos sea un producto. 
+
+47:52
+Daniel Cardona
+El reto está una chimba. 
+
+47:56
+Juan Francisco Reyes Mora
+De. 
+
+47:56
+Daniel Cardona
+Un mundo de banqueros, de Logística y de Comercio exterior en donde era un producto BB. ¿Entonces es decir, lo primero que haría es yo le puedo solucionar lo siguiente, cuántas horas hombre le está metiendo a la gestión de pagos de los clientes? ¿Quién me paga tiempo? 
+
+48:24
+Luis Felipe Camargo Pulido
+Tenemos un equipo de tres personas haciendo eso, creo Juan Francisco. 
+
+48:30
+Juan Francisco Reyes Mora
+De cartera ordinaria y cartera amorosa, tenemos dos equipos. 
+
+48:35
+Daniel Cardona
+¿Ok, y cuando ustedes colocan un crédito, eso qué pasa con eso? 
+
+48:42
+Juan Francisco Reyes Mora
+Tenemos dos capas de análisis, nosotros somos muy sencillos en el análisis Dani, Creo que eso es que nos ha ayudado, porque nosotros, la sencillez está, todos tienen un cupo de crédito, todos. Y hay empresas a las cuales nosotros les hemos automatizado un poco el proceso para que ellos no tengan que aprobar. A ver, en el mundo de las libranzas se estila, se acostumbra a que el convenio o la empresa es el que apruebe el crédito, eso requiere de el tiempo de la persona, de recursos humanos, que mire nómina y nosotros con el tiempo nos dimos cuenta que eso nos iba, nos dilataba muchísimo los créditos. 
+
+49:25
+Juan Francisco Reyes Mora
+Entonces montamos un sistema que se llama autogestión y la autogestión tiene un poco más de riesgo y es que yo hago un acuerdo y yo le digo venga, yo no voy a superar estos niveles, estas políticas y yo tengo un equipo que hace unos estudios que se demoran minuto y medio por cada persona, donde determino si tiene o no la posibilidad de sacar el crédito y esos créditos a esas personas se les permite desembolsos casi que en línea o máximo desembolsos en el mismo día, lo cual eso ha hecho una diferenciación en el mercado, pero es a través de esta metodología que se llama autogestión. 
+
+50:00
+Juan Francisco Reyes Mora
+Entonces en ese equipo tengo tres personas que me miran 200, 300 operaciones en un solo día y eso en la mañana y en la tarde y en otro momento hacen el reporte de novedades a las empresas donde reportan las deudas que tiene. Entonces el equipo se dedica a eso y el otro equipo se dedica a la recuperación de cartera vencida. Eso es el equipo como de crédito y cartera que tengo. 
+
+50:23
+Luis Felipe Camargo Pulido
+Pero sí una cosa que se podría automatizar porque lo que hacen es literalmente mirar tu certificado de nómina y ver si tienes otras librenzas o no y si no supera el 30% de una, si lo supera, no, o sea, eso se puede hacer. 
+
+50:39
+Daniel Cardona
+Bueno, listo, bien, perfecto, marica, sí, chimba, me encanta, hágale, voy a hacer la propuesta, se las voy a bajar. Y lo que le digo Juan es trabajar con nosotros es incómodo porque forzamos el crecimiento, tenemos conversaciones incómodas que levantan callos. 
+
+51:00
+Luis Felipe Camargo Pulido
+¿Y. 
+
+51:07
+Daniel Cardona
+Por qué? ¿Porque al final ustedes quieren crecer, pero. 
+
+51:11
+Juan Francisco Reyes Mora
+Es que a uno nunca y duele pero Ari, es que cómo va a querer crecer? Porque es que usted ríase lo que yo tengo, o sea, yo tengo universo inmenso que ya está construido, tengo digamos que un producto que resuelve problemas a la gente y tengo unos inversionistas que están esperando que yo llame capital para colocar plata. Entonces si, entonces pues yo no puedo tener plata hasta que yo no tenga los créditos. 
+
+51:47
+Daniel Cardona
+¿Quieren empezar? 
+
+51:52
+Juan Francisco Reyes Mora
+Nosotros estamos, de hecho con Endeavor estamos también nos metimos un tema de mentorías porque nos llevamos 5 años en esto y lo que hemos logrado ha sido lo que nosotros nos ha dado por el conocimiento que tenemos. Y ya uno de nuestros mentores, man de Eduardo, que este man, marica. 
+
+52:14
+Luis Felipe Camargo Pulido
+Eduardo, no me acuerdo ni idea cómo. 
+
+52:17
+Juan Francisco Reyes Mora
+Se llama, pero se llama Eduardo, es un crack, hizo un éxito de su empresa de publicidad y mano, está ayudando a sacar el propósito de la empresa. ¿Nosotros cómo nos comemos el tema de propósito, cómo nos vendemos? ¿Y entonces Mana está trabajando, dándoles duro el tema de sacar el propósito y lo que hemos encontrado en esas etapas y es que nosotros ayudamos al progreso de las personas y eso es lo que nos toca empezar a comunicar para que obviamente esto resuene mucho en las empresas, porque el progreso, lo que quiere la gente, todos queremos progresar, pero como lo hacemos? A través de un crédito de libranza. Y es donde nos estamos comiendo el cuento para meternoslo de lleno y así profundizar y ya no tener esos ratios del 23% que tenemos hoy de profundización una empresa, sino irnos al 30-35. 
+
+53:06
+Juan Francisco Reyes Mora
+Tenemos una que estamos al 45% y tiene 12.000 empleados que tiene G. Tenemos 45%. 
+
+53:21
+Luis Felipe Camargo Pulido
+Los que manejan Transmilenios y hay una de esas 70% de la población dentro. 
+
+53:35
+Daniel Cardona
+O sea, gracias a ustedes básicamente. 
+
+53:38
+Luis Felipe Camargo Pulido
+Marica trabaja para nosotros, básicamente. 
+
+53:43
+Juan Francisco Reyes Mora
+Todos humanes están con nosotros, todos los de Tremilenio eléctrico, el otro que es el de las troncales, entonces fácilmente tenemos 5.000 empleados de Transmilenio con nosotros. 
+
+53:57
+Daniel Cardona
+Bueno, listo, bien, hágale weón, déjeme le construyo. Me parece una putería, Me parece. Me parece una chimba, me parece una chimba. Si quiere tengo una conversación con su socio. Yo les propondría son ciclos completos de iteraciones constantes en producto y comunicación y por ende go to market. 
+
+54:24
+Juan Francisco Reyes Mora
+Dani en esa propuesta también se ve como marica, vamos al resultado. Algo que me conecto mucho los dos en la conversación. Marica, dígame. Yo lo voy a ayudar a que esta se haga en tanto tiempo y se logre esa colocación de créditos, o sea con objetivos. 
+
+54:44
+Daniel Cardona
+Es que por eso estoy en 27 y voy para 45 y estamos ya a la mitad de septiembre y usted sabe. Es decir, de esas tendencias, usted ya tiene listo un arsenal de comunicación para la gente que le puso créditos hace un año y que no se lo ha puesto todavía, le vuelvan a colocar o empieces en un wishlist con. Es que weón, puede hacer hasta. Puede hacer hasta listas de productos. Olvídese del marketplace, weón. También recomendación Pipe, mande el marketplace para la mierda, weón. 
+
+55:14
+Luis Felipe Camargo Pulido
+Ya lo hicimos, ya lo hicimos. 
+
+55:18
+Juan Francisco Reyes Mora
+Para. 
+
+55:18
+Daniel Cardona
+Qué hijueputas, Lo único que está haciendo es desenfocarlo. Me parece una gran idea. No, todavía no se lo invente. UTM a todos los marketplace y huevón, redima con un cupón descuento que es de nadie, yo que sé. 
+
+55:39
+Luis Felipe Camargo Pulido
+Pero sí, sí, de acuerdo, tenemos que. Tenemos que hacer muchas cosas bien y nada. 
+
+55:45
+Daniel Cardona
+Y también priorizar. Me parece una chimba, es decir, admiración profunda por todo lo que están haciendo y por todo lo que han hecho. Creo que tienen un montón de información que literalmente es. Y yo esto porque estaba en el puesto de Luis Felipe. Creo que es tener tiempo para pensar, para sentarse y decir, ya puedo sacar un poquito la cabeza porque huevón, vea, es que nos pasa, nos quedamos calvos a los de marketing, huevón. 
+
+56:19
+Juan Francisco Reyes Mora
+Si, eso estaba viendo que pensar cuesta, por eso no me fui por ese lado. 
+
+56:25
+Daniel Cardona
+Listo. Bueno señores, en verdad chimba, déjenme les llego con una propuestica bacana y les busco un espacio la próxima semana y vemos números, es decir, podemos negociar y si está abierto Juan Francisco, un porcentaje de un fee y otro porcentaje de éxito de acuerdo a unos números a. 
+
+56:48
+Luis Felipe Camargo Pulido
+Un año para tener BBC. 
+
+56:54
+Daniel Cardona
+Tíreme porfa el presupuesto mensual de marketing de inversión. Es decir, cuánto de inversión y cuánto yo trabajar con banqueros. 
+
+57:06
+Luis Felipe Camargo Pulido
+Entonces tranquilo, estamos en cero. Estamos en cero. 
+
+57:11
+Juan Francisco Reyes Mora
+Daniel tan marica, ¿Cuál cero? 
+
+57:15
+Luis Felipe Camargo Pulido
+Tengo cuatro millones de pesos para push notifications y dos millones de pesos para mensajes de texto. Si me paso se empuja. 
+
+57:23
+Juan Francisco Reyes Mora
+¿Y cuánto pago de nómina, huevón? Entonces, como dicen, más o menos lo que pagamos en Indigital, lo que pagamos por Clientify, mandemos las herramientas que tenemos. 
+
+57:43
+Luis Felipe Camargo Pulido
+Vamos a decirlo Francisco, plata para quemar no Hay solamente 6 millones de pesos mensuales. 
+
+57:54
+Daniel Cardona
+Pero pues, es decir, si me entiende, la gran ventaja que yo no sea el CMO es que soy el externo. Entonces para hacer esto cuesta esto marica. 
+
+58:03
+Luis Felipe Camargo Pulido
+Pero en la vida real no hay presupuesto para pauta. Para pauta digital. 
+
+58:08
+Juan Francisco Reyes Mora
+Si es pauta. 
+
+58:11
+Daniel Cardona
+Es lo que le digo, piénselo y piénselo como banquero. Usted tiene que hacer unas inversiones a corto plazo y tiene que hacer unas inversiones a largo plazo. Las inversiones a largo plazo no van a tener un retorno inmediato. Las inversiones a corto plazo no son sostenibles en el tiempo. Y las inversiones medias normalmente no lo llevan a ningún lado. Entonces usted ya sabe que sus inversiones a largo plazo tienen que estar entre el 60 y el 70 por ciento de presupuesto, todas las acciones cortas con una rápida experimentación tienen que tener el 20% en dos canales en donde usted ya sepa que puede crecer y un 10 % de experimentación sobre ese mismo presupuesto y ya es como parce yo espero hacer esto en tantas empresas para que vaya usted y si la cierre. 
+
+58:52
+Daniel Cardona
+¿Pero esto ya sabemos que inherentemente BB no va a dejar plata, entonces cuál es el ROI que le va a meter? ¿No es que hay un ROI pero es que ayuda en el top of the funnel y el top of the funnel me pesa tanto y me cuesta tanto poner un lead de BB, segundo pedazo de presupuesto, pasar de un lead de BB a activación, pues yo necesito una plata para ejecutar las mierdas que tengo que ejecutar, lo puedo hacer una agencia, vale juego, pero alguien tiene que hacer cuántas activaciones por cliente cerrado, tac, tac, tac, cuesta A, B, C, D y esto tanto y listo, cuánto espero activar de cada una de estas mierdas? Ni puta idea porque no hay números o si hay números levante y dice listo, activar o adquirir un usuario me cuesta tanto. 
+
+59:31
+Daniel Cardona
+Y si usted le mete una promoción sobre adquisición sobre activación en el mismo evento que yo no sé si operativamente podamos llegar a hacer eso, se cerró el ciclo. Entonces usted utiliza un mismo evento con la finalidad de adquirir usuarios y de activar usuarios y sí llame a las marcas y diga oiga tengo acceso a una empresa de cuánta cantidad de empleados quiere patrocinar, entonces una patica de partnerships y alianzas. 
+
+01:00:02
+Juan Francisco Reyes Mora
+Como huevón ustedes tienen. 
+
+01:00:03
+Daniel Cardona
+La gente, los usuarios y la plata. 
+
+01:00:07
+Juan Francisco Reyes Mora
+Y la plata es como por qué no crecer marica tenemos huevo, es como. 
+
+01:00:18
+Luis Felipe Camargo Pulido
+Comerciales que he tenido, es como en. 
+
+01:00:21
+Daniel Cardona
+Verdad me está jodiendo. Bueno listo, yo les paso eso a más tardar hoy y si quieren arrancamos contrato, o sea firmas de contratos y alcanza la próxima semana y yo podría arrancar la misma próxima semana. 
+
+01:00:43
+Juan Francisco Reyes Mora
+Eso allá. 
+
+01:00:44
+Luis Felipe Camargo Pulido
+Dependemos de Juan Francisco. 
+
+01:00:47
+Juan Francisco Reyes Mora
+Que creo que. 
+
+01:00:48
+Luis Felipe Camargo Pulido
+Se me cayó. 
+
+01:01:07
+Juan Francisco Reyes Mora
+Estoy en la oficina. 
+
+01:01:08
+Luis Felipe Camargo Pulido
+Juan, yo tengo evento hoy en la miércoles, pero bueno voy a decir lo que diría Juan Francisco, listo, hablamos la siguiente semana. Muchísimas gracias por tu tiempo Daniel y nada, la verdad soy el más interesado en que esto lo agarremos de la forma que es. 
+
+01:01:28
+Juan Francisco Reyes Mora
+Aló. 
+
+01:01:33
+Daniel Cardona
+Escucha. 
+
+01:01:38
+Juan Francisco Reyes Mora
+Para mí Quedó claro la vuelta disponibilidad. 
+
+01:02:05
+Daniel Cardona
+Wait. 

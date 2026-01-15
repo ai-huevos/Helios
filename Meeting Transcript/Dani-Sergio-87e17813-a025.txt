@@ -1,0 +1,324 @@
+
+00:00
+Daniel Cardona
+Don Serge. 
+
+00:05
+Sergio
+Hola. 
+
+00:06
+Daniel Cardona
+Hola. ¿Todo bien, papá? Afortunadamente todo al pelo, man. Bien, me agarraste. Acabo de salir de una conferencia en Adidas y no había tenido tiempo como para sentarme . ¿Me escuchas bien? 
+
+00:27
+Daniel Cardona
+Ya, perfecto, listo. Súper. 
+
+00:31
+Daniel Cardona
+Bueno, Doc, gracias por la puntualidad, altamente apreciada. Me gusta esa metodología de reuniones de. 
+
+00:40
+Sergio
+30 minutos, creo que le obliga a todos al gran. Exacto, exacto. A mí no me guste la cháchara y el Motac, pero. Pero a veces toca apretar. 
+
+00:57
+Daniel Cardona
+Exactamente. Estamos perfecto. Alineadísimos. Listo. ¿Entonces, en nuestra última conversación me mostraste un poquito de ustedes qué hacían? Yo, si te soy completamente honesto, todavía no tengo presentación comercial, apenas la estoy terminando. Te voy a contar qué problemas resuelvo, para qué tipo de empresas y dónde creo que puede haber una sinergia interesante con las empresas del grupo. Listo. Lo primero es que la razón por la cual yo me fui de Fin Cargo fue porque desde el departamento en el que yo estaba, estábamos empujando la conversación de inteligencia artificial y no desde tecnología. Producto era el que llevaba las iniciativas de go to market al mercado y tecnología nos hacía el pushback sobre lo que están haciendo. Y a mí eso me parecía irrisorio. ¿Yo soy hoy de la metodología en. 
+
+01:54
+Daniel Cardona
+Que cualquier equipo de producto, de growth. 
+
+01:58
+Daniel Cardona
+O de revenue debe tener claro una de tres hacia dónde vamos o el objetivo, cómo vas a lograr ese objetivo? Y el por qué queremos lograr ese objetivo. Que es donde muchas startups o muchas empresas como que se destilan y es el porqué de mi objetivo no es de mi empresa, el porqué es de mi cliente. ¿Yo voy a crecer tanto en revenue al año, y eso qué le va a permitir hacer a mis clientes? Te doy un ejemplo específico en fincargo, si nosotros llegábamos a 30 millones de dólares de GMB mes a mes, eso significaba que más importadores nuestros iban a tener la plata y el flujo de caja para seguir importando. Y esa conversación, cuando te la llevas a diferentes niveles, no se trata simplemente de cumplir un KPI o un número. 
+
+02:45
+Daniel Cardona
+¿Hay que entender si quiero llegar a 30, cómo lo distribuyo, cuáles son las rutas y los go to markets que necesito, en qué ICPs, en qué industrias? Tengo claro cuál es el proceso de venta hacia estas industrias, hacia este ICP, o me toca salir a levantar, ¿Cierto? Normalmente todo ese primer levantamiento es lo que yo llamo Product Marketing, donde es una esencia específica del marketero que se pone un sombrero y entiende cómo está la competencia, entiende cómo están los mensajes, entiende quién es el ICP, gestiona y se mueve hacia el posicionamiento específico que quiere dejar en la cabeza de sus clientes o prospectos. Pero si solamente lo abarcas a ese pedazo, te perdés de la mejor conversación que está pasando a diario en tus vendedores que está en las reuniones. 
+
+03:34
+Daniel Cardona
+Entonces, el primer servicio o producto que presto yo es meto un robot de estos y el output de esto es un prompt que te saca insights sobre la conversación y mandan a una base de datos de marketing, a una base de datos de producto y a una base de datos de ventas. 
+
+03:53
+Daniel Cardona
+¿Para qué? 
+
+03:55
+Daniel Cardona
+Para que puedas tomar mejores decisiones. ¿Para que? Si las hipótesis que tenés acerca de tu ICP o de tu mercado las estás validando en tus conversaciones de ventas. Y si, básicamente la conversación de ventas está alineada con el mensaje que Marketing dijo que iba a tener que decir. ¿Cierto? Una vez validas eso, empezás a explorar lo que para mí es el segundo pilar y es Content Marketing. Y Content Marketing no es otra cosa más que saber muy bien cuáles son. 
+
+04:25
+Sergio
+Los lead magnet de una buenas tardes, ¿Cómo estás? 
+
+04:32
+Daniel Cardona
+Bien. 
+
+04:35
+Sergio
+Por hoy. 
+
+04:36
+Daniel Cardona
+No. 
+
+04:40
+Daniel Cardona
+Quiero saber qué le están ofreciendo. 
+
+04:42
+Sergio
+No vinieron a rescuer la basura, pero no habían basura. 
+
+04:49
+Daniel Cardona
+Ya. Lo segundo es entender Content Marketing. Y Content Marketing abarca Outbound e Inbound. Entonces, ¿Cómo se están diseñando las secuencias de los vendedores? ¿Cuál es la narrativa que se está teniendo? ¿Qué herramientas disponibles tiene Ventas para salir a contar una historia diferente en el mercado? ¿Y eso también cómo se traduce en Inbound respecto son webinars? ¿Son charlas? ¿Son podcast? ¿Está el sitio web Adredi pensado para crecer a largo plazo a través de SEO o no? ¿Tengo yo súper caracterizados cuáles necesito contar la historia en la parte de arriba del funnel, en la mitad del funnel y en la parte de abajo del funnel, para que la historia que estamos contando sea coherente y consistente en los canales o no? 
+
+05:32
+Daniel Cardona
+Y lo más bonito de todo es que como ya estás grabando las conversaciones, esas mismas conversaciones de venta son las que alimentan las conversaciones de contenido, las que alimentan las conversaciones del departamento comercial y de los mismos founders. Porque si nos sentamos a decirnos la verdad, los founders no tienen tiempo para sentarse a escribir, pero tienen que escribir en LinkedIn y el equipo de marketing no tiene tiempo de salir a levantar los insights que el equipo de ventas está teniendo todos los días en la calle. ¿Eso se trabaja con un modelo de experimentación donde se miden dos canales de crecimiento, se definen las hipótesis, sistemas, un procesito chiquito acerca de vamos a invertir en pautas, todo va a ser en SEO, va a ser en Outbound, cuáles son las métricas del experimento y cómo lo vamos a o cómo lo queremos llevar a trabajar? 
+
+06:22
+Daniel Cardona
+¿Y finalmente eso cómo se traduce en conversión? Pensá que el modelo de Outbound es más de cuántas respuestas estoy teniendo yo al contenido que estoy generando y desde Inbound si es cuántos CTR, cuántas impresiones en la página, o sea, si te estoy hablando de algo muy técnico, me avisas y bájale cinco rayitas. ¿Bien, eso cómo se traduce en el sitio web? Pero lo más importante es cuánto tiempo está pasando desde que un lead se registra hasta qué ventas le responde. 
+
+06:53
+Daniel Cardona
+Si vos haces el ejercicio, y te invito a que lo hagas con cualquiera de las empresas del portafolio, simplemente como ejercicio, cuánto tiempo te demoras o se demora alguien contactándote desde que les haces hola, llenas un formulario hasta que te contactan realmente cuando uno no tiene claro como equipo de marketing que la responsabilidad de uno es de revenue, uno deja que ese tipo de cosas pasen, porque también el responsable es ventas, pero el responsable también tiene que ser mercadeo. Pero entonces en esa dicotomía me muevo yo. ¿Y cuando después de 30 días o 60 días se encuentra como ese pilar de experimentación, arranca lo que para mí es Growth Marketing, que ya eso es parce, tenés claro el mensaje, tenés claro la decisión y tienes claro los dos canales donde vas a crecer? 
+
+07:38
+Daniel Cardona
+Sí. 
+
+07:39
+Daniel Cardona
+OK, metele candela, prende el carro y acelera el motion de growth enfocado siempre en cuál es la base de experimentación que tenés, que aprendiste y cómo seguís aprendiendo en el tiempo. Y a grandes rasgos, esa es mi tesis, la visión del producto. 
+
+07:55
+Daniel Cardona
+¿Contame. 
+
+07:58
+Sergio
+Cómo te imaginas, es decir, aplicando digamos que lo que me acabaste de. 
+
+08:03
+Daniel Cardona
+Contar, en qué tipo de empresas, es. 
+
+08:06
+Sergio
+Decir, cuál es el mínimo Pues porque yo te contaba, tenemos por ejemplo pues unas startups que tenemos en el DSP que todas están en diferentes estados, pero todas están muy temprano, cierto? ¿Entonces son equipos pequeños y obviamente uno quisiera que de temprano pudieran empezar a pensar en metodologías digamos que de grow, pero son equipos pequeños, cierto? Y ya tenemos las que están pues en growth. De esas creería que tienen más capacidades digamos internas de ejecutar un playbook como el que me estás contando. ¿Pero quería entender vos cómo lo ves? ¿Dónde aplica más y dónde aplica menos? ¿Te imaginas tener un producto con un alcance como este? Es para las pre seed, early stage y esto es lo mínimo que deberían hacer las que sean BB o las que sean BC. 
+
+09:00
+Sergio
+Y esto ya sí es para empresas que estén en una etapa más madura, series a grow. 
+
+09:06
+Daniel Cardona
+Mira, yo creo que uno tiene que ser muy inteligente en dónde jugar y eso es algo que he aprendido yo en la vida, me ha dado esta experiencia a las malas. Lo primero es que. 
+
+09:18
+Daniel Cardona
+Sí o sí. 
+
+09:19
+Daniel Cardona
+BB, mi experiencia ha sido en los últimos años en BB, en BC hay demasiado pasando y normalmente vos tenés unos quick wins muy cercanos en paid o en scrapping de información y demás. El proceso de BB es mucho más largo y mucho más difícil. Donde genero más resultados son empresas que tienen revenue o ARR entre el millón de dólares y los 5 millones de dólares. Y de los 15 a los 50 ya te voy a decir por qué el salto tan grande, porque el proceso comercial del 1 al de 5 es muy similar el de 15 al de 50. Normalmente el founder es quien está vendiendo. Si el equipo de founders no vende, las ventas se retrasan. Pueden o no tener un equipo de sales, pero no necesariamente saben cuáles son los KPI, saben que están vendiendo pero no tienen muy claro por qué. 
+
+10:12
+Daniel Cardona
+Y eso todo se traduce a un sistema. No hay un sistema articulado de revenue que les permita a ellos entender dónde están, para dónde van y cuáles son los plays que tienen que tener. Hoy por hoy yo estoy haciendo dos cosas, estoy ofreciendo servicios con base tecnológica, entonces mi visión de producto esto es un end to end o debería ser un end to end. El UI ponele que es un chat, no sé muy bien cómo conceptualizarlo, pero al final estos son flujos de trabajo para crear plug and place en diferentes empresas para que el founder tenga una ruta clara sobre dónde enfocarse, en qué momento. Todo arranca en un diagnóstico, ese diagnóstico hace como un overview general de go to market y a partir de ese overview, que son más o menos unas 300 preguntas. 
+
+10:55
+Daniel Cardona
+¿Vos tenés claro cuáles son los quick wins, dónde empezar y qué necesitas empezar a iterar? Hoy por hoy es un servicio, es decir, mi play del mercado es yo hago un fractional CMO o un fractional Go to market engineer, arranco como un servicio, entiendo los procesos internos de la empresa, estoy conectando los flujos de trabajo y los agentes y a futuro, de aquí a los próximos 6 a 8 meses espero tener ya productos listos para sacar a mercado. Hoy el ticket promedio está entre 3.500, 4.500 dólares y normalmente son equipos que pueden obtener CERE por mes o por flujo. Y digamos que hay unos grandes asteriscos, porque yo también como mi consultoría es una consultoría de resultado y de medio, si se incrementa el revenue yo me cojo un pedazo, un delta del crecimiento. 
+
+11:50
+Daniel Cardona
+Del revenue, no me choca. Entonces sí eso es OK, porque estoy. 
+
+11:57
+Sergio
+Pensando después como cuál es el primer cliente. Nosotros estamos acompañando ya en el lado más de growth, una compañía de digital signage, digamos que le estamos ayudando a diseñar su estrategia de crecimiento, no tan táctica, pero más en qué mercado vamos a jugar, cómo vamos a jugar, si vamos a jugar en el mercado de la publicidad o no. Y estamos terminando de afinar ese detalle y vamos a empezar un proceso de levantamiento de capital para fondear esa etapa de crecimiento. Es una empresa muy bonita, una empresa que lleva 12 años en el mercado. Bootstr ya vende cuatro, tres millones de dólares más o menos. Evitas financieramente súper bonita. 
+
+12:50
+Sergio
+¿Pero hablando con él, con el CEO founder, pues en estos días nos mostraba un poquito cómo estaba su estructura, hablábamos pues de al hombre le ha tocado ser el todero, no ha podido, a pesar de que ha querido y tiene los recursos, no ha podido tener un equipo de sales con digamos bien estructurado y mucho menos de mercadeo, cierto? 
+
+13:10
+Sergio
+Entonces no ha hecho mercadeo, no lo ha hecho bien en mercadeo, en ventas lo ha hecho bien, pero porque pues es un poquito de fuerza bruta más que algo realmente pues que sea fuerza bruta porque él es un puta, después es un emprendedor y tiene toda la energía y conoce su producto, entonces vende porque sí, pues porque se, Pero obviamente entonces eso ralentiza el proceso y hace que no sea escalable porque depende de una sola persona y ha cambiado el equipo comercial tres veces. Está haciendo el tercer y el cuarto cambio en 12 meses. La primera recomendación que le dimos venga, miremos dónde hay que poner la energía, la energía suya y dónde traemos expertos que nos ayuden a. Entonces lo primero fue por allá en operaciones, un tema logístico que no tenía. Su negocio depende de pantallas, ¿Cierto? 
+
+14:01
+Sergio
+Porque él instala pantallas, instala un software en pantallas y su gran valor es que su software es el mejor del mercado para administrar la información que se proyecta en una pantalla o en un kiosco de autogestión. Pero le toca instalar pantallas, es parte de su negocio, pero pues almacenar pantallas y mover pantallas no es su core business. Entréguele eso a un tercero marica, un operador logístico, usted está perdiendo energía. Y el otro fue mercadeo, me decían, tengo este equipo pero yo no hecho ni mercadeo. 
+
+14:31
+Sergio
+Venga, porque no buscamos primero un servicio exactamente lo que dijiste, pues como Fractional o un CMO as a Service que nos ayude primero a entender y a diseñar una estrategia y ya después miraremos si eso se va configurando en un equipo in house, en un equipo mixto qué se necesita, pero entreguémosle eso y concentremos nuestra energía en apalancar esa vertical con un buen equipo interno de sales que sí se necesita, pero a partir de una estrategia de crecimiento que ya diseñemos y que nos permita contratar de forma estratégica. Entonces ese es un primer cliente que me gustaría que revisáramos porque estamos en eso, estamos en ese proceso y estamos construyendo incluso para el proceso de levantar los recursos es muy importante tener muy claro cuál va a ser esa estrategia de Grow, ¿Cierto? 
+
+15:26
+Sergio
+Ya sabemos dónde queremos jugar, vamos a perseguir este mercado, sabemos que necesitamos X inversión, sabemos el tamaño de ese mercado, los economics de ese mercado, nos falta ya bajar un poquito a bueno, y. 
+
+15:37
+Daniel Cardona
+Cuál es el equipo que necesito para. 
+
+15:40
+Sergio
+Construir la estrategia que me va a permitir ganar en ese mercado, ¿Cierto? Entonces eso me encantaría que lo pudiéramos revisar. Y con el founder muy rápidamente, yo creo que el precio funciona. Ojalá pudiera uno decir recarguemos un poquito más al variable. A mí me gusta mucho alinear incentivos al resultado, pero no te estoy diciendo pues que esté algo impagable para esta empresa. Creo que está bien, creo que está bien. 
+
+16:08
+Daniel Cardona
+Hay una cosa que y de tu conversación la semana pasada lo que más me gustó y lo que más me gustaría hacer es que para mí hoy las organizaciones nos tenemos que reinventar los modelos del organigrama que creamos hacer y si en la conversación no está cuántos agentes por puesto estoy, agentes de AI por puesto estoy metiendo en la conversación, no estamos en nada. 
+
+16:34
+Daniel Cardona
+¿Qué pasa dependiendo el founder, esa va. 
+
+16:37
+Daniel Cardona
+A ser una conversación muy difícil? Es una conversación inexistente o realmente es como parce no tengo ni idea cómo comerme este muñeco. 
+
+16:46
+Sergio
+Entonces aquí en este caso el manejo la empresa es de tecnología al final porque su core es el software, no el hardware. Citan el hardware para correr el software. ¿Incluso nuestro modelo de negocio a futuro es usted se tiene que convertir en una especie de canal de publicidad, cierto? ¿Su software y las pantallas tienen que ser el canal por el que corra mucha publicidad en retail físico, cierto? Que ha estado muy desconectado. ¿Es como realmente lograr ese mundo phygital que hoy no existe en Colombia por lo menos que es muy complejo, el mundo e commerce ya está inventado, el playbook está listo, el mundo físico es el que no ha entendido cómo puede utilizar herramientas del mundo digital pero en el retail físico que además sigue siendo en Colombia el 90 % de las. 
+
+17:36
+Daniel Cardona
+Ventas de retail, cierto? 
+
+17:38
+Sergio
+Entonces queremos jugar y este man es súper digital, le encanta todo el tema de inteligencia artificial, sabe del tema, lee mucho, lo único es que sabes que es un comportamiento natural en todas las empresas uno siempre piensa y sobre todo el founder piensa en cómo lo implemento para mis clientes, nunca piensan cómo lo hago. 
+
+17:57
+Daniel Cardona
+De acuerdo. Y por eso, perdón que te corté, creo que la sinergia más bonita que podamos llegar a encontrar Sergio, y esto me encantaría que podamos plantear un modelo, es cómo nos diseñamos nosotros un modelo de growth propietario de ustedes como family office ejecutado y porque al final toda la lora que te acabo de. 
+
+18:19
+Daniel Cardona
+Decir es workflows, agentes y procesos para. 
+
+18:24
+Daniel Cardona
+Y aplica un pal founder chiquitico y es como usted no piensa en cinco canales si usted no tiene equipo de ventas, usted founder es el mejor canal de ventas. ¿Cuál es el sistema específico que usted está haciendo para publicar más en LinkedIn y en el canal de adquisición que. 
+
+18:36
+Daniel Cardona
+Tiene Si es Seed y Serie A. 
+
+18:39
+Daniel Cardona
+Parce, ¿Cuáles son los dos canales? Dos, ya no es uno, ya son dos. Donde usted va a apostarle las balas específicas, donde usted va a crecer, cómo hacer un tema de messaging, cómo hacer un tema de posicionamiento. Y al final lo que te decía la vez pasada, si la data recae en ustedes, porque al final el mejor interés financiero de ustedes como VC es que la empresa crezca y sea rentable, ¿Dónde están los datos y las apuestas específicas que ustedes están recogiendo de sus empresas para que esa realidad sea. 
+
+19:09
+Daniel Cardona
+De verdad y pase? 
+
+19:12
+Sergio
+Me interesa mucho, es decir, me gusta la idea. Te conté, internamente tenemos capacidades tecnológicas, tenemos un líder de tecnología especialista en inteligencia artificial, tenemos un. El director de nuestro producto de Business Builder especialista en producto, entonces sería un golazo poderlo hacer y no sé cómo todavía pues de esta conversación en borrador, ¿Cierto? Pero te confirmo que me interesaría, me interesaría poder hacer. Y lo que te digo, vamos a tener muchos, pues debajo de nosotros hay muchos usuarios, ¿Cierto? De diferentes tamaños, que lo que hay que buscar es entre más automático, más fácil llevarlo al pequeño, ¿Cierto? Entonces yo creo que de nosotros también depende un poquito darle esa capacidad al que está empezando para que sin tener que sobreinvertirse plata que no tiene, pues pueda hacer algo en Grow, que es importante que lo haga, ¿Cierto? Porque pues pucha, demuestra un montón de. 
+
+20:13
+Sergio
+Pues naces bien, ¿Cierto? Naces como con más solidez en un mercado que está cada vez más competido, pues. 
+
+20:21
+Daniel Cardona
+Y creo que también el panorama de experimentación es innato en ustedes como family office. Y sería muy bacano que esa experiencia, porque al final ustedes están experimentando en diferentes industrias con founders y con hipótesis de modelos de negocio, y cuando eso lo bajas a los modelos de growth. 
+
+20:37
+Daniel Cardona
+De cada compañía, inherentemente tenés cómo, no. 
+
+20:43
+Daniel Cardona
+Necesariamente influir en los resultados, pero influir en la experimentación del founding. Y eso creo que es clave. 
+
+20:50
+Daniel Cardona
+Sí, sí, sí, sí, de acuerdo. 
+
+20:52
+Sergio
+Y lo que hablábamos la vez pasada, normalmente los founders llegan muy técnicos, muy de producto, poco de ventas, sobre todo BB. Es decir, es que vender BB no es fácil, no es fácil, no es fácil. Yo que estoy todos los días vendiendo el producto de nosotros, la consultoría es un rollo, puchas, son ventas largas hoy pues nomás estábamos en una reunión con el presidente del Grupo Escala y dijimos no, aquí ya la cerramos. Casi que volvimos a empezar, ¿Cierto? Pero bueno, ese es el mundo. Y eso es un aprendizaje que además a nosotros nos gustaría trasladar a las startups y ojalá de una forma, digamos que tecnificada, ¿Cierto? Para que ellos vivan esa misma morcho, absorban ese conocimiento de nuestras experiencias. 
+
+21:43
+Daniel Cardona
+Perfecto. Hay una cosa que se me ocurre ya que podemos hacer y es si hay startups tuyas que le estén vendiendo al Enterprise. Yo tengo un producto en conjunto con José Villegas, que es el director de Globan, que es un diagnóstico específico de Go to Market para adquisición de nuevos clientes. Enterprise Parsi. Son cuatro sesiones de 300 preguntas donde si el equipo fundador cree que sabe de ventas, es donde es un reality check de marica, No tengo idea en dónde estoy. Venga, ahora sí escuchemos hablar. Porque esto te evalúa diferentes capacidades. Eso más o menos son mil dólares de implementación. Es menos de lo que te cuesta un practicante al mes. Y te saca una ruta clara de qué tenías que hacer en tu go to market en los próximos 30 días. Eso es un producto que te lo pongo a disposición. 
+
+22:30
+Daniel Cardona
+Nosotros ya lo estamos tecnificando. De momento es nos sentamos, conversamos con los equipos fundador y de revenue y les dan una hoja de ruta acerca de qué deberían estar haciendo, cómo lo deberían estar gestionando, hacia dónde nos movemos. Eso como punto uno. Y ya después lo que te puedo presentar es, dame por una semanita y yo te bajo todo el playbook de growth enfocado netamente en Go to Market y en BB. Porque sí creo que la manera más fácil en la que ustedes hoy pueden escalar es lo que me contabas del podcast. Y les puedo echar una mano cómo empezamos a tener conversaciones muy alineadas con todo lo que está pasando en la industria. 
+
+23:05
+Daniel Cardona
+Si el CET es en las oficinas de ustedes, si no, una buena inversión de equipos y que después ustedes también inviten a sus propios equipos de startups a la oficina para grabar este tipo de episodios y que ustedes se conviertan como en ese media house donde hay un nicho que creo que es que no se está hablando en la industria o de la manera como ustedes lo pudieran estar hablando. ¿Me hago entender? 
+
+23:26
+Sergio
+Sí, sí, sí, sí. No hagamos eso. Si quieres mándame la información pues de este como assessment que ya tienes. Listo. Y cuando tengas como esa decantado un poquito el proceso pues en una semana o dos me haces una señita. Vos me dijiste que vos estás en Bogotá. 
+
+23:40
+Daniel Cardona
+En Medellín. Estoy en Bogotá. 
+
+23:42
+Sergio
+Bogotá. Listo, nos sentamos otra vez virtual pues y lo revisamos pues feliz. 
+
+23:47
+Daniel Cardona
+Y nos inventamos, si quiere nos inventamos un conversatorio y le pueda hacer un workshop de growth a las empresas que usted tenga en Medellín también feliz de hacerlo. Yo razones para ir a Medellín, o. 
+
+23:57
+Sergio
+Sea, nunca me sobran de una. ¿Y pues esta empresa pues mucho me decís cuándo es el momento también de hacer como la introducción? 
+
+24:06
+Daniel Cardona
+Cuando quiera. 
+
+24:07
+Daniel Cardona
+Listo, listo. 
+
+24:09
+Sergio
+Yo tengo pues todas las semanas una sesióncita pues con el CEO, le voy a decir que ya tenemos una opción pues para lo que hemos hablado de mercadeo as a service y te pongo, te escribo y cuadramos una sentada. 
+
+24:22
+Daniel Cardona
+¿Y ustedes como empresa, ustedes que han visto, qué necesidades tienen marketing? 
+
+24:27
+Sergio
+Pues nosotros todas, pero más sí. ¿Lo que pasa es que todavía no hemos agotado como la gasolina pues del network cercano, cierto? Entonces nos ha hecho falta, pero sabemos que no hemos hecho nada. Esa es como la conclusión más directa. Pero lo que te decía pues en el go to market que diseñamos pues tenemos, sabemos que tenemos que hacer, nos ha faltado. Pero también pues bienvenido, mejor dicho, si se te ocurre algo, si le das una revisada a nuestros activos digitales y marica, mínimamente irían a hacer esto y esto, pues bienvenido, hágale. 
+
+25:07
+Daniel Cardona
+Firme de una papá, cuente con eso porque sí, me encantaría. Hay una tesis que quiero validar y es la que te digo. La idea de empezar a trabajar con Pedro es digitalizar mi oferta de productos. Tengo mi go to market súper claro y es yo primero meto en la empresa, yo entiendo los procesos de la empresa y a partir de empiezo a construir productos. Esa es la ventaja de hacer un servicio a partir de tecnología. Pero lo que más quisiera enfocarme yo es cómo le hago la vida más fácil a los equipos para que construyan y creen contenido fácilmente de una manera escalable, para que el contenido no deje de ser un problema, para que la distribución lo empiece a hacer. 
+
+25:48
+Daniel Cardona
+Porque cuando ya vos tenés las piezas y a ver, hoy un sistema de Content Marketing o de Content Machine puede correr tranquilamente automatizado un 90% con un human in the loop. Pero la forma en la que Pedro me pintó la conversación cuando me dijo que nos sentáramos a hablar es, sería muy bacano ofrecer este modelo en conjunto en donde lo viéramos como un producto inherente de la firma y es como parce, echémosle un piano, cómo podemos generar un retorno a partir de nuestras acciones de marketing y cómo esto puede ser una herramienta de adquisición tanto de corporativos como de startups, pero que nos permita generar un play de marketing a largo plazo que sea sólido. 
+
+26:28
+Sergio
+¿A mí me parece una nota y como te digo, nosotros tenemos, Pedro obviamente las tiene, pues Pedro finalmente es la casa de software, pero nosotros tenemos capacidades internas un poco más manualitas, más cerquita, cierto? Entonces aquí todo es bienvenido, todas las ideas, eso estamos nosotros construyendo. 
+
+26:50
+Daniel Cardona
+Parece perfecto. Listo Sergi, deme una semanita para organizar cabeza y le mando un correo con todo lo que tengo. El diagnóstico que yo qué haría con ustedes de cara o Pues ni siquiera yo qué haría. Es como un diagnóstico chiquitico de par se vea. Creo que hay una oportunidad divina acá, acá, acá y acá. Y si tiene sentido, nos armamos un presupuesto en conjunto y empezamos a operar de uno. Listo papá. Mil gracias Sergio. Un abrazo. Chao. 
+
+27:15
+Daniel Cardona
+Pues. 
