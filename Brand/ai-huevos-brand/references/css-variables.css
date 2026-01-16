@@ -1,20 +1,27 @@
 /**
  * AI Huevos Design System - CSS Custom Properties
- * Version: 1.0.0
+ * Single source of truth for all brand tokens
+ * Version: 2.0.0
  */
 
 :root {
-  /* ==================== COLORS ==================== */
+  /* ==================== BRAND COLORS ==================== */
   
-  /* Brand Colors */
+  /* Primary (Equal proportion) */
   --color-brand-white: #FFFFFF;
   --color-brand-black: #030102;
   --color-brand-yellow: #FFD826;
   --color-brand-blue: #3988FF;
-  --color-brand-violet: #B4A7FA;
-  --color-brand-orange: #F97316;
   
-  /* Semantic Colors */
+  /* Secondary (Lower proportion) */
+  --color-brand-violet: #B4A7FA;
+  --color-brand-orange: #FF6B35;
+  
+  /* Extended (Web/Dashboard) */
+  --color-gray-dark: #8B8B8B;
+  --color-gray-light: #E8E8E8;
+  
+  /* Semantic */
   --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-error: #EF4444;
@@ -32,20 +39,20 @@
   --color-neutral-800: #1F2937;
   --color-neutral-900: #111827;
   
-  /* Data Visualization Palette */
-  --color-data-1: #FFD826;
-  --color-data-2: #3988FF;
-  --color-data-3: #B4A7FA;
-  --color-data-4: #F97316;
-  --color-data-5: #030102;
+  /* Data Visualization (use in order) */
+  --color-data-1: #FFD826; /* Yellow */
+  --color-data-2: #3988FF; /* Blue */
+  --color-data-3: #B4A7FA; /* Violet */
+  --color-data-4: #FF6B35; /* Orange */
+  --color-data-5: #030102; /* Black */
   
   /* ==================== TYPOGRAPHY ==================== */
   
-  /* Font Families */
+  /* Fonts */
   --font-primary: 'Scandia', 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'Geist Mono', 'Monaco', 'Courier New', monospace;
   
-  /* Font Sizes */
+  /* UI Type Scale */
   --font-size-h1: 32px;
   --font-size-h2: 28px;
   --font-size-h3: 24px;
@@ -57,7 +64,17 @@
   --font-size-metric: 48px;
   --font-size-data: 13px;
   
-  /* Font Weights */
+  /* Presentation Type Scale */
+  --font-size-slide-display: 130px;
+  --font-size-slide-h1: 100px;
+  --font-size-slide-h2: 75px;
+  --font-size-slide-h3: 60px;
+  --font-size-slide-h4: 48px;
+  --font-size-slide-body-lg: 32px;
+  --font-size-slide-body: 24px;
+  --font-size-slide-caption: 18px;
+  
+  /* Weights */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -96,6 +113,9 @@
   --radius-xl: 12px;
   --radius-full: 9999px;
   
+  /* Egg Shape */
+  --radius-egg: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  
   /* ==================== SHADOWS ==================== */
   
   --shadow-none: none;
@@ -103,7 +123,7 @@
   --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
   --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-  --shadow-dashboard-card: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
+  --shadow-card: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06);
   
   /* ==================== MOTION ==================== */
   
@@ -114,15 +134,6 @@
   --easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
   --easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
   --easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-  --easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  
-  /* ==================== BREAKPOINTS ==================== */
-  
-  --breakpoint-mobile: 320px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1024px;
-  --breakpoint-wide: 1440px;
-  --breakpoint-ultra: 1920px;
   
   /* ==================== Z-INDEX ==================== */
   
@@ -141,8 +152,7 @@
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
-  letter-spacing: var(--letter-spacing-tight);
-  color: var(--color-neutral-800);
+  color: var(--color-brand-black);
 }
 
 .text-h2 {
@@ -150,8 +160,7 @@
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-subheading);
-  letter-spacing: -0.25px;
-  color: var(--color-neutral-800);
+  color: var(--color-brand-black);
 }
 
 .text-h3 {
@@ -159,7 +168,7 @@
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-semibold);
   line-height: 1.4;
-  color: var(--color-neutral-800);
+  color: var(--color-brand-black);
 }
 
 .text-h4 {
@@ -167,7 +176,7 @@
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-semibold);
   line-height: 1.4;
-  color: var(--color-neutral-800);
+  color: var(--color-brand-black);
 }
 
 .text-body {
@@ -175,7 +184,7 @@
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-body);
-  color: var(--color-neutral-800);
+  color: var(--color-brand-black);
 }
 
 .text-small {
@@ -186,43 +195,24 @@
   color: var(--color-neutral-500);
 }
 
-.text-label {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-label);
-  font-weight: var(--font-weight-semibold);
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-wide);
-  color: var(--color-neutral-800);
-}
-
 .text-metric {
   font-family: var(--font-mono);
   font-size: var(--font-size-metric);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   letter-spacing: -1px;
-  color: var(--color-neutral-800);
+  color: var(--color-brand-yellow);
 }
 
-.text-data {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-data);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-body);
-  color: var(--color-neutral-800);
-}
-
-/* Card */
+/* Components */
 .card {
-  background-color: white;
+  background-color: var(--color-brand-white);
   border: 1px solid var(--color-neutral-300);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  box-shadow: var(--shadow-dashboard-card);
+  box-shadow: var(--shadow-card);
 }
 
-/* Button Base */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -239,15 +229,24 @@
 
 .btn-primary {
   background-color: var(--color-brand-orange);
-  color: white;
+  color: var(--color-brand-white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e55a2f;
 }
 
 .btn-secondary {
   background-color: var(--color-brand-yellow);
-  color: var(--color-neutral-900);
+  color: var(--color-brand-black);
+  border: none;
 }
 
-/* Input */
+.btn-secondary:hover {
+  background-color: #e6c222;
+}
+
 .input {
   font-family: var(--font-primary);
   font-size: var(--font-size-body);
@@ -260,6 +259,39 @@
 .input:focus {
   outline: none;
   border-color: var(--color-brand-blue);
+}
+
+/* Egg Shape */
+.egg {
+  border-radius: var(--radius-egg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.egg-yellow {
+  background-color: var(--color-brand-yellow);
+  color: var(--color-brand-black);
+}
+
+.egg-blue {
+  background-color: var(--color-brand-blue);
+  color: var(--color-brand-white);
+}
+
+.egg-violet {
+  background-color: var(--color-brand-violet);
+  color: var(--color-brand-black);
+}
+
+/* Accent bar */
+.accent-bar::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-brand-yellow);
+  margin-top: var(--spacing-md);
 }
 
 /* Reduced Motion */
