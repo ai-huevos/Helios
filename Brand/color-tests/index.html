@@ -215,7 +215,7 @@
     <div class="container">
         <header>
             <h1>Comparación de Paletas de Color</h1>
-            <p class="subtitle">Cuatro variaciones de la identidad visual AI Huevos</p>
+            <p class="subtitle">Variaciones de la identidad visual AI Huevos con análisis de usabilidad</p>
             <div class="brand-colors">
                 <div style="text-align: center;">
                     <div class="color-swatch" style="background: #FFFFFF; border-color: #121212;"></div>
@@ -243,6 +243,18 @@
                 </div>
             </div>
         </header>
+
+        <!-- RECOMMENDED OPTIMIZED VERSIONS -->
+        <div style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); padding: 32px; border-radius: 12px; margin-bottom: 48px; text-align: center;">
+            <h2 style="color: white; font-size: 32px; margin-bottom: 16px;">✓ Versiones Optimizadas (WCAG AAA)</h2>
+            <p style="color: white; opacity: 0.9; margin-bottom: 24px;">Basadas en análisis de contraste y accesibilidad. Recomendadas para producción.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="light-mode-optimized.html" target="_blank" style="background: white; color: #030102; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600;">Light Mode (20.9:1 contrast)</a>
+                <a href="dark-mode-optimized.html" target="_blank" style="background: #030102; color: #FFD826; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 2px solid #FFD826;">Dark Mode (all colors AAA)</a>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 32px; color: #6B7280;">Versiones Exploratorias</h2>
 
         <div class="version-grid">
             <div class="version-card">
@@ -301,6 +313,78 @@
                         <div class="mini-swatch" style="background: #FFFFFF; border-color: #121212;"></div>
                     </div>
                     <a href="version-4-yellow-violet.html" target="_blank" class="view-button">Ver completo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTRAST RATIO TABLE -->
+        <div class="analysis" style="margin-bottom: 32px;">
+            <h2>Ratios de Contraste (WCAG)</h2>
+            <p style="margin-bottom: 24px; color: #6B7280;">Mínimo requerido: AA = 4.5:1 (texto normal), AAA = 7:1 (óptimo)</p>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                    <thead>
+                        <tr style="background: #F3F4F6;">
+                            <th style="padding: 12px; text-align: left; border-bottom: 2px solid #E5E7EB;">Combinación</th>
+                            <th style="padding: 12px; text-align: center; border-bottom: 2px solid #E5E7EB;">Light Mode<br>(sobre White)</th>
+                            <th style="padding: 12px; text-align: center; border-bottom: 2px solid #E5E7EB;">Dark Mode<br>(sobre Black)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #E5E7EB;"><span style="display: inline-block; width: 16px; height: 16px; background: #030102; border-radius: 4px; vertical-align: middle; margin-right: 8px;"></span>Black / White</td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #10B981; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">20.9:1 AAA</span></td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #10B981; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">20.9:1 AAA</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #E5E7EB;"><span style="display: inline-block; width: 16px; height: 16px; background: #FFD826; border-radius: 4px; vertical-align: middle; margin-right: 8px;"></span>Yellow</td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #EF4444; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">1.5:1 FAIL</span></td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #10B981; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">13.9:1 AAA</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #E5E7EB;"><span style="display: inline-block; width: 16px; height: 16px; background: #3988FF; border-radius: 4px; vertical-align: middle; margin-right: 8px;"></span>Blue</td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #F59E0B; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">3.5:1 Large</span></td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #10B981; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">5.9:1 AA</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border-bottom: 1px solid #E5E7EB;"><span style="display: inline-block; width: 16px; height: 16px; background: #B4A7FA; border-radius: 4px; vertical-align: middle; margin-right: 8px;"></span>Violet</td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #EF4444; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">2.3:1 FAIL</span></td>
+                            <td style="padding: 12px; text-align: center; border-bottom: 1px solid #E5E7EB;"><span style="background: #10B981; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">9.1:1 AAA</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px;"><span style="display: inline-block; width: 16px; height: 16px; background: #FF6B35; border-radius: 4px; vertical-align: middle; margin-right: 8px;"></span>Orange (CTAs)</td>
+                            <td style="padding: 12px; text-align: center;"><span style="background: #F59E0B; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">3.2:1 Large</span></td>
+                            <td style="padding: 12px; text-align: center;"><span style="background: #10B981; color: white; padding: 4px 8px; border-radius: 4px; font-weight: 600;">6.5:1 AA</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top: 16px; padding: 16px; background: #FEF3C7; border-radius: 8px; color: #92400E; font-size: 14px;">
+                <strong>Insight clave:</strong> Dark mode es más versátil — todos los colores de acento pasan accesibilidad sobre fondo negro. En light mode, solo el texto negro funciona bien.
+            </p>
+        </div>
+
+        <!-- ORANGE USAGE GUIDE -->
+        <div class="analysis" style="margin-bottom: 32px; background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);">
+            <h2 style="color: #9A3412;">Uso del Orange (#FF6B35)</h2>
+            <div class="analysis-grid">
+                <div class="analysis-item">
+                    <h3 style="color: #EA580C;">✓ Uso correcto</h3>
+                    <ul>
+                        <li class="pro">Botones CTA primarios</li>
+                        <li class="pro">Call-to-action en secciones oscuras</li>
+                        <li class="pro">Hover states de botones amarillos</li>
+                        <li class="pro">Texto sobre fondo negro (6.5:1)</li>
+                    </ul>
+                </div>
+                <div class="analysis-item">
+                    <h3 style="color: #DC2626;">✗ Evitar</h3>
+                    <ul>
+                        <li class="con">Fondos de secciones completas</li>
+                        <li class="con">Texto sobre fondo blanco</li>
+                        <li class="con">Uso como color protagonista</li>
+                        <li class="con">Elementos decorativos grandes</li>
+                    </ul>
                 </div>
             </div>
         </div>
