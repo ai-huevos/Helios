@@ -1,97 +1,88 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowDown } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 
 const Hero = () => {
+    const { t } = useLanguage()
+
     return (
-        <section className="hero" style={{ backgroundColor: 'var(--yellow)', position: 'relative', overflow: 'hidden' }}>
-            <div className="container" style={{ textAlign: 'left', zIndex: 10 }}>
+        <section style={{
+            minHeight: '90vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            paddingTop: '80px',
+            position: 'relative',
+            overflow: 'hidden'
+        }}>
+
+            <div className="container" style={{ position: 'relative', zIndex: 2 }}>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 >
-                    <span className="font-mono" style={{ fontSize: '18px', display: 'block', marginBottom: '24px' }}>
-                        investor room v1.0
-                    </span>
-                    <h1 style={{ fontSize: 'clamp(48px, 8vw, 120px)', maxWidth: '900px', marginBottom: '40px' }}>
-                        AI infrastructure for LatAm enterprises.
+                    <h1 style={{
+                        fontSize: 'clamp(48px, 6vw, 96px)',
+                        letterSpacing: '-0.04em',
+                        lineHeight: 0.95,
+                        marginBottom: '32px',
+                        maxWidth: '1200px',
+                        color: 'var(--text-primary)'
+                    }}>
+                        {t.hero.title}
                     </h1>
-                    <p style={{ fontSize: 'clamp(20px, 3vw, 32px)', maxWidth: '700px', marginBottom: '60px', opacity: 0.9 }}>
-                        From WhatsApp chaos to traceable agent networks.
+
+                    <p style={{
+                        fontSize: 'clamp(18px, 2vw, 24px)',
+                        maxWidth: '600px',
+                        marginBottom: '48px',
+                        opacity: 0.7,
+                        color: 'var(--text-primary)'
+                    }}>
+                        {t.hero.subtitle}
                     </p>
 
-                    <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                        <button
-                            className="font-mono"
-                            style={{
-                                backgroundColor: 'var(--black)',
-                                color: 'var(--white)',
-                                padding: '16px 32px',
-                                border: 'none',
-                                borderRadius: '100px',
-                                fontSize: '18px',
-                                cursor: 'pointer',
-                                transition: 'transform 0.2s ease'
-                            }}
-                            onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                            onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                            onClick={() => document.getElementById('pitch').scrollIntoView({ behavior: 'smooth' })}
-                        >
-                            ver el pitch
-                        </button>
-                        <div style={{
-                            display: 'flex',
+                    <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        style={{
+                            backgroundColor: 'var(--text-primary)',
+                            color: 'var(--bg-primary)',
+                            border: 'none',
+                            padding: '16px 32px',
+                            borderRadius: '50px',
+                            fontSize: '16px',
+                            fontWeight: 600,
+                            cursor: 'pointer',
+                            display: 'inline-flex',
                             alignItems: 'center',
-                            gap: '12px',
-                            padding: '16px 24px',
-                            border: '2px solid var(--black)',
-                            borderRadius: '100px',
-                            fontWeight: '500'
-                        }}>
-                            <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#22c55e', animation: 'pulse 2s infinite' }}></div>
-                            <span>Raising $200k</span>
-                        </div>
-                    </div>
+                            gap: '8px'
+                        }}
+                    >
+                        {t.hero.cta} <ArrowRight size={20} />
+                    </motion.button>
                 </motion.div>
             </div>
 
             {/* Decorative Egg */}
             <motion.div
-                animate={{
-                    y: [0, -20, 0],
-                    rotate: [0, 5, 0]
-                }}
-                transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                }}
+                animate={{ y: [0, -20, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 style={{
                     position: 'absolute',
-                    right: '5%',
-                    bottom: '20%',
-                    width: 'clamp(200px, 30vw, 400px)',
-                    opacity: 0.15,
-                    zIndex: 1
+                    right: '-5%',
+                    top: '20%',
+                    fontSize: '400px',
+                    opacity: 0.05,
+                    zIndex: 1,
+                    pointerEvents: 'none'
                 }}
             >
-                <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="100" cy="120" rx="70" ry="90" fill="black" />
-                </svg>
+                🥚
             </motion.div>
 
-            <div style={{ position: 'absolute', bottom: '40px', left: '50%', transform: 'translateX(-50%)' }}>
-                <ArrowDown size={32} />
-            </div>
-
-            <style>{`
-        @keyframes pulse {
-          0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-          70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
-          100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
-        }
-      `}</style>
         </section>
     )
 }

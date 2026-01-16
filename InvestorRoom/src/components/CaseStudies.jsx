@@ -2,21 +2,21 @@ import React from 'react'
 
 const cases = [
     {
-        icon: "🏢",
-        title: "The Family Office Engine",
-        type: "Enterprise Multi-Industry",
-        challenge: "Fragmentación total en un holding con hoteles (Marriott), alimentos (Burger King) y construcción.",
-        solution: "Arqueología organizacional profunda: 68 entrevistas, 2,700+ puntos de datos vinculados en un grafo de procesos.",
-        result: "292 oportunidades identificadas con $1.5M de valor potencial y 7 productos operativos.",
+        icon: "🏨",
+        title: "Metro Hotels",
+        type: "Real Estate & Hospitality",
+        challenge: "Reportes de junta 20 días tarde. Ceguera táctica en 17 propiedades.",
+        solution: "Infraestructura de agentes que automatiza el P&L diario y optimiza el staffing basado en ocupancia real.",
+        result: "Cierre mensual automatizado. Visibilidad en tiempo real de ocupancia y ADR.",
         color: "var(--blue)"
     },
     {
-        icon: "🚀",
-        title: "Shipping Velocity",
-        type: "Operational Proof",
-        challenge: "La IA en LatAm suele quedarse en 'promesas' sin ejecución real en procesos de dinero.",
-        solution: "7 productos funcionales entregados en 5 meses (Intervías WhatsApp, Entity Extractor, Automation Platform).",
-        result: "$270K de revenue confirmado con solo 3 clientes iniciales demostrando unit economics de escala.",
+        icon: "🐔",
+        title: "Huevos Kikes",
+        type: "Agroindustry",
+        challenge: "Fragmentación de datos en granjas y centros de distribución. Silos operativos.",
+        solution: "Implementación de extractor de entidades para digitalizar la 'arqueología' de procesos en producción.",
+        result: "Consolidación de data silos en 2 semanas. Mapeo de 292 oportunidades de automatización.",
         color: "var(--yellow)"
     }
 ]

@@ -1,30 +1,39 @@
 :root {
-  /* Colors */
-  --white: #FFFFFF;
-  --black: #000000;
+  /* Core Palette */
   --yellow: #FFE03D;
   --blue: #4D9FFF;
   --purple: #B8A0FF;
   --orange: #FF5C3D;
-  
-  --text-primary: #000000;
-  --text-secondary: #9B9B9B;
-  
+  --green: #22c55e;
+
   /* Fonts */
   --font-primary: 'Scandia', 'Inter', -apple-system, sans-serif;
   --font-mono: 'Geist Mono', 'SF Mono', monospace;
-  
+
   /* Spacing */
   --grid-margin: 80px;
-  --grid-padding-top: 120px;
-  
+
   /* Animation */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+[data-theme='light'] {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #000000;
+  --text-secondary: #555555;
+  --border-color: #e2e8f0;
+  --card-bg: #FFFFFF;
+  --card-hover: #f1f5f9;
+}
+
 [data-theme='dark'] {
+  --bg-primary: #050505;
+  --bg-secondary: #111111;
   --text-primary: #FFFFFF;
-  --text-secondary: #E5E5E5;
-  --bg-primary: #000000;
+  --text-secondary: #A1A1A1;
+  --border-color: #333333;
+  --card-bg: #1A1A1A;
+  --card-hover: #252525;
 }
