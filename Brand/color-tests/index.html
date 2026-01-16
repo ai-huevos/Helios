@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos | Comparación de Paletas de Color</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/scandia');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Scandia', 'Inter', system-ui, sans-serif;
+            background: #F9FAFB;
+            color: #121212;
+            padding: 48px 24px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #121212;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #4B5563;
+            margin-bottom: 32px;
+        }
+
+        .brand-colors {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .color-swatch {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            border: 2px solid #E5E7EB;
+        }
+
+        .color-label {
+            font-size: 14px;
+            color: #6B7280;
+            text-align: center;
+        }
+
+        /* Version Grid */
+        .version-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .version-card {
+            background: #FFFFFF;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .version-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .version-preview {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        .version-info {
+            padding: 24px;
+        }
+
+        .version-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #121212;
+            margin-bottom: 12px;
+        }
+
+        .version-description {
+            font-size: 16px;
+            color: #4B5563;
+            margin-bottom: 16px;
+        }
+
+        .version-colors {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .mini-swatch {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            border: 2px solid #E5E7EB;
+        }
+
+        .view-button {
+            display: inline-block;
+            background: #121212;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .view-button:hover {
+            background: #FFD826;
+            color: #121212;
+        }
+
+        /* Analysis Section */
+        .analysis {
+            background: #FFFFFF;
+            padding: 48px;
+            border-radius: 12px;
+            margin-bottom: 48px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .analysis h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #121212;
+            margin-bottom: 24px;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .analysis-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #121212;
+            margin-bottom: 8px;
+        }
+
+        .analysis-item p {
+            font-size: 16px;
+            color: #4B5563;
+            line-height: 1.6;
+        }
+
+        .pro {
+            color: #10B981;
+            font-weight: 600;
+        }
+
+        .con {
+            color: #EF4444;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        li.pro::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #10B981;
+            font-weight: bold;
+        }
+
+        li.con::before {
+            content: "×";
+            position: absolute;
+            left: 0;
+            color: #EF4444;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Comparación de Paletas de Color</h1>
+            <p class="subtitle">Cuatro variaciones de la identidad visual AI Huevos</p>
+            <div class="brand-colors">
+                <div style="text-align: center;">
+                    <div class="color-swatch" style="background: #FFFFFF; border-color: #121212;"></div>
+                    <div class="color-label">White</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="color-swatch" style="background: #121212;"></div>
+                    <div class="color-label">Black</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="color-swatch" style="background: #FFD826;"></div>
+                    <div class="color-label">Yellow</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="color-swatch" style="background: #3988FF;"></div>
+                    <div class="color-label">Blue</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="color-swatch" style="background: #B4A7FA;"></div>
+                    <div class="color-label">Violet</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="color-swatch" style="background: #FF6B35;"></div>
+                    <div class="color-label">Orange</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="version-grid">
+            <div class="version-card">
+                <iframe class="version-preview" src="version-1-white-yellow.html"></iframe>
+                <div class="version-info">
+                    <h2 class="version-title">Versión 1: White Dominant + Yellow Accents</h2>
+                    <p class="version-description">Fondo blanco limpio con yellow (#FFD826) como color de acento principal. Máxima legibilidad y profesionalismo.</p>
+                    <div class="version-colors">
+                        <div class="mini-swatch" style="background: #FFFFFF; border-color: #121212;"></div>
+                        <div class="mini-swatch" style="background: #FFD826;"></div>
+                        <div class="mini-swatch" style="background: #121212;"></div>
+                    </div>
+                    <a href="version-1-white-yellow.html" target="_blank" class="view-button">Ver completo</a>
+                </div>
+            </div>
+
+            <div class="version-card">
+                <iframe class="version-preview" src="version-2-black-blue.html"></iframe>
+                <div class="version-info">
+                    <h2 class="version-title">Versión 2: Black Dominant + Blue Accents</h2>
+                    <p class="version-description">Fondo negro (#121212) con blue (#3988FF) como acento. Bold, moderno, tecnológico.</p>
+                    <div class="version-colors">
+                        <div class="mini-swatch" style="background: #121212;"></div>
+                        <div class="mini-swatch" style="background: #3988FF;"></div>
+                        <div class="mini-swatch" style="background: #FFFFFF;"></div>
+                    </div>
+                    <a href="version-2-black-blue.html" target="_blank" class="view-button">Ver completo</a>
+                </div>
+            </div>
+
+            <div class="version-card">
+                <iframe class="version-preview" src="version-3-contrast-split.html"></iframe>
+                <div class="version-info">
+                    <h2 class="version-title">Versión 3: Balanced Contrast Split</h2>
+                    <p class="version-description">Secciones alternadas black/white con los tres colores primarios (yellow, blue, violet) distribuidos equitativamente.</p>
+                    <div class="version-colors">
+                        <div class="mini-swatch" style="background: #121212;"></div>
+                        <div class="mini-swatch" style="background: #FFFFFF; border-color: #121212;"></div>
+                        <div class="mini-swatch" style="background: #FFD826;"></div>
+                        <div class="mini-swatch" style="background: #3988FF;"></div>
+                        <div class="mini-swatch" style="background: #B4A7FA;"></div>
+                    </div>
+                    <a href="version-3-contrast-split.html" target="_blank" class="view-button">Ver completo</a>
+                </div>
+            </div>
+
+            <div class="version-card">
+                <iframe class="version-preview" src="version-4-yellow-violet.html"></iframe>
+                <div class="version-info">
+                    <h2 class="version-title">Versión 4: Yellow Hero + Violet Secondary</h2>
+                    <p class="version-description">Yellow (#FFD826) como protagonista en hero, complementado con violet (#B4A7FA). Energético y diferenciado.</p>
+                    <div class="version-colors">
+                        <div class="mini-swatch" style="background: #FFD826;"></div>
+                        <div class="mini-swatch" style="background: #B4A7FA;"></div>
+                        <div class="mini-swatch" style="background: #121212;"></div>
+                        <div class="mini-swatch" style="background: #FFFFFF; border-color: #121212;"></div>
+                    </div>
+                    <a href="version-4-yellow-violet.html" target="_blank" class="view-button">Ver completo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="analysis">
+            <h2>Análisis por Versión</h2>
+            <div class="analysis-grid">
+                <div class="analysis-item">
+                    <h3>Versión 1: White + Yellow</h3>
+                    <ul>
+                        <li class="pro">Máxima profesionalidad y legibilidad</li>
+                        <li class="pro">Versátil para todo tipo de audiencias</li>
+                        <li class="pro">Yellow destaca sin saturar</li>
+                        <li class="con">Puede parecer conservador</li>
+                        <li class="con">Menos diferenciación visual</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-item">
+                    <h3>Versión 2: Black + Blue</h3>
+                    <ul>
+                        <li class="pro">Extremadamente tecnológico y moderno</li>
+                        <li class="pro">Blue crea confianza corporativa</li>
+                        <li class="pro">Alto impacto visual</li>
+                        <li class="con">Puede ser intenso para lecturas largas</li>
+                        <li class="con">Requiere contraste cuidadoso</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-item">
+                    <h3>Versión 3: Contrast Split</h3>
+                    <ul>
+                        <li class="pro">Balance perfecto de colores primarios</li>
+                        <li class="pro">Dinamismo visual y ritmo</li>
+                        <li class="pro">Demuestra versatilidad de paleta</li>
+                        <li class="con">Puede ser visualmente complejo</li>
+                        <li class="con">Requiere jerarquía clara de contenido</li>
+                    </ul>
+                </div>
+
+                <div class="analysis-item">
+                    <h3>Versión 4: Yellow + Violet</h3>
+                    <ul>
+                        <li class="pro">Máxima diferenciación en mercado</li>
+                        <li class="pro">Energía y creatividad</li>
+                        <li class="pro">Memorabilidad instantánea</li>
+                        <li class="con">Puede ser demasiado atrevido para corporativo</li>
+                        <li class="con">Yellow backgrounds requieren cuidado en texto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="analysis">
+            <h2>Recomendaciones de Uso</h2>
+            <div class="analysis-grid">
+                <div class="analysis-item">
+                    <h3>Versión 1</h3>
+                    <p><strong>Mejor para:</strong> Landing pages corporativas, investor presentations, documentación técnica, emails profesionales.</p>
+                </div>
+
+                <div class="analysis-item">
+                    <h3>Versión 2</h3>
+                    <p><strong>Mejor para:</strong> Dashboards de producto, demos técnicas, eventos tech, contenido para desarrolladores.</p>
+                </div>
+
+                <div class="analysis-item">
+                    <h3>Versión 3</h3>
+                    <p><strong>Mejor para:</strong> Páginas de producto, case studies, páginas About Us, contenido educativo extenso.</p>
+                </div>
+
+                <div class="analysis-item">
+                    <h3>Versión 4</h3>
+                    <p><strong>Mejor para:</strong> Eventos, campañas de marca, redes sociales, contenido viral, creatividad/innovación.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
