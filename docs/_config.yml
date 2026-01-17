@@ -1,0 +1,50 @@
+# GitHub Pages Configuration for AI Huevos
+
+# Site settings
+title: "AI Huevos - Infraestructura de Agentes para LatAm"
+description: "Transformación digital para operadores inmobiliarios y agroindustriales en América Latina"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .claude
+  - .cursor
+  - .git
+  - .github
+  - .gitignore
+  - secrets
+  - Brand/figma-design-agent
+  - research/fireflies-extraction
+  - workflows/figma-agent
+
+# Include files/directories
+include:
+  - docs
+
+# Collections (if needed in the future)
+collections:
+  case_studies:
+    output: true
+    permalink: /case-studies/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "es"

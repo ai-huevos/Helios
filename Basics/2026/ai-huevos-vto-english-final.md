@@ -9,8 +9,8 @@
 
 | Role | Person | Monthly (USD) | Equity | Brings |
 |------|--------|---------------|--------|--------|
-| **Co-Founder (Vision/Sales)** | Daniel Cardona | $6,000 | 50% | Sales, client relationships, system architecture, organizational archaeology |
-| **Co-Founder (Product/Delivery)** | Daniel Restrepo | $8,250 | 50% | Production engineering, delivery discipline, AI agent development |
+| **Co-Founder (Vision/Sales)** | Daniel Cardona | $6,000 | 50% | 3 years at Finkargo, growth/marketing/revenue systems, 110+ processes automated, sees systems where others see chaos |
+| **Co-Founder (Product/Delivery)** | Daniel Restrepo | $8,250 | 50% | 3 years at Finkargo, operations/product/process architecture, built systems handling $650M in transactions, makes things actually work |
 
 **Total Founder Cost:** $14,250/month | $171,000/year
 
@@ -69,62 +69,74 @@ We don't care how long something takes—we care what it produces. Reduced headc
 
 ## The Problem We Solve
 
-**Large LatAm enterprises are drowning in informal processes and legacy systems.**
+### Every big company runs on three invisible systems:
+1. **WhatsApp** – where the real decisions happen
+2. **Excel** – where the real data lives
+3. **People's heads** – where the real knowledge is trapped
 
-They have:
-- 100+ systems with 15-30% actual usage
-- Knowledge trapped in people's heads, not systems
-- No visibility into where automation would actually help
-- Fear of "being left behind" on AI, but no roadmap
+You've spent millions on SAP, Oracle, fancy software. Your people use maybe 20% of it.
 
-They've tried:
-- Hiring consultants who deliver PowerPoints, not results
-- Buying software that nobody uses
-- Internal "digital transformation" projects that stall
+Meanwhile:
+- Your best employee quits → chaos
+- You need a report → 3 days of Excel work
+- You want to know what's really happening → nobody can tell you
 
-**They need someone who will dig in, understand the reality, and deliver measurable outcomes.**
+**Everyone's talking about AI. Nobody's talking about the fact that AI can't help if your company's reality lives in WhatsApp groups and Excel files.**
+
+**They need someone who will interview everyone, find what's broken, fix it with technology, and stay to keep improving.**
 
 ---
 
 ## Our Solution
 
-### The AI Huevos Method
+### We build rails.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   PHASE 1: EXCAVATE                                             │
-│   ────────────────                                              │
-│   Interview everyone. Map reality, not org charts.              │
-│   Deliverable: Entity map, process inventory, pain points       │
-│   Time: 4-6 weeks | Price: $5,000/company                       │
-│                                                                 │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   PHASE 2: PRIORITIZE                                           │
-│   ─────────────────                                             │
-│   Score automation opportunities by ROI and effort.             │
-│   Deliverable: Ranked roadmap with $ impact per item            │
-│   Time: 1-2 weeks | Price: Included in diagnostic               │
-│                                                                 │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   PHASE 3: BUILD                                                │
-│   ────────────                                                  │
-│   Deploy automations that prove value fast.                     │
-│   Deliverable: Working systems, not prototypes                  │
-│   Time: 4-8 weeks per automation | Price: $500-2,500 each       │
-│                                                                 │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   PHASE 4: EMBED                                                │
-│   ──────────                                                    │
-│   Install Director AI. Train their IT. Transfer ownership.      │
-│   Deliverable: Self-sufficient client                           │
-│   Time: Ongoing | Price: $8,500 setup + $10-20/user/month       │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+Think about railroads. Before trains, every town was an island. Rails connected them.
+
+Your company is the same:
+- SAP is one island
+- Excel is another
+- WhatsApp is another
+- Each department is another
+
+**We build the rails so information can flow. So AI can actually work. So you can see what's happening.**
+
+### How It Works (Simple, Linear)
+
+| Step | What Happens | Time |
+|------|--------------|------|
+| **1. We talk** | Interview your team. Find what's broken. | 2-4 weeks |
+| **2. We fix** | Build automations that do the boring work. | 2-8 weeks |
+| **3. We improve** | Your people give feedback. We make it smarter. | Ongoing |
+| **4. We stay** | Director AI keeps everything connected. | Monthly |
+
+### Three Products
+
+**1. The Checkup ($5-15K)**
+Like going to the doctor. We interview everyone, look at all your systems, and give you a complete picture.
+
+**You get:**
+- Map of who does what (the real one, not the org chart)
+- List of systems and how much they're actually used
+- Where money is being wasted
+- Priority list: what to fix first
+
+**2. The Fix ($15-50K per automation)**
+We build tools that do the boring work.
+
+**You get:**
+- Working automation in 2-3 weeks
+- Your people give feedback, we improve it
+- Every automation gets smarter over time
+
+**3. Director AI ($10-20/user/month)**
+Your company's brain. Everything in one place.
+
+**You get:**
+- All company knowledge accessible
+- Ask questions, get real answers
+- See problems before they become crises
+- New employees learn 10x faster
 
 ---
 
@@ -147,7 +159,9 @@ They've tried:
 
 ## Value Proposition (One Sentence) 
 
-> **We find $500K+ in automation opportunities inside LatAm enterprises, then we build the first ones to prove they work.**
+> **We interview your people, find what's broken, fix it with technology, and stay to keep improving.**
+
+Think of us like hiring a new operations director—but one who actually talks to everyone, finds the real problems, and fixes them. Not with more meetings. With technology that works.
 
 ---
 
@@ -156,11 +170,18 @@ They've tried:
 ### 1. Organizational Archaeology
 We don't trust org charts. We interview everyone—68 interviews, 2,748 entities extracted, 292 automation opportunities identified in our first engagement. We see what's actually happening, not what the CEO thinks is happening.
 
-### 2. LatAm Native
-Spanish-first. We understand that WhatsApp is the real operating system. We know that "mañana" means next week. We've worked inside LatAm enterprises and know where the bodies are buried.
+### 2. We Build Rails
+We don't build isolated solutions. We build rails that connect systems. Just like railroads connected isolated towns, we connect WhatsApp, Excel, SAP, Oracle, and people's heads so information can flow and AI can actually work.
 
 ### 3. We Ship, Not Slide
-We don't deliver PowerPoints—we deliver working systems. Our first client has automations running in production, not decks sitting in a folder.
+We don't deliver PowerPoints—we deliver working systems. Our clients have:
+- Contract automation processing 250 contracts/day
+- Service Desk mini-apps with email/WhatsApp integration
+- Real-time financial dashboards across multiple business units
+- Chatbots with user hierarchies deployed
+- HR bots collecting and updating employee documents
+
+Not decks. Not prototypes. Production systems.
 
 ---
 
@@ -223,10 +244,13 @@ We don't deliver PowerPoints—we deliver working systems. Our first client has 
 | Metric | Value |
 |--------|-------|
 | Confirmed Revenue | $134,000 (GDM $94K + DRUO $40K) |
+| Active Clients | 3 (Grupo Doria Medina, DRUO/Conversa) |
+| Capacity | 6 clients with 2 full-time founders |
 | Interviews Processed | 68 |
 | Entities Extracted | 2,748 |
 | Automation Opportunities | 292 |
-| Potential Value Identified | $587K-657K/year (GDM alone) |
+| Potential Value Identified | $15M+ in savings opportunities (GDM) |
+| Products Deployed | Contract automation (250 contracts/day), Service Desk mini-app, Financial dashboards, Hotel chatbot (phase 1) |
 
 ---
 
@@ -268,14 +292,19 @@ We don't deliver PowerPoints—we deliver working systems. Our first client has 
 
 | Quarter | Milestone | Success Metric |
 |---------|-----------|----------------|
-| **Q1** | First automation deployed to GDM | Client using weekly |
-| **Q1** | Director AI MVP live | 10+ users active |
-| **Q2** | Second client from investor network | Contract signed |
+| **Q1** | Contract automation live at GDM | 250 contracts/day automated, client using weekly |
+| **Q1** | Service Desk mini-app deployed | Integration with email/WhatsApp, tickets assigned automatically |
+| **Q1** | Financial dashboards operational | Real-time KPIs across hotel/restaurant/construction units |
+| **Q1** | Hotel chatbot phase 1 live | 10 critical users providing feedback, user hierarchies implemented |
+| **Q2** | Marketing suite of agents deployed | Automated PQR responses, multi-restaurant control panel |
+| **Q2** | HR WhatsApp bot live | Employee document collection and database updates |
+| **Q2** | Director AI MVP live | 10+ users active across GDM units |
+| **Q2** | Second client from investor network | Contract signed (Confíe or similar) |
 | **Q2** | First recurring revenue | $2K/month |
-| **Q3** | Industry playbook v1 (Hospitality) | Documented, reusable |
+| **Q3** | Industry playbook v1 (Hospitality) | Documented, reusable across hotels/restaurants |
 | **Q3** | Third client signed | $50K+ contract |
 | **Q4** | Recurring revenue | $5K/month |
-| **Q4** | Team expansion | First hire (junior dev) |
+| **Q4** | Team expansion | First hire (junior dev for system integrations) |
 
 ---
 
@@ -320,29 +349,42 @@ We don't deliver PowerPoints—we deliver working systems. Our first client has 
 
 3. **The tools are ready.** Claude, GPT-4, WhatsApp APIs—the building blocks exist. Someone needs to assemble them for this market.
 
-4. **We've done the hard part.** 68 interviews, one proven client, working methodology. We're not starting from zero.
+4. **We've done the hard part.** 68 interviews, 3 active clients, multiple products deployed in production. Contract automation processing 250 contracts/day. Not prototypes—working systems.
+
+5. **Repository-based infrastructure.** We operate through GitHub repos, not broken files. Our development process (ADW - Agent Development Workflow) is systematized and scalable.
 
 ---
 
 # APPENDIX: THE PRODUCT STACK
 
-## Layer 1: Director AI (The Brain)
-- Organizational intelligence system
-- Knows where every process, pain point, and opportunity lives
-- **Price:** $8,500 setup + $10-20/user/month
-- **Outcome:** Client knows where to invest
+## Product Stack
 
-## Layer 2: Automations & Agents
-- Specific process automations built on proven patterns
-- Contract generation, document processing, call routing, etc.
-- **Price:** $500-2,500 per automation
-- **Outcome:** Direct time/cost savings
+### 1. The Checkup ($5-15K)
+- Interview everyone, map reality, not org charts
+- Deliverable: Entity map, process inventory, pain points, savings opportunities
+- Time: 2-4 weeks
+- Outcome: Complete picture of what's broken and where money is wasted
 
-## Layer 3: IT Enablement
-- Train client's team to maintain and extend automations
-- Transfer ownership, reduce dependency on us
-- **Price:** Included or separate training fee
-- **Outcome:** Client independence
+### 2. The Fix ($15-50K per automation)
+Build automations that do the boring work. Working automation in 2-3 weeks. People give feedback, we improve it. Every automation gets smarter over time.
+
+**Currently Deployed at GDM:**
+- **Contract Automation**: 250 contracts/day (from 47 steps/2 weeks → 5 steps/same day)
+- **Service Desk Mini-App**: Email/WhatsApp → automatic ticket creation and assignment
+- **Financial Dashboards**: Real-time KPIs across hotel/restaurant/construction units
+- **Hotel Chatbot (Phase 1)**: User hierarchies, information access control, 10 critical users
+- **HR WhatsApp Bot**: Employee document collection (ID, selfie) → database updates
+- **Marketing Suite**: Multi-restaurant control panel, Instagram/WhatsApp sync
+
+**Outcome:** Direct time/cost savings, proven ROI, operational visibility
+
+### 3. Director AI ($10-20/user/month)
+- Your company's brain. Everything in one place
+- All company knowledge accessible
+- Ask questions, get real answers
+- See problems before they become crises
+- New employees learn 10x faster
+- Outcome: Ongoing intelligence and continuous improvement
 
 ---
 
