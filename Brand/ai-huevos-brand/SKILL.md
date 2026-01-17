@@ -11,42 +11,80 @@ description: AI Huevos brand guidelines and design system for creating on-brand 
 
 | Task | Read This First |
 |------|----------------|
-| **Presentations (PPTX)** | [slides.md](slides.md) → html2pptx patterns |
-| **UI/Artifacts (React)** | [components.md](components.md) → React patterns |
-| **Raw tokens** | [references/](references/) → CSS, Tailwind, JSON |
+| **Full brand manual** | [brand-manual.md](brand-manual.md) |
+| **Quick reference** | [CHEATSHEET.md](CHEATSHEET.md) |
+| **Presentations (PPTX)** | [slides.md](slides.md) |
+| **UI/Artifacts (React)** | [components.md](components.md) |
+| **Raw tokens** | [references/](references/) |
+
+## Critical Rules
+
+### 1. Logo Is Sacred
+```
+✅ ALWAYS use official SVG from assets/logos/
+❌ NEVER create CSS egg shapes as logo substitute
+❌ NEVER use 🥚 emoji as logo
+❌ NEVER separate wordmark from character
+```
+
+### 2. Color Discipline
+```
+✅ Max 3 colors per composition
+✅ Orange = CTAs only (never background)
+✅ Violet = accents only (never dominant)
+❌ NEVER yellow text on white (fails WCAG)
+```
+
+### 3. Typography
+```
+✅ Scandia for all text
+✅ Geist Mono for data/code only
+✅ Sentence case always
+❌ NEVER ALL CAPS (except acronyms)
+```
 
 ## Brand Colors
 
-### Primary Palette (Equal Proportion)
+### Primary (Equal Proportion)
 ```
 White   #FFFFFF  │  Backgrounds, text on dark
-Black   #030102  │  Primary text, wordmark  
+Black   #030102  │  Primary text, wordmark
 Yellow  #FFD826  │  Primary accent, egg character
 Blue    #3988FF  │  Primary accent, alternate egg
 ```
 
-### Secondary Palette (Lower Proportion)
+### Secondary (Lower Proportion)
 ```
 Violet  #B4A7FA  │  Details, accents
-Orange  #FF6B35  │  CTAs only — never protagonist
+Orange  #FF6B35  │  CTAs only — NEVER protagonist
 ```
 
-### Extended (Web/Dashboard)
+## Logo Files
+
 ```
-Gray Dark   #8B8B8B  │  Section dividers
-Gray Light  #E8E8E8  │  Subtle backgrounds
+Light backgrounds → logo-yellow-black.svg or logo-blue-black.svg
+Dark backgrounds  → logo-yellow-white.svg or logo-blue-white.svg
+
+Location: assets/logos/
+Minimum size: 170px width
 ```
 
-### Data Visualization Sequence
-`Yellow → Blue → Violet → Orange → Black`
+## Light Mode vs Dark Mode
 
-## Typography
+### Light Mode (White background)
+- Text: Black only
+- Colors: For decoration (icons, borders, buttons)
+- Headlines: Black
+- CTA: Yellow bg + Black text
 
-### Fonts
-- **Scandia** — Headlines, body text
-- **Geist Mono** — Data, metrics, code, CTAs
+### Dark Mode (Black background)
+- Text: White or Yellow
+- All accent colors work for text
+- Headlines: White or Yellow (both AAA)
+- CTA: Yellow bg + Black text
 
-### Type Scale (UI)
+## Type Scale
+
 | Style | Size | Weight | Use |
 |-------|------|--------|-----|
 | H1 | 32px | Bold | Page titles |
@@ -57,71 +95,25 @@ Gray Light  #E8E8E8  │  Subtle backgrounds
 | Small | 12px | Regular | Captions |
 | Metric | 48px | Bold (Mono) | Big numbers |
 
-### Type Scale (Presentations)
-| Style | Size | Use |
-|-------|------|-----|
-| Display | 130px | Impact statements |
-| H1 | 100px | Slide titles |
-| H2 | 75px | Section headers |
-| Body Large | 32px | Key points |
-| Body | 24px | Supporting text |
-
-## Logo System
-
-### Variants
-| File | Wordmark | Egg | Background |
-|------|----------|-----|------------|
-| `logo-yellow-black.svg` | Black | Yellow | Light |
-| `logo-blue-black.svg` | Black | Blue | Light |
-| `logo-yellow-white.svg` | White | Yellow | Dark |
-| `logo-blue-white.svg` | White | Blue | Dark |
-
-### Usage Rules
-- Minimum width: 170px (digital), 2.1cm (print)
-- Clear space: Height of the "a" in wordmark
-- Never rotate, distort, or add effects
-
-## Color Combinations
-
-### Safe Combinations
-| Background | Text | Accent |
-|------------|------|--------|
-| White | Black | Yellow or Blue |
-| Black | White | Yellow or Blue |
-| Yellow | Black | Blue |
-| Blue | White | Yellow |
-
-### Avoid
-- Orange on violet
-- Yellow text on white (low contrast)
-- Multiple accent colors competing
-
-## Egg Characters
-
-### Types
-1. **Sin rostro** — Simple egg shapes, decorative
-2. **Con rostro** — Expressive faces, emotions
-3. **Con cuerpo** — Full character, interactions
-
-### CSS Egg Shape
-```css
-.egg {
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-}
-```
-
 ## File Structure
 
 ```
 ai-huevos-brand/
 ├── SKILL.md              ← You are here
+├── brand-manual.md       ← Full brand manual
+├── CHEATSHEET.md         ← Quick reference
 ├── slides.md             ← Presentation patterns
 ├── components.md         ← UI component patterns
+├── foundations/          ← Deep dive documentation
+│   ├── 01-brand-identity.md
+│   ├── 02-logo-system.md
+│   ├── 03-color-system.md
+│   ├── 04-typography.md
+│   └── 05-voice-tone.md
 ├── assets/
-│   ├── logos/            ← SVG logo files
-│   └── fonts/            ← Scandia, Geist Mono
+│   └── logos/            ← Official SVG logos
 └── references/
-    ├── css-variables.css ← Raw CSS custom properties
+    ├── css-variables.css ← CSS custom properties
     ├── design-tokens.json← Token definitions
     └── tailwind-config.js← Tailwind preset
 ```
@@ -131,3 +123,21 @@ ai-huevos-brand/
 - "Pa' emprender se necesitan huevos"
 - "AI tastes better with eggs"
 - "Traducimos la tecnología en herramientas prácticas"
+
+## CSS Quick Reference
+
+```css
+:root {
+  --white: #FFFFFF;
+  --black: #030102;
+  --yellow: #FFD826;
+  --blue: #3988FF;
+  --violet: #B4A7FA;
+  --orange: #FF6B35;
+
+  --font-primary: 'Scandia', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  --radius-egg: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+```

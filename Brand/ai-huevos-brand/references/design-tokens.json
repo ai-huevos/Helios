@@ -1,5 +1,12 @@
 {
-  "version": "2.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "2.1.0",
+  "lastUpdated": "2025-01-16",
+  "meta": {
+    "name": "AI Huevos Design Tokens",
+    "description": "Single source of truth for all brand design decisions",
+    "documentation": "../brand-manual.md"
+  },
   "color": {
     "brand": {
       "white": { "value": "#FFFFFF", "description": "Backgrounds, text on dark" },
@@ -37,6 +44,25 @@
       "series3": { "value": "#B4A7FA", "description": "Violet - tertiary" },
       "series4": { "value": "#FF6B35", "description": "Orange - quaternary" },
       "series5": { "value": "#030102", "description": "Black - for contrast" }
+    },
+    "contrast": {
+      "blackOnWhite": { "ratio": "20.9:1", "rating": "AAA" },
+      "whiteOnBlack": { "ratio": "20.9:1", "rating": "AAA" },
+      "yellowOnBlack": { "ratio": "13.9:1", "rating": "AAA" },
+      "violetOnBlack": { "ratio": "9.1:1", "rating": "AAA" },
+      "orangeOnBlack": { "ratio": "6.5:1", "rating": "AA" },
+      "blueOnBlack": { "ratio": "5.9:1", "rating": "AA" },
+      "yellowOnWhite": { "ratio": "1.5:1", "rating": "FAIL" },
+      "violetOnWhite": { "ratio": "2.3:1", "rating": "FAIL" },
+      "blueOnWhite": { "ratio": "3.5:1", "rating": "LargeOnly" },
+      "orangeOnWhite": { "ratio": "3.2:1", "rating": "LargeOnly" }
+    },
+    "rules": {
+      "maxColorsPerComposition": 3,
+      "orangeUsage": "CTAs only - never as background or main element",
+      "violetUsage": "Accents only - never dominant",
+      "yellowTextOnLight": "FORBIDDEN - use as background or icon only",
+      "logoSource": "Always use official SVG from assets/logos/"
     }
   },
   "typography": {
