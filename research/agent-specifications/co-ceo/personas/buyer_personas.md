@@ -234,35 +234,192 @@ Before using this persona:
 
 ---
 
-## PERSONA 2: [Enterprise CFO] - PENDING
+## PERSONA 2: The Overwhelmed Enterprise Executive
 
-**Status:** Awaiting full customer transcripts via Fireflies MCP
+### Identity
 
-**Expected Source:** 
-- `01KCMFNTMZGNDPDPEQ3MVD1BBN` - Comversa feedback
-- `01KD8D7DEKMFB5TR508V4AJAX5` - Proyecto IA
+| Attribute | Value |
+|-----------|-------|
+| **Archetype** | The Overwhelmed Executive |
+| **Based On** | Comversa/GDM stakeholder patterns (from summaries) |
+| **Role** | COO / VP Operations / General Manager |
+| **Company Type** | Multi-business holding / Family office |
+| **Company Size** | Large ($50M+ revenue, 500+ employees) |
+| **Industry** | Hospitality, F&B, Construction, Multi-vertical |
 
-**Language to Extract:**
-- Financial justification language
-- ROI expectations
-- Risk assessment vocabulary
-- Decision authority dynamics
+### Background Story
+
+> Runs operations across multiple business units. Every decision flows through them or through one owner. Systems are fragmented (40-142 systems), creating constant friction. Knows things are broken but doesn't have visibility to prove it or fix it.
+
+### Core Problem
+
+Bottlenecked decision-making, fragmented systems, and lack of operational visibility across business units.
 
 ---
 
-## PERSONA 3: [Operations Leader] - PENDING
+## Language Bank (From Summaries)
 
-**Status:** Awaiting full customer transcripts
+### Pain Expressions
 
-**Expected Source:**
-- Comversa operations meetings
-- Hotel LTH implementation meetings
+| Pattern | Source | Copywriting Use |
+|---------|--------|-----------------|
+| "142 sistemas que generan 277 fricciones" | GDM Analysis | Scale of problem |
+| "Único punto de decisión que crea cuellos de botella" | Multiple meetings | Bottleneck pattern |
+| "Trabajo manual excesivo" | Luis N Meeting | Automation value |
+| "Falta de visibilidad financiera para los gerentes" | Luis N Meeting | Dashboard value |
+| "Dependencia crítica de [person/dept] que genera cuellos de botella" | Comversa | Single point of failure |
+| "La concentración de decisiones en la alta gerencia limita la capacidad operativa" | Macroprocesos | Delegation need |
 
-**Language to Extract:**
-- Process pain descriptions
-- System frustration vocabulary
-- Efficiency expectations
-- Team management concerns
+### Value Expressions (What They Want)
+
+| Pattern | Context | Copywriting Use |
+|---------|---------|-----------------|
+| "Estructura financiera y autonomía operativa" | GDM objectives | Outcome messaging |
+| "Reporte que refleje la realidad operativa y financiera" | Luis N Meeting | Visibility value |
+| "Definir responsables claros" | Multiple meetings | Accountability |
+| "Quick wins antes de inversiones grandes" | Dashboard meeting | Phased approach |
+
+### Decision Patterns
+
+| Pattern | Evidence | Response Approach |
+|---------|----------|-------------------|
+| Need to see proof first | "Quick wins" emphasis | Start with diagnostic |
+| Want operational autonomy | Bottleneck discussions | Position as enabling delegation |
+| Skeptical of big promises | Roadmap discussions | Show incremental progress |
+
+---
+
+## Psychographics
+
+### Primary Goal
+- Reduce decision bottlenecks
+- Get visibility across business units
+- Enable team autonomy
+
+### Primary Fear
+- Making wrong technology investment (again)
+- Disrupting what's working
+- Revealing problems they can't fix
+
+### Success Metric
+- Fewer decisions requiring their approval
+- Real-time visibility into operations
+- Clear accountability per unit
+
+---
+
+## Copywriting Applications
+
+### Headlines That Would Resonate
+
+- "142 systems. One person deciding everything. Something has to change."
+- "When every decision flows through you, nothing flows fast."
+- "See what's actually happening—before someone tells you what went wrong."
+- "Stop being the bottleneck. Start building systems."
+
+### Value Props That Match
+
+| Standard | Adjusted for This Persona |
+|----------|---------------------------|
+| "We diagnose and fix" | "We find where decisions get stuck and build paths around them" |
+| "AI-powered automation" | "Systems that let your teams move without waiting for approval" |
+| "Enterprise solutions" | "Built for multi-business operations that need to work together" |
+
+### CTAs That Would Work
+
+- "Start with a diagnostic. See the full picture in 2 weeks."
+- "Find the bottlenecks before they find you."
+- "Let's map your decision flows—no commitment to fix (yet)."
+
+---
+
+## PERSONA 3: The Tech-Mature Founder
+
+### Identity
+
+| Attribute | Value |
+|-----------|-------|
+| **Archetype** | The Tech-Mature Founder |
+| **Based On** | Pedro Londono (Fractal) - Second meeting patterns |
+| **Role** | CEO / Founder |
+| **Company Type** | Tech services company (dev shop, consultancy) |
+| **Company Size** | Mid-market ($500K-$2M revenue) |
+| **Industry** | Technology services, B2B |
+
+### Background Story
+
+> Technical founder or tech-comfortable CEO who understands software, has implemented systems before, and knows what good looks like. Frustrated by past vendor failures. Looking for a partner who "gets it" without needing to be educated.
+
+### Core Problem
+
+Scaling sales and operations while maintaining quality—needs systematic growth without losing what makes them special.
+
+---
+
+## Language Bank
+
+### Pain Expressions
+
+| Quote | Context | Copywriting Use |
+|-------|---------|-----------------|
+| "Un montón de reuniones, de esas que uno entra y no sabe para qué entró" | Meeting overload | Time waste messaging |
+| "Hablando carreta un montón" | Wasted conversation | Efficiency value |
+| "Después de un back to back de reuniones el cerebro se desconecta" | Cognitive overload | Simplicity messaging |
+| "Llego al mediodía y yo digo no, qué desastre" | Burnout signals | Support messaging |
+
+### Value Expressions
+
+| Quote | Context | Copywriting Use |
+|-------|---------|-----------------|
+| "Una metodología que nos permita medir y reaccionar sobre el feedback" | Measurement need | Data-driven positioning |
+| "El mercado es el que manda" | Market validation | Validation approach |
+| "No te estoy haciendo preguntas porque estoy de acuerdo" | Efficiency in conversation | Direct communication |
+
+### Decision Patterns
+
+| Pattern | Evidence | Response Approach |
+|---------|----------|-------------------|
+| Fast decision-maker | "Está clarísimo" after explanation | Be direct, move quickly |
+| Values methodology | Asks about frameworks | Lead with process |
+| Wants ownership | Discusses team building | Position as capability building |
+
+---
+
+## Psychographics
+
+### Primary Goal
+- Scale revenue without scaling headcount proportionally
+- Build repeatable systems
+- Find partners who don't need education
+
+### Primary Fear
+- Hiring wrong people
+- Losing control of quality
+- Wasting time on wrong approaches
+
+### Success Metric
+- Revenue growth rate
+- Team utilization
+- Pipeline conversion
+
+---
+
+## Copywriting Applications
+
+### Headlines That Would Resonate
+
+- "You know what good looks like. So do we."
+- "Methodology first. Magic second."
+- "For founders who've done this before."
+- "Measure. React. Repeat."
+
+### Value Props That Match
+
+| Standard | Adjusted for This Persona |
+|----------|---------------------------|
+| "We diagnose and fix" | "We bring the methodology you need to scale" |
+| "AI-powered automation" | "Systematic experimentation, not guesswork" |
+| "Enterprise solutions" | "Enterprise frameworks for growth-stage companies" |
 
 ---
 
@@ -275,6 +432,25 @@ Before using this persona:
 - Integration concerns
 - Security considerations
 - Vendor evaluation criteria
+
+**Expected Sources (To Fetch):**
+- Comversa IT discussions
+- SAP/Oracle integration meetings
+
+---
+
+## PERSONA 5: [Strategic Advisor/Investor] - PENDING
+
+**Status:** Awaiting Tomas transcript
+
+**Meeting to Fetch:**
+- `01K4G5JS23ZG0H4HPH5EYP4TAZ` - Pre-founding with Tomas
+
+**Expected Language:**
+- Portfolio-level thinking
+- Risk assessment vocabulary
+- Partnership evaluation criteria
+- Long-term vision discussions
 
 ---
 
