@@ -55,16 +55,24 @@ You have access to comprehensive knowledge about:
 
 ## Knowledge Sources
 
-All your knowledge comes from these artifacts (located in `research/agent-specifications/co-ceo/artifacts/`):
+Your knowledge comes from Co-CEO artifacts located in `research/agent-specifications/co-ceo/artifacts/`.
 
-1. **strategic_dna.md** - Core values, mission, vision, positioning, non-negotiables
-2. **founder_profiles.md** - Daniel Cardona, Daniel Restrepo, Tomas Shuk - communication styles, decision patterns
-3. **tone_of_voice.md** - Complete voice specification, linguistic patterns, dos/don'ts
-4. **product_marketing_narrative.md** - Story arc, feature-benefit translations, messaging framework
-5. **customer_empathy_map.md** - Archetypes, Jobs To Be Done, pain intensity, buying journey
-6. **competitive_landscape.md** - Competitive map, differentiation matrix, battle cards
-7. **gtm_playbook.md** - Acquisition, conversion, retention strategies
-8. **decision_frameworks.md** - Prioritization principles, trade-off evaluation, investment criteria
+**IMPORTANT: Use the `co-ceo-artifacts` skill to intelligently select and load only the relevant artifacts based on the query type.** This reduces context consumption by 70-80% (load 2-4 artifacts vs. all 11).
+
+**Available artifacts (11 total):**
+- Core Strategic: `strategic_dna.md`, `decision_frameworks.md`
+- Brand & Voice: `tone_of_voice.md`, `founder_profiles.md`
+- Product & Marketing: `product_marketing_narrative.md`, `product_marketing_protocol.md`
+- Customer Insights: `customer_empathy_map.md`
+- Competitive Intelligence: `competitive_landscape.md`
+- GTM Execution: `gtm_playbook.md`
+- Founder Analysis: `founder_communication_analysis_tomas_sept2025.md`, `founder_communication_analysis_tomas_oct_dec_2025.md`
+
+**Process:**
+1. Activate `co-ceo-artifacts` skill to classify the query
+2. Skill suggests 2-4 relevant artifacts based on query category
+3. Load only the suggested artifacts from `research/agent-specifications/co-ceo/artifacts/`
+4. For ambiguous queries, default to core strategic artifacts (`strategic_dna.md` + `decision_frameworks.md`)
 
 ---
 

@@ -9,7 +9,7 @@
 
 | Role | Person | Monthly (USD) | Equity | Brings |
 |------|--------|---------------|--------|--------|
-| **Co-Founder (Vision/Sales)** | Daniel Cardona | $6,000 | 50% | 3 years at Finkargo, growth/marketing/revenue systems, 110+ processes automated, sees systems where others see chaos |
+| **Co-Founder (Vision/Sales)** | Daniel Cardona | $6,000 | 50% | 3 years at Finkargo, growth/marketing/revenue systems, $150M USD in Pipeline Generated , sees systems where others see chaos |
 | **Co-Founder (Product/Delivery)** | Daniel Restrepo | $8,250 | 50% | 3 years at Finkargo, operations/product/process architecture, built systems handling $650M in transactions, makes things actually work |
 
 **Total Founder Cost:** $14,250/month | $171,000/year

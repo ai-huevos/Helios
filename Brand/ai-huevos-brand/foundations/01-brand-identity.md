@@ -2,10 +2,10 @@
 
 ## Brand Philosophy
 
-> "Pa' emprender se necesitan huevos"
-> — Entrepreneurship takes courage.
+> "Pa' emprender y transformar se necesitan huevos"
+> — Entrepreneurship and transformation takes courage.
 
-AI Huevos nace de la convicción de que emprender requiere coraje. No es solo un juego de palabras — es nuestra filosofía central. Cada decisión de marca refleja esta actitud audaz pero accesible.
+AI Huevos nace de la convicción de que transformar requiere coraje. No es solo un juego de palabras — es nuestra filosofía central. Cada decisión de marca refleja esta actitud audaz pero accesible.
 
 ## Mission
 

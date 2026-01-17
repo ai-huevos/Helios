@@ -4,282 +4,103 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AI Huevos Brand Guidelines is a brand management and automation repository that centralizes brand identity, design systems, user research workflows, and AI agent deployment configurations. The project is designed for operation with Claude Skills and maintains all content in Spanish.
+AI Huevos is a brand management repository with documentation, design systems, and a React-based InvestorRoom application. Spanish-first content — never translate Spanish to English, always use `ensure_ascii=False` in JSON operations.
 
-**Key Principle**: Spanish-first content — never translate Spanish content to English, always use `ensure_ascii=False` in JSON operations.
+## Development Commands
 
-## 🚨 CRITICAL RULE: NO FILES IN ROOT
-
-**NEVER create `.md` files in the repository root** (except README.md, CHANGELOG.md, CONTRIBUTING.md, SETUP.md).
-
-All documentation MUST go in the appropriate directory:
-
-| Content Type | Location | Examples |
-|--------------|----------|----------|
-| Architecture decisions | `docs/architecture/` | ADRs, structure docs, migration plans |
-| Workflow documentation | `docs/workflows/` | How-to guides, process docs |
-| API references | `docs/api-reference/` | API specs, endpoint docs |
-| Research outputs | `research/[category]/` | Analysis, insights, findings |
-| Agent specifications | `research/agent-specifications/` | Agent configs, discovery outputs |
-| Templates | `templates/` | Reusable document templates |
-| Brand guidelines | `Brand/` | Brand-specific docs |
-
-**Why this matters**:
-- ✅ Discoverability: Files are where users expect them
-- ✅ Scalability: Structure doesn't degrade over time
-- ✅ Consistency: Follows documented architecture
-- ✅ Maintenance: Clear ownership and purpose
-
-**Before creating ANY file**:
-1. Ask: "What is the purpose of this file?"
-2. Consult the table above
-3. Create in the correct directory
-4. NEVER use root as default
-
-## Repository Architecture
-
-### Core Components
-
-1. **Brand System** (`Brand/`)
-   - `Brand/ai-huevos-brand/` — Primary brand skill with design tokens, assets, and implementation files
-   - `Brand/visual-identity/` — Logos, colors, typography specifications
-   - `Brand/voice-tone/` — Voice and tone guidelines
-   - `Brand/messaging/` — Brand messaging frameworks
-   - `Brand/Pitch Deck/` — Investor presentation materials and market research
-
-2. **Workflows** (`workflows/`)
-   - `user-research/` — User research automation workflows
-   - `channel-performance/` — Channel analytics and performance tracking
-   - `automation-pipelines/` — General automation workflows
-   - `agent-deployment/` — AI agent deployment configurations
-
-3. **Research** (`research/`)
-   - `user-personas/` — User persona definitions
-   - `market-analysis/` — Market research and competitive analysis
-   - `performance-reports/` — Channel and campaign performance data
-   - `agent-specifications/` — AI agent discovery and specifications
-   - `strategic-insights/` — Founding team, advisor, partner conversations (PLANNED)
-   - `user-research/customer-interviews/` — Client interviews and feedback (PLANNED)
-   - `market-intelligence/prospect-calls/` — Sales and prospect discovery (PLANNED)
-
-4. **Documentation** (`docs/`)
-   - `architecture/` — System architecture decisions, ADRs, structure documentation
-   - `api-reference/` — API documentation
-   - `workflows/` — Workflow documentation
-
-5. **Business Context** (`Basics/`, `Sales/`, `Meeting Transcript/`)
-   - Historical company documents and client work
-   - Sales materials and client research
-   - Meeting notes and business context
-   - **NOTE**: `Meeting Transcript/` will be migrated to `research/` structure (see `docs/architecture/MEETING_TRANSCRIPTS_STRUCTURE.md`)
-
-### Brand System Implementation
-
-The brand system is production-ready with:
-- **Design Tokens**: `Brand/ai-huevos-brand/references/design-tokens.json`
-- **CSS Variables**: `Brand/ai-huevos-brand/references/css-variables.css`
-- **Tailwind Config**: `Brand/ai-huevos-brand/references/tailwind-config.js`
-- **Fonts**: `Brand/fonts/Scandia/` (primary) and `Brand/fonts/Geist_Mono/` (code/data)
-- **Logo Assets**: `Brand/ai-huevos-brand/assets/logos/` (SVG variants for all backgrounds)
-
-**Brand Colors** (use these exact hex values):
-- Primary: White (#FFFFFF), Black (#121212), Yellow (#FFD826), Blue (#3988FF)
-- Secondary: Violet (#B4A7FA), Orange (#FF6B35 — CTAs only)
-- Web Extended: Gray Dark (#8B8B8B), Gray Light (#E8E8E8)
-
-**Typography**:
-- Primary: Scandia (Medium for headlines, Regular for body) — always sentence case
-- Code/Data: Geist Mono
-
-**Key Brand Message**: "Pa' emprender se necesitan huevos" (Entrepreneurship takes courage)
-
-## Branch Strategy (CRITICAL)
-
-**GitFlow-based workflow** with three protected branches:
-
-```
-production (stable, production-ready)
-    ↑ merge from main (requires 2 approvals)
-main (verified releases)
-    ↑ merge from development (requires 1 approval)
-development (integration, base for work) ← ALWAYS START HERE
-    ↑ branch from here
-feature/* (your changes)
-research/* (experimental work)
-hotfix/* (urgent fixes only)
+### InvestorRoom (React/Vite App)
+```bash
+cd InvestorRoom
+npm install                                    # Install dependencies
+npm run dev                                    # Dev server (http://localhost:5173)
+npm run build                                  # Production build
+npm run test                                   # Run all tests (vitest)
+npm run test -- --watch                        # Watch mode
+npm run test -- src/__tests__/SomeTest.jsx    # Single test file
+npm run preview                                # Preview production build
 ```
 
-**NEVER work directly on `main` or `production`**. Always create feature branches from `development`:
+## Critical Rules
+
+### File Placement — NO FILES IN ROOT
+Never create `.md` files in repository root (except README.md, CHANGELOG.md, CONTRIBUTING.md, SETUP.md).
+
+| Content Type | Location |
+|--------------|----------|
+| Architecture decisions | `docs/architecture/` |
+| Workflow documentation | `docs/workflows/` |
+| Research outputs | `research/[category]/` |
+| Agent specifications | `research/agent-specifications/` |
+| Brand guidelines | `Brand/` |
+| Templates | `templates/` |
+
+### Branch Strategy
+```
+production ← main ← development ← feature/*
+```
+**ALWAYS branch from `development`**, never work directly on `main` or `production`.
 
 ```bash
-git checkout development
-git pull origin development
+git checkout development && git pull
 git checkout -b feature/descriptive-name
 ```
 
-## Conventional Commits (Required)
-
+### Conventional Commits
 Format: `<type>(<scope>): <subject>`
 
-**Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- **Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- **Scopes**: `brand`, `workflow`, `research`, `automation`, `docs`, `agent`, `investor-room`
 
-**Scopes**: `brand`, `workflow`, `research`, `automation`, `docs`, `agent`
+## Architecture
 
-**Examples**:
-```bash
-feat(brand): añadir sistema de color tokens
-fix(workflow): corregir error en pipeline de research
-docs(research): actualizar user personas
-refactor(automation): optimizar deploy script
-```
+### Key Directories
+- **Brand/ai-huevos-brand/** — Design system, tokens, logos, brand guidelines
+- **InvestorRoom/** — React/Vite investor presentation app
+- **research/** — User personas, market analysis, agent specifications
+- **workflows/** — User research, automation pipelines, agent deployment
+- **.claude/skills/** — Claude skills (brand, reports, internal-comms)
 
-All commits generated by Claude Code will include the footer:
-```
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>
-```
+### InvestorRoom Architecture
+Multi-persona layout system targeting different investor types:
+- **AppVisionary.jsx** — High-level vision, minimal data
+- **AppOperator.jsx** — Detailed metrics, operational focus
+- **AppPolish.jsx** — Refined presentation, balanced view
+- **AppSwitcher.jsx** — Persona selector component
 
-## Development Workflow
+Key components: `SynthesisHero`, `SynthesisGrid`, `OpportunityExplorer`, `PitchSection`, `SuccessCases`
 
-### Starting Work
-1. Verify current branch: `git status`
-2. Ensure on `development`: `git checkout development && git pull`
-3. Create feature branch: `git checkout -b feature/task-name`
-4. Load project context if needed (check brand guidelines, existing workflows)
+### Brand System
+**Full guidelines:** Read `Brand/ai-huevos-brand/SKILL.md` before creating visual content.
 
-### During Work
-- **TodoWrite**: Use for tasks with >3 steps
-- **Read First**: Always read files before Write/Edit
-- **Brand Consistency**: Verify against `Brand/ai-huevos-brand/SKILL.md` before creating visual content
-- **Parallel Execution**: Run independent tasks in parallel
-- **Spanish Content**: Maintain Spanish for all user-facing content
+| Resource | Path |
+|----------|------|
+| Brand guidelines | `Brand/ai-huevos-brand/SKILL.md` |
+| Design tokens (source of truth) | `Brand/ai-huevos-brand/references/design-tokens.json` |
+| Official logos | `Brand/ai-huevos-brand/assets/logos/` |
 
-### Completing Work
-```bash
-git add .
-git commit -m "feat(scope): descripción
+**Critical rules (always apply):**
+- Max 3 colors per composition
+- Orange = CTAs only (never background)
+- Yellow text on white = FORBIDDEN (fails WCAG)
+- Always use official SVG logos — never CSS shapes or emoji
+- Scandia font, sentence case only (never ALL CAPS)
 
-- Detalle cambio 1
-- Detalle cambio 2
+## Content Language
 
-🤖 Generated with Claude Code
-Co-Authored-By: Claude <noreply@anthropic.com>"
-git push origin feature/task-name
-# Create PR to development (not main!)
-```
-
-## Key Files Reference
-
-| File | Purpose |
-|------|---------|
-| `README.md` | Repository overview, branch strategy, development workflow |
-| `CONTRIBUTING.md` | Contribution guidelines, PR process, code standards |
-| `CHANGELOG.md` | Version history (Keep a Changelog format) |
-| `.claude/CLAUDE.md` | Project-specific Claude instructions (this file's parent) |
-| `Brand/ai-huevos-brand/SKILL.md` | Complete brand guidelines and design system |
-| `Brand/ai-huevos-brand/references/design-tokens.json` | Programmatic design tokens |
-
-## Tool Usage Patterns
-
-### Primary MCP Tools
-1. **Serena** — Semantic code operations, project memory, session persistence
-2. **Context7** — Official library documentation lookups
-3. **Sequential Thinking** — Complex multi-step reasoning, architectural decisions
-
-### File Operations
-- Always use **absolute paths** starting with `/Users/tatooine/Documents/Development/AI huevos/`
-- **Read** before Write/Edit (never edit blind)
-- **Edit** for modifying existing files (preferred over Write)
-- **Write** only for new files that are necessary
-
-### Brand Workflow
-When creating any visual content, presentations, dashboards, or branded materials:
-1. Read `Brand/ai-huevos-brand/SKILL.md` for current brand guidelines
-2. Reference design tokens from `Brand/ai-huevos-brand/references/design-tokens.json`
-3. Use logo assets from `Brand/ai-huevos-brand/assets/logos/`
-4. Maintain color usage rules (primary colors in similar proportions, orange minimal)
-5. Use Scandia font (sentence case) for text, Geist Mono for code/data
-
-## Special Considerations
-
-### Content Language
-- **All user-facing content**: Spanish
-- **Code/configuration**: English is acceptable
-- **Documentation**: Spanish preferred
+- **User-facing content**: Spanish (never translate)
+- **Code/config**: English acceptable
 - **Brand messages**: Always Spanish
-- **JSON operations**: Use `ensure_ascii=False`
+- **Key tagline**: "Pa' emprender se necesitan huevos"
 
-### Security
-- Never commit secrets (API keys, tokens, credentials)
-- `.env` files are gitignored
-- Check `.gitignore` before committing sensitive data
-- `secrets/` directory is blocked
+## Serena Project Memory
 
-### Claude Skills Integration
-The repository is optimized for Claude Skills operation:
-- `/sc:design` — Design system and brand operations
-- `/sc:research` — User research and market analysis
-- `/sc:workflow` — Workflow automation generation
-- `/sc:implement` — Feature implementation
-- `/sc:analyze` — Performance analysis
+Check memories at session start if relevant:
+```
+mcp__serena__list_memories → mcp__serena__read_memory
+```
 
-Custom commands (when implemented):
-- `/brand-check` — Validate brand consistency
-- `/deploy-agent` — Deploy AI agents
-- `/channel-report` — Generate performance reports
-- `/user-research` — Execute research workflows
+Write memories for: brand decisions, workflow patterns, architecture choices.
 
-### AI Agent Workflows
-- Document configurations in `workflows/agent-deployment/`
-- Track performance metrics
-- Maintain agent configs as code
-- Link to research insights from `research/`
+## Additional Resources
 
-### User Research Protocols
-- Store personas in `research/user-personas/`
-- Document methodology
-- Link workflows to `workflows/user-research/`
-- Track insights systematically
-
-## Project Context Memory
-
-When starting new sessions, key memories to check (via Serena):
-- **Brand guidelines**: Core identity, design system tokens
-- **Workflow patterns**: Common automation patterns
-- **Research insights**: User personas, market analysis
-- **Architecture decisions**: System design choices
-
-Write memories when:
-- New brand guidelines are established
-- Workflow patterns are discovered
-- Research insights are uncovered
-- Architecture decisions are made
-
-## Quality Checklist
-
-Before completing work:
-- [ ] Follows brand guidelines (if applicable)
-- [ ] Uses conventional commits format
-- [ ] Spanish content maintained (not translated)
-- [ ] No secrets or credentials committed
-- [ ] Working on feature branch (not main/production)
-- [ ] Documentation updated if needed
-- [ ] Read files before editing them
-
-## Common Pitfalls to Avoid
-
-1. Working directly on `main` or `production` branches
-2. Translating Spanish content to English
-3. Committing without conventional commit format
-4. Creating files without reading existing ones first
-5. Using orange color as protagonist (it's accent-only)
-6. Ignoring brand consistency requirements
-7. Not using TodoWrite for complex multi-step tasks
-8. Committing secrets or API keys
-
-## Resources
-
-- [Conventional Commits](https://www.conventionalcommits.org/)
-- [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
-- [GitFlow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-- Internal: See `README.md`, `CONTRIBUTING.md`, `Brand/ai-huevos-brand/SKILL.md`
+See `README.md` for full branch strategy, `CONTRIBUTING.md` for PR process and code standards.
