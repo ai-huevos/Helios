@@ -1,0 +1,71 @@
+/* Phase 3: The Synthesis - Source of Truth */
+
+:root {
+    /* Strict Palette from Reference */
+    --bg-primary: #030102;
+    /* Deep Black */
+    --surface: #0a0a0a;
+    --surface-elevated: #141414;
+
+    --yellow: #FFD826;
+    --blue: #3988FF;
+    --violet: #B4A7FA;
+    --orange: #FF6B35;
+
+    --white: #FFFFFF;
+    --text-primary: #FFFFFF;
+    --text-secondary: #8B8B8B;
+
+    --border-color: rgba(255, 255, 255, 0.1);
+    --border-active: rgba(255, 255, 255, 0.2);
+
+    /* Fonts */
+    --font-primary: 'Scandia', 'Inter', sans-serif;
+    --font-mono: 'Geist Mono', 'Roboto Mono', monospace;
+
+    /* Spacing */
+    --grid-gap: 1px;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Utilities */
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-violet {
+    color: var(--violet);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+/* Grid Layout Utility */
+.synthesis-grid {
+    display: grid;
+    gap: var(--grid-gap);
+    background-color: var(--border-color);
+    /* Creates the borders */
+    border: 1px solid var(--border-color);
+}
+
+.synthesis-grid>* {
+    background-color: var(--bg-primary);
+}

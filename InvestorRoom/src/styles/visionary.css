@@ -1,0 +1,155 @@
+/* Option C: The Visionary - Styles */
+
+.vis-wrapper {
+    background-color: #000000;
+    color: #FFFFFF;
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Minimal Header */
+.vis-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.vis-logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.vis-nav-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-left: 32px;
+    transition: color 0.3s;
+}
+
+.vis-nav-link:hover {
+    color: #FFFFFF;
+}
+
+/* Hero Typography */
+.vis-hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.vis-h1 {
+    font-size: 120px;
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    background: linear-gradient(180deg, #FFFFFF 0%, #888888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
+.vis-lead {
+    font-size: 24px;
+    max-width: 600px;
+    color: #888888;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Big Metrics */
+.vis-metrics-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vis-metric-item {
+    flex: 1;
+}
+
+.vis-metric-val {
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 16px;
+}
+
+.vis-metric-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #4D9FFF;
+}
+
+/* Cards / Content */
+.vis-card-section {
+    padding: 100px 40px;
+}
+
+.vis-card {
+    background: #111111;
+    padding: 60px;
+    transition: background 0.5s;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.vis-card:hover {
+    background: #1A1A1A;
+}
+
+.vis-card-title {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+
+.vis-btn-floating {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.vis-btn-floating:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .vis-h1 {
+        font-size: 60px;
+    }
+
+    .vis-metrics-row {
+        flex-direction: column;
+        gap: 60px;
+    }
+}

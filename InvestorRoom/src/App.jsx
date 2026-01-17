@@ -1,163 +1,95 @@
-import React, { useState, useEffect } from 'react'
-import { Moon, Sun, Globe } from 'lucide-react'
-import { LanguageProvider, useLanguage } from './context/LanguageContext'
-import Hero from './components/Hero'
-import PitchSection from './components/PitchSection'
-import OpportunityExplorer from './components/OpportunityExplorer'
-import SuccessCases from './components/SuccessCases'
+import React, { useEffect, useState } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import SynthesisHero from './components/SynthesisHero'
+import SynthesisGrid from './components/SynthesisGrid'
+import './styles/design-system.css'
 
-const AppContent = () => {
-    const [theme, setTheme] = useState('light')
-    const { language, toggleLanguage, t } = useLanguage()
+const App = () => {
+    const { scrollY } = useScroll()
+    const [scrolled, setScrolled] = useState(false)
+    const headerBorder = useTransform(scrollY, [0, 50], ["rgba(255,255,255,0)", "rgba(255,255,255,0.1)"])
 
     useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme)
-    }, [theme])
-
-    const toggleTheme = () => {
-        setTheme(prev => prev === 'light' ? 'dark' : 'light')
-    }
+        const handleScroll = () => setScrolled(window.scrollY > 20)
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
-        <div className="investor-room" style={{ backgroundColor: 'var(--bg-primary)', minHeight: '100vh', transition: 'background-color 0.2s ease' }}>
+        <div style={{ background: 'var(--bg-primary)', minHeight: '100vh', color: 'var(--text-primary)' }}>
 
-            {/* Navigation */}
-            <nav style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                right: 0,
-                height: '80px',
-                backgroundColor: theme === 'light' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(0, 0, 0, 0.8)',
-                backdropFilter: 'blur(10px)',
-                zIndex: 1000,
-                borderBottom: '1px solid var(--border-color)',
-                transition: 'background-color 0.2s ease, border-color 0.2s ease'
-            }}>
-                <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '100%' }}>
-                    <div style={{ fontWeight: 800, fontSize: '24px', color: 'var(--text-primary)' }}>🥚 AI Huevos</div>
-
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-                        <div style={{ display: 'flex', gap: '24px' }} className="font-mono">
-                            <NavLink href="#pitch">{t.nav.pitch}</NavLink>
-                            <NavLink href="#opportunity">{t.nav.opportunity}</NavLink>
-                            <NavLink href="#cases">{t.nav.cases}</NavLink>
-                        </div>
-
-                        <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-                            {/* Language Toggle */}
-                            <button
-                                onClick={toggleLanguage}
-                                className="font-mono"
-                                style={{
-                                    background: 'transparent',
-                                    border: 'none',
-                                    cursor: 'pointer',
-                                    color: 'var(--text-primary)',
-                                    fontSize: '14px',
-                                    fontWeight: 600,
-                                    opacity: 0.8,
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '4px'
-                                }}
-                            >
-                                <Globe size={16} />
-                                {language === 'en' ? 'ES' : 'EN'}
-                            </button>
-
-                            <div style={{ width: '1px', height: '14px', backgroundColor: 'var(--border-color)' }}></div>
-
-                            <button
-                                onClick={toggleTheme}
-                                aria-label="Toggle theme"
-                                style={{
-                                    background: 'transparent',
-                                    border: 'none',
-                                    cursor: 'pointer',
-                                    color: 'var(--text-primary)',
-                                    display: 'flex',
-                                    alignItems: 'center'
-                                }}
-                            >
-                                {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
-                            </button>
-
-                            <button style={{
-                                backgroundColor: 'var(--text-primary)',
-                                color: 'var(--bg-primary)',
-                                border: 'none',
-                                padding: '10px 24px',
-                                borderRadius: '50px',
-                                cursor: 'pointer',
-                                fontWeight: 600,
-                                fontSize: '14px'
-                            }}>
-                                {t.nav.contact}
-                            </button>
-                        </div>
-                    </div>
+            {/* Sticky, Blurred Header */}
+            <motion.header
+                style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    padding: '24px 48px',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    zIndex: 100,
+                    background: scrolled ? 'rgba(3,1,2,0.8)' : 'transparent',
+                    backdropFilter: scrolled ? 'blur(12px)' : 'none',
+                    borderBottom: '1px solid',
+                    borderColor: headerBorder
+                }}
+            >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '20px', fontWeight: 700 }}>
+                    <div style={{ width: '32px', height: '40px', background: 'var(--yellow)', borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%' }}></div>
+                    AI Huevos
                 </div>
-            </nav>
+
+                <nav style={{ display: 'flex', gap: '32px' }}>
+                    {['Soluciones', 'Casos', 'Nosotros'].map((item) => (
+                        <a
+                            key={item}
+                            href={`#${item.toLowerCase()}`}
+                            style={{
+                                color: 'var(--white)',
+                                textDecoration: 'none',
+                                fontSize: '14px',
+                                fontWeight: 500,
+                                opacity: 0.8,
+                                transition: 'opacity 0.2s'
+                            }}
+                        >
+                            {item}
+                        </a>
+                    ))}
+                    <a
+                        href="#contacto"
+                        style={{
+                            color: 'var(--yellow)',
+                            textDecoration: 'none',
+                            fontSize: '14px',
+                            fontWeight: 600
+                        }}
+                    >
+                        Contacto
+                    </a>
+                </nav>
+            </motion.header>
 
             <main>
-                <Hero />
-                <PitchSection />
-                <OpportunityExplorer />
-                <SuccessCases />
+                <SynthesisHero />
+                <SynthesisGrid />
+
+                {/* Footer (Simple) */}
+                <footer style={{
+                    borderTop: '1px solid var(--border-color)',
+                    padding: '48px',
+                    textAlign: 'center',
+                    marginTop: '80px',
+                    color: 'var(--text-secondary)',
+                    fontSize: '14px'
+                }}>
+                    <p>© 2025 AI Huevos | Hecho con coraje 🥚</p>
+                </footer>
             </main>
-
-            <footer style={{ backgroundColor: '#000000', color: '#FFFFFF', padding: '100px 0' }}>
-                <div className="container">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start' }}>
-                        <div>
-                            <h2 style={{ fontSize: '48px', marginBottom: '24px', lineHeight: 1.1 }}>{t.footer.ready}</h2>
-                            <p style={{ opacity: 0.6, fontSize: '18px', marginBottom: '40px', maxWidth: '400px' }}>
-                                {t.footer.join}
-                            </p>
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                                <a href="mailto:daniel@aihuevos.com" className="font-mono" style={{ textDecoration: 'underline', fontSize: '18px' }}>daniel@aihuevos.com</a>
-                                <span className="font-mono" style={{ opacity: 0.5, fontSize: '14px' }}>Bogotá • Mexico City • Miami</span>
-                            </div>
-                        </div>
-
-                        <div style={{ textAlign: 'right' }}>
-                            <div style={{ fontSize: '80px', marginBottom: '20px' }}>🥚</div>
-                            <div className="font-mono" style={{ opacity: 0.4, marginBottom: '8px' }}>{t.footer.rights}</div>
-                            <div className="font-mono" style={{ opacity: 0.3, fontSize: '12px', whiteSpace: 'pre-line' }}>
-                                {t.footer.version}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     )
 }
-
-function App() {
-    return (
-        <LanguageProvider>
-            <AppContent />
-        </LanguageProvider>
-    )
-}
-
-const NavLink = ({ href, children }) => (
-    <a
-        href={href}
-        style={{
-            color: 'var(--text-primary)',
-            fontSize: '14px',
-            fontWeight: 500,
-            opacity: 0.8,
-            transition: 'opacity 0.2s'
-        }}
-        onMouseEnter={(e) => e.target.style.opacity = '1'}
-        onMouseLeave={(e) => e.target.style.opacity = '0.8'}
-    >
-        {children}
-    </a>
-)
 
 export default App
