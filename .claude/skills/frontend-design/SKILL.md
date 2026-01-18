@@ -65,11 +65,56 @@ Geist Mono   → Data, metrics, code only
 
 ---
 
+## Figma Brandbook Integration 🎨
+
+**Official Figma Brandbook:** https://www.figma.com/design/Z2oWxiu7yyEJFy9TbwIQyZ/AIHUEVOS_BRANDBOOK
+
+### When Figma MCP is Available
+
+**ALWAYS prefer Figma MCP as the source of truth** for brand tokens:
+- Extract design variables from Figma Brandbook
+- Sync tokens from Figma Variables to code
+- Validate designs match Figma specifications
+- Generate components from Figma designs
+
+**Figma MCP Workflow:**
+1. Ask: "Extract design tokens from [Figma Brandbook URL]"
+2. Compare extracted tokens with local `brand-tokens.json`
+3. Update local tokens if Figma has newer values
+4. Use Figma tokens for generation/validation
+
+**Without Figma MCP:**
+- Use `references/brand-tokens.json` as fallback
+- Local tokens should match Figma Brandbook
+- When in doubt, refer to Figma directly
+
+---
+
 ## Workflow
+
+### Phase 0: Sync with Figma (If MCP Available)
+
+**If Figma MCP server is connected:**
+
+1. **Extract latest tokens from Figma Brandbook:**
+   ```
+   "Extract all design tokens from https://www.figma.com/design/Z2oWxiu7yyEJFy9TbwIQyZ/AIHUEVOS_BRANDBOOK"
+   ```
+
+2. **Compare with local tokens:**
+   - Compare Figma Variables with `brand-tokens.json`
+   - Update local file if Figma has newer/changed values
+   - Document any discrepancies
+
+3. **Validate brand compliance:**
+   ```
+   "Check if this design follows AI Huevos brand guidelines from Figma"
+   ```
 
 ### Phase 1: Read Brand Tokens
 
-**ALWAYS start by reading:** `references/brand-tokens.json`
+**Primary source (if Figma MCP available):** Extract from Figma Brandbook
+**Fallback source:** `references/brand-tokens.json`
 
 This file contains:
 - All brand colors with usage rules
@@ -93,11 +138,29 @@ This file contains:
 
 ### Phase 3: Generate or Refine
 
+**Use Figma MCP for Design Context (Recommended):**
+
+If Figma MCP is available and designs exist in Figma:
+1. **Extract component styles from Figma:**
+   ```
+   "Get component structure and styles from [Figma frame/component URL]"
+   ```
+
+2. **Generate code from Figma design:**
+   ```
+   "Convert this Figma component to React with shadcn/ui and AI Huevos brand colors"
+   ```
+
+3. **Validate against Figma Brandbook:**
+   ```
+   "Check if this component matches AI Huevos brand guidelines from Figma"
+   ```
+
 **Use Magic MCP (21st.dev) if available:**
 
 | Tool | When |
 |------|------|
-| `mcp__magic__21st_magic_component_builder` | Creating new components |
+| `mcp__magic__21st_magic_component_builder` | Creating new components without Figma designs |
 | `mcp__magic__21st_magic_component_inspiration` | Exploring design patterns |
 | `mcp__magic__21st_magic_component_refiner` | Improving existing components |
 
@@ -108,21 +171,41 @@ mcp__magic__21st_magic_component_builder({
   searchQuery: "hero section",  // 2-4 words
   absolutePathToCurrentFile: "/path/to/component.jsx",
   absolutePathToProjectDirectory: "/path/to/project",
-  standaloneRequestQuery: "Detailed requirements"
+  standaloneRequestQuery: "Detailed requirements with AI Huevos brand colors from Figma"
 })
 ```
+
+**Priority Order:**
+1. **Figma MCP** (if designs exist) → Extract from Figma Brandbook
+2. **Magic MCP** (for generation) → Use with Figma token context
+3. **Manual coding** → Following brand-tokens.json
 
 ### Phase 4: Apply Brand
 
 **After generating, ALWAYS verify:**
 
+**Brand Compliance:**
 ```
-✅ Colors from brand-tokens.json
+✅ Colors from Figma Brandbook or brand-tokens.json
 ✅ Orange only on CTA buttons
 ✅ Black text on light backgrounds
 ✅ Typography uses Scandia/Inter
 ✅ Contrast passes WCAG AA
+✅ Max 3 colors per composition
+✅ Sentence case (no ALL CAPS)
 ```
+
+**Figma Validation (if MCP available):**
+```
+"Validate this component matches AI Huevos brand guidelines from Figma Brandbook"
+```
+
+**Contrast Verification:**
+- Black on White: 20.9:1 ✅ AAA
+- White on Black: 20.9:1 ✅ AAA
+- Yellow on Black: 13.9:1 ✅ AAA
+- Yellow on White: 1.5:1 ❌ FORBIDDEN
+- Violet on White: 2.3:1 ❌ FORBIDDEN
 
 **Post-generation fix example:**
 ```jsx
@@ -182,37 +265,81 @@ mcp__magic__21st_magic_component_builder({
 
 ## Examples
 
-### Example 1: Improve Overall Design
+### Example 1: Sync Design Tokens from Figma
+**User:** "Sync brand colors from Figma Brandbook"
+
+**Workflow:**
+1. Use Figma MCP: "Extract all color tokens from https://www.figma.com/design/Z2oWxiu7yyEJFy9TbwIQyZ/AIHUEVOS_BRANDBOOK"
+2. Compare extracted colors with `brand-tokens.json`
+3. Update `tailwind.config.js` with Figma values
+4. Update CSS variables in `css-variables.css`
+5. Commit updated tokens
+
+**Result:** Brand tokens stay in sync with Figma source of truth
+
+---
+
+### Example 2: Generate Component from Figma Design
+**User:** "Create hero section from Figma design"
+
+**Workflow:**
+1. Get Figma frame URL for hero section
+2. Use Figma MCP: "Get component structure and styles from [Figma URL]"
+3. Extract:
+   - Layout structure
+   - Colors (from Figma Variables)
+   - Typography (Scandia font, sizes, weights)
+   - Spacing values
+4. Generate React component with:
+   - shadcn/ui components
+   - AI Huevos brand colors from Figma
+   - Tailwind classes
+   - Responsive design
+5. Validate against Figma Brandbook
+
+**Result:** Pixel-perfect component matching Figma design
+
+---
+
+### Example 3: Improve Overall Design
 **User:** "Improve the design of my React app with AI Huevos brand"
 
 **Workflow:**
-1. Read `references/brand-tokens.json`
+1. **If Figma MCP available:** Extract latest tokens from Figma Brandbook
+   **Else:** Read `references/brand-tokens.json`
 2. Audit `src/components/` for color inconsistencies
 3. List components to improve (Hero, Cards, Nav)
 4. For each component:
+   - Use Figma MCP to check against brand guidelines (if available)
    - Use `component_refiner` with brand context
-   - Apply colors from tokens
+   - Apply colors from Figma tokens (or local tokens)
    - Verify WCAG compliance
 5. Test in browser
 
-### Example 2: Create Hero Section
+**Result:** Brand-compliant components aligned with Figma Brandbook
+
+### Example 4: Create Hero Section (Without Figma)
 **User:** "Create a hero section for the landing page"
 
 **Workflow:**
-1. Read brand tokens
+1. **If Figma MCP available:** Extract hero patterns from Figma Brandbook
+   **Else:** Read `brand-tokens.json`
 2. Generate with:
    ```
    searchQuery: "hero section"
    standaloneRequestQuery: "Modern hero with headline,
-   subtext, and primary CTA using AI Huevos brand colors"
+   subtext, and primary CTA using AI Huevos brand colors
+   (yellow #FFD826, blue #3988FF, orange #FF6B35 for CTAs)"
    ```
-3. Apply brand colors:
+3. Apply brand colors from Figma (or tokens):
    - Background: White `#FFFFFF`
    - Headline: Black `#030102`
    - CTA: Orange `#FF6B35` with black text
-4. Save to `src/components/Hero.jsx`
+   - Accents: Yellow `#FFD826` or Blue `#3988FF`
+4. Validate against Figma Brandbook (if MCP available)
+5. Save to `src/components/Hero.jsx`
 
-### Example 3: Redesign Card Component
+### Example 5: Redesign Card Component
 **User:** "Redesign the pricing cards to look more professional"
 
 **Workflow:**
@@ -228,12 +355,14 @@ mcp__magic__21st_magic_component_builder({
 ## Quality Checklist
 
 ### Brand Compliance
-- [ ] All colors from brand-tokens.json
+- [ ] **Colors sync with Figma Brandbook** (if MCP available) OR match `brand-tokens.json`
 - [ ] Max 3 colors per composition
-- [ ] Orange only on CTAs
-- [ ] No yellow/violet text on white
+- [ ] Orange only on CTAs (never background)
+- [ ] Violet only as accents (never dominant)
+- [ ] No yellow/violet text on white (WCAG fails)
 - [ ] Sentence case for all headings
 - [ ] No ALL CAPS (except acronyms)
+- [ ] Official logo SVG used (never CSS shapes or emoji)
 
 ### Design Quality
 - [ ] Clear typography hierarchy
@@ -257,9 +386,27 @@ mcp__magic__21st_magic_component_builder({
 frontend-design/
 ├── SKILL.md                    # This file
 └── references/
-    ├── brand-tokens.json       # Complete AI Huevos tokens
+    ├── brand-tokens.json       # Complete AI Huevos tokens (sync with Figma)
     ├── color-system.md         # Color usage guide
     └── typography.md           # Type scale guide
+```
+
+## Figma Brandbook Reference
+
+**Official Figma Brandbook:** https://www.figma.com/design/Z2oWxiu7yyEJFy9TbwIQyZ/AIHUEVOS_BRANDBOOK
+
+**Use Figma MCP to:**
+- Extract latest design tokens
+- Validate brand compliance
+- Generate components from designs
+- Sync tokens between Figma and code
+
+**Figma MCP Queries:**
+```
+"Extract all design tokens from https://www.figma.com/design/Z2oWxiu7yyEJFy9TbwIQyZ/AIHUEVOS_BRANDBOOK"
+"Check if this design matches AI Huevos brand guidelines from Figma"
+"Get component styles from [Figma frame URL]"
+"Convert Figma component to React with AI Huevos brand colors"
 ```
 
 ---
@@ -284,12 +431,44 @@ frontend-design/
 
 ---
 
-## Without Magic MCP
+## Integration Priority
 
-If Magic MCP is not available, this skill still works:
-- Read brand tokens manually
-- Write components following brand guidelines
-- Use the color/typography references
-- Apply quality checklist
+**Best Practice Workflow:**
 
-Just skip the MCP tool calls and write code directly.
+1. **Figma MCP First** (if available):
+   - Extract tokens from Figma Brandbook
+   - Validate designs against Figma
+   - Generate from Figma designs
+
+2. **Magic MCP Second** (for generation):
+   - Use with Figma token context
+   - Generate components when Figma designs don't exist
+
+3. **Manual Fallback**:
+   - Read `brand-tokens.json`
+   - Write code following guidelines
+   - Apply quality checklist
+
+**If Figma MCP Not Available:**
+- Use `references/brand-tokens.json` as source of truth
+- Tokens should match Figma Brandbook
+- Validate manually against Figma when possible
+
+**If Magic MCP Not Available:**
+- Write code manually following brand guidelines
+- Use Figma MCP tokens for context
+- Apply quality checklist manually
+
+---
+
+## 📚 Additional Resources
+
+**Figma Integration Guide:** [FIGMA_INTEGRATION.md](FIGMA_INTEGRATION.md)
+- Complete workflow for syncing tokens from Figma
+- Component generation from Figma designs
+- Brand compliance validation using Figma MCP
+
+**Figma Brandbook:** https://www.figma.com/design/Z2oWxiu7yyEJFy9TbwIQyZ/AIHUEVOS_BRANDBOOK
+- Single source of truth for all design tokens
+- Variables, components, and brand guidelines
+- Access via Figma MCP server
