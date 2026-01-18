@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos Design System Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --yellow: #FFD826;
+            --blue: #3988FF;
+            --violet: #B4A7FA;
+            --orange: #FF6B35;
+            --black: #030102;
+            --white: #FFFFFF;
+            --gray-light: #E8E8E8;
+            --gray-dark: #8B8B8B;
+            --surface: #0a0a0a;
+            --surface-elevated: #141414;
+            --bg-primary: #030102;
+            --text-primary: #FFFFFF;
+            --text-secondary: #8B8B8B;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Scandia', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Light/Clear theme - matching light-mode-optimized.html */
+        body[data-theme="light"] {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        body[data-theme="light"] .subtitle {
+            color: var(--text-secondary);
+        }
+
+        body[data-theme="light"] header {
+            border-bottom-color: var(--yellow);
+            border-bottom-width: 3px;
+        }
+
+        body[data-theme="light"] h1 {
+            color: var(--black);
+        }
+
+        body[data-theme="light"] .brand-logo {
+            color: var(--black);
+        }
+
+        body[data-theme="light"] .section-title {
+            color: var(--text-secondary);
+        }
+
+        body[data-theme="light"] .nav-card {
+            background: var(--white);
+            border-color: var(--gray-light);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        body[data-theme="light"] .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+            border-color: var(--yellow);
+        }
+
+        body[data-theme="light"] .nav-card h2 {
+            color: var(--black);
+        }
+
+        body[data-theme="light"] .nav-card p {
+            color: var(--gray-dark);
+        }
+
+        body[data-theme="light"] .nav-card a {
+            color: var(--blue);
+        }
+
+        body[data-theme="light"] .nav-card a:hover {
+            color: var(--yellow);
+        }
+
+        body[data-theme="light"] .color-info {
+            background: var(--white);
+        }
+
+        body[data-theme="light"] .section {
+            background: var(--gray-light);
+        }
+
+        body[data-theme="light"] .section h2 {
+            color: var(--black);
+        }
+
+        body[data-theme="light"] .color-swatch {
+            border-color: var(--gray-light);
+        }
+
+        body[data-theme="light"] .file-path {
+            background: var(--gray-light);
+            color: var(--gray-dark);
+        }
+
+        body[data-theme="light"] th,
+        body[data-theme="light"] td {
+            border-bottom-color: var(--gray-light);
+        }
+
+        body[data-theme="light"] th {
+            color: var(--black);
+        }
+
+        body[data-theme="light"] .rules {
+            background: rgba(255, 214, 38, 0.15);
+            border-left-color: var(--yellow);
+        }
+
+        body[data-theme="light"] .rules h4 {
+            color: var(--black);
+        }
+
+        body[data-theme="light"] .rules li {
+            color: var(--black);
+            opacity: 0.8;
+        }
+
+        body[data-theme="light"] footer {
+            border-top-color: var(--gray-light);
+            border-top-width: 2px;
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 60px 0 40px;
+            border-top: 2px solid var(--yellow);
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+
+        .brand-logo {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--yellow);
+            letter-spacing: -0.02em;
+        }
+
+        .logo-svg {
+            width: 56px;
+            height: auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: var(--yellow);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            opacity: 0.9;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .nav-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--yellow);
+            box-shadow: 0 8px 24px rgba(255, 216, 38, 0.15);
+        }
+
+        .nav-card h2 {
+            color: var(--yellow);
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .nav-card p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .nav-card ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .nav-card li {
+            margin-bottom: 8px;
+        }
+
+        .nav-card a {
+            color: var(--text-primary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-card a:hover {
+            color: var(--yellow);
+            text-decoration: underline;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .color-swatch {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .color-box {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .color-info {
+            padding: 16px;
+            background: var(--bg-primary);
+        }
+
+        .color-info strong {
+            display: block;
+            color: var(--yellow);
+            margin-bottom: 4px;
+        }
+
+        .color-info code {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        .section {
+            margin: 60px 0;
+            padding: 32px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            border-top: 2px solid var(--yellow);
+        }
+
+        .section h2 {
+            color: var(--yellow);
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .quick-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--yellow);
+            color: var(--black);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .quick-link:hover {
+            background: var(--orange);
+            color: var(--black);
+            transform: translateY(-2px);
+        }
+
+        .file-path {
+            background: var(--bg-primary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'Geist Mono', 'Monaco', monospace;
+            font-size: 12px;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            color: var(--yellow);
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: var(--yellow);
+            color: var(--black);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .rules {
+            background: var(--bg-primary);
+            border-left: 3px solid var(--yellow);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .rules h4 {
+            color: var(--yellow);
+            margin-bottom: 8px;
+        }
+
+        .rules ul {
+            margin-left: 20px;
+        }
+
+        .rules li {
+            margin: 6px 0;
+            color: var(--text-secondary);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .theme-toggle button {
+            background: var(--yellow);
+            color: var(--black);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .theme-toggle button:hover {
+            background: var(--orange);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        body[data-theme="light"] .theme-toggle button {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        body[data-theme="light"] .theme-toggle button:hover {
+            background: var(--gray);
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle theme">
+            <span id="themeLabel">Clear View</span>
+        </button>
+    </div>
+    <div class="container">
+        <header>
+            <div class="brand-header">
+                <img src="ai-huevos-brand/assets/logos/logo-yellow-white.svg" alt="AI Huevos Logo" class="logo-svg" />
+                <div class="brand-logo">AI HUEVOS</div>
+            </div>
+            <div class="section-title">Design System</div>
+            <p class="subtitle">Complete Design System Review Dashboard</p>
+        </header>
+
+        <section class="section">
+            <h2>📚 Documentation Hub</h2>
+            <p>All design system documentation organized by purpose:</p>
+            
+            <div class="nav-grid">
+                <div class="nav-card">
+                    <h2>Brand Manual</h2>
+                    <p>Complete brand guidelines and identity</p>
+                    <ul>
+                        <li><a href="ai-huevos-brand/brand-manual.md">Full Manual</a></li>
+                        <li><a href="ai-huevos-brand/CHEATSHEET.md">Quick Reference</a></li>
+                        <li><a href="ai-huevos-brand/SKILL.md">Brand Skill</a></li>
+                    </ul>
+                    <div class="file-path">Brand/ai-huevos-brand/</div>
+                </div>
+
+                <div class="nav-card">
+                    <h2>UI Components</h2>
+                    <p>React components and UI patterns</p>
+                    <ul>
+                        <li><a href="ai-huevos-brand/components.md">Component Patterns</a></li>
+                        <li><a href=".agent/skills/ui-design-system/SKILL.md">UI Design Skill</a></li>
+                        <li><a href=".agent/skills/ui-design-system/resources/design-system-checklist.md">Quality Checklist</a></li>
+                    </ul>
+                    <div class="file-path">.agent/skills/ui-design-system/</div>
+                </div>
+
+                <div class="nav-card">
+                    <h2>Presentations</h2>
+                    <p>Pitch deck and slide design system</p>
+                    <ul>
+                        <li><a href="ai-huevos-brand/slides.md">Slide Patterns</a></li>
+                        <li><a href="Pitch Deck/DESIGN_SYSTEM.md">Pitch Deck System</a></li>
+                    </ul>
+                    <div class="file-path">Brand/Pitch Deck/</div>
+                </div>
+
+                <div class="nav-card">
+                    <h2>Design Tokens</h2>
+                    <p>Raw tokens in multiple formats</p>
+                    <ul>
+                        <li><a href="ai-huevos-brand/references/design-tokens.json">JSON Tokens</a></li>
+                        <li><a href="ai-huevos-brand/references/css-variables.css">CSS Variables</a></li>
+                        <li><a href="ai-huevos-brand/references/tailwind-config.js">Tailwind Config</a></li>
+                    </ul>
+                    <div class="file-path">Brand/ai-huevos-brand/references/</div>
+                </div>
+
+                <div class="nav-card">
+                    <h2>Foundations</h2>
+                    <p>Deep dive documentation</p>
+                    <ul>
+                        <li><a href="ai-huevos-brand/foundations/01-brand-identity.md">Brand Identity</a></li>
+                        <li><a href="ai-huevos-brand/foundations/02-logo-system.md">Logo System</a></li>
+                        <li><a href="ai-huevos-brand/foundations/03-color-system.md">Color System</a></li>
+                        <li><a href="ai-huevos-brand/foundations/04-typography.md">Typography</a></li>
+                        <li><a href="ai-huevos-brand/foundations/05-voice-tone.md">Voice & Tone</a></li>
+                    </ul>
+                    <div class="file-path">Brand/ai-huevos-brand/foundations/</div>
+                </div>
+
+                <div class="nav-card">
+                    <h2>Assets</h2>
+                    <p>Logo files and fonts</p>
+                    <ul>
+                        <li><a href="ai-huevos-brand/assets/logos/">Logo SVGs</a></li>
+                        <li><a href="ai-huevos-brand/assets/fonts/">Font Files</a></li>
+                    </ul>
+                    <div class="file-path">Brand/ai-huevos-brand/assets/</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎨 Color Palette</h2>
+            <p>All brand colors with usage guidelines:</p>
+            
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-box" style="background: var(--yellow); color: var(--black);">Yellow</div>
+                    <div class="color-info">
+                        <strong>Yellow #FFD826</strong>
+                        <code>Primary accent, egg character</code>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background: var(--blue); color: var(--white);">Blue</div>
+                    <div class="color-info">
+                        <strong>Blue #3988FF</strong>
+                        <code>Primary accent, data/trust</code>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background: var(--violet); color: var(--black);">Violet</div>
+                    <div class="color-info">
+                        <strong>Violet #B4A7FA</strong>
+                        <code>Secondary accent, details</code>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background: var(--orange); color: var(--white);">Orange</div>
+                    <div class="color-info">
+                        <strong>Orange #FF6B35</strong>
+                        <code>CTAs only, minimal use</code>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background: var(--black); color: var(--white);">Black</div>
+                    <div class="color-info">
+                        <strong>Black #030102</strong>
+                        <code>Primary text, wordmark</code>
+                    </div>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box" style="background: var(--white); color: var(--black); border: 1px solid rgba(0,0,0,0.1);">White</div>
+                    <div class="color-info">
+                        <strong>White #FFFFFF</strong>
+                        <code>Backgrounds, text on dark</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rules">
+                <h4>Color Usage Rules</h4>
+                <ul>
+                    <li>✅ Max 3 colors per composition</li>
+                    <li>✅ Orange = CTAs only (never background)</li>
+                    <li>✅ Violet = accents only (never dominant)</li>
+                    <li>❌ Never yellow text on white (fails WCAG)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📝 Typography Scale</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Style</th>
+                        <th>Size</th>
+                        <th>Weight</th>
+                        <th>Font</th>
+                        <th>Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>H1</strong></td>
+                        <td>32px</td>
+                        <td>700</td>
+                        <td>Scandia</td>
+                        <td>Page titles</td>
+                    </tr>
+                    <tr>
+                        <td><strong>H2</strong></td>
+                        <td>28px</td>
+                        <td>700</td>
+                        <td>Scandia</td>
+                        <td>Section headers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>H3</strong></td>
+                        <td>24px</td>
+                        <td>600</td>
+                        <td>Scandia</td>
+                        <td>Card headers</td>
+                    </tr>
+                    <tr>
+                        <td><strong>H4</strong></td>
+                        <td>20px</td>
+                        <td>600</td>
+                        <td>Scandia</td>
+                        <td>Subsections</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Body</strong></td>
+                        <td>14px</td>
+                        <td>400</td>
+                        <td>Scandia</td>
+                        <td>Default text</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Small</strong></td>
+                        <td>12px</td>
+                        <td>400</td>
+                        <td>Scandia</td>
+                        <td>Captions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Metric</strong></td>
+                        <td>48px</td>
+                        <td>700</td>
+                        <td>Geist Mono</td>
+                        <td>Big numbers</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="rules">
+                <h4>Typography Rules</h4>
+                <ul>
+                    <li>✅ Scandia for all text</li>
+                    <li>✅ Geist Mono for data/code only</li>
+                    <li>✅ Sentence case always</li>
+                    <li>❌ Never ALL CAPS (except acronyms)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>✅ Quick Review Checklist</h2>
+            <p>Use this checklist when reviewing design implementations:</p>
+            
+            <div class="rules">
+                <h4>Design System Compliance</h4>
+                <ul>
+                    <li>All colors use CSS variables (no hardcoded hex)</li>
+                    <li>Typography uses defined scale (no arbitrary sizes)</li>
+                    <li>Spacing uses token system (--space-*)</li>
+                    <li>Components follow naming conventions</li>
+                </ul>
+            </div>
+
+            <div class="rules">
+                <h4>Accessibility</h4>
+                <ul>
+                    <li>WCAG AAA contrast ratios (21:1 for body text)</li>
+                    <li>Keyboard navigable</li>
+                    <li>Screen reader friendly (semantic HTML)</li>
+                    <li>Respects prefers-reduced-motion</li>
+                </ul>
+            </div>
+
+            <div class="rules">
+                <h4>Brand Consistency</h4>
+                <ul>
+                    <li>Logo used correctly (official SVG files)</li>
+                    <li>Brand colors used consistently</li>
+                    <li>Typography matches brand guidelines</li>
+                    <li>Tone is bold, direct, confident</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 20px;">
+                <a href=".agent/skills/ui-design-system/resources/design-system-checklist.md" class="quick-link">
+                    View Full Quality Checklist →
+                </a>
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>🚀 Quick Actions</h2>
+            <p>Common tasks and shortcuts:</p>
+            
+            <div class="quick-links">
+                <a href="ai-huevos-brand/CHEATSHEET.md" class="quick-link">Brand Cheatsheet</a>
+                <a href="ai-huevos-brand/references/css-variables.css" class="quick-link">CSS Variables</a>
+                <a href="ai-huevos-brand/references/design-tokens.json" class="quick-link">Design Tokens</a>
+                <a href=".agent/skills/ui-design-system/SKILL.md" class="quick-link">UI Design Skill</a>
+                <a href="Pitch Deck/DESIGN_SYSTEM.md" class="quick-link">Pitch Deck System</a>
+                <a href="ai-huevos-brand/assets/logos/" class="quick-link">Logo Files</a>
+            </div>
+        </section>
+
+        <footer style="text-align: center; margin-top: 80px; padding: 40px 0; border-top: 1px solid var(--border-color); color: var(--text-secondary);">
+            <p style="opacity: 0.7;">AI Huevos Design System | Version 2.1.0 | Last Updated: January 2026</p>
+            <p style="margin-top: 10px; font-size: 12px; opacity: 0.7;">
+                "Pa' emprender se necesitan huevos"
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeLabel = document.getElementById('themeLabel');
+        const body = document.body;
+
+        // Load saved theme or default to dark
+        const savedTheme = localStorage.getItem('designSystemTheme') || 'dark';
+        body.setAttribute('data-theme', savedTheme);
+        updateThemeLabel(savedTheme);
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('designSystemTheme', newTheme);
+            updateThemeLabel(newTheme);
+        });
+
+        function updateThemeLabel(theme) {
+            themeLabel.textContent = theme === 'dark' ? 'Clear View' : 'Dark View';
+        }
+    </script>
+</body>
+</html>
