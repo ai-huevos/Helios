@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos | Versión 3 Enhanced - Balanced Contrast Split</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/scandia');
+        @import url('https://fonts.cdnfonts.com/css/geist-mono');
+
+        :root {
+            --white: #FFFFFF;
+            --black: #030102;
+            --yellow: #FFD826;
+            --blue: #3988FF;
+            --violet: #B4A7FA;
+            --orange: #FF6B35;
+            --gray-light: #E8E8E8;
+            --gray-dark: #8B8B8B;
+            --surface: #0a0a0a;
+            --surface-elevated: #141414;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: var(--black);
+            --bg-secondary: var(--surface);
+            --bg-elevated: var(--surface-elevated);
+            --text-primary: var(--white);
+            --text-secondary: rgba(255,255,255,0.8);
+            --border-color: rgba(255,255,255,0.1);
+        }
+
+        [data-theme="light"] {
+            --bg-primary: var(--white);
+            --bg-secondary: var(--gray-light);
+            --bg-elevated: var(--white);
+            --text-primary: var(--black);
+            --text-secondary: #4B5563;
+            --border-color: var(--gray-light);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Scandia', 'Inter', system-ui, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--yellow);
+            border: 2px solid var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .theme-toggle svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--black);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .theme-toggle .sun {
+            display: none;
+        }
+
+        .theme-toggle .moon {
+            display: block;
+        }
+
+        [data-theme="dark"] .theme-toggle .sun {
+            display: block;
+        }
+
+        [data-theme="dark"] .theme-toggle .moon {
+            display: none;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 24px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .logo-egg {
+            width: 40px;
+            height: 48px;
+            background: var(--yellow);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            opacity: 0.8;
+        }
+
+        nav a:hover {
+            color: var(--yellow);
+            opacity: 1;
+        }
+
+        /* Hero Section - Black background in light mode, stays black in dark */
+        .hero {
+            background: var(--black);
+            padding: 120px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -300px;
+            right: -200px;
+            width: 600px;
+            height: 700px;
+            background: radial-gradient(ellipse, rgba(255,216,38,0.15) 0%, transparent 70%);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            left: -100px;
+            width: 400px;
+            height: 500px;
+            background: radial-gradient(ellipse, rgba(57,136,255,0.1) 0%, transparent 70%);
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 24px;
+            line-height: 1.2;
+            position: relative;
+        }
+
+        .hero .highlight {
+            color: var(--yellow);
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--white);
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .cta-button {
+            background: var(--yellow);
+            color: var(--black);
+            padding: 16px 48px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--blue);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Features Section - White in light mode, elevated in dark */
+        .features {
+            background: var(--bg-elevated);
+            padding: 80px 48px;
+            transition: background-color 0.3s;
+        }
+
+        .features h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--bg-elevated);
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--yellow);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .feature-card:nth-child(2):hover {
+            border-color: var(--blue);
+        }
+
+        .feature-card:nth-child(3):hover {
+            border-color: var(--violet);
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+
+        .feature-card:nth-child(1) .feature-icon {
+            background: rgba(255,216,38,0.2);
+        }
+
+        .feature-card:nth-child(2) .feature-icon {
+            background: rgba(57,136,255,0.2);
+        }
+
+        .feature-card:nth-child(3) .feature-icon {
+            background: rgba(180,167,250,0.2);
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        /* Stats Section - Black background in light mode */
+        .stats {
+            background: var(--black);
+            padding: 80px 48px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-family: 'Geist Mono', monospace;
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .stat-item:nth-child(1) h3 {
+            color: var(--yellow);
+        }
+
+        .stat-item:nth-child(2) h3 {
+            color: var(--blue);
+        }
+
+        .stat-item:nth-child(3) h3 {
+            color: var(--violet);
+        }
+
+        .stat-item:nth-child(4) h3 {
+            color: var(--yellow);
+        }
+
+        .stat-item p {
+            font-size: 18px;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        /* Footer - White in light mode, elevated in dark */
+        footer {
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+            padding: 48px;
+            text-align: center;
+            border-top: 2px solid var(--border-color);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        .footer-accent {
+            color: var(--yellow);
+            font-weight: 600;
+        }
+
+        /* Version Label */
+        .version-label {
+            position: fixed;
+            top: 80px;
+            right: 24px;
+            background: var(--yellow);
+            color: var(--black);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            z-index: 999;
+            border: 2px solid var(--text-primary);
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+    <div class="version-label">Versión 3 Enhanced: Balanced Contrast Split</div>
+
+    <header>
+        <div class="logo">
+            <div class="logo-egg"></div>
+            AI Huevos
+        </div>
+        <nav>
+            <a href="#soluciones">Soluciones</a>
+            <a href="#casos">Casos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Pa' emprender se necesitan <span class="highlight">huevos</span></h1>
+        <p>Transformamos equipos comerciales con agentes de IA que automatizan prospección, investigación y análisis para cerrar más ventas.</p>
+        <a href="#" class="cta-button">Agenda una demo</a>
+    </section>
+
+    <section class="features">
+        <h2>¿Por qué AI Huevos?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🥚</div>
+                <h3>Automatización inteligente</h3>
+                <p>Agentes de IA que trabajan 24/7 investigando prospectos, analizando señales de compra y preparando outreach personalizado.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Datos accionables</h3>
+                <p>Convertimos conversaciones en insights estratégicos con análisis automático de llamadas y meetings.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Implementación rápida</h3>
+                <p>De cero a operativo en semanas, no meses. Workflows personalizados que se adaptan a tu stack tecnológico.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>85%</h3>
+                <p>Reducción en tiempo de investigación</p>
+            </div>
+            <div class="stat-item">
+                <h3>3x</h3>
+                <p>Aumento en outreach personalizado</p>
+            </div>
+            <div class="stat-item">
+                <h3>60%</h3>
+                <p>Mejora en calificación de leads</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Operación continua de agentes</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 <span class="footer-accent">AI Huevos</span> | Hecho con coraje 🥚</p>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
