@@ -44,7 +44,7 @@
 
 ---
 
-### Hotel LTH (Comversa Group)
+### Hotel LTH (Grupo Doria Media Group)
 **Profile:** Hospitality sector business
 
 **Jobs To Be Done:**
@@ -117,7 +117,7 @@
 
 ### Success vs. Failure Patterns
 
-**Success (Conversa, Bolivian Foods, Hotel LTH):**
+**Success (Comversa, Bolivian Foods, Hotel LTH):**
 - Clear pain points identified
 - Diagnostic-first approach
 - Incremental implementation
