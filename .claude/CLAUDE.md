@@ -17,7 +17,6 @@ npm run build                                  # Production build
 npm run test                                   # Run all tests (vitest)
 npm run test -- --watch                        # Watch mode
 npm run test -- src/__tests__/InvestorRoom.test.jsx  # Single test file
-npm run preview                                # Preview production build
 ```
 
 ## Critical Rules
@@ -42,11 +41,6 @@ production ← main ← development ← feature/*
 ```
 **ALWAYS branch from `development`**, never work directly on `main` or `production`.
 
-```bash
-git checkout development && git pull
-git checkout -b feature/descriptive-name
-```
-
 ### Conventional Commits
 Format: `<type>(<scope>): <subject>`
 
@@ -57,13 +51,22 @@ Format: `<type>(<scope>): <subject>`
 
 ### Key Directories
 - **Brand/ai-huevos-brand/** — Design system, tokens, logos, brand guidelines
-- **InvestorRoom/** — React/Vite investor presentation app
+- **InvestorRoom/** — React/Vite investor presentation app (shadcn/ui, Tailwind v4)
 - **research/** — User personas, market analysis, agent specifications
 - **workflows/** — User research, automation pipelines, agent deployment
-- **.claude/skills/** — Claude skills (see below)
+- **.claude/skills/** — Claude skills (MCP wrappers and utilities)
 
-### Skills Overview
-**Core skills**: `ai-huevos-brand`, `reports`, `internal-comms`, `writing-review`, `org-archaeology`, `proposal-builder`
+### Skills
+
+**Claude skills** (in `.claude/skills/`):
+| Skill | Purpose |
+|-------|---------|
+| `reports` | Client reports, diagnostic findings, executive summaries |
+| `internal-comms` | Status updates, stakeholder emails, newsletters |
+| `writing-review` | Edit, proofread, and polish written content |
+| `org-archaeology` | Extract business intelligence from Spanish interviews |
+| `proposal-builder` | SOWs, pricing documents, engagement letters |
+| `frontend-design` | Production-grade frontend interfaces with brand |
 
 **MCP wrapper skills**:
 | Skill | MCP Server | Purpose |
@@ -74,16 +77,16 @@ Format: `<type>(<scope>): <subject>`
 | `browser-testing` | playwright | UI testing, screenshots |
 
 ### InvestorRoom Architecture
-Multi-persona layout system with shared components:
+Multi-persona layout system built on shadcn/ui + Tailwind v4:
 - **Persona layouts**: `AppVisionary.jsx` (vision-focused), `AppOperator.jsx` (metrics-heavy), `AppPolish.jsx` (balanced)
 - **Switcher**: `AppSwitcher.jsx` — runtime persona switching
 - **Shared components**: `SynthesisHero`, `SynthesisGrid`, `OpportunityExplorer`, `PitchSection`, `SuccessCases`
 - **Context**: `LanguageContext.jsx` for Spanish/English support
-- **Tests**: `src/__tests__/InvestorRoom.test.jsx`
+- **UI stack**: 24 shadcn/ui components, React Flow (graphs), Recharts (analytics)
 
 ### Co-CEO Agent System
 Strategic artifacts for the Co-CEO AI agent:
-- **Artifacts**: `research/agent-specifications/co-ceo/artifacts/`
+- **Artifacts**: `research/agent-specifications/co-ceo/artifacts/` (11 strategic documents)
 - **Discovery workflow**: `workflows/agent-deployment/co-ceo/CO_CEO_DISCOVERY_PROMPT.md`
 - **Skill**: `/co-ceo-artifacts` loads relevant context based on query type
 
@@ -92,13 +95,16 @@ Strategic artifacts for the Co-CEO AI agent:
 - **Synthesis**: `research/fireflies-extraction/FINAL_SYNTHESIS_REPORT.md`
 
 ### Brand System
-**Full guidelines:** Read `Brand/ai-huevos-brand/SKILL.md` before creating visual content.
+
+**Dashboard**: Open `Brand/design-system-review.html` for central navigation to all brand resources.
 
 | Resource | Path |
 |----------|------|
 | Brand guidelines | `Brand/ai-huevos-brand/SKILL.md` |
-| Design tokens (source of truth) | `Brand/ai-huevos-brand/references/design-tokens.json` |
+| Quick reference | `Brand/ai-huevos-brand/CHEATSHEET.md` |
+| Design tokens | `Brand/ai-huevos-brand/references/design-tokens.json` |
 | Official logos | `Brand/ai-huevos-brand/assets/logos/` |
+| Portability guide | `Brand/ai-huevos-brand/PORT_TO_NEW_REPO.md` |
 
 **Critical rules (always apply):**
 - Max 3 colors per composition
@@ -106,6 +112,8 @@ Strategic artifacts for the Co-CEO AI agent:
 - Yellow text on white = FORBIDDEN (fails WCAG)
 - Always use official SVG logos — never CSS shapes or emoji
 - Scandia font, sentence case only (never ALL CAPS)
+
+**Porting brand to another repo**: Run `Brand/ai-huevos-brand/COPY_MINIMAL.sh` (3 files) or `COPY_COMPLETE.sh` (full docs).
 
 ## Content Language
 
