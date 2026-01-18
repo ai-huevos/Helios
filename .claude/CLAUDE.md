@@ -16,7 +16,7 @@ npm run dev                                    # Dev server (http://localhost:51
 npm run build                                  # Production build
 npm run test                                   # Run all tests (vitest)
 npm run test -- --watch                        # Watch mode
-npm run test -- src/__tests__/SomeTest.jsx    # Single test file
+npm run test -- src/__tests__/InvestorRoom.test.jsx  # Single test file
 npm run preview                                # Preview production build
 ```
 
@@ -37,6 +37,8 @@ Never create `.md` files in repository root (except README.md, CHANGELOG.md, CON
 ### Branch Strategy
 ```
 production ← main ← development ← feature/*
+                                ← hotfix/* (urgent fixes, merge to main + backport)
+                                ← research/* (experimental, may not merge)
 ```
 **ALWAYS branch from `development`**, never work directly on `main` or `production`.
 
@@ -58,16 +60,36 @@ Format: `<type>(<scope>): <subject>`
 - **InvestorRoom/** — React/Vite investor presentation app
 - **research/** — User personas, market analysis, agent specifications
 - **workflows/** — User research, automation pipelines, agent deployment
-- **.claude/skills/** — Claude skills (brand, reports, internal-comms)
+- **.claude/skills/** — Claude skills (see below)
+
+### Skills Overview
+**Core skills**: `ai-huevos-brand`, `reports`, `internal-comms`, `writing-review`, `org-archaeology`, `proposal-builder`
+
+**MCP wrapper skills**:
+| Skill | MCP Server | Purpose |
+|-------|-----------|---------|
+| `web-research` | context7 | Official library docs, API references |
+| `meeting-intelligence` | fireflies | Transcript analysis from Fireflies |
+| `ui-components` | magic | React/Next.js component generation |
+| `browser-testing` | playwright | UI testing, screenshots |
 
 ### InvestorRoom Architecture
-Multi-persona layout system targeting different investor types:
-- **AppVisionary.jsx** — High-level vision, minimal data
-- **AppOperator.jsx** — Detailed metrics, operational focus
-- **AppPolish.jsx** — Refined presentation, balanced view
-- **AppSwitcher.jsx** — Persona selector component
+Multi-persona layout system with shared components:
+- **Persona layouts**: `AppVisionary.jsx` (vision-focused), `AppOperator.jsx` (metrics-heavy), `AppPolish.jsx` (balanced)
+- **Switcher**: `AppSwitcher.jsx` — runtime persona switching
+- **Shared components**: `SynthesisHero`, `SynthesisGrid`, `OpportunityExplorer`, `PitchSection`, `SuccessCases`
+- **Context**: `LanguageContext.jsx` for Spanish/English support
+- **Tests**: `src/__tests__/InvestorRoom.test.jsx`
 
-Key components: `SynthesisHero`, `SynthesisGrid`, `OpportunityExplorer`, `PitchSection`, `SuccessCases`
+### Co-CEO Agent System
+Strategic artifacts for the Co-CEO AI agent:
+- **Artifacts**: `research/agent-specifications/co-ceo/artifacts/`
+- **Discovery workflow**: `workflows/agent-deployment/co-ceo/CO_CEO_DISCOVERY_PROMPT.md`
+- **Skill**: `/co-ceo-artifacts` loads relevant context based on query type
+
+### Research Outputs
+- **Fireflies transcripts**: `research/fireflies-extraction/transcripts/` (by category: customer, founding-team, advisors, prospects, partners)
+- **Synthesis**: `research/fireflies-extraction/FINAL_SYNTHESIS_REPORT.md`
 
 ### Brand System
 **Full guidelines:** Read `Brand/ai-huevos-brand/SKILL.md` before creating visual content.

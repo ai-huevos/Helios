@@ -4,6 +4,7 @@ Skills are modular instruction sets that extend Claude's capabilities for specif
 
 ## Skills Registry
 
+### Core Business Skills
 | Skill | Purpose | Status |
 |-------|---------|--------|
 | `ai-huevos-brand` | Brand guidelines, colors, typography, logos | ✅ Active |
@@ -12,6 +13,14 @@ Skills are modular instruction sets that extend Claude's capabilities for specif
 | `writing-review` | Edit, refine, proofread content | ✅ Active |
 | `org-archaeology` | Interview extraction, knowledge graphs, entity mapping | ✅ Active |
 | `proposal-builder` | Client proposals, SOWs, pricing docs | ✅ Active |
+
+### MCP Wrapper Skills
+| Skill | MCP Server | Purpose | Status |
+|-------|-----------|---------|--------|
+| `web-research` | context7 | Official library docs, API references | ✅ Active |
+| `meeting-intelligence` | fireflies | Transcript analysis, action items, insights | ✅ Active |
+| `ui-components` | magic | React/Next.js component generation | ✅ Active |
+| `browser-testing` | playwright + chrome-devtools | UI testing, screenshots, automation | ✅ Active |
 
 ## Location Strategy
 
