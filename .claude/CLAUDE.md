@@ -4,7 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AI Huevos is a brand management repository with documentation, design systems, and a React-based InvestorRoom application. Spanish-first content — never translate Spanish to English, always use `ensure_ascii=False` in JSON operations.
+AI Huevos is a brand management repository with documentation, design systems, and two React applications:
+- **InvestorRoom** - Investor presentation app with multi-persona layouts
+- **design-os** - Product planning and design tool that exports implementation packages
+
+Spanish-first content — never translate Spanish to English, always use `ensure_ascii=False` in JSON operations.
 
 ## Development Commands
 
@@ -24,6 +28,22 @@ Key file locations:
 - **Design system CSS**: `src/styles/design-system.css` (brand tokens as CSS variables)
 - **Test setup**: `src/setupTests.js` (vitest + @testing-library/react)
 - **UI primitives**: `src/components/ui/` (shadcn/ui components)
+
+### design-os (React/Vite/TypeScript App)
+```bash
+cd design-os
+npm install                                    # Install dependencies
+npm run dev                                    # Dev server (http://localhost:5174)
+npm run build                                  # TypeScript compile + production build
+npm run lint                                   # ESLint check
+npm run preview                                # Preview production build
+```
+
+**Important**: design-os is a product planning/design tool. See `design-os/agents.md` for complete agent directives. Key points:
+- Two contexts: Design OS UI (stone/lime, DM Sans) vs. Product Designs (use product tokens)
+- Tailwind CSS v4 only (no tailwind.config.js)
+- Planning flow: Product Vision → Roadmap → Data Model → Design System → Shell → Sections → Export
+- Screen designs go to `src/sections/[section-name]/`, exports to `product-plan/`
 
 ## Critical Rules
 
@@ -51,16 +71,25 @@ production ← main ← development ← feature/*
 Format: `<type>(<scope>): <subject>`
 
 - **Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-- **Scopes**: `brand`, `workflow`, `research`, `automation`, `docs`, `agent`, `investor-room`
+- **Scopes**: `brand`, `workflow`, `research`, `automation`, `docs`, `agent`, `investor-room`, `design-os`
 
 ## Architecture
 
 ### Key Directories
 - **Brand/ai-huevos-brand/** — Design system, tokens, logos, brand guidelines
 - **InvestorRoom/** — React/Vite investor presentation app (shadcn/ui, Tailwind v4)
+- **design-os/** — React/Vite/TypeScript product planning/design tool (separate codebase)
 - **research/** — User personas, market analysis, agent specifications
 - **workflows/** — User research, automation pipelines, agent deployment
 - **.claude/skills/** — Claude skills (MCP wrappers and utilities)
+
+### Two React Applications
+This repository contains two independent React applications:
+
+1. **InvestorRoom** - AI Huevos investor presentation with multi-persona layouts
+2. **design-os** - Product planning and design tool (exports component packages)
+
+They share brand guidelines but have separate dev servers, dependencies, and purposes.
 
 ### Skills
 
@@ -101,6 +130,32 @@ React/Vite app with multi-persona layouts (shadcn/ui + Tailwind v4):
 - Context: `LanguageContext.jsx` for ES/EN support
 
 **UI stack**: 24 shadcn/ui primitives, React Flow (graphs), Recharts (analytics), Framer Motion (animations)
+
+### design-os Architecture
+Product planning and design tool that outputs implementation-ready packages:
+
+**Planning Flow**:
+1. Product Vision (`/product-vision`) → `product/product-overview.md`
+2. Product Roadmap (`/product-roadmap`) → `product/product-roadmap.md`
+3. Data Model (`/data-model`) → `product/data-model/data-model.md`
+4. Design System (`/design-tokens`) → `product/design-system/{colors,typography}.json`
+5. Shell Design (`/design-shell`) → `src/shell/components/`
+6. Section Design (`/shape-section`, `/sample-data`, `/design-screen`) → `src/sections/[name]/`
+7. Export (`/export-product`) → `product-plan/` (handoff package)
+
+**Key Files**:
+- `design-os/agents.md` - Complete agent directives and design requirements
+- `product/` - Product definition (specs, data model, design tokens)
+- `src/shell/` - Application shell components
+- `src/sections/` - Section screen designs and components
+- `product-plan/` - Generated export package with prompts and instructions
+
+**Critical Rules**:
+- Tailwind CSS v4 only (no tailwind.config.js)
+- Design OS UI uses stone/lime + DM Sans
+- Product designs use product-defined tokens
+- All components accept data via props (no direct imports)
+- Mobile responsive + light/dark mode required
 
 ### Co-CEO Agent System
 Strategic artifacts for the Co-CEO AI agent:
