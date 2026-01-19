@@ -1,0 +1,1 @@
+../../design-os/.claude/commands/data-model.md
