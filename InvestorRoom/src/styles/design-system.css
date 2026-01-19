@@ -1,6 +1,8 @@
 /* AI Huevos Design System v1.0 - Iteration 2 (FINAL) */
 /* Focus: Interaction States & Accessibility */
 
+@import "tailwindcss";
+
 :root {
     /* ============================================
      COLOR SYSTEM
