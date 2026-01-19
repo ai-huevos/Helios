@@ -14,10 +14,16 @@ cd InvestorRoom
 npm install                                    # Install dependencies
 npm run dev                                    # Dev server (http://localhost:5173)
 npm run build                                  # Production build
+npm run preview                                # Preview production build
 npm run test                                   # Run all tests (vitest)
-npm run test -- --watch                        # Watch mode
+npm run test -- --watch                        # Watch mode (interactive)
 npm run test -- src/__tests__/InvestorRoom.test.jsx  # Single test file
 ```
+
+Key file locations:
+- **Design system CSS**: `src/styles/design-system.css` (brand tokens as CSS variables)
+- **Test setup**: `src/setupTests.js` (vitest + @testing-library/react)
+- **UI primitives**: `src/components/ui/` (shadcn/ui components)
 
 ## Critical Rules
 
@@ -77,12 +83,24 @@ Format: `<type>(<scope>): <subject>`
 | `browser-testing` | playwright | UI testing, screenshots |
 
 ### InvestorRoom Architecture
-Multi-persona layout system built on shadcn/ui + Tailwind v4:
-- **Persona layouts**: `AppVisionary.jsx` (vision-focused), `AppOperator.jsx` (metrics-heavy), `AppPolish.jsx` (balanced)
-- **Switcher**: `AppSwitcher.jsx` — runtime persona switching
-- **Shared components**: `SynthesisHero`, `SynthesisGrid`, `OpportunityExplorer`, `PitchSection`, `SuccessCases`
-- **Context**: `LanguageContext.jsx` for Spanish/English support
-- **UI stack**: 24 shadcn/ui components, React Flow (graphs), Recharts (analytics)
+React/Vite app with multi-persona layouts (shadcn/ui + Tailwind v4):
+
+**Routing** (react-router-dom):
+- `/` → `pages/Homepage.jsx` (landing page with Hero, Problem, Solution, HowItWorks, Team, Pricing)
+- `/inversionistas` → `pages/InvestorRoom.jsx` (investor presentation)
+
+**Persona layouts** (in `src/`):
+- `AppVisionary.jsx` — vision-focused narrative
+- `AppOperator.jsx` — metrics-heavy dashboard
+- `AppPolish.jsx` — balanced presentation
+- `AppSwitcher.jsx` — runtime persona switching
+
+**Shared components** (`src/components/`):
+- Investor: `SynthesisHero`, `SynthesisGrid`, `OpportunityExplorer`, `PitchSection`, `SuccessCases`
+- Homepage: `homepage/Hero`, `homepage/Problem`, `homepage/Solution`, `homepage/HowItWorks`, `homepage/Team`, `homepage/Pricing`
+- Context: `LanguageContext.jsx` for ES/EN support
+
+**UI stack**: 24 shadcn/ui primitives, React Flow (graphs), Recharts (analytics), Framer Motion (animations)
 
 ### Co-CEO Agent System
 Strategic artifacts for the Co-CEO AI agent:
