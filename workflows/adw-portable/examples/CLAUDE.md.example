@@ -1,0 +1,103 @@
+# CLAUDE.md - Example SaaS Application
+
+> This is an example of a filled-in CLAUDE.md for a typical Next.js SaaS application.
+
+## Project Overview
+
+**Acme Dashboard** - A multi-tenant analytics dashboard for B2B SaaS companies.
+
+**Stack:** Next.js 14 + TypeScript + Prisma + PostgreSQL + Tailwind CSS
+
+## Quick Start
+
+```bash
+# Install dependencies
+pnpm install
+
+# Setup database
+pnpm db:push
+
+# Run development server
+pnpm dev
+# Open http://localhost:3000
+```
+
+## Project Structure
+
+```
+src/
+├── app/                  # Next.js App Router
+│   ├── (auth)/           # Auth routes (login, register)
+│   ├── (dashboard)/      # Protected dashboard routes
+│   └── api/              # API routes
+├── components/
+│   ├── ui/               # shadcn/ui components
+│   └── features/         # Feature-specific components
+├── lib/
+│   ├── db.ts             # Prisma client
+│   ├── auth.ts           # Auth utilities
+│   └── utils.ts          # Shared utilities
+└── types/                # TypeScript types
+```
+
+## Code Standards
+
+### Naming Conventions
+- **Files:** kebab-case (e.g., `user-profile.tsx`)
+- **Components:** PascalCase (e.g., `UserProfile`)
+- **Functions:** camelCase (e.g., `getUserById`)
+- **Types:** PascalCase with suffix (e.g., `UserProps`, `DashboardData`)
+
+### Architecture Pattern
+- **Server Components** by default
+- **Client Components** only when needed (interactivity, hooks)
+- **API Routes** for mutations, Server Actions for forms
+- **Prisma** for all database access
+
+### Key Patterns to Follow
+1. Use `cn()` from lib/utils for conditional classes
+2. All forms use react-hook-form + zod validation
+3. Loading states use Suspense boundaries
+4. Errors caught by error.tsx files
+
+## Git Workflow
+
+- **Main branch:** `main`
+- **Feature branches:** `feature/<issue>-<description>`
+- **Commit style:** Conventional commits (`feat:`, `fix:`, `docs:`)
+
+## Environment Variables
+
+Required for development:
+```bash
+DATABASE_URL="postgresql://..."
+NEXTAUTH_SECRET="generate-with-openssl"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+## Common Tasks
+
+### Adding a new page
+1. Create route in `src/app/(dashboard)/`
+2. Add page.tsx with async data fetching
+3. Create components in `src/components/features/`
+4. Add to navigation in `src/components/nav.tsx`
+
+### Adding a new API endpoint
+1. Create route in `src/app/api/`
+2. Use NextResponse for responses
+3. Validate input with zod
+4. Handle errors consistently
+
+### Database changes
+1. Update `prisma/schema.prisma`
+2. Run `pnpm db:push` for development
+3. Create migration: `pnpm prisma migrate dev --name description`
+
+## Notes for AI Agents
+
+- Always check existing components before creating new ones
+- Use shadcn/ui components from `@/components/ui`
+- Server Components can directly await Prisma calls
+- Client Components need API routes or Server Actions
+- Tests are in `__tests__` folders alongside source
