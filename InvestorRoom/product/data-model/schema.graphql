@@ -1,0 +1,893 @@
+# Design OS - Business Operating System Graph Schema
+# All entities are nodes. All relationships are edges.
+# This is a network, not tables.
+
+# =============================================================================
+# CORE BUSINESS NODES
+# =============================================================================
+
+type Account {
+  id: ID!
+  name: String!
+  industry: String
+  size: String # "500+", "100-500", etc.
+  status: AccountStatus!
+
+  # Edges
+  contacts: [Contact!]!
+  deals: [Deal!]!
+  meetings: [Meeting!]!
+  transactions: [Transaction!]!
+  systems: [System!]! # Systems discovered during archaeology
+  processes: [Process!]! # Processes mapped for this client
+}
+
+enum AccountStatus {
+  PROSPECT
+  ACTIVE
+  CHURNED
+  PARTNER
+}
+
+type Contact {
+  id: ID!
+  name: String!
+  email: String
+  role: String
+
+  # Edges
+  account: Account
+  meetings: [Meeting!]!
+  messages: [Message!]!
+  insights: [Insight!]! # Insights extracted from their communications
+}
+
+type Deal {
+  id: ID!
+  name: String!
+  value: Float!
+  stage: DealStage!
+  closedAt: String
+
+  # Edges
+  account: Account!
+  product: Product!
+  channel: Channel! # How they found us
+  meetings: [Meeting!]!
+  contacts: [Contact!]! # Decision makers
+}
+
+enum DealStage {
+  LEAD
+  QUALIFIED
+  PROPOSAL
+  NEGOTIATION
+  CLOSED_WON
+  CLOSED_LOST
+}
+
+type Product {
+  id: ID!
+  name: String! # "Diagnóstico", "Macroproceso", "Director AI"
+  price: Float!
+  type: ProductType!
+
+  # Edges
+  deals: [Deal!]!
+  processes: [Process!]! # Processes this product documents
+  brandAssets: [BrandAsset!]!
+}
+
+enum ProductType {
+  ONE_TIME # Diagnóstico, Macroproceso
+  RECURRING # Support, Director AI access
+  IMPLEMENTATION # CRM, Dashboard
+}
+
+# =============================================================================
+# PEOPLE NODES
+# =============================================================================
+
+type Employee {
+  id: ID!
+  name: String!
+  email: String!
+  role: String!
+
+  # Edges
+  tasks: [Task!]!
+  systems: [System!]! # Derived from tasks
+  aors: [AOR!]! # Areas of responsibility (as DRI or backup)
+  okrs: [OKR!]!
+  meetings: [Meeting!]!
+  messages: [Message!]!
+}
+
+type Supplier {
+  id: ID!
+  name: String!
+  type: SupplierType!
+
+  # Edges
+  systems: [System!]! # Systems they provide
+  subscriptions: [Subscription!]!
+  transactions: [Transaction!]!
+}
+
+enum SupplierType {
+  SAAS # Fireflies, Slack, GitHub
+  API_PROVIDER # OpenAI, Anthropic
+  CONTRACTOR # Freelancers
+  INFRASTRUCTURE # AWS, Vercel
+}
+
+# =============================================================================
+# FINANCIAL NODES
+# =============================================================================
+
+type Transaction {
+  id: ID!
+  amount: Float!
+  date: String!
+  type: TransactionType!
+  description: String
+
+  # Edges - polymorphic: either from Account (revenue) or to Supplier (expense)
+  account: Account # If revenue
+  supplier: Supplier # If expense
+  subscription: Subscription # If recurring expense
+  metrics: [Metric!]! # Impacts these metrics
+}
+
+enum TransactionType {
+  REVENUE
+  EXPENSE
+  REFUND
+}
+
+type Subscription {
+  id: ID!
+  name: String!
+  cost: Float!
+  billingCycle: BillingCycle!
+  renewalDate: String
+
+  # Edges
+  supplier: Supplier!
+  system: System! # The system this subscription provides access to
+  transactions: [Transaction!]!
+}
+
+enum BillingCycle {
+  MONTHLY
+  ANNUAL
+  USAGE_BASED
+}
+
+# =============================================================================
+# ANALYTICS NODES
+# =============================================================================
+
+type Metric {
+  id: ID!
+  name: String!
+  value: Float!
+  unit: String!
+  date: String!
+  counterMetric: Metric # Paired metric to prevent perverse optimization
+
+  # Edges
+  channel: Channel
+  account: Account
+  pipeline: Pipeline
+  system: System # System health metrics
+}
+
+type Channel {
+  id: ID!
+  name: String! # "Website", "LinkedIn", "Referral", "Email"
+  type: ChannelType!
+
+  # Edges
+  deals: [Deal!]!
+  metrics: [Metric!]! # Conversion rates, CAC
+  campaigns: [Campaign!]!
+}
+
+enum ChannelType {
+  ORGANIC
+  PAID
+  REFERRAL
+  DIRECT
+}
+
+type Campaign {
+  id: ID!
+  name: String!
+  status: CampaignStatus!
+  startDate: String
+  endDate: String
+
+  # Edges
+  channel: Channel!
+  metrics: [Metric!]!
+  brandAssets: [BrandAsset!]!
+}
+
+enum CampaignStatus {
+  DRAFT
+  ACTIVE
+  PAUSED
+  COMPLETED
+}
+
+type Pipeline {
+  id: ID!
+  name: String! # "Fundraising", "Recruiting", "Sales"
+  type: PipelineType!
+
+  # Edges
+  deals: [Deal!]!
+  metrics: [Metric!]! # Velocity, conversion
+  stages: [String!]! # Custom stages per pipeline
+}
+
+enum PipelineType {
+  SALES
+  FUNDRAISING
+  RECRUITING
+}
+
+# =============================================================================
+# COMMUNICATIONS NODES
+# =============================================================================
+
+type Meeting {
+  id: ID!
+  title: String!
+  date: String!
+  duration: Int # Minutes
+  transcript: String
+  category: MeetingCategory!
+
+  # Edges
+  contacts: [Contact!]! # External attendees
+  employees: [Employee!]! # Internal attendees
+  account: Account
+  deal: Deal
+  insights: [Insight!]!
+}
+
+enum MeetingCategory {
+  CUSTOMER
+  PROSPECT
+  FOUNDING_TEAM
+  ADVISOR
+  PARTNER
+}
+
+type Message {
+  id: ID!
+  subject: String
+  body: String!
+  date: String!
+  source: MessageSource!
+
+  # Edges
+  sender: Contact # or Employee
+  recipient: Contact # or Employee
+  insights: [Insight!]!
+  thread: [Message!]! # Conversation thread
+}
+
+enum MessageSource {
+  EMAIL # Gmail
+  SLACK
+  WHATSAPP
+}
+
+type Insight {
+  id: ID!
+  content: String!
+  type: InsightType!
+  confidence: Float # 0-1
+  date: String!
+
+  # Edges - polymorphic source
+  meeting: Meeting
+  message: Message
+  contact: Contact # Who expressed this
+  tags: [String!]!
+}
+
+enum InsightType {
+  PAIN_POINT
+  OPPORTUNITY
+  DECISION
+  ACTION_ITEM
+  OBJECTION
+  PRAISE
+  RISK
+}
+
+# =============================================================================
+# OPERATIONAL ROOM NODES (The Graph Core)
+# =============================================================================
+
+type System {
+  id: ID!
+  name: String!
+  description: String
+  integrationStatus: IntegrationStatus!
+  criticality: Criticality!
+  ownership: Ownership!
+
+  # Edges
+  supplier: Supplier # If external
+  apis: [API!]! # Integration points
+  processes: [Process!]! # Processes that use this system
+  tasks: [Task!]! # Tasks performed in this system
+  employees: [Employee!]! # Who uses it (derived)
+  metrics: [Metric!]! # Health metrics
+  subscription: Subscription # Cost
+}
+
+enum IntegrationStatus {
+  INTEGRATED # Has API connections, data flows automatically
+  DISCONNECTED # Manual data transfer - "142 sistemas desconectados"
+  PLANNED # Integration roadmap exists
+}
+
+enum Criticality {
+  CORE # Business stops without it
+  SUPPORT # Helpful but survivable
+  LEGACY # Should be replaced
+}
+
+enum Ownership {
+  INTERNAL # Built by company
+  EXTERNAL # SaaS/vendor
+  SHADOW # Unofficial employee tools (Excel workarounds, personal WhatsApp)
+}
+
+type API {
+  id: ID!
+  name: String!
+  type: APIType!
+  healthStatus: HealthStatus!
+  lastSync: String
+  errorRate: Float
+
+  # Edges - connects two systems
+  sourceSystem: System!
+  targetSystem: System!
+  metrics: [Metric!]! # Connection health
+}
+
+enum APIType {
+  REST
+  GRAPHQL
+  WEBHOOK
+  FILE_EXPORT # CSV, Excel
+  MANUAL # Human data transfer
+}
+
+enum HealthStatus {
+  HEALTHY
+  DEGRADED
+  DOWN
+  UNKNOWN
+}
+
+type Process {
+  id: ID!
+  name: String!
+  description: String
+  frequency: String # "Daily", "Weekly", "On-demand"
+  documentedAt: String
+
+  # Edges
+  tasks: [Task!]!
+  systems: [System!]! # Systems used
+  aor: AOR! # Who owns this process
+  product: Product # If this is a deliverable (Macroproceso)
+  account: Account # If mapped for a client
+  metrics: [Metric!]! # Performance metrics
+}
+
+type Task {
+  id: ID!
+  name: String!
+  description: String
+  frequency: TaskFrequency!
+  timeSpentMinutes: Int # Average time per execution
+  isManual: Boolean!
+  automationPotential: Float # 0-1, calculated
+
+  # Edges
+  process: Process!
+  employee: Employee! # Who performs it
+  systems: [System!]! # Systems touched
+
+  # Computed: automation ROI
+  # annualHours = frequency × timeSpentMinutes / 60
+  # annualCost = annualHours × hourlyRate
+}
+
+enum TaskFrequency {
+  MULTIPLE_DAILY # >1x per day
+  DAILY
+  WEEKLY
+  MONTHLY
+  QUARTERLY
+  AD_HOC
+}
+
+# =============================================================================
+# CAPABILITIES NODES
+# =============================================================================
+
+type Skill {
+  id: ID!
+  name: String! # "meeting-intelligence", "proposal-builder"
+  description: String
+  mcpServer: String # "fireflies", "context7"
+
+  # Edges
+  workflows: [Process!]! # Workflows this skill enables
+  metrics: [Metric!]! # Usage stats
+}
+
+# =============================================================================
+# IDENTITY NODES
+# =============================================================================
+
+type BrandAsset {
+  id: ID!
+  name: String!
+  type: BrandAssetType!
+  path: String! # File path in repo
+
+  # Edges
+  products: [Product!]!
+  campaigns: [Campaign!]!
+}
+
+enum BrandAssetType {
+  LOGO
+  DESIGN_TOKEN
+  GUIDELINE
+  MESSAGING
+  TEMPLATE
+}
+
+type Persona {
+  id: ID!
+  name: String! # "CEO/Founder", "COO/Ops", "Manager"
+  description: String
+  painPoints: [String!]!
+  goals: [String!]!
+
+  # Edges
+  products: [Product!]! # Products designed for this persona
+  insights: [Insight!]! # Research insights about this persona
+}
+
+# =============================================================================
+# FOUNDEROS NODES
+# =============================================================================
+
+type OKR {
+  id: ID!
+  objective: String!
+  keyResults: [String!]!
+  progress: Float! # 0-1
+  status: OKRStatus!
+  quarter: String! # "2026-Q1"
+
+  # Edges
+  employee: Employee! # Owner
+  parentOKR: OKR # Company-level alignment
+  metrics: [Metric!]!
+}
+
+enum OKRStatus {
+  ON_TRACK # Green
+  AT_RISK # Yellow
+  OFF_TRACK # Red
+}
+
+type AOR {
+  id: ID!
+  name: String!
+  description: String
+
+  # Edges
+  dri: Employee! # Directly Responsible Individual
+  backup: Employee! # No SPOFs
+  processes: [Process!]!
+}
+
+# =============================================================================
+# PRODUCT ANALYTICS NODES (PLG Measurement)
+# =============================================================================
+
+type User {
+  id: ID!
+  email: String!
+  name: String!
+  role: UserRole!
+  createdAt: String!
+  lastActiveAt: String
+  activationStatus: ActivationStatus!
+
+  # Edges
+  account: Account! # Which client they belong to
+  sessions: [Session!]!
+  agentExecutions: [AgentExecution!]!
+  featureUsage: [FeatureUsage!]!
+
+  # Computed PLG metrics
+  totalSessions: Int!
+  daysActive: Int!
+  retentionWeek1: Boolean!
+  retentionWeek4: Boolean!
+}
+
+enum UserRole {
+  ADMIN # Full access, can configure
+  MEMBER # Standard access
+  VIEWER # Read-only dashboards
+}
+
+enum ActivationStatus {
+  SIGNED_UP # Created account
+  ONBOARDING # In onboarding flow
+  ACTIVATED # Completed key action (asked first question, ran first automation)
+  POWER_USER # High engagement
+  CHURNED # Inactive >30 days
+}
+
+type Session {
+  id: ID!
+  startedAt: String!
+  endedAt: String
+  durationMinutes: Int
+  source: SessionSource!
+  deviceType: DeviceType!
+
+  # Edges
+  user: User!
+  events: [Event!]!
+  agentExecutions: [AgentExecution!]!
+}
+
+enum SessionSource {
+  DIRECT # Typed URL
+  SLACK # From Slack integration
+  EMAIL # From email link
+  WHATSAPP # From WhatsApp bot
+  API # Programmatic access
+}
+
+enum DeviceType {
+  DESKTOP
+  MOBILE
+  TABLET
+  API_CLIENT
+}
+
+type Event {
+  id: ID!
+  name: String! # "clicked_feature", "searched", "exported"
+  category: EventCategory!
+  timestamp: String!
+  properties: String # JSON blob for flexible event data
+
+  # Edges
+  session: Session!
+  user: User!
+  feature: String # Which feature was interacted with
+  system: System # If event relates to a system
+  process: Process # If event relates to a process
+}
+
+enum EventCategory {
+  NAVIGATION # Viewed page, opened modal
+  INTERACTION # Clicked, searched, filtered
+  CREATION # Created record, started automation
+  EXPORT # Downloaded, shared
+  AGENT # Asked question, ran skill
+  ERROR # Something went wrong
+}
+
+type AgentExecution {
+  id: ID!
+  skill: Skill!
+  input: String! # The user's question/request
+  output: String # The agent's response
+  success: Boolean!
+  errorMessage: String
+  durationMs: Int!
+  tokensUsed: Int
+  timestamp: String!
+
+  # Edges
+  user: User!
+  session: Session!
+
+  # Context - what was the agent working with?
+  account: Account # Client context
+  meeting: Meeting # If analyzing a meeting
+  process: Process # If working on a process
+  systems: [System!]! # Systems referenced
+
+  # Feedback
+  userRating: Int # 1-5 stars
+  userFeedback: String
+}
+
+type AutomationRun {
+  id: ID!
+  name: String!
+  trigger: AutomationTrigger!
+  status: AutomationStatus!
+  startedAt: String!
+  completedAt: String
+  durationMs: Int
+  recordsProcessed: Int
+  errorMessage: String
+
+  # Edges
+  account: Account!
+  process: Process! # Which process was automated
+  systems: [System!]! # Systems involved
+  api: API # Integration used
+
+  # Metrics
+  valueSaved: Float # Calculated time/cost savings
+}
+
+enum AutomationTrigger {
+  SCHEDULED # Cron-based
+  WEBHOOK # External trigger
+  MANUAL # User clicked "Run"
+  EVENT # Triggered by another event
+}
+
+enum AutomationStatus {
+  RUNNING
+  SUCCESS
+  PARTIAL # Some records failed
+  FAILED
+}
+
+type FeatureUsage {
+  id: ID!
+  feature: String! # "director_ai", "dashboard", "process_map"
+  period: String! # "2026-01", "2026-W03"
+
+  # Metrics
+  uniqueUsers: Int!
+  totalEvents: Int!
+  avgSessionDuration: Float!
+  adoptionRate: Float! # % of users who used this feature
+
+  # Edges
+  account: Account # Account-level aggregation
+  events: [Event!]! # Raw events for drill-down
+}
+
+# =============================================================================
+# PLG METRICS (Computed/Aggregated)
+# =============================================================================
+
+type PLGMetrics {
+  # Acquisition
+  signups: Int!
+  signupsByChannel: [ChannelMetric!]!
+
+  # Activation
+  activationRate: Float! # % who completed key action
+  timeToActivation: Float! # Avg days from signup to activation
+
+  # Engagement
+  dau: Int! # Daily active users
+  wau: Int! # Weekly active users
+  mau: Int! # Monthly active users
+  dauMauRatio: Float! # Stickiness
+  avgSessionDuration: Float!
+  avgSessionsPerUser: Float!
+
+  # Agent usage
+  agentExecutionsTotal: Int!
+  agentSuccessRate: Float!
+  topSkillsUsed: [SkillUsage!]!
+  avgAgentResponseTime: Float!
+
+  # Automation value
+  automationRunsTotal: Int!
+  automationSuccessRate: Float!
+  totalValueGenerated: Float! # Sum of valueSaved across automations
+
+  # Retention
+  retentionWeek1: Float!
+  retentionWeek4: Float!
+  retentionMonth3: Float!
+  churnRate: Float!
+
+  # Revenue (if applicable)
+  mrr: Float!
+  arpu: Float!
+  expansionRevenue: Float!
+}
+
+type SkillUsage {
+  skill: Skill!
+  executions: Int!
+  successRate: Float!
+  avgDuration: Float!
+  uniqueUsers: Int!
+}
+
+# =============================================================================
+# ROOT QUERY - Entry Points into the Graph
+# =============================================================================
+
+type Query {
+  # Core lookups
+  account(id: ID!): Account
+  contact(id: ID!): Contact
+  employee(id: ID!): Employee
+  system(id: ID!): System
+  process(id: ID!): Process
+
+  # List queries
+  accounts(status: AccountStatus): [Account!]!
+  employees: [Employee!]!
+  deals(stage: DealStage): [Deal!]!
+
+  # Graph traversals - the power queries
+  disconnectedSystems: [System!]! # integration_status = DISCONNECTED
+  shadowSystems: [System!]! # ownership = SHADOW
+  spofProcesses: [Process!]! # Processes where AOR has no backup
+  automationOpportunities(minROI: Float): [Task!]! # High-value automation targets
+
+  # Analytics
+  revenueByChannel: [ChannelMetric!]!
+  systemDependencies(systemId: ID!): [System!]! # What depends on this system
+  employeeSystemUsage(employeeId: ID!): [System!]!
+
+  # Search across the graph
+  search(query: String!): SearchResult!
+
+  # ==========================================================================
+  # PLG Analytics Queries
+  # ==========================================================================
+
+  # User analytics
+  user(id: ID!): User
+  users(accountId: ID, status: ActivationStatus): [User!]!
+  activeUsers(period: String!): [User!]! # "day", "week", "month"
+
+  # Session analytics
+  sessions(userId: ID, from: String, to: String): [Session!]!
+  sessionsBySource: [SessionSourceMetric!]!
+
+  # Event analytics
+  events(category: EventCategory, feature: String, from: String, to: String): [Event!]!
+  topFeatures(period: String!): [FeatureUsage!]!
+
+  # Agent analytics
+  agentExecutions(skillId: ID, userId: ID, success: Boolean): [AgentExecution!]!
+  agentMetrics(period: String!): AgentMetrics!
+  topQuestions(limit: Int): [QuestionPattern!]! # Most common user questions
+
+  # Automation analytics
+  automationRuns(accountId: ID, status: AutomationStatus): [AutomationRun!]!
+  automationMetrics(period: String!): AutomationMetrics!
+  automationROI(accountId: ID): AutomationROI!
+
+  # Aggregate PLG metrics
+  plgMetrics(period: String!): PLGMetrics!
+  retentionCohorts(startDate: String!): [RetentionCohort!]!
+  activationFunnel: ActivationFunnel!
+}
+
+# =============================================================================
+# SUPPORTING TYPES
+# =============================================================================
+
+type ChannelMetric {
+  channel: Channel!
+  revenue: Float!
+  deals: Int!
+  conversionRate: Float!
+}
+
+type SearchResult {
+  accounts: [Account!]!
+  contacts: [Contact!]!
+  systems: [System!]!
+  processes: [Process!]!
+  insights: [Insight!]!
+}
+
+type SessionSourceMetric {
+  source: SessionSource!
+  sessions: Int!
+  avgDuration: Float!
+  conversionRate: Float!
+}
+
+type AgentMetrics {
+  totalExecutions: Int!
+  successRate: Float!
+  avgResponseTime: Float!
+  uniqueUsers: Int!
+  topSkills: [SkillUsage!]!
+  errorPatterns: [ErrorPattern!]!
+}
+
+type ErrorPattern {
+  message: String!
+  count: Int!
+  skill: Skill
+}
+
+type QuestionPattern {
+  pattern: String! # "Show me [entity] for [account]"
+  examples: [String!]!
+  count: Int!
+  successRate: Float!
+}
+
+type AutomationMetrics {
+  totalRuns: Int!
+  successRate: Float!
+  recordsProcessed: Int!
+  totalValueSaved: Float!
+  topProcesses: [ProcessAutomationStats!]!
+}
+
+type ProcessAutomationStats {
+  process: Process!
+  runs: Int!
+  successRate: Float!
+  avgDuration: Float!
+  valueSaved: Float!
+}
+
+type AutomationROI {
+  account: Account!
+  totalValueSaved: Float!
+  hoursRecovered: Float!
+  automationsActive: Int!
+  costPerAutomation: Float!
+  roi: Float! # valueSaved / cost
+}
+
+type RetentionCohort {
+  cohortDate: String! # "2026-01"
+  usersInCohort: Int!
+  week1: Float!
+  week2: Float!
+  week4: Float!
+  week8: Float!
+  week12: Float!
+}
+
+type ActivationFunnel {
+  signedUp: Int!
+  startedOnboarding: Int!
+  completedOnboarding: Int!
+  firstAgentQuery: Int!
+  firstAutomation: Int!
+  activated: Int! # Power user
+
+  # Conversion rates between steps
+  signupToOnboarding: Float!
+  onboardingToFirstQuery: Float!
+  firstQueryToAutomation: Float!
+  automationToActivated: Float!
+}
