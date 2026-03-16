@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos: Series A Trajectory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6ef;
+            /* YC Beige */
+            color: #333;
+        }
+
+        /* YC Orange Accents */
+        .yc-orange {
+            color: #ff6600;
+        }
+
+        .bg-yc-orange {
+            background-color: #ff6600;
+        }
+
+        .border-yc-orange {
+            border-color: #ff6600;
+        }
+
+        /* Card Styling */
+        .yc-card {
+            background: white;
+            border-top: 4px solid #ff6600;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border-radius: 2px;
+        }
+
+        /* Custom Toggle Switch */
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #ff6600;
+        }
+
+        .toggle-checkbox:checked+.toggle-label {
+            background-color: #ff6600;
+        }
+
+        /* Chart Transitions */
+        canvas {
+            transition: all 0.3s ease;
+        }
+
+        /* Number Animation */
+        .metric-value {
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-8 min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center mb-8 pb-4 border-b border-gray-200">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-yc-orange flex items-center justify-center text-white font-bold text-lg">Y</div>
+            <div>
+                <h1 class="text-xl font-bold tracking-tight text-gray-900">AI Huevos <span
+                        class="text-gray-400 font-normal">| Financial Model</span></h1>
+            </div>
+        </div>
+        <div class="text-right">
+            <div class="text-xs uppercase tracking-widest text-gray-500 font-semibold">Projected Valuation (Month 18)
+            </div>
+            <div id="valuationDisplay" class="text-3xl font-bold text-gray-900">$0M</div>
+        </div>
+    </nav>
+
+    <!-- Main Grid -->
+    <div class="grid grid-cols-12 gap-6">
+
+        <!-- LEFT COLUMN: Controls -->
+        <div class="col-span-12 lg:col-span-3 space-y-6">
+
+            <!-- Control Card -->
+            <div class="yc-card p-6">
+                <h3 class="text-sm font-bold text-gray-900 uppercase mb-6">Simulation Inputs</h3>
+
+                <!-- Toggle 1: Investment -->
+                <div class="mb-8">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Seed Capital ($50k)</span>
+                        <div
+                            class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                            <input type="checkbox" name="investToggle" id="investToggle"
+                                class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                                checked onchange="updateModel()" />
+                            <label for="investToggle"
+                                class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 cursor-pointer"></label>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500">Injects capital in Month 1 to bridge the implementation valley.</p>
+                </div>
+
+                <!-- Toggle 2: Pivot -->
+                <div class="mb-8">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-semibold text-gray-700">Activate GDM Pivot</span>
+                        <div
+                            class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                            <input type="checkbox" name="pivotToggle" id="pivotToggle"
+                                class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                                checked onchange="updateModel()" />
+                            <label for="pivotToggle"
+                                class="toggle-label block overflow-hidden h-5 rounded-full bg-gray-300 cursor-pointer"></label>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500">Converts Service Revenue into Recurring Transaction Revenue.</p>
+                </div>
+
+                <hr class="border-gray-100 my-6">
+
+                <!-- Slider 1: Hire Date -->
+                <div class="mb-6">
+                    <div class="flex justify-between mb-2">
+                        <label class="text-xs font-bold uppercase text-gray-500">Hire Engineer</label>
+                        <span id="hireMonthVal" class="text-xs font-bold text-yc-orange">Month 2</span>
+                    </div>
+                    <input type="range" id="hireMonth" min="1" max="8" value="2"
+                        class="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#ff6600]"
+                        oninput="updateModel()">
+                </div>
+
+                <!-- Slider 2: Growth -->
+                <div class="mb-2">
+                    <div class="flex justify-between mb-2">
+                        <label class="text-xs font-bold uppercase text-gray-500">MoM Tx Growth</label>
+                        <span id="growthVal" class="text-xs font-bold text-yc-orange">20%</span>
+                    </div>
+                    <input type="range" id="growthRate" min="5" max="40" step="5" value="20"
+                        class="w-full h-1 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#ff6600]"
+                        oninput="updateModel()">
+                </div>
+            </div>
+
+            <!-- KPI Card -->
+            <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm">
+                <div class="mb-4">
+                    <div class="text-xs text-gray-400 uppercase">Month 18 Recurring Rev</div>
+                    <div class="text-2xl font-bold text-gray-800" id="mrrDisplay">$0</div>
+                </div>
+                <div class="mb-4">
+                    <div class="text-xs text-gray-400 uppercase">Cash Low Point</div>
+                    <div class="text-2xl font-bold text-gray-800" id="minCashDisplay">$0</div>
+                    <div class="text-xs text-gray-400" id="minCashMonth">Month 0</div>
+                </div>
+                <div id="alertBox"
+                    class="hidden mt-4 p-3 bg-red-50 text-red-700 text-xs rounded border border-red-100 font-medium">
+                    ⚠️ Cash runway depleted. Deal is dead.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Visuals -->
+        <div class="col-span-12 lg:col-span-9 grid grid-cols-1 gap-6">
+
+            <!-- Main Chart -->
+            <div class="yc-card p-6 h-[400px]">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-sm font-bold text-gray-900 uppercase">Cash Runway vs. Total Revenue</h3>
+                    <div class="flex gap-4 text-xs">
+                        <div class="flex items-center gap-1">
+                            <div class="w-3 h-3 bg-gray-800 rounded-full"></div> Revenue
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div class="w-3 h-3 bg-[#ff6600] rounded-full"></div> Cash
+                        </div>
+                    </div>
+                </div>
+                <div class="relative h-[320px] w-full">
+                    <canvas id="mainChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="grid grid-cols-2 gap-6">
+
+                <!-- Revenue Mix -->
+                <div class="bg-white border border-gray-200 p-6 h-[250px] shadow-sm rounded-sm">
+                    <h3 class="text-sm font-bold text-gray-900 uppercase mb-2">Revenue Quality Shift</h3>
+                    <div class="relative h-[180px] w-full">
+                        <canvas id="mixChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Text Summary -->
+                <div
+                    class="bg-gray-50 border border-gray-200 p-6 h-[250px] shadow-sm rounded-sm flex flex-col justify-center">
+                    <h3 class="text-sm font-bold text-gray-900 uppercase mb-4">The Narrative</h3>
+                    <p class="text-sm text-gray-600 mb-2 leading-relaxed" id="narrativeText">
+                        Loading scenario...
+                    </p>
+                    <div class="mt-2">
+                        <span
+                            class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800"
+                            id="statusBadge">
+                            Investable
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // --- Logic Configuration ---
+        const MONTHS = Array.from({ length: 18 }, (_, i) => `M${i + 1}`);
+        const BASE_SERVICE_REV = [14000, 14000, 16000, 16000, 4000, 4000, 4000, 6000, 6000, 6000, 8000, 8000, 8000, 8000, 10000, 10000, 10000, 10000];
+        const BASE_OPEX = 7500;
+        const ENGINEER_COST = 3500;
+        const FOUNDER_BUMP_COST = 3000;
+
+        let mainChart = null;
+        let mixChart = null;
+
+        // --- Calculation Engine ---
+        function calculate() {
+            const hasInvestment = document.getElementById('investToggle').checked;
+            const hasPivot = document.getElementById('pivotToggle').checked;
+            const hireMonth = parseInt(document.getElementById('hireMonth').value);
+            const growthRate = parseInt(document.getElementById('growthRate').value) / 100;
+
+            // UI Text Updates
+            document.getElementById('hireMonthVal').innerText = `Month ${hireMonth}`;
+            document.getElementById('growthVal').innerText = `${(growthRate * 100).toFixed(0)}%`;
+
+            let cashBalance = 10000 + (hasInvestment ? 50000 : 0);
+            let cashArr = [];
+            let totalRevArr = [];
+            let serviceRevArr = [];
+            let platformRevArr = [];
+
+            for (let i = 0; i < 18; i++) {
+                let month = i + 1;
+
+                // Revenue
+                let sRev = BASE_SERVICE_REV[i];
+                let pRev = 0;
+
+                if (hasPivot && month >= 4) {
+                    // Growth Curve logic
+                    let baseVol = 2000;
+                    let activeMonths = month - 3;
+                    let volume = baseVol * Math.pow((1 + growthRate), activeMonths);
+                    pRev = volume * 0.50; // $0.50 fee
+                    // GDM specific kicker
+                    if (month >= 4) pRev += (month < 8 ? 1000 : 3000);
+                } else if (!hasPivot) {
+                    // Standard consultancy bump
+                    sRev = sRev * 1.1;
+                }
+
+                serviceRevArr.push(sRev);
+                platformRevArr.push(pRev);
+                let tRev = sRev + pRev;
+                totalRevArr.push(tRev);
+
+                // Expenses
+                let opex = BASE_OPEX;
+                if (month >= hireMonth) opex += ENGINEER_COST;
+                if (month >= 11) opex += FOUNDER_BUMP_COST;
+                let cogs = 500 + (pRev * 0.15); // Hosting + 15% platform cost
+                let burn = tRev - (opex + cogs);
+
+                cashBalance += burn;
+                cashArr.push(cashBalance);
+            }
+
+            return { cashArr, totalRevArr, serviceRevArr, platformRevArr };
+        }
+
+        // --- Update UI ---
+        function updateModel() {
+            const data = calculate();
+
+            // 1. KPI Updates
+            const mrr = data.platformRevArr[17];
+            const minCash = Math.min(...data.cashArr);
+            const minCashIdx = data.cashArr.indexOf(minCash);
+
+            // Valuation: Service (1x) + Platform (12x for high growth)
+            const annService = data.serviceRevArr[17] * 12;
+            const annPlatform = mrr * 12;
+            const valuation = annService + (annPlatform * 12); // Higher multiple for YC style
+
+            document.getElementById('mrrDisplay').innerText = `$${Math.round(mrr).toLocaleString()}`;
+            document.getElementById('valuationDisplay').innerText = `$${(valuation / 1000000).toFixed(1)}M`;
+            document.getElementById('minCashDisplay').innerText = `$${Math.round(minCash).toLocaleString()}`;
+            document.getElementById('minCashMonth').innerText = `Month ${minCashIdx + 1}`;
+
+            // Color Logic
+            const minCashEl = document.getElementById('minCashDisplay');
+            const alertBox = document.getElementById('alertBox');
+            if (minCash < 0) {
+                minCashEl.className = "text-2xl font-bold text-red-600";
+                alertBox.classList.remove('hidden');
+            } else {
+                minCashEl.className = "text-2xl font-bold text-gray-800";
+                alertBox.classList.add('hidden');
+            }
+
+            // Narrative Update
+            const narrativeEl = document.getElementById('narrativeText');
+            const badgeEl = document.getElementById('statusBadge');
+            if (minCash < 0) {
+                narrativeEl.innerText = "Without capital injection, the pivot to infrastructure kills cash flow in Month " + (minCashIdx + 1) + ". The company dies before the asset is built.";
+                badgeEl.className = "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800";
+                badgeEl.innerText = "Uninvestable";
+            } else if (mrr < 5000) {
+                narrativeEl.innerText = "The company survives, but remains a consultancy. Valuation stays low as revenue is tied to founder hours.";
+                badgeEl.className = "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800";
+                badgeEl.innerText = "Lifestyle Business";
+            } else {
+                narrativeEl.innerText = "Capital bridges the gap. By Month 13, the Transaction Engine ($" + Math.round(mrr).toLocaleString() + "/mo) overtakes costs. Valuation explodes due to high-margin recurring revenue.";
+                badgeEl.className = "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800";
+                badgeEl.innerText = "Venture Scale";
+            }
+
+            // 2. Chart Updates
+            renderMainChart(data);
+            renderMixChart(data);
+        }
+
+        function renderMainChart(data) {
+            const ctx = document.getElementById('mainChart').getContext('2d');
+            if (mainChart) mainChart.destroy();
+
+            mainChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: MONTHS,
+                    datasets: [
+                        {
+                            label: 'Cash Runway',
+                            data: data.cashArr,
+                            borderColor: '#ff6600', // YC Orange
+                            backgroundColor: 'rgba(255, 102, 0, 0.05)',
+                            borderWidth: 3,
+                            pointRadius: 0,
+                            pointHoverRadius: 6,
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Revenue',
+                            data: data.totalRevArr,
+                            borderColor: '#111827', // Gray-900
+                            borderWidth: 2,
+                            borderDash: [5, 5],
+                            pointRadius: 0,
+                            tension: 0.1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { display: true, labels: { usePointStyle: true, boxWidth: 8 } },
+                        tooltip: {
+                            backgroundColor: '#fff',
+                            titleColor: '#333',
+                            bodyColor: '#666',
+                            borderColor: '#eee',
+                            borderWidth: 1,
+                            padding: 10
+                        }
+                    },
+                    scales: {
+                        x: { grid: { display: false } },
+                        y: {
+                            grid: { borderDash: [2, 4], color: '#f0f0f0' },
+                            ticks: { callback: (val) => '$' + val / 1000 + 'k' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderMixChart(data) {
+            const ctx = document.getElementById('mixChart').getContext('2d');
+            if (mixChart) mixChart.destroy();
+
+            const indices = [2, 5, 11, 17]; // M3, M6, M12, M18
+            const labels = ['M3', 'M6', 'M12', 'M18'];
+            const sData = indices.map(i => data.serviceRevArr[i]);
+            const pData = indices.map(i => data.platformRevArr[i]);
+
+            mixChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Service (1x)',
+                            data: sData,
+                            backgroundColor: '#cbd5e1', // Slate-300
+                            barThickness: 20
+                        },
+                        {
+                            label: 'Platform (12x)',
+                            data: pData,
+                            backgroundColor: '#ff6600', // YC Orange
+                            barThickness: 20
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { stacked: true, grid: { display: false } },
+                        y: { stacked: true, display: false }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        // Init
+        window.onload = updateModel;
+
+    </script>
+</body>
+
+</html>

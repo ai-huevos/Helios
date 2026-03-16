@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos | Plan Financiero v4.0</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-dark: #030102;
+            --bg-card: #0f0f0f;
+            --text-primary: #ffffff;
+            --text-secondary: #888;
+            --accent-yellow: #FFD700;
+            --accent-cyan: #00E5FF;
+            --accent-magenta: #FF00FF;
+            --border-color: #222;
+            --positive: #00E676;
+            --negative: #FF5252;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            padding: 24px;
+            line-height: 1.5;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 24px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: var(--accent-yellow);
+            font-weight: 700;
+        }
+
+        .header-sub {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .tab:hover {
+            border-color: var(--accent-cyan);
+            color: var(--text-primary);
+        }
+
+        .tab.active {
+            background: var(--accent-cyan);
+            color: #000;
+            border-color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .kpi-title {
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 0.05em;
+        }
+
+        .kpi-value {
+            font-size: 1.75rem;
+            font-family: var(--font-mono);
+            font-weight: 700;
+        }
+
+        .kpi-sub {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .chart-card h3 {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 280px;
+            width: 100%;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--bg-card);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        th,
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            text-align: right;
+        }
+
+        th:first-child,
+        td:first-child {
+            text-align: left;
+            position: sticky;
+            left: 0;
+            background: var(--bg-card);
+            z-index: 10;
+            min-width: 200px;
+            border-right: 1px solid var(--border-color);
+        }
+
+        th {
+            background: #1a1a1a;
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        tr:hover td {
+            background: #1a1a1a;
+        }
+
+        input.cell-input {
+            background: transparent;
+            border: 1px solid transparent;
+            color: inherit;
+            font-family: var(--font-mono);
+            text-align: right;
+            width: 90px;
+            padding: 4px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        input.cell-input:hover {
+            border-color: #444;
+        }
+
+        input.cell-input:focus {
+            outline: none;
+            border-color: var(--accent-yellow);
+            background: #181818;
+        }
+
+        .section-header td {
+            background: #1a1a1a;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.08em;
+        }
+
+        .total-row td {
+            font-weight: 700;
+            border-top: 2px solid #333;
+        }
+
+        .highlight-row td {
+            background: #111;
+        }
+
+        .positive {
+            color: var(--positive);
+        }
+
+        .negative {
+            color: var(--negative);
+        }
+
+        .view-section {
+            display: none;
+        }
+
+        .view-section.active {
+            display: block;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            background: #222;
+            color: #fff;
+            border: 1px solid #333;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+
+        .btn:hover {
+            background: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div>
+            <h1>AI HUEVOS — PLAN FINANCIERO</h1>
+            <div class="header-sub">Modelo de 24 Meses | Datos Actualizados del Google Sheet</div>
+        </div>
+        <div>
+            <button class="btn" onclick="resetModel()">Reiniciar al Base</button>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" onclick="showView('pyg')">P&L (PyG)</button>
+        <button class="tab" onclick="showView('supuestos')">Supuestos</button>
+        <button class="tab" onclick="showView('hc')">Headcount</button>
+        <button class="tab" onclick="showView('valuation')">Valuación</button>
+    </div>
+
+    <div class="kpi-grid">
+        <div class="card">
+            <div class="kpi-title">Ingresos Brutos (Año 1)</div>
+            <div class="kpi-value positive" id="kpi-revenue">--</div>
+        </div>
+        <div class="card">
+            <div class="kpi-title">EBITDA (Año 1)</div>
+            <div class="kpi-value" id="kpi-ebitda">--</div>
+            <div class="kpi-sub" id="kpi-ebitda-margin">Margen: --</div>
+        </div>
+        <div class="card">
+            <div class="kpi-title">Breakeven Month</div>
+            <div class="kpi-value" id="kpi-breakeven">--</div>
+        </div>
+        <div class="card">
+            <div class="kpi-title">Clientes Acumulados (M12)</div>
+            <div class="kpi-value" id="kpi-clients">--</div>
+        </div>
+        <div class="card">
+            <div class="kpi-title">Valuación (x6 EBITDA)</div>
+            <div class="kpi-value" id="kpi-valuation">--</div>
+        </div>
+    </div>
+
+    <div class="charts-container">
+        <div class="card chart-card">
+            <h3>EBITDA Mensual</h3>
+            <div class="chart-wrapper">
+                <canvas id="ebitdaChart"></canvas>
+            </div>
+        </div>
+        <div class="card chart-card">
+            <h3>Clientes Acumulados</h3>
+            <div class="chart-wrapper">
+                <canvas id="clientsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-pyg" class="view-section active">
+        <div class="table-container">
+            <table id="pyg-table">
+                <thead>
+                    <tr id="pyg-header"></tr>
+                </thead>
+                <tbody id="pyg-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="view-supuestos" class="view-section">
+        <div class="card" style="padding: 24px;">
+            <h3 style="margin-bottom: 16px; color: var(--accent-yellow);">Supuestos Clave</h3>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+                <div>
+                    <label class="kpi-title">Suscripción Mensual</label>
+                    <input class="cell-input" style="width:100%; margin-top:8px" type="number" id="input-subscription"
+                        value="16000" onchange="updateAssumption('subscription', this.value)">
+                </div>
+                <div>
+                    <label class="kpi-title">CAC (Costo por Cliente)</label>
+                    <input class="cell-input" style="width:100%; margin-top:8px" type="number" id="input-cac"
+                        value="2500" onchange="updateAssumption('cac', this.value)">
+                </div>
+                <div>
+                    <label class="kpi-title">Churn Rate (%)</label>
+                    <input class="cell-input" style="width:100%; margin-top:8px" type="number" id="input-churn"
+                        value="10" onchange="updateAssumption('churn', this.value)">
+                </div>
+                <div>
+                    <label class="kpi-title">Comisión Ventas (%)</label>
+                    <input class="cell-input" style="width:100%; margin-top:8px" type="number"
+                        id="input-sales-commission" value="5"
+                        onchange="updateAssumption('salesCommission', this.value)">
+                </div>
+                <div>
+                    <label class="kpi-title">Pago Terceros (%)</label>
+                    <input class="cell-input" style="width:100%; margin-top:8px" type="number" id="input-third-party"
+                        value="9" onchange="updateAssumption('thirdParty', this.value)">
+                </div>
+                <div>
+                    <label class="kpi-title">Impuesto Facturación (%)</label>
+                    <input class="cell-input" style="width:100%; margin-top:8px" type="number" id="input-tax" value="19"
+                        onchange="updateAssumption('tax', this.value)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-hc" class="view-section">
+        <div class="table-container">
+            <table id="hc-table">
+                <thead>
+                    <tr id="hc-header"></tr>
+                </thead>
+                <tbody id="hc-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="view-valuation" class="view-section">
+        <div class="card" style="padding: 24px;">
+            <h3 style="margin-bottom: 16px; color: var(--accent-yellow);">Recomendación de MOAT LABS</h3>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+                Bajo los siguientes factores asumidos:
+            </p>
+            <ul style="margin-left: 24px; color: var(--text-secondary); line-height: 2;">
+                <li>Facturación ARR Año 1: <strong style="color: var(--positive);">$1,929,930 USD</strong>. EBITDA
+                    Positivo luego de Mes 7.</li>
+                <li>Facturación ARR Año 3: <strong style="color: var(--positive);">$20,361,628 USD</strong>. EBITDA
+                    Positivo año completo.</li>
+                <li>Inversión buscada: <strong>$3,500,000 USD</strong> a <strong>$6,000,000 USD</strong>.</li>
+                <li>Crecimiento continuo y exponencial.</li>
+                <li>Supuestos de HC y Gastos Validados.</li>
+            </ul>
+            <p style="margin-top: 24px; font-size: 1.25rem; color: var(--accent-cyan);">
+                Valoración Sugerida: <strong id="valuation-suggestion">$15,073,582.79 Postmoney</strong>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // --- Constants from Supuestos ---
+        const MONTHS = 24;
+        const MONTH_LABELS = Array.from({length: MONTHS}, (_, i) => `M${i+1}`);
+
+        // --- Data from Google Sheet (Extracted) ---
+        const BASE_ASSUMPTIONS = {
+            subscription: 16000,
+            avgProduction: 8500,
+            cac: 2500,
+            churn: 10, // %
+            salesCommission: 5, // %
+            productCommission: 20, // %
+            thirdParty: 9, // %
+            tax: 19, // %
+            gmvPerformance: [0,0,0,0,0,10,10,10,10,10,10,15,15,15,15,15,15,15,15,15,15,15,15,15] // % starts M6
+        };
+
+        const BASE_CLIENTS = {
+            nuevos: [0,1,2,2,2,3,3,3,4,4,4,4,8,8,8,8,8,12,12,12,12,12,12,12],
+            acumulados: [1,1,2,3,4,6,8,10,13,15,17,19,25,30,35,39,43,50,57,63,68,73,77,81]
+        };
+
+        const BASE_SERVERS = [2500,3250,4750,6250,7750,10000,12250,14500,17500,20500,23500,26500,32500,38500,44500,50500,56500,65500,74500,83500,92500,101500,110500,119500];
+
+        const BASE_SALARIES = [15750,15750,15750,15750,15750,28250,28250,30750,34750,34750,36250,53750,53750,53750,54750,61250,61250,67000,71000,71000,71000,73000,73000,75000];
+        const BASE_HC_COUNT = [3,3,3,3,3,6,6,8,9,9,10,15,15,15,16,18,18,23,26,26,26,27,27,30];
+
+        let currentAssumptions = JSON.parse(JSON.stringify(BASE_ASSUMPTIONS));
+        let results = {};
+
+        // --- Calculation Engine ---
+        function calculateModel() {
+            results = {
+                ingresosBrutos: [],
+                ingresosNetos: [],
+                margenOperacional: [],
+                ebitda: [],
+                utilidadNeta: []
+            };
+
+            for (let i = 0; i < MONTHS; i++) {
+                // Ingresos Brutos = Clientes Acumulados * Subscription + GMV Performance Revenue
+                const clientsAcc = BASE_CLIENTS.acumulados[i];
+                const subscriptionRev = clientsAcc * currentAssumptions.subscription;
+                
+                // GMV Accumulated (Simplified: Clients * AvgProduction * 12 months of history, capped)
+                const gmvAcc = clientsAcc * currentAssumptions.avgProduction * 12;
+                const gmvPerformanceRate = currentAssumptions.gmvPerformance[i] / 100;
+                const gmvRev = gmvAcc * gmvPerformanceRate;
+
+                const ingresosBrutos = subscriptionRev + gmvRev;
+
+                // Deductions
+                const morosidad = ingresosBrutos * (currentAssumptions.churn / 100);
+                const impuestos = ingresosBrutos * (currentAssumptions.tax / 100);
+                const ingresosNetos = ingresosBrutos - morosidad - impuestos;
+
+                // Costs
+                const servers = BASE_SERVERS[i];
+                const salesComm = ingresosNetos * (currentAssumptions.salesCommission / 100);
+                const thirdPartyComm = ingresosNetos * (currentAssumptions.thirdParty / 100);
+                const totalCosts = servers + salesComm + thirdPartyComm;
+
+                const margenOperacional = ingresosNetos - totalCosts;
+
+                // OpEx
+                const salaries = BASE_SALARIES[i];
+                const benefits = salaries * 0.60; // ~60% for all benefits
+                const totalOpex = salaries + benefits;
+
+                const ebitda = margenOperacional - totalOpex;
+                
+                // Tax on Profit (if positive)
+                const irpj = ebitda > 0 ? ebitda * 0.34 : 0;
+                const utilidadNeta = ebitda - irpj;
+
+                results.ingresosBrutos.push(ingresosBrutos);
+                results.ingresosNetos.push(ingresosNetos);
+                results.margenOperacional.push(margenOperacional);
+                results.ebitda.push(ebitda);
+                results.utilidadNeta.push(utilidadNeta);
+            }
+        }
+
+        // --- Formatters ---
+        const fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+        const fmtNum = (n) => fmt.format(n).replace('$','');
+
+        // --- Render Functions ---
+        function renderPyGTable() {
+            const thead = document.getElementById('pyg-header');
+            const tbody = document.getElementById('pyg-body');
+
+            thead.innerHTML = '<th>Concepto</th>' + MONTH_LABELS.map(m => `<th>${m}</th>`).join('');
+
+            const createRow = (label, dataArr, cssClass = '') => {
+                const cells = dataArr.map(v => {
+                    const style = v < 0 ? 'color: var(--negative)' : '';
+                    return `<td style="${style}">${fmtNum(v)}</td>`;
+                }).join('');
+                return `<tr class="${cssClass}"><td>${label}</td>${cells}</tr>`;
+            };
+
+            const createHeader = (label) => `<tr class="section-header"><td colspan="${MONTHS+1}">${label}</td></tr>`;
+
+            let html = '';
+            html += createHeader('Ingresos');
+            html += createRow('(=) Ingresos Brutos', results.ingresosBrutos, 'total-row');
+            html += createRow('(=) Ingresos Netos', results.ingresosNetos);
+            html += createHeader('Márgenes');
+            html += createRow('(=) Márgen Operacional', results.margenOperacional);
+            html += createRow('(=) EBITDA', results.ebitda, 'total-row highlight-row');
+            html += createRow('(=) Utilidad Neta', results.utilidadNeta);
+
+            tbody.innerHTML = html;
+        }
+
+        function renderHCTable() {
+            const thead = document.getElementById('hc-header');
+            const tbody = document.getElementById('hc-body');
+
+            thead.innerHTML = '<th>Concepto</th>' + MONTH_LABELS.map(m => `<th>${m}</th>`).join('');
+
+            const createRow = (label, dataArr) => {
+                const cells = dataArr.map(v => `<td>${typeof v === 'number' ? fmtNum(v) : v}</td>`).join('');
+                return `<tr><td>${label}</td>${cells}</tr>`;
+            };
+
+            let html = '';
+            html += createRow('HCs Acumulados', BASE_HC_COUNT);
+            html += createRow('Salarios Acumulados', BASE_SALARIES);
+
+            tbody.innerHTML = html;
+        }
+
+        function updateKPIs() {
+            // Year 1 totals (first 12 months)
+            const year1Revenue = results.ingresosBrutos.slice(0, 12).reduce((a, b) => a + b, 0);
+            const year1EBITDA = results.ebitda.slice(0, 12).reduce((a, b) => a + b, 0);
+            const year1Clients = BASE_CLIENTS.acumulados[11];
+
+            document.getElementById('kpi-revenue').innerText = fmt.format(year1Revenue);
+            
+            const ebitdaEl = document.getElementById('kpi-ebitda');
+            ebitdaEl.innerText = fmt.format(year1EBITDA);
+            ebitdaEl.className = `kpi-value ${year1EBITDA >= 0 ? 'positive' : 'negative'}`;
+            
+            const margin = Math.round((year1EBITDA / year1Revenue) * 100);
+            document.getElementById('kpi-ebitda-margin').innerText = `Margen: ${margin}%`;
+
+            // Breakeven
+            const breakevenMonth = results.ebitda.findIndex(e => e > 0) + 1;
+            document.getElementById('kpi-breakeven').innerText = breakevenMonth > 0 ? `Mes ${breakevenMonth}` : 'N/A';
+
+            document.getElementById('kpi-clients').innerText = year1Clients;
+
+            // Valuation
+            const valuation = year1EBITDA > 0 ? year1EBITDA * 6 : 0;
+            document.getElementById('kpi-valuation').innerText = fmt.format(valuation);
+        }
+
+        // --- Charts ---
+        let ebitdaChartInstance, clientsChartInstance;
+
+        function updateCharts() {
+            // EBITDA Chart
+            const ctxEbitda = document.getElementById('ebitdaChart').getContext('2d');
+            const dataEbitda = {
+                labels: MONTH_LABELS,
+                datasets: [{
+                    label: 'EBITDA',
+                    data: results.ebitda,
+                    backgroundColor: results.ebitda.map(v => v >= 0 ? 'rgba(0, 230, 118, 0.7)' : 'rgba(255, 82, 82, 0.7)'),
+                    borderRadius: 4
+                }]
+            };
+
+            if (ebitdaChartInstance) {
+                ebitdaChartInstance.data = dataEbitda;
+                ebitdaChartInstance.update();
+            } else {
+                ebitdaChartInstance = new Chart(ctxEbitda, {
+                    type: 'bar',
+                    data: dataEbitda,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { grid: { color: '#222' }, ticks: { color: '#888' } },
+                            x: { grid: { display: false }, ticks: { color: '#888' } }
+                        }
+                    }
+                });
+            }
+
+            // Clients Chart
+            const ctxClients = document.getElementById('clientsChart').getContext('2d');
+            const dataClients = {
+                labels: MONTH_LABELS,
+                datasets: [{
+                    label: 'Clientes',
+                    data: BASE_CLIENTS.acumulados,
+                    borderColor: '#FFD700',
+                    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            };
+
+            if (clientsChartInstance) {
+                clientsChartInstance.data = dataClients;
+                clientsChartInstance.update();
+            } else {
+                clientsChartInstance = new Chart(ctxClients, {
+                    type: 'line',
+                    data: dataClients,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { grid: { color: '#222' }, ticks: { color: '#888' } },
+                            x: { grid: { display: false }, ticks: { color: '#888' } }
+                        }
+                    }
+                });
+            }
+        }
+
+        // --- View Switching ---
+        window.showView = function(viewId) {
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            document.getElementById('view-' + viewId).classList.add('active');
+            document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+            event.target.classList.add('active');
+        };
+
+        // --- Assumption Updates ---
+        window.updateAssumption = function(key, value) {
+            currentAssumptions[key] = parseFloat(value) || 0;
+            recalcAndRender();
+        };
+
+        window.resetModel = function() {
+            currentAssumptions = JSON.parse(JSON.stringify(BASE_ASSUMPTIONS));
+            document.getElementById('input-subscription').value = BASE_ASSUMPTIONS.subscription;
+            document.getElementById('input-cac').value = BASE_ASSUMPTIONS.cac;
+            document.getElementById('input-churn').value = BASE_ASSUMPTIONS.churn;
+            document.getElementById('input-sales-commission').value = BASE_ASSUMPTIONS.salesCommission;
+            document.getElementById('input-third-party').value = BASE_ASSUMPTIONS.thirdParty;
+            document.getElementById('input-tax').value = BASE_ASSUMPTIONS.tax;
+            recalcAndRender();
+        };
+
+        function recalcAndRender() {
+            calculateModel();
+            renderPyGTable();
+            renderHCTable();
+            updateKPIs();
+            updateCharts();
+        }
+
+        // --- Init ---
+        recalcAndRender();
+
+    </script>
+</body>
+
+</html>
