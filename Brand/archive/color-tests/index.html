@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos | Complete Design System Mockup</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/scandia');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --yellow: #FFD826;
+            --blue: #3988FF;
+            --violet: #B4A7FA;
+            --orange: #FF6B35;
+            --black: #030102;
+            --white: #FFFFFF;
+            --gray-light: #E8E8E8;
+            --gray-dark: #8B8B8B;
+            --surface: #0a0a0a;
+            --surface-elevated: #141414;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --text-primary: #FFFFFF;
+            --text-secondary: #8B8B8B;
+        }
+
+        body {
+            font-family: 'Scandia', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--black);
+            color: var(--text-primary);
+            line-height: 1.5;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Light Mode */
+        body[data-theme="light"] {
+            background: var(--white);
+            color: var(--black);
+            --surface: #F9FAFB;
+            --surface-elevated: #FFFFFF;
+            --border-color: rgba(3, 1, 2, 0.1);
+            --text-primary: #030102;
+            --text-secondary: #4B5563;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--surface-elevated);
+            border-bottom: 2px solid var(--yellow);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--yellow);
+        }
+
+        .theme-toggle {
+            background: var(--yellow);
+            color: var(--black);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: var(--orange);
+            transform: translateY(-2px);
+        }
+
+        /* Section Headers */
+        .section-header {
+            margin: 60px 0 30px;
+            text-align: center;
+        }
+
+        .section-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--yellow);
+            margin-bottom: 12px;
+        }
+
+        body[data-theme="light"] .section-header h1 {
+            color: var(--black);
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        /* Component Showcase Grid */
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .component-card {
+            background: var(--surface-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .component-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--yellow);
+            box-shadow: 0 8px 24px rgba(255, 216, 38, 0.15);
+        }
+
+        .component-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--yellow);
+            margin-bottom: 8px;
+        }
+
+        body[data-theme="light"] .component-title {
+            color: var(--black);
+        }
+
+        .component-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        /* Button Styles */
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Scandia', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--orange);
+            color: var(--black);
+        }
+
+        .btn-primary:hover {
+            background: #E55A2B;
+        }
+
+        .btn-secondary {
+            background: var(--yellow);
+            color: var(--black);
+        }
+
+        .btn-secondary:hover {
+            background: #E5C222;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--text-primary);
+        }
+
+        body[data-theme="light"] .btn-outline {
+            border-color: var(--black);
+            color: var(--black);
+        }
+
+        .btn-outline:hover {
+            background: var(--yellow);
+            border-color: var(--yellow);
+            color: var(--black);
+        }
+
+        /* Card Component */
+        .demo-card {
+            background: var(--surface-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 12px 0;
+        }
+
+        .demo-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .demo-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* Badge Component */
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .badge-yellow {
+            background: var(--yellow);
+            color: var(--black);
+        }
+
+        .badge-blue {
+            background: var(--blue);
+            color: var(--white);
+        }
+
+        .badge-violet {
+            background: var(--violet);
+            color: var(--black);
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin: 12px 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--surface);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--yellow);
+            transition: width 0.3s ease;
+        }
+
+        .progress-fill-blue {
+            background: var(--blue);
+        }
+
+        .progress-fill-orange {
+            background: var(--orange);
+        }
+
+        /* Table Component */
+        .demo-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        .demo-table th,
+        .demo-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .demo-table th {
+            color: var(--yellow);
+            font-weight: 600;
+        }
+
+        body[data-theme="light"] .demo-table th {
+            color: var(--black);
+        }
+
+        /* Avatar Component */
+        .avatar-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin: 12px 0;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--yellow);
+            color: var(--black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Input Components */
+        .input-group {
+            margin: 12px 0;
+        }
+
+        .input-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px 14px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 14px;
+            font-family: 'Scandia', sans-serif;
+        }
+
+        .input:focus {
+            outline: none;
+            border-color: var(--yellow);
+        }
+
+        .textarea {
+            width: 100%;
+            padding: 10px 14px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-size: 14px;
+            font-family: 'Scandia', sans-serif;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        /* Chat Interface Mock */
+        .chat-interface {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            background: var(--surface-elevated);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .message {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .message-content {
+            flex: 1;
+        }
+
+        .message-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .message-author {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+
+        .message-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .chat-input-area {
+            padding: 16px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            gap: 12px;
+        }
+
+        /* Graph Visualization Area */
+        .graph-container {
+            height: 300px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 12px 0;
+        }
+
+        .graph-placeholder {
+            color: var(--text-secondary);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .graph-node {
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            background: var(--yellow);
+            color: var(--black);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .graph-node:nth-child(1) { top: 20%; left: 20%; }
+        .graph-node:nth-child(2) { top: 50%; left: 50%; background: var(--blue); color: var(--white); }
+        .graph-node:nth-child(3) { top: 80%; left: 80%; background: var(--violet); }
+
+        /* Tabs Component */
+        .tabs-container {
+            margin: 12px 0;
+        }
+
+        .tabs-list {
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tab:hover {
+            color: var(--yellow);
+        }
+
+        .tab.active {
+            color: var(--yellow);
+            border-bottom-color: var(--yellow);
+        }
+
+        body[data-theme="light"] .tab.active {
+            color: var(--black);
+            border-bottom-color: var(--black);
+        }
+
+        /* Alert Component */
+        .alert {
+            padding: 16px;
+            border-radius: 6px;
+            margin: 12px 0;
+            border-left: 4px solid var(--yellow);
+            background: rgba(255, 216, 38, 0.1);
+        }
+
+        .alert-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .alert-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* Checkbox Component */
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0;
+        }
+
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .checkbox:checked {
+            background: var(--yellow);
+            border-color: var(--yellow);
+        }
+
+        .checkbox-label {
+            font-size: 14px;
+            color: var(--text-primary);
+        }
+
+        /* Scroll Area Indicator */
+        .scroll-indicator {
+            background: var(--surface);
+            border: 1px dashed var(--border-color);
+            border-radius: 4px;
+            padding: 40px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .component-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="brand">
+                <div class="brand-logo">AI HUEVOS</div>
+                <span style="color: var(--text-secondary); font-size: 14px;">Design System Mockup</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <span id="themeLabel">Light Mode</span>
+            </button>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="section-header">
+            <h1>Complete Platform Design System</h1>
+            <p>Mockup of all installed shadcn/ui components with AI Huevos branding</p>
+            <p style="margin-top: 8px; font-size: 14px; color: var(--text-secondary);">
+                Includes: Chat interfaces, Document systems, Workflow management, Agent performance, Graph visualization
+            </p>
+        </div>
+
+        <!-- Component Showcase -->
+        <div class="component-grid">
+            <!-- Buttons -->
+            <div class="component-card">
+                <div class="component-title">Buttons</div>
+                <div class="component-description">Primary CTA (Orange), Secondary (Yellow), Outline variants</div>
+                <div class="btn-group">
+                    <button class="btn btn-primary">Primary CTA</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-outline">Outline</button>
+                </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="component-card">
+                <div class="component-title">Badges</div>
+                <div class="component-description">Status indicators and labels</div>
+                <div>
+                    <span class="badge badge-yellow">Active</span>
+                    <span class="badge badge-blue">In Progress</span>
+                    <span class="badge badge-violet">Completed</span>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="component-card">
+                <div class="component-title">Cards</div>
+                <div class="component-description">Content containers with elevation</div>
+                <div class="demo-card">
+                    <h3>Process Document</h3>
+                    <p>Review and approve workflow documentation</p>
+                </div>
+            </div>
+
+            <!-- Progress Bars -->
+            <div class="component-card">
+                <div class="component-title">Progress Indicators</div>
+                <div class="component-description">Visual progress tracking</div>
+                <div class="progress-container">
+                    <div style="margin-bottom: 8px; font-size: 12px; color: var(--text-secondary);">Task Completion: 65%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div style="margin-bottom: 8px; font-size: 12px; color: var(--text-secondary);">Implementation: 42%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-fill-blue" style="width: 42%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="component-card">
+                <div class="component-title">Data Tables</div>
+                <div class="component-description">Structured data display with sorting</div>
+                <table class="demo-table">
+                    <thead>
+                        <tr>
+                            <th>Agent</th>
+                            <th>Tasks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Agent Alpha</td>
+                            <td>142</td>
+                            <td><span class="badge badge-yellow">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Agent Beta</td>
+                            <td>89</td>
+                            <td><span class="badge badge-blue">Working</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Avatars -->
+            <div class="component-card">
+                <div class="component-title">Avatars</div>
+                <div class="component-description">User and agent profile pictures</div>
+                <div class="avatar-group">
+                    <div class="avatar">AI</div>
+                    <div class="avatar" style="background: var(--blue); color: var(--white);">DH</div>
+                    <div class="avatar" style="background: var(--violet);">DC</div>
+                </div>
+            </div>
+
+            <!-- Input Fields -->
+            <div class="component-card">
+                <div class="component-title">Form Inputs</div>
+                <div class="component-description">Text inputs and textareas</div>
+                <div class="input-group">
+                    <label class="input-label">Document Title</label>
+                    <input type="text" class="input" placeholder="Enter document name...">
+                </div>
+                <div class="input-group">
+                    <label class="input-label">Description</label>
+                    <textarea class="textarea" placeholder="Add description..."></textarea>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="component-card">
+                <div class="component-title">Tabs Navigation</div>
+                <div class="component-description">Multi-section content organization</div>
+                <div class="tabs-container">
+                    <div class="tabs-list">
+                        <button class="tab active">Overview</button>
+                        <button class="tab">Processes</button>
+                        <button class="tab">Analytics</button>
+                    </div>
+                    <div style="color: var(--text-secondary); font-size: 14px;">
+                        Tab content area - switch between sections
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerts -->
+            <div class="component-card">
+                <div class="component-title">Alert Messages</div>
+                <div class="component-description">Important information and insights</div>
+                <div class="alert">
+                    <div class="alert-title">🧠 Insight Clave</div>
+                    <div class="alert-description">
+                        Los Tajibos concentra el 41% de las fricciones debido a su complejidad operativa.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="component-card">
+                <div class="component-title">Checkboxes</div>
+                <div class="component-description">Task completion and selections</div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="checkbox" id="task1" checked>
+                    <label class="checkbox-label" for="task1">Review BPMN process</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="checkbox" id="task2">
+                    <label class="checkbox-label" for="task2">Approve workflow changes</label>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="component-card" style="grid-column: 1 / -1;">
+                <div class="component-title">Chat Interface (RAG Chatbase)</div>
+                <div class="component-description">Scroll Area, Avatar, Textarea, Separator components</div>
+                <div class="chat-interface">
+                    <div class="chat-messages">
+                        <div class="message">
+                            <div class="avatar">AI</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="message-author">Agent Alpha</span>
+                                </div>
+                                <div class="message-text">I've completed the analysis of the organizational processes. Here are the key findings...</div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="avatar" style="background: var(--blue); color: var(--white);">U</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="message-author">You</span>
+                                </div>
+                                <div class="message-text">Great! Can you show me the workflow diagram?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-area">
+                        <textarea class="textarea" style="min-height: 60px; flex: 1;" placeholder="Type your message..."></textarea>
+                        <button class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graph Visualization -->
+            <div class="component-card" style="grid-column: 1 / -1;">
+                <div class="component-title">Graph Visualization (React Flow + Neo4j)</div>
+                <div class="component-description">BPMN processes and organizational relationship graphs</div>
+                <div class="graph-container">
+                    <div class="graph-placeholder">
+                        <div class="graph-node">Process<br/>Start</div>
+                        <div class="graph-node">Review</div>
+                        <div class="graph-node">Approval</div>
+                        <div style="margin-top: 80px; font-size: 12px; color: var(--text-secondary);">
+                            React Flow visualization area<br/>
+                            Connects to Neo4j graph database
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Document System -->
+            <div class="component-card" style="grid-column: 1 / -1;">
+                <div class="component-title">Document Elaboration System</div>
+                <div class="component-description">Command Palette (Cmd+K), Textarea, Dropdown Menu components</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 12px;">
+                    <div>
+                        <div class="input-group">
+                            <label class="input-label">Press Cmd+K for Command Palette</label>
+                            <input type="text" class="input" placeholder="Search documents, actions..." style="background: var(--surface);">
+                        </div>
+                        <div style="font-size: 12px; color: var(--text-secondary); margin-top: 8px;">
+                            Available commands: New Document, Save, Export, Share
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-group">
+                            <label class="input-label">Document Editor</label>
+                            <textarea class="textarea" placeholder="Type or paste your document content here..."></textarea>
+                        </div>
+                        <div class="btn-group" style="margin-top: 12px;">
+                            <button class="btn btn-secondary">Save Draft</button>
+                            <button class="btn btn-outline">Export</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workflow Management -->
+            <div class="component-card" style="grid-column: 1 / -1;">
+                <div class="component-title">Workflow Management</div>
+                <div class="component-description">Table, Checkbox, Progress, Badge, Tabs components</div>
+                <div style="margin-top: 12px;">
+                    <div class="tabs-list" style="margin-bottom: 20px;">
+                        <button class="tab active">All Workflows (258)</button>
+                        <button class="tab">In Progress (142)</button>
+                        <button class="tab">Completed (89)</button>
+                        <button class="tab">Pending (27)</button>
+                    </div>
+                    <table class="demo-table">
+                        <thead>
+                            <tr>
+                                <th>Workflow</th>
+                                <th>Status</th>
+                                <th>Progress</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Process Documentation Review</td>
+                                <td><span class="badge badge-yellow">In Progress</span></td>
+                                <td>
+                                    <div class="progress-bar" style="width: 200px;">
+                                        <div class="progress-fill" style="width: 65%"></div>
+                                    </div>
+                                </td>
+                                <td><button class="btn btn-outline" style="padding: 6px 12px; font-size: 12px;">View</button></td>
+                            </tr>
+                            <tr>
+                                <td>BPMN Process Approval</td>
+                                <td><span class="badge badge-blue">Reviewing</span></td>
+                                <td>
+                                    <div class="progress-bar" style="width: 200px;">
+                                        <div class="progress-fill progress-fill-blue" style="width: 42%"></div>
+                                    </div>
+                                </td>
+                                <td><button class="btn btn-outline" style="padding: 6px 12px; font-size: 12px;">View</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Agent Performance -->
+            <div class="component-card" style="grid-column: 1 / -1;">
+                <div class="component-title">Agent Performance Dashboard</div>
+                <div class="component-description">Table, Progress, Badge, Card, Avatar, Recharts components</div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px;">
+                    <div class="demo-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div class="avatar">AI</div>
+                            <div>
+                                <div style="font-weight: 600; font-size: 16px;">Agent Alpha</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">142 tasks completed</div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div style="margin-bottom: 8px; font-size: 12px; color: var(--text-secondary);">Performance: 85%</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill progress-fill-orange" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 12px;">
+                            <span class="badge badge-yellow">Active</span>
+                        </div>
+                    </div>
+                    <div class="demo-card">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div class="avatar" style="background: var(--blue); color: var(--white);">AB</div>
+                            <div>
+                                <div style="font-weight: 600; font-size: 16px;">Agent Beta</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">89 tasks completed</div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div style="margin-bottom: 8px; font-size: 12px; color: var(--text-secondary);">Performance: 72%</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill progress-fill-blue" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 12px;">
+                            <span class="badge badge-blue">Working</span>
+                        </div>
+                    </div>
+                    <div class="demo-card">
+                        <div style="font-weight: 600; font-size: 24px; color: var(--yellow); margin-bottom: 4px;">258</div>
+                        <div style="font-size: 14px; color: var(--text-secondary);">Total Processes</div>
+                        <div style="margin-top: 12px; font-size: 12px; color: var(--text-secondary);">
+                            <div>Completed: 89</div>
+                            <div>In Progress: 142</div>
+                            <div>Pending: 27</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installation Summary -->
+        <div class="component-card" style="margin-top: 40px; margin-bottom: 60px;">
+            <div class="component-title">Installed Components & Resources</div>
+            <div class="component-description">Complete list of shadcn/ui components and libraries ready to use</div>
+            
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 24px;">
+                <div>
+                    <h3 style="font-size: 18px; font-weight: 600; color: var(--yellow); margin-bottom: 16px;">shadcn/ui Components (24)</h3>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; font-size: 14px; color: var(--text-secondary);">
+                        <div>✓ Button</div>
+                        <div>✓ Card</div>
+                        <div>✓ Dialog</div>
+                        <div>✓ Table</div>
+                        <div>✓ Tabs</div>
+                        <div>✓ Badge</div>
+                        <div>✓ Progress</div>
+                        <div>✓ Alert</div>
+                        <div>✓ Select</div>
+                        <div>✓ Input</div>
+                        <div>✓ Textarea</div>
+                        <div>✓ Checkbox</div>
+                        <div>✓ Label</div>
+                        <div>✓ Calendar</div>
+                        <div>✓ Accordion</div>
+                        <div>✓ Tooltip</div>
+                        <div>✓ Popover</div>
+                        <div>✓ Sheet</div>
+                        <div>✓ Scroll Area</div>
+                        <div>✓ Separator</div>
+                        <div>✓ Dropdown Menu</div>
+                        <div>✓ Avatar</div>
+                        <div>✓ Command</div>
+                        <div>✓ Skeleton</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="font-size: 18px; font-weight: 600; color: var(--yellow); margin-bottom: 16px;">External Libraries</h3>
+                    <div style="font-size: 14px; color: var(--text-secondary); line-height: 2;">
+                        <div>✓ React Flow (graph visualization)</div>
+                        <div>✓ React Query (data fetching)</div>
+                        <div>✓ Recharts (analytics charts)</div>
+                    </div>
+                    
+                    <h3 style="font-size: 18px; font-weight: 600; color: var(--yellow); margin-top: 24px; margin-bottom: 16px;">Documentation</h3>
+                    <div style="font-size: 14px; color: var(--text-secondary); line-height: 2;">
+                        <div>✓ SHADCN_UI_SETUP.md</div>
+                        <div>✓ PLATFORM_SETUP_SUMMARY.md</div>
+                        <div>✓ PLATFORM_COMPONENTS_RECOMMENDATIONS.md</div>
+                        <div>✓ SHADCN_COMPONENTS_RECOMMENDATIONS.md</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeLabel = document.getElementById('themeLabel');
+        const body = document.body;
+
+        // Load saved theme or default to dark
+        const savedTheme = localStorage.getItem('designSystemTheme') || 'dark';
+        body.setAttribute('data-theme', savedTheme);
+        updateThemeLabel(savedTheme);
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('designSystemTheme', newTheme);
+            updateThemeLabel(newTheme);
+        });
+
+        function updateThemeLabel(theme) {
+            themeLabel.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+    </script>
+</body>
+</html>

@@ -130,26 +130,11 @@ El Co-CEO AI, usando estos artefactos, debe poder:
 - 5-10 concrete examples per principle
 - Edge case coverage
 
-## 📖 Cómo Ejecutar
+## 📖 Quick Start
 
-### Quick Start:
-```bash
-# 1. Read the full prompt
-cat CO_CEO_DISCOVERY_PROMPT.md
+**To use the Co-CEO agent:** See `HOW_TO_USE_CO_CEO.md` for activation and usage instructions.
 
-# 2. Execute with Claude Code
-# Copy the "Example Usage" section from the prompt
-
-# 3. Follow phased approach (4 weeks)
-# Don't rush - depth > speed
-```
-
-### Tools to Use:
-- **Read**: Para files (NOT bash cat)
-- **TodoWrite**: Track progress (16 transcripts + synthesis)
-- **Serena memory**: Store key insights
-- **Sequential Thinking**: Complex synthesis
-- **Context7**: Framework references (JTBD, positioning)
+**To execute discovery analysis:** See `CO_CEO_DISCOVERY_PROMPT.md` for the full analysis workflow (4-week phased approach).
 
 ## 💡 Expected Impact
 

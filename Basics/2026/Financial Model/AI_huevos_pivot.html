@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos: The Pivot Strategy Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Outfit for Brand (Rounded Sans), Roboto Mono for Data -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Roboto+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['Roboto Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            yellow: '#FFD826',
+                            blue: '#3988FF',
+                            orange: '#FF6B35',
+                            black: '#030102',
+                            white: '#FFFFFF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            /* 
+             AI HUEVOS BRAND TOKENS 
+             Theme: Light Mode (Playful, Poster-like)
+            */
+            --bg-body: #FFFFFF;
+            --bg-card: #FFFFFF;
+            --bg-card-hover: #F8FAFC;
+            --bg-input: #F1F5F9;
+
+            --text-main: #030102;
+            --text-muted: #64748B;
+            --border-subtle: #E2E8F0;
+            --border-strong: #CBD5E1;
+
+            --accent-primary: #FFD826;
+            /* Yellow Backgrounds in Light Mode */
+            --accent-text: #030102;
+        }
+
+        .dark {
+            /* 
+             Theme: Dark Mode (Visionary, Tech)
+            */
+            --bg-body: #030102;
+            --bg-card: #0F0F11;
+            --bg-card-hover: #18181B;
+            --bg-input: #1F2937;
+
+            --text-main: #FAFAFA;
+            --text-muted: #A1A1AA;
+            --border-subtle: rgba(255, 255, 255, 0.1);
+            --border-strong: rgba(255, 255, 255, 0.2);
+
+            --accent-primary: #FFD826;
+            /* Yellow Text in Dark Mode */
+            --accent-text: #FFD826;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Scrollytelling Setup */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .snap-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .snap-section {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        /* Components */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .dark .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-strong);
+            background: var(--bg-card-hover);
+        }
+
+        /* Toggle Switch */
+        .theme-toggle {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 50;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-strong);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sliders */
+        input[type=range] {
+            accent-color: #3988FF;
+            height: 6px;
+            width: 100%;
+            background: var(--bg-input);
+            border-radius: 4px;
+            appearance: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: var(--bg-body);
+            border: 4px solid #3988FF;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Theme Toggle -->
+    <button onclick="toggleTheme()" class="theme-toggle">
+        <span id="themeIcon">☀️</span>
+        <span id="themeText">Light Mode</span>
+    </button>
+
+    <div class="snap-container">
+
+        <!-- SLIDE 1: INTRO -->
+        <section class="snap-section px-4 md:px-8 max-w-7xl mx-auto w-full">
+
+            <div class="mb-12">
+                <div
+                    class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold bg-brand-yellow/20 text-brand-yellow border border-brand-yellow/40 mb-6 uppercase tracking-wider">
+                    Strategy Deck 2026
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tight">
+                    From <span class="text-brand-orange">Consulting</span><br>
+                    To <span class="text-brand-blue">Infrastructure</span>
+                </h1>
+                <p class="text-2xl text-brand-yellow font-bold max-w-2xl">
+                    Only Huevos creates the system.
+                </p>
+                <p class="text-lg opacity-70 max-w-2xl mt-2">
+                    Stop treating GDM as a billable client. Use them as "Client Zero".
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 w-full mt-12">
+                <!-- Phase 1 -->
+                <div class="card p-8 border-l-4 border-brand-orange">
+                    <h3 class="text-lg font-bold text-brand-orange mb-2 uppercase tracking-wide">Phase 1: The Trap</h3>
+                    <p class="opacity-70 mb-4 h-16">Fixed-scope workflows. Revenue stops when we stop coding.</p>
+                    <div class="flex items-center gap-4 pt-4 mt-4 border-t border-brand-orange/20">
+                        <div class="text-4xl font-black">1x</div>
+                        <div class="text-sm opacity-50 uppercase font-mono tracking-wider">Valuation</div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="card p-8 border-l-4 border-brand-blue">
+                    <h3 class="text-lg font-bold text-brand-blue mb-2 uppercase tracking-wide">Phase 2: The Opportunity
+                    </h3>
+                    <p class="opacity-70 mb-4 h-16">Transaction Engine. Revenue grows as their business grows.</p>
+                    <div class="flex items-center gap-4 pt-4 mt-4 border-t border-brand-blue/20">
+                        <div class="text-4xl font-black text-brand-blue">10x</div>
+                        <div class="text-sm opacity-50 uppercase font-mono tracking-wider">Valuation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: INSIGHT -->
+        <section class="snap-section px-4 md:px-8 max-w-7xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-5xl font-black mb-8">The Margin Arbitrage</h2>
+                    <div class="p-8 bg-brand-yellow text-brand-black rounded-3xl mb-8 transform -rotate-1 shadow-lg">
+                        <p class="text-3xl font-bold text-[#030102] leading-tight">
+                            80% of value is standard code.<br>
+                            Only 20% needs expensive AI.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-sm font-bold mb-2 font-mono">
+                                <span class="text-brand-blue">DETERMINISTIC (Zero Cost)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-6 overflow-hidden">
+                                <div class="bg-brand-blue h-6 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-bold mb-2 font-mono">
+                                <span class="text-brand-orange">LLM REASONING (High Cost)</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-6 overflow-hidden">
+                                <div class="bg-brand-orange h-6 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-10 backdrop-blur-sm">
+                    <h3
+                        class="text-xl font-bold mb-8 font-mono tracking-widest border-b border-gray-200 dark:border-gray-800 pb-4">
+                        PRICING MODEL</h3>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4 opacity-40">
+                            <div class="mt-1 text-red-500 font-bold text-xl">✕</div>
+                            <div>
+                                <div class="font-bold text-lg">SaaS Fee ($299/mo)</div>
+                                <div class="text-sm opacity-70">Client perceives as "paying for air".</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-brand-blue text-xl">✓</div>
+                            <div>
+                                <div class="font-bold text-xl text-brand-blue">Transaction Fee</div>
+                                <div class="text-sm opacity-70">Client pays for success ($0.10 - $2.00).</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SLIDE 4: SIMULATOR -->
+        <section class="snap-section px-4 md:px-8 max-w-7xl mx-auto w-full">
+            <div class="grid lg:grid-cols-12 gap-8 w-full">
+                <div class="lg:col-span-4 space-y-6">
+                    <div>
+                        <h2 class="text-3xl font-black mb-2">Simulator</h2>
+                        <p class="opacity-60 text-sm">Model the revenue based on volume.</p>
+                    </div>
+
+                    <!-- BK -->
+                    <div class="card p-5 border-l-4 border-brand-orange">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="font-bold">Burger King</h4>
+                            <span class="text-xs bg-brand-orange/20 text-brand-orange px-2 py-1 rounded font-bold">HIGH
+                                VOL</span>
+                        </div>
+                        <input type="range" id="bkSlider" min="0" max="100000" step="1000" value="50000" class="mb-4">
+                        <div class="flex justify-between font-mono font-bold">
+                            <span id="bkVolDisplay">50,000</span>
+                            <span class="opacity-50">$0.05</span>
+                        </div>
+                    </div>
+
+                    <!-- Hotel -->
+                    <div class="card p-5 border-l-4 border-brand-blue">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="font-bold">5-Star Hotel</h4>
+                            <span class="text-xs bg-brand-blue/20 text-brand-blue px-2 py-1 rounded font-bold">MED
+                                VOL</span>
+                        </div>
+                        <input type="range" id="hotelSlider" min="0" max="5000" step="100" value="2000" class="mb-4">
+                        <div class="flex justify-between font-mono font-bold">
+                            <span id="hotelVolDisplay">2,000</span>
+                            <span class="opacity-50">$1.00</span>
+                        </div>
+                    </div>
+
+                    <!-- MRR -->
+                    <div class="card p-6 bg-brand-yellow text-brand-black border-none transform rotate-1">
+                        <div class="text-xs uppercase font-bold tracking-widest text-[#030102] opacity-70 mb-1">
+                            Projected MRR</div>
+                        <div class="text-5xl font-black font-mono text-[#030102]" id="totalMrrDisplay">$5,500</div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 card p-6 flex flex-col h-full min-h-[500px]">
+                    <h3 class="font-bold text-lg mb-6">Revenue Projection</h3>
+                    <div class="flex-grow relative">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Toggle Logic
+        const html = document.documentElement;
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+
+        function toggleTheme() {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                themeIcon.innerText = '🌙';
+                themeText.innerText = 'Dark Mode';
+                updateCharts(false);
+            } else {
+                html.classList.add('dark');
+                themeIcon.innerText = '☀️';
+                themeText.innerText = 'Light Mode';
+                updateCharts(true);
+            }
+        }
+
+        // --- State & Charts ---
+        const state = { bkVolume: 50000, bkPrice: 0.05, hotelVolume: 2000, hotelPrice: 1.00, constVolume: 200, constPrice: 5.00 };
+        let revenueChartInstance = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initListeners();
+            updateCalculations();
+        });
+
+        function initListeners() {
+            document.getElementById('bkSlider').addEventListener('input', (e) => {
+                state.bkVolume = parseInt(e.target.value);
+                document.getElementById('bkVolDisplay').innerText = state.bkVolume.toLocaleString();
+                updateCalculations();
+            });
+            document.getElementById('hotelSlider').addEventListener('input', (e) => {
+                state.hotelVolume = parseInt(e.target.value);
+                document.getElementById('hotelVolDisplay').innerText = state.hotelVolume.toLocaleString();
+                updateCalculations();
+            });
+        }
+
+        function updateCalculations() {
+            const totalMrr = (state.bkVolume * state.bkPrice) + (state.hotelVolume * state.hotelPrice) + (state.constVolume * state.constPrice);
+            document.getElementById('totalMrrDisplay').innerText = '$' + totalMrr.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+            updateRevenueChart(totalMrr);
+        }
+
+        function updateRevenueChart(mrr) {
+            // Redraw based on current theme is complex in vanilla JS without Destroy, so allow Chart.js to handle updates
+            const isDark = html.classList.contains('dark');
+            const ctx = document.getElementById('revenueChart').getContext('2d');
+            const months = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
+
+            let cumulative = 0;
+            const newModelData = Array(12).fill(0).map((_, i) => {
+                let ramp = i < 3 ? (i + 1) / 3 : 1;
+                cumulative += (mrr * ramp);
+                return cumulative;
+            });
+
+            const colorGrid = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+            const colorText = isDark ? '#A1A1AA' : '#64748B';
+
+            if (revenueChartInstance) {
+                revenueChartInstance.data.datasets[1].data = newModelData;
+                revenueChartInstance.options.scales.y.grid.color = colorGrid;
+                revenueChartInstance.options.scales.y.ticks.color = colorText;
+                revenueChartInstance.options.scales.x.ticks.color = colorText;
+                revenueChartInstance.update();
+            } else {
+                revenueChartInstance = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: months,
+                        datasets: [
+                            {
+                                label: 'Fixed Fee',
+                                data: Array(12).fill(56000), // Simplified visual
+                                borderColor: '#FF6B35',
+                                borderDash: [5, 5],
+                                borderWidth: 2,
+                                tension: 0.1,
+                                pointRadius: 0
+                            },
+                            {
+                                label: 'Platform Revenue',
+                                data: newModelData,
+                                borderColor: '#3988FF',
+                                backgroundColor: 'rgba(57, 136, 255, 0.1)',
+                                borderWidth: 4,
+                                pointRadius: 0,
+                                tension: 0.4,
+                                fill: true
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: colorGrid },
+                                ticks: { color: colorText, font: { family: "'Roboto Mono'" } }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: colorText, font: { family: "'Outfit'" } }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        function updateCharts(isDark) {
+            if (revenueChartInstance) {
+                const colorGrid = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+                const colorText = isDark ? '#A1A1AA' : '#64748B';
+                revenueChartInstance.options.scales.y.grid.color = colorGrid;
+                revenueChartInstance.options.scales.y.ticks.color = colorText;
+                revenueChartInstance.options.scales.x.ticks.color = colorText;
+                revenueChartInstance.update();
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -337,3 +337,18 @@ Before deploying any Figma-exported component:
 - Anima Plugin: https://www.animaapp.com/
 - Brand Guidelines: `brand_guidelines.md`
 - Brand Designer Skill: `.claude/skills/brand-designer.md`
+- Figma Agent Skill: `Brand/figma-design-agent/SKILL.md`
+
+## Approach 5: AI Huevos Figma Agent (New)
+
+The **Figma Design Agent** is a specialized AI agent capable of directly executing Figma operations to build artifacts.
+
+### Capabilities
+- **HTML to Deck**: Converts eBook/HTML content into 1920x1080 slides.
+- **Brand Guardrails**: Automatically applies strictly defined brand colors and fonts.
+- **Auto-Layout**: Builds frames using modern Figma best practices.
+
+### Usage
+- **Skill Definition**: `Brand/figma-design-agent/SKILL.md`
+- **Workflows**: `workflows/figma-agent/`
+

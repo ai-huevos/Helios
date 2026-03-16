@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos | Dark Mode Optimized</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/scandia');
+        @import url('https://fonts.cdnfonts.com/css/geist-mono');
+
+        :root {
+            --white: #FFFFFF;
+            --black: #030102;
+            --yellow: #FFD826;
+            --blue: #3988FF;
+            --violet: #B4A7FA;
+            --orange: #FF6B35;
+            --gray-light: #E8E8E8;
+            --gray-dark: #8B8B8B;
+            --surface: #0a0a0a;
+            --surface-elevated: #141414;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Scandia', 'Inter', system-ui, sans-serif;
+            background: var(--black);
+            color: var(--white);
+            line-height: 1.5;
+        }
+
+        /* Header */
+        header {
+            background: var(--black);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 24px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .logo-egg {
+            width: 40px;
+            height: 48px;
+            background: var(--yellow);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--yellow);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--black);
+            padding: 100px 48px 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -300px;
+            right: -200px;
+            width: 600px;
+            height: 700px;
+            background: radial-gradient(ellipse, rgba(255,216,38,0.15) 0%, transparent 70%);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            left: -100px;
+            width: 400px;
+            height: 500px;
+            background: radial-gradient(ellipse, rgba(57,136,255,0.1) 0%, transparent 70%);
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 24px;
+            line-height: 1.1;
+            position: relative;
+        }
+
+        /* Yellow text works on dark - AAA contrast */
+        .hero .highlight {
+            color: var(--yellow);
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--white);
+            opacity: 0.9;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .cta-primary {
+            background: var(--yellow);
+            color: var(--black);
+            padding: 16px 48px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-primary:hover {
+            background: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255,216,38,0.3);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 16px 48px;
+            font-size: 18px;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--blue);
+            color: var(--blue);
+        }
+
+        /* Features Section */
+        .features {
+            background: var(--surface);
+            padding: 80px 48px;
+        }
+
+        .features h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--white);
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--surface-elevated);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255,255,255,0.15);
+        }
+
+        .feature-card:nth-child(1):hover {
+            border-color: var(--yellow);
+            box-shadow: 0 8px 24px rgba(255,216,38,0.15);
+        }
+
+        .feature-card:nth-child(2):hover {
+            border-color: var(--blue);
+            box-shadow: 0 8px 24px rgba(57,136,255,0.15);
+        }
+
+        .feature-card:nth-child(3):hover {
+            border-color: var(--violet);
+            box-shadow: 0 8px 24px rgba(180,167,250,0.15);
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+
+        .feature-card:nth-child(1) .feature-icon {
+            background: rgba(255,216,38,0.2);
+        }
+
+        .feature-card:nth-child(2) .feature-icon {
+            background: rgba(57,136,255,0.2);
+        }
+
+        .feature-card:nth-child(3) .feature-icon {
+            background: rgba(180,167,250,0.2);
+        }
+
+        /* Colored headings work on dark - all pass AA+ */
+        .feature-card:nth-child(1) h3 {
+            color: var(--yellow);
+        }
+
+        .feature-card:nth-child(2) h3 {
+            color: var(--blue);
+        }
+
+        .feature-card:nth-child(3) h3 {
+            color: var(--violet);
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            color: var(--white);
+            opacity: 0.8;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--black);
+            padding: 80px 48px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 32px;
+        }
+
+        /* Colored numbers work on dark - all AAA contrast */
+        .stat-item h3 {
+            font-family: 'Geist Mono', monospace;
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .stat-item:nth-child(1) h3 {
+            color: var(--yellow);
+        }
+
+        .stat-item:nth-child(2) h3 {
+            color: var(--blue);
+        }
+
+        .stat-item:nth-child(3) h3 {
+            color: var(--violet);
+        }
+
+        .stat-item:nth-child(4) h3 {
+            color: var(--yellow);
+        }
+
+        .stat-item p {
+            font-size: 16px;
+            color: var(--white);
+            opacity: 0.9;
+        }
+
+        /* CTA Section with Orange */
+        .cta-section {
+            background: linear-gradient(135deg, var(--surface) 0%, var(--black) 100%);
+            padding: 80px 48px;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--yellow), transparent);
+        }
+
+        .cta-section h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 24px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            color: var(--white);
+            opacity: 0.8;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Orange CTA - high contrast on dark */
+        .cta-orange {
+            background: var(--orange);
+            color: var(--black);
+            padding: 18px 56px;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-orange:hover {
+            background: var(--yellow);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255,107,53,0.4);
+        }
+
+        /* Clients/Trust Section */
+        .trust {
+            background: var(--surface);
+            padding: 48px;
+            text-align: center;
+        }
+
+        .trust p {
+            color: var(--gray-dark);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+        }
+
+        .trust-logos {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            opacity: 0.5;
+        }
+
+        .trust-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 48px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .footer-egg {
+            width: 24px;
+            height: 28px;
+            background: var(--yellow);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        footer p {
+            opacity: 0.7;
+        }
+
+        /* Version Label */
+        .version-label {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--black);
+            color: var(--yellow);
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            z-index: 1000;
+            border: 1px solid var(--yellow);
+        }
+
+        .a11y-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #10B981;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="version-label">Dark Mode <span class="a11y-badge">WCAG AAA</span></div>
+
+    <header>
+        <div class="logo">
+            <div class="logo-egg"></div>
+            AI Huevos
+        </div>
+        <nav>
+            <a href="#soluciones">Soluciones</a>
+            <a href="#casos">Casos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Pa' emprender se necesitan <span class="highlight">huevos</span></h1>
+        <p>Transformamos equipos comerciales con agentes de IA que automatizan prospección, investigación y análisis para cerrar más ventas.</p>
+        <div class="cta-group">
+            <a href="#" class="cta-primary">Agenda una demo</a>
+            <a href="#" class="cta-secondary">Ver casos de éxito</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>¿Por qué AI Huevos?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🥚</div>
+                <h3>Automatización inteligente</h3>
+                <p>Agentes de IA que trabajan 24/7 investigando prospectos, analizando señales de compra y preparando outreach personalizado.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Datos accionables</h3>
+                <p>Convertimos conversaciones en insights estratégicos con análisis automático de llamadas y meetings.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Implementación rápida</h3>
+                <p>De cero a operativo en semanas, no meses. Workflows personalizados que se adaptan a tu stack tecnológico.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>85%</h3>
+                <p>Reducción en tiempo de investigación</p>
+            </div>
+            <div class="stat-item">
+                <h3>3x</h3>
+                <p>Aumento en outreach personalizado</p>
+            </div>
+            <div class="stat-item">
+                <h3>60%</h3>
+                <p>Mejora en calificación de leads</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Operación continua de agentes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>¿Listo para escalar tu equipo comercial?</h2>
+        <p>Únete a las empresas que ya están cerrando más deals con AI Huevos.</p>
+        <a href="#" class="cta-orange">Comenzar ahora</a>
+    </section>
+
+    <section class="trust">
+        <p>Empresas que confían en nosotros</p>
+        <div class="trust-logos">
+            <span class="trust-logo">Startup A</span>
+            <span class="trust-logo">Corp B</span>
+            <span class="trust-logo">Tech C</span>
+            <span class="trust-logo">Scale D</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <div class="footer-egg"></div>
+            <span style="font-weight: 600;">AI Huevos</span>
+        </div>
+        <p>© 2025 AI Huevos | Hecho con coraje 🥚</p>
+    </footer>
+</body>
+</html>

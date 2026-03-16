@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Huevos | Versión 3: Balanced Contrast Split</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/scandia');
+        @import url('https://fonts.cdnfonts.com/css/geist-mono');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Scandia', 'Inter', system-ui, sans-serif;
+            background: #FFFFFF;
+            color: #121212;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        header {
+            background: #121212;
+            padding: 24px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .logo span {
+            color: #FFD826;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD826;
+        }
+
+        /* Hero Section - Black background */
+        .hero {
+            background: #121212;
+            padding: 120px 48px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero .highlight {
+            color: #FFD826;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #E8E8E8;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: #FFD826;
+            color: #121212;
+            padding: 16px 48px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #3988FF;
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section - White background */
+        .features {
+            background: #FFFFFF;
+            padding: 80px 48px;
+        }
+
+        .features h2 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #121212;
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px solid #E8E8E8;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: #FFD826;
+            transform: translateY(-4px);
+        }
+
+        .feature-card:nth-child(2):hover {
+            border-color: #3988FF;
+        }
+
+        .feature-card:nth-child(3):hover {
+            border-color: #B4A7FA;
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #121212;
+            margin-bottom: 16px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            color: #4B5563;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 32px;
+        }
+
+        .feature-card:nth-child(1) .feature-icon {
+            background: #FFD826;
+        }
+
+        .feature-card:nth-child(2) .feature-icon {
+            background: #3988FF;
+        }
+
+        .feature-card:nth-child(3) .feature-icon {
+            background: #B4A7FA;
+        }
+
+        /* Stats Section - Black background */
+        .stats {
+            background: #121212;
+            padding: 80px 48px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-family: 'Geist Mono', monospace;
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .stat-item:nth-child(1) h3 {
+            color: #FFD826;
+        }
+
+        .stat-item:nth-child(2) h3 {
+            color: #3988FF;
+        }
+
+        .stat-item:nth-child(3) h3 {
+            color: #B4A7FA;
+        }
+
+        .stat-item:nth-child(4) h3 {
+            color: #FFD826;
+        }
+
+        .stat-item p {
+            font-size: 18px;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+
+        /* Footer - White background */
+        footer {
+            background: #FFFFFF;
+            color: #121212;
+            padding: 48px;
+            text-align: center;
+            border-top: 2px solid #E8E8E8;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        .footer-accent {
+            color: #FFD826;
+            font-weight: 600;
+        }
+
+        /* Version Label */
+        .version-label {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #121212 50%, #FFFFFF 50%);
+            color: #FFD826;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+            border: 2px solid #FFD826;
+        }
+    </style>
+</head>
+<body>
+    <div class="version-label">Versión 3: Contrast Split</div>
+
+    <header>
+        <div class="logo">AI <span>Huevos</span></div>
+        <nav>
+            <a href="#soluciones">Soluciones</a>
+            <a href="#casos">Casos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Pa' emprender se necesitan <span class="highlight">huevos</span></h1>
+        <p>Transformamos equipos comerciales con agentes de IA que automatizan prospección, investigación y análisis para cerrar más ventas.</p>
+        <a href="#" class="cta-button">Agenda una demo</a>
+    </section>
+
+    <section class="features">
+        <h2>¿Por qué AI Huevos?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🥚</div>
+                <h3>Automatización inteligente</h3>
+                <p>Agentes de IA que trabajan 24/7 investigando prospectos, analizando señales de compra y preparando outreach personalizado.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Datos accionables</h3>
+                <p>Convertimos conversaciones en insights estratégicos con análisis automático de llamadas y meetings.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Implementación rápida</h3>
+                <p>De cero a operativo en semanas, no meses. Workflows personalizados que se adaptan a tu stack tecnológico.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>85%</h3>
+                <p>Reducción en tiempo de investigación</p>
+            </div>
+            <div class="stat-item">
+                <h3>3x</h3>
+                <p>Aumento en outreach personalizado</p>
+            </div>
+            <div class="stat-item">
+                <h3>60%</h3>
+                <p>Mejora en calificación de leads</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Operación continua de agentes</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 <span class="footer-accent">AI Huevos</span> | Hecho con coraje 🥚</p>
+    </footer>
+</body>
+</html>

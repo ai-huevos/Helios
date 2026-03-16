@@ -1,3 +1,12 @@
+/**
+ * AI Huevos Design System - Tailwind Configuration
+ * Version: 2.0.0
+ * 
+ * Usage: Import this in your tailwind.config.js
+ * const aiHuevosPreset = require('./tailwind-config');
+ * module.exports = { presets: [aiHuevosPreset], ... }
+ */
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,7 +22,9 @@ module.exports = {
           yellow: '#FFD826',
           blue: '#3988FF',
           violet: '#B4A7FA',
-          orange: '#F97316',
+          orange: '#FF6B35',
+          'gray-dark': '#8B8B8B',
+          'gray-light': '#E8E8E8',
         },
         semantic: {
           success: '#10B981',
@@ -33,11 +44,11 @@ module.exports = {
           800: '#1F2937',
           900: '#111827',
         },
-        dataViz: {
+        data: {
           1: '#FFD826',
           2: '#3988FF',
           3: '#B4A7FA',
-          4: '#F97316',
+          4: '#FF6B35',
           5: '#030102',
         },
       },
@@ -46,6 +57,7 @@ module.exports = {
         mono: ['Geist Mono', 'Monaco', 'Courier New', 'monospace'],
       },
       fontSize: {
+        // UI Scale
         'h1': ['32px', { lineHeight: '1.2', fontWeight: '700', letterSpacing: '-0.5px' }],
         'h2': ['28px', { lineHeight: '1.3', fontWeight: '700', letterSpacing: '-0.25px' }],
         'h3': ['24px', { lineHeight: '1.4', fontWeight: '600' }],
@@ -74,18 +86,24 @@ module.exports = {
         'lg': '8px',
         'xl': '12px',
         'full': '9999px',
+        'egg': '50% 50% 50% 50% / 60% 60% 40% 40%',
       },
       boxShadow: {
         'sm': '0 1px 2px 0 rgba(0,0,0,0.05)',
         'md': '0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)',
         'lg': '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)',
         'xl': '0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04)',
-        'dashboard-card': '0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06)',
+        'card': '0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06)',
       },
       transitionDuration: {
         'fast': '150ms',
         'base': '300ms',
         'slow': '500ms',
+      },
+      transitionTimingFunction: {
+        'ease-in': 'cubic-bezier(0.4, 0, 1, 1)',
+        'ease-out': 'cubic-bezier(0, 0, 0.2, 1)',
+        'ease-in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
     },
   },
